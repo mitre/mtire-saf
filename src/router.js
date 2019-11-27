@@ -132,6 +132,11 @@ const router = new Router({
         requiresAuth: true,
       }
     },
+    {
+      path:'/validation',
+      name:"validation",
+      component:()=> import('@/views/Validation')
+    },
   ]
 })
 

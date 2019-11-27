@@ -9,14 +9,14 @@
                     "RedHat CVE Vulnerability Scan Baseline": "https://github.cms.gov/ISPG/rhel_cve_vulnerability_scan_baseline",
                     "Microsoft Windows 2012r2 Member Server STIG Baseline": "https://github.com/mitre/microsoft-windows-2012r2-memberserver-stig-baseline",
                     "Docker CE CIS Baseline": "https://github.com/mitre/docker-ce-cis-baseline",
-                    "Canonical Ubuntu 16.04 STIG Baseline": "https://github.com/mitre/docker-ce-cis-baseline"
+                    "Canonical Ubuntu 16.04 STIG Baseline": "https://github.com/mitre/canonical-ubuntu-16.04-lts-stig-baseline"
                 }
             },
             {
                 "category": "Application Logic",
                 "values": {
                     "RSA Archer 6 Security Configuration Guide Baseline": "https://github.com/mitre/rsa-archer-6-security-configuration-guide-baseline",
-                    "RedHat Jboss Enterprise Application Server 6.3 STIG Baseline": "https://github.com/mitre/rsa-archer-6-security-configuration-guide-baseline",
+                    "RedHat Jboss Enterprise Application Server 6.3 STIG Baseline": "https://github.com/mitre/red-hat-jboss-eap-6.3-stig-baseline",
                     "Oracle Java Runtime Environment 7 Unix STIG Baseline": "https://github.com/mitre/oracle-java-runtime-environment-7-unix-stig-baseline",
                     "Oracle Java Runtime Environment 8 Unix STIG Baseline": "https://github.com/mitre/oracle-java-runtime-environment-8-unix-stig-baseline"
                 }
