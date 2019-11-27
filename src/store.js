@@ -17,6 +17,15 @@ export default new Vuex.Store({
         }, 
       },
       { 
+        text: 'Validation', 
+        to: '/validation', 
+        icon:'mdi-home', 
+        meta:{
+          showToolbar: true,
+          showBottomNav: true
+        }, 
+      },
+      { 
         text: 'Events', 
         to: '/events', 
         icon: 'mdi-assistant', 

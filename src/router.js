@@ -135,7 +135,12 @@ const router = new Router({
     {
       path:'/validation',
       name:"validation",
-      component:()=> import('@/views/Validation')
+      component:()=> import('@/views/Validation.vue'),
+      meta:{
+        title:`Validation Profiles | ${communitydata.CommunityName}`,
+        color:"#0277bd",
+        requiresAuth: false,
+      }
     },
   ]
 })
