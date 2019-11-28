@@ -43,7 +43,7 @@
                            </v-col>
 
                            <v-col cols="12" md="12" lg="12" sm="12" class="pa-3">
-                               <p class="google-font mb-0" style="font-size:150%">About GDG Jalandhar</p>
+                               <p class="google-font mb-0" style="font-size:150%">About MITRE SAF</p>
                                 <p class="google-font mt-0" style="font-size:95%">Google Developer Group Jalandhar is inspired by GTUG/GDG Family . We started our journey in Feb 2011. We try to engage student developers, fresh graduates and professionals through our hack events & meetups. The motive is to create a local ecosystem of programmers & hackers in and around Jalandhar. The technology awareness is main goal for first few years of the group.</p>
                            </v-col> 
 
