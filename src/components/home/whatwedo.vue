@@ -6,7 +6,7 @@
         <p
           class="google-font mt-0"
           style="font-size:95%"
-        >Google Developer Groups (GDGs) are for developers who are interested in Google's developer technology.</p>
+        >The MITRE SAF works to bring the needed technologies, methodologies and patterns together to help bridge the needs of Security with the methods of todays developers and operators.</p>
         <p class="google-font" style="font-size:95%">About different Google technologies</p>
         <span v-for="(item,i) in communitydata.WhatWeDoTech" :key="i">
           <v-tooltip bottom>
@@ -35,37 +35,27 @@
       <v-col cols="12" md="9" lg="9" sm="12">
         <v-container fluid>
           <v-row>
-            <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
-              <v-icon large style="font-size:300%">mdi-comment</v-icon>
-              <p class="google-font mt-2" style="font-size:130%">Talks</p>
-              <p
-                class="google-font"
-                style="font-size:95%"
-              >Get updated with the latest news and announcements</p>
-            </v-col>
-            <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
-              <v-icon large style="font-size:300%">mdi-code-tags</v-icon>
-              <p class="google-font mt-2" style="font-size:130%">Codelabs</p>
-              <p
-                class="google-font"
-                style="font-size:95%"
-              >Get hands-on experience and guidance from the community members</p>
-            </v-col>
-            <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
-              <v-icon large style="font-size:300%">mdi-school</v-icon>
-              <p class="google-font mt-2" style="font-size:130%">Campus Roadshows</p>
-              <p
-                class="google-font"
-                style="font-size:95%"
-              >Share knowledge in different Companies, colleges and universities</p>
-            </v-col>
-            <v-col md="3" lg="3" sm="6" cols="6" class="text-center pa-2">
-              <v-icon large style="font-size:300%">mdi-chart-bubble</v-icon>
-              <p class="google-font mt-2" style="font-size:130%">Live Viewing Parties</p>
-              <p
-                class="google-font"
-                style="font-size:95%"
-              >Share knowledge in different Companies, colleges and universities</p>
+            <v-col
+              v-for="item in whatwedodata"
+              :key="item.name"
+              md="3"
+              lg="3"
+              sm="6"
+              cols="6"
+              class="text-center pa-2"
+            >
+              <v-icon large style="font-size:300%">{{ item.icon }}</v-icon>
+              <p class="google-font mt-2" style="font-size:130%">{{ item.name }}</p>
+              <p class="google-font" style="font-size:95%">{{ item.desc }}</p>
+              <!-- <v-btn
+                v-bind:href="item.more_link"
+                outlined
+                target="_blank"
+                rounded
+                small
+                style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
+                class="ml-0 mt-3 google-font"
+              >Learn More</v-btn> -->
             </v-col>
           </v-row>
         </v-container>
@@ -76,10 +66,12 @@
 
 <script>
 import communitydata from "@/assets/data/communitydata.json";
+import whatwedodata from "@/assets/data/whatWeDo.json";
 export default {
   name: "App",
   data: () => ({
-    communitydata: communitydata
+    communitydata: communitydata,
+    whatwedodata: whatwedodata
   }),
   methods: {
     getImgUrl(url) {

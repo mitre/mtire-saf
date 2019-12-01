@@ -54,9 +54,6 @@ export default {
 </script>
 
 <style scoped>
-.darkbg {
-  /* background: #1F1A24 */
-}
 @media screen and (min-width: 600px) {
   .card-top-margin {
     margin-top: -110px;
