@@ -1,9 +1,9 @@
 [
   {
-    "name": "Name",
-    "designation": "Front End Developer",
+    "name": "Aaron Lippold",
+    "designation": "Project Lead",
     "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-    "image": "",
+    "image": "aaron-lippold.png",
     "socialLinks": {
       "twitter": "https://twitter.com/vrijrajsingh",
       "linkedin": "https://www.linkedin.com/in/vrijraj",
@@ -12,10 +12,10 @@
     }
   },
   {
-    "name": "Name",
-    "designation": "Front End Developer",
+    "name": "Eugene Aronne",
+    "designation": "Project Lead",
     "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-    "image": "",
+    "image": "eugene-aronne.png",
     "socialLinks": {
       "twitter": "https://twitter.com/vrijrajsingh",
       "linkedin": "https://www.linkedin.com/in/vrijraj",
@@ -24,10 +24,10 @@
     }
   },
   {
-    "name": "Name",
-    "designation": "Front End Developer",
+    "name": "Brett Kreider",
+    "designation": "CEL for Security Automation",
     "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-    "image": "",
+    "image": "brett-kreider.png",
     "socialLinks": {
       "twitter": "https://twitter.com/vrijrajsingh",
       "linkedin": "https://www.linkedin.com/in/vrijraj",
@@ -36,10 +36,10 @@
     }
   },
   {
-    "name": "Name",
+    "name": "Alicia Sturtevant",
     "designation": "Front End Developer",
     "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-    "image": "",
+    "image": "alicia-sturtevant.png",
     "socialLinks": {
       "twitter": "https://twitter.com/vrijrajsingh",
       "linkedin": "https://www.linkedin.com/in/vrijraj",
@@ -48,10 +48,142 @@
     }
   },
   {
-    "name": "Name",
+    "name": "Colin Doherty",
     "designation": "Front End Developer",
     "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
-    "image": "",
+    "image": "colin-doherty.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Dan Haynes",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "dan-haynes.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    } 
+  },
+  {
+    "name": "Jacob Henry",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "jacob-henry.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Lipee Vora",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "lipee-vora.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    } 
+  },
+  {
+    "name": "Luke Malinowski",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "luke-malinowski.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Mark Tollick",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "mark-tollick.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Mohamed El-Sharkawi",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "mohamed-el-sharkawi.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Robert Thew",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "robert-thew.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Rony Xavier",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "rony-xavier.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Sam Cornwell",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "sam-cornwell.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Vikram Bala",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "vikram-bala.png",
+    "socialLinks": {
+      "twitter": "https://twitter.com/vrijrajsingh",
+      "linkedin": "https://www.linkedin.com/in/vrijraj",
+      "github": "https://github.com/Vrijraj",
+      "website": ""
+    }
+  },
+  {
+    "name": "Will Dower",
+    "designation": "Front End Developer",
+    "bio": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Adipisci est, eius non minima amet quaerat expedita quos exercitationem quia aspernatur blanditiis totam officia commodi eos sapiente natus excepturi ab nemo.",
+    "image": "will-dower.png",
     "socialLinks": {
       "twitter": "https://twitter.com/vrijrajsingh",
       "linkedin": "https://www.linkedin.com/in/vrijraj",

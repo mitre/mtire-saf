@@ -22,7 +22,7 @@
                 </p>
                 <p class="google-font mt-0">Google is known all around the world. Everyone is 'googling', checking on 'maps' and communicating in 'gmail'. For simple users, they are services that just works, but not for us. Developers see much more: APIs, scalability issues, complex technology stacks. And that is what GDG is about.</p>
                 <p class="google-font mt-0 mb-0">Our goal is to organize space to connect the best industry experts with Indian audience to boost development of IT. And Our Core Team is:</p>
-      </v-col>-->
+      </v-col> -->
     </v-row>
   </v-container>
 </template>
