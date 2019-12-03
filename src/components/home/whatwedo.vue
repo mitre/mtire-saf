@@ -20,8 +20,7 @@
                   small
                   style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
                   class="ml-0 mt-3 google-font hidden-md-and-down"
-                 >{{item.TechName}}</v-btn
-                <img :src="getImgUrl(item.image)" width="30vh" alt srcset dark v-on="on" />
+                 >{{item.TechName}}</v-btn>
               </a>
               &nbsp;&nbsp;&nbsp;
             </template>
