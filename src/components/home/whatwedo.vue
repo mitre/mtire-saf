@@ -12,6 +12,15 @@
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
               <a :href="item.link" target="_blank" class="ma-0">
+                <v-btn
+                  href="#"
+                  outlined
+                  target="_blank"
+                  rounded
+                  small
+                  style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
+                  class="ml-0 mt-3 google-font hidden-md-and-down"
+                 >{{item.TechName}}</v-btn
                 <img :src="getImgUrl(item.image)" width="30vh" alt srcset dark v-on="on" />
               </a>
               &nbsp;&nbsp;&nbsp;
@@ -22,7 +31,7 @@
 
         <br />
 
-        <v-btn
+        <!-- <v-btn
           href="#"
           outlined
           target="_blank"
@@ -30,7 +39,7 @@
           small
           style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
           class="ml-0 mt-3 google-font hidden-md-and-down"
-        >Learn More</v-btn>
+        >Learn More</v-btn> -->
       </v-col>
       <v-col cols="12" md="9" lg="9" sm="12">
         <v-container fluid>
