@@ -15,14 +15,14 @@
               class="ma-0 google-font"
               style="border-radius:5px;text-transform: capitalize;color:white"
             >Meetup Page</v-btn>&nbsp;
-            <v-btn
+            <!-- <v-btn
               href="#"
               target="_blank"
               outlined
               color
               class="ma-0 google-font"
               style="border-radius:5px;text-transform: capitalize;color:white"
-            >Facebook Page</v-btn>
+            >Facebook Page</v-btn> -->
             <br />
             <br />
             <router-link

@@ -5,13 +5,13 @@
         <p class="google-font mb-1" style="font-weight: 350;font-size:200%">
           <b>
             Our
-            <span style="color: #1a73e8;">Partners</span>
+            <span style="color: #1a73e8;">Sponsors</span>
           </b>
         </p>
         <p
           class="google-font mt-1 mb-0"
           style="font-size:120%"
-        >A very big thank you to all our partners for their continued partnership.</p>
+        >A very big thank you to all our Sponsors for their continued partnership.</p>
         <p class="google-font mt-0 mb-0" style="font-size:120%">
           If you’re interested in being showcased throughout , contact
           <a

@@ -2,7 +2,7 @@
   <v-container fluid>
     <v-row align="center">
       <v-col md="3" sm="5">
-        <v-img
+        <!-- <v-img
           :src="require('@/assets/img/home.svg')"
           :lazy-src="require('@/assets/img/home.svg')"
           width="100%"
@@ -13,7 +13,7 @@
               <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
             </v-row>
           </template>
-        </v-img>
+        </v-img> -->
       </v-col>
       <v-col md="9" sm="7">
         <p class="google-font mb-1" style="font-weight: 350;color: #616161;font-size:200%">
@@ -28,7 +28,7 @@
           <span v-for="(item,i) in communitydata.CommunityHashTags" :key="i">#{{item}} &nbsp;</span>
         </p>
 
-        <v-btn
+        <!-- <v-btn
           :href="communitydata.CommunityMeetupLink"
           target="_blank"
           class="ma-0 google-font elevation-1 primary"
@@ -44,7 +44,7 @@
           outlined
           class="ml-0"
           dark
-        >Learn More</v-btn>
+        >Learn More</v-btn> -->
       </v-col>
     </v-row>
   </v-container>
