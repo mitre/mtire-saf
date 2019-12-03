@@ -7,7 +7,7 @@
           class="google-font mt-0"
           style="font-size:95%"
         >The MITRE SAF works to bring the needed technologies, methodologies and patterns together to help bridge the needs of Security with the methods of todays developers and operators.</p>
-        <p class="google-font" style="font-size:95%">About different Google technologies</p>
+        <p class="google-font" style="font-size:95%">About different MITRE tools</p>
         <span v-for="(item,i) in communitydata.WhatWeDoTech" :key="i">
           <v-tooltip bottom>
             <template v-slot:activator="{ on }">
