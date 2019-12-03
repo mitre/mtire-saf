@@ -21,8 +21,9 @@
       <v-card-title class="px-5 google-font" primary-title>{{data.data.name}}</v-card-title>
 
       <v-card-text class="pa-5">
-        <p class="google-font">{{data.data.designation}}</p>
-        <p class="google-font">{{data.data.roles}}</p>
+        <p class="google-font" style="font-size:120%">{{data.data.designation}}</p>
+        <p class="google-font">Other Roles: {{data.data.roles}}</p>
+        
         <socialMediaDetails class="pl-0 ml-0" :data="{data:data.data.socialLinks}" />
       </v-card-text>
 
