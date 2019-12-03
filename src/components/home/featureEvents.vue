@@ -5,9 +5,9 @@
         <p class="google-font mb-0 mt-0" style="font-weight: 350;font-size:180%">
           <b>
             Our
-            <span style="color: #1a73e8;">Feature Event</span>
+            <span style="color: #1a73e8;">Feature Training</span>
             &
-            <span style="color: #1a73e8;">Meetup</span>
+            <span style="color: #1a73e8;">Events</span>
           </b>
         </p>
         <!-- <p class="google-font mb-0" style="font-size:180%">Our Feature Event & Meetup</p> -->
