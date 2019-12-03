@@ -20,9 +20,9 @@
         <p
           class="google-font mt-0 mb-0"
           style="font-size:110%"
-        >GDGs are local groups of developers who are specifically interested in Google products and APIs. Each local group is called a GDG chapter and can host a variety of technical activities for developers - from just a few people getting together to watch our latest videos, to large gatherings with demos and tech talks, to hackathons.</p>
+        >*insert text from slide deck</p>
         <br />
-        <v-btn
+        <!-- <v-btn
           :href="communitydata.CommunityMeetupLink"
           target="_blank"
           class="ma-0 google-font elevation-1 primary"
@@ -38,7 +38,7 @@
           outlined
           class="ml-0"
           dark
-        >Learn More</v-btn>
+        >Learn More</v-btn> -->
       </v-col>
     </v-row>
   </v-container>
