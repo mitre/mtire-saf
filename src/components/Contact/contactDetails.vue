@@ -7,7 +7,12 @@
           style="font-size:110%"
         >Our events are open to newbies, developers, managers, and organizations who are interested in Google's technologies or use them as part of their projects.</p> -->
         <br />
-        <p class="google-font">Questions? Please contact {{communitydata.CommunityEmail}}.</p>
+        <p class="google-font">Questions? Please contact
+          <a
+            style="color:#1565C0;text-decoration: none;"
+            :href="`mailto:${communitydata.CommunityEmail}`"
+          >{{communitydata.CommunityEmail}}</a>
+        </p>
         <!-- <p class="google-font mt-4 mb-3" style="font-size:130%">
           Follow Us:
           <span v-for="(item,i) in communitydata.SocialLinks" :key="i">
