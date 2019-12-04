@@ -24,25 +24,34 @@ export default new Vuex.Store({
           showToolbar: true,
           showBottomNav: true
         }
-      },
+      },     
       {
-        text: "Events",
-        to: "/events",
-        icon: "mdi-assistant",
+        text: "Hardening",
+        to: "/hardening",
+        icon: "mdi-home",
         meta: {
           showToolbar: true,
           showBottomNav: true
         }
       },
-      {
-        text: "Team",
-        to: "/team",
-        icon: "mdi-account-settings",
-        meta: {
-          showToolbar: true,
-          showBottomNav: true
-        }
-      },
+      // {
+      //   text: "Events",
+      //   to: "/events",
+      //   icon: "mdi-assistant",
+      //   meta: {
+      //     showToolbar: true,
+      //     showBottomNav: true
+      //   }
+      // },
+      //{
+        //text: "Team",
+        //to: "/team",
+        //icon: "mdi-account-settings",
+        //meta: {
+        //  showToolbar: true,
+        //  showBottomNav: true
+        //}
+      //},
       {
         text: "About",
         to: "/about",
