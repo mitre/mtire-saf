@@ -18,15 +18,15 @@
       <v-col md="9" sm="7">
         <p class="google-font mb-1" style="font-weight: 350;color: #616161;font-size:200%">
           <b>
-            Make good things
-            <span style="color: #1a73e8;">together</span>.
-          </b>
+            Security Automation
+            <span style="color: #1a73e8;">Framework</span>
+          </b> 
         </p>
-        <p class="google-font mt-0 mb-0" style="font-size:150%">{{communitydata.CommunityName}}</p>
+        <!-- <p class="google-font mt-0 mb-0" style="font-size:150%">{{communitydata.CommunityName}}</p> -->
         <p class="google-font" style="font-size:100%">{{communitydata.CommunityShortDescription}}</p>
-        <p class="google-font" style="font-size:100%;color:#9e9e9e">
+        <!-- <p class="google-font" style="font-size:100%;color:#9e9e9e">
           <span v-for="(item,i) in communitydata.CommunityHashTags" :key="i">#{{item}} &nbsp;</span>
-        </p>
+        </p> -->
 
         <!-- <v-btn
           :href="communitydata.CommunityMeetupLink"
