@@ -8,7 +8,7 @@
     <v-container fluid>
       <v-row align="center" justify="center" class="my-0 py-0">
         <v-col cols="12" md="10" lg="10" sm="10" class="py-0 my-0">
-          <v-divider v-if="!this.$vuetify.theme.dark"></v-divider>
+          <!-- <v-divider v-if="!this.$vuetify.theme.dark"></v-divider> -->
           <!-- <p class="google-font mt-4 mb-3" style="font-size:130%">
             Follow Us:
             <span v-for="(item,i) in communitydata.SocialLinks" :key="i">
@@ -22,7 +22,7 @@
               </v-tooltip>
             </span>
           </p> -->
-          <v-divider></v-divider>
+          <!-- <v-divider></v-divider> -->
         </v-col>
       </v-row>
 

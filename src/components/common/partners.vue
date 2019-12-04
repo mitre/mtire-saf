@@ -11,7 +11,7 @@
         <p
           class="google-font mt-1 mb-0"
           style="font-size:120%"
-        >A very big thank you to all our Community for their continued partnership.</p>
+        >A very big thank you to our Community for their continued partnership.</p>
         <p class="google-font mt-0 mb-0" style="font-size:120%">
           If you’re interested in being showcased throughout , contact
           <a

@@ -1,15 +1,16 @@
 <template>
   <v-container fluid>
     <v-row align="center" justify="center">
-      <v-col cols="12" md="3" lg="3" sm="12">
+      <v-col cols="12" md="3" lg="3" sm="12" class="text-center pa-2">
         <p class="google-font mb-0" style="font-size:150%">What we do?</p>
         <p
           class="google-font mt-0"
           style="font-size:95%"
         >The MITRE SAF works to bring the needed technologies, methodologies and patterns together to help bridge the needs of Security with the methods of todays developers and operators.</p>
-        <p class="google-font" style="font-size:95%">About different MITRE tools: </p>
+        <p class="google-font" style="font-size:95%">About the SAF tool chain and libraries: </p>
+
         <span v-for="(item,i) in communitydata.WhatWeDoTech" :key="i">
-          <v-tooltip bottom>
+          <v-tooltip bottom >
             <template v-slot:activator="{ on }">
               <a :href="item.link" target="_blank" class="ma-0">
                 <v-btn
@@ -20,6 +21,7 @@
                   small
                   style="text-transform: capitalize;border-radius:5px;text-transform: capitalize;"
                   class="ml-0 mt-3 google-font hidden-md-and-down"
+
                  >{{item.TechName}}</v-btn>
               </a>
               &nbsp;&nbsp;&nbsp;
