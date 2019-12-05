@@ -7,8 +7,8 @@
     </v-row>-->
     <v-row align="center" class="py-0 my-0 mb-5">
       <v-col md="8" sm="8" cols="12" class="py-0 my-0">
-        <h1 class="google-font mb-2">Security Starting at the Development Stage</h1>
-        <p>With each release of a product or patch, more vulnerabilities are introduced, which can lead to a higher risk of authorized access being gained ot sensitive data.</p>
+        <h1 class="google-font mb-2">Shifting Security Left</h1>
+        <p>The goal of this framework is to help the community of developers, operators, and security auditors measure, visualize, and correct security defects as early as possible in the development lifecycle, at each commit, from sprint to sprint.</p>
         <!-- {{communitydata.CommunityGuideline}} -->
         <!-- <v-expansion-panels accordion>
           <v-expansion-panel v-for="(item,i) in communitydata.CommunityGuideline" :key="i">

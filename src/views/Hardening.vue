@@ -3,6 +3,7 @@
     <div class="title text-justify pa-4">
       <p>
 <<<<<<< HEAD
+<<<<<<< HEAD
         These open-source community-based InSpec profiles validate security of
         common system components. MITRE is helping to provide stewardship over
         these profiles, hosted here and at other community vendor sites. If you
@@ -12,11 +13,16 @@
         >{{ db.email }}</a>. If you are interested in developing and contributing your own
         profiles, please see our links to Training material.
 =======
+=======
+>>>>>>> 05958bbe07a777bc98466ec37ad8a5be529b6b20
         These open-source community-based hardening baselines help to securely configure common system components. MITRE is helping to provide stewardship over these hardening baselines, hosted here and at other community vendor sites. If you are interested in new hardening baselines, please contact us at
         <a
           :href="mail_link"
         >{{ db.email }}</a>.
+<<<<<<< HEAD
 >>>>>>> e4cb75684bf1e22d2bcd6eeb635993cb76875927
+=======
+>>>>>>> 05958bbe07a777bc98466ec37ad8a5be529b6b20
       </p>
     </div>
 
@@ -70,7 +76,13 @@ p {
 }
 </style>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 
 wrap button text fix the viewports -- buttons should stack
 >>>>>>> e4cb75684bf1e22d2bcd6eeb635993cb76875927
+=======
+
+wrap button text fix the viewports -- buttons should stack
+
+>>>>>>> 05958bbe07a777bc98466ec37ad8a5be529b6b20
