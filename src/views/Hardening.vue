@@ -1,6 +1,6 @@
 <template>
   <v-content>
-    <div class="title text-justify pa-4">
+    <div class="title text-justify pa-2">
       <p>
         These open-source community-based hardening baselines help to securely configure common system components. MITRE is helping to provide stewardship over these hardening baselines, hosted here and at other community vendor sites. If you are interested in new hardening baselines, please contact us at
         <a
@@ -26,6 +26,7 @@ export default {
     return {
       hardening: hardening,
       db: db
+
     };
   },
   computed: {
@@ -48,5 +49,3 @@ p {
   hyphens: auto;
 }
 </style>
-
-wrap button text fix the viewports -- buttons should stack
