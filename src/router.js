@@ -140,12 +140,8 @@ const router = new Router({
         title: `Hardening Profiles | ${communitydata.CommunityName}`,
         color: "#0277bd",
         requiresAuth: false
-<<<<<<< HEAD
-
-=======
->>>>>>> 05958bbe07a777bc98466ec37ad8a5be529b6b20
+      }
     }
-  }
   ]
 });
 
