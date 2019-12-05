@@ -135,13 +135,14 @@ const router = new Router({
     {
       path: "/hardening",
       name: "hardening",
-      component: () => import("./views/Hardening.vue"),
+      component: () => import("@/views/Hardening.vue"),
       meta: {
-        title: `Hardening |  + ${communitydata.CommunityName}`,
+        title: `Hardening Profiles | ${communitydata.CommunityName}`,
         color: "#0277bd",
         requiresAuth: false
-      }
+
     }
+  }
   ]
 });
 
