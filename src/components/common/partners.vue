@@ -29,7 +29,7 @@
           </v-col>
           <v-sheet
               class="mx-auto"
-              elevation="2"
+              elevation="0"
               height="300"
               max-width="1200">
               <v-slide-group
