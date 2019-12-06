@@ -20,7 +20,7 @@
         :key="cat"
         :class="{'x-small': $vuetify.breakpoint.mdAndDown}"
         class="pa-2 ma-2"
-        :to="{path: $route.path, hash: make_linkable(cat)}"
+        :to="{hash: make_linkable(cat)}"
       >{{cat}}</v-btn>
     </div>
     <v-sheet v-for="item in profiles.items" :key="item.category" class="ma-2 pa-2">
@@ -51,10 +51,6 @@ export default {
     };
   },
   methods: {
-    last_cat(category) {
-      var cat_array = this.$props.profiles.categories;
-      return category != cat_array[cat_array.length - 1];
-    },
     make_linkable(str) {
       return str.replace(/\s+/g, "-").toLowerCase();
     },
@@ -71,6 +67,8 @@ export default {
     moveForBottomNavStyle() {
       if (this.$vuetify.breakpoint.smAndDown) {
         return "z-index: 10; bottom: 60px"
+      } else {
+        return ""
       }
     },
   }
