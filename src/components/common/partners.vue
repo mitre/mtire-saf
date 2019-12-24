@@ -76,7 +76,7 @@
               :color="active ? 'primary' : '#574B75'"
               class="ma-4"
               elevation="4"
-              height="100"
+              height="150"
               width="200"
               target="_blank"
             >
@@ -86,7 +86,7 @@
                     :src="getImgUrl(item.img)"
                     :lazy-src="getImgUrl(item.img)"
                     class="white"
-                    height="100"
+                    height="150"
                     width="200"
                     contain
                   ></v-img>
