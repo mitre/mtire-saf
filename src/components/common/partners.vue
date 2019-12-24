@@ -86,7 +86,7 @@
                   <v-img
                     :src="getImgUrl(item.img)"
                     :lazy-src="getImgUrl(item.img)"
-                    class="white"
+                    class="white fixed-ratio-resize"
                     height="150"
                     width="200"
                     contain
@@ -137,5 +137,12 @@ export default {
   background: white;
   border: 1px solid #ebebeb;
   text-align: center;
+}
+
+.fixed-ratio-resize {
+  /* basic responsive img */
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* IE8 */
 }
 </style>
