@@ -3,37 +3,37 @@
         {
             "name": "VmWare",
             "link": "https://github.com/kclinden/vmware-esxi-6.5-stig-baseline",
-            "img": ""
+            "img": "vmware.png"
         },
         {
             "name": "Elastic",
             "link": "https://github.com/elastic/elasticsearch-inspec",
-            "img": ""
+            "img": "elastic.png"
         },
         {
             "name": "CruchyData",
             "link": "https://github.com/CrunchyData/pgstigcheck-inspec",
-            "img": ""
+            "img": "crunchydata.png"
         },
         {
             "name": "Cerner",
             "link": "",
-            "img": ""
+            "img": "cerner.png"
         },
         {
             "name": "Nessus",
             "link": "",
-            "img": ""
+            "img": "nessus.png"
         },
         {
             "name": "NSA SIMP",
             "link": "https://www.simp-project.com/",
-            "img": ""
+            "img": "simp.png"
         },
         {
             "name": "GitHub",
             "link": "",
-            "img": ""
+            "img": "github.png"
         }
     ]
 }

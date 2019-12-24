@@ -58,10 +58,15 @@
       </v-row>
     </v-container>
 
-<br>
+    <br />
 
     <v-container fluid>
-      <v-row justify="space-between" v-for="(itemp,i) in commercialpart" :key="i" :class="color_mode">
+      <v-row
+        justify="space-between"
+        v-for="(itemp,i) in commercialpart"
+        :key="i"
+        :class="color_mode"
+      >
         <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0">
           <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
         </v-col>
@@ -73,11 +78,18 @@
               elevation="4"
               height="100"
               width="200"
-              v-bind:href="[(itemp.length > 0 ) ? item.link : null]"
               target="_blank"
             >
               <v-tooltip bottom>
                 <template v-slot:activator="{ on }">
+                  <v-img
+                    :src="getImgUrl(item.img)"
+                    :lazy-src="getImgUrl(item.img)"
+                    class="white"
+                    height="100"
+                    width="200"
+                    contain
+                  ></v-img>
                   <v-card-subtitle class="google-font mb-0" style="color:white">{{item.name}}</v-card-subtitle>
                 </template>
               </v-tooltip>
