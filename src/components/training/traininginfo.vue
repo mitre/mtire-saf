@@ -2,6 +2,17 @@
   <v-container fluid>
     <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Training Courses Currently Offered</p>
     <br>
+          <p class="google-font mb-0" style="font-size:100%">
+            <span style="color: #1a73e8;">InSpec Profile Developers Course</span>
+             - Reviews the basics on how to write and run tests
+        </p>
+        <p class="google-font mb-0" style="font-size:100%">
+            <span style="color: #1a73e8;">InSpec Advanced Developer Course</span>
+             - In depth explaination of some of the higher functionalities provided by InSpec
+        </p>
+
+    <br>
+    <br>
     <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Upcoming Training Sessions</p>
     <p
       class="google-font mt-0 mb-0"
@@ -19,7 +30,7 @@
       >
         <v-dialog v-model="dialog">
           <template v-slot:activator="{ on }">
-            <p class="google-font ma-0 mt-0" style="font-size:120%;">{{item.name}}</p>
+            <p class="google-font mb-0" style="font-size:100%;">{{item.name}}</p>
           </template>
         </v-dialog>
       </v-col>
