@@ -1,6 +1,6 @@
 <template>
-  <v-content class="pa-0 pt-5">
-    <v-container fluid class="pa-0 pt-5 mt-2">
+  <v-content class="pa-0">
+    <v-container fluid class="pa-0 mt-2">
       <v-row
         justify="center"
         align="center"
@@ -33,10 +33,10 @@
               label="Compact View"
             />
             <div v-show="showCompact">
-              <profileTemplateCompact :profiles="baselines" />
+              <profileTemplateCompact :profiles="baselines.baselines" />
             </div>
             <div v-show="!showCompact">
-              <profileTemplate :profiles="baselines" />
+              <profileTemplate :profiles="baselines.baselines" />
             </div>
           </div>
         </v-col>
