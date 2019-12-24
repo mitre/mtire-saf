@@ -78,6 +78,7 @@
               elevation="4"
               height="100"
               width="200"
+              v-bind:href="[(itemp.length > 0 ) ? item.link : null]"
               target="_blank"
             >
               <v-tooltip bottom>
