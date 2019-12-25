@@ -26,7 +26,7 @@
     <v-sheet
       v-for="cat in categorized"
       :key="cat"
-      class="ma-2 pa-2 google-font happy"
+      class="ma-2 pa-2 google-font jump"
       :id="make_linkable(cat)"
     >
       <h2>{{ cat }}</h2>
@@ -128,7 +128,7 @@ export default {
 };
 </script>
 <style scoped>
-.happy:before {
+.jump:before {
   display: block;
   content: "";
   height: 30px;
