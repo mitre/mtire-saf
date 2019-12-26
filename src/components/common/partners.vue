@@ -91,7 +91,6 @@
                     width="200"
                     contain
                   ></v-img>
-                  <v-card-subtitle class="google-font mb-0" style="color:white">{{item.name}}</v-card-subtitle>
                 </template>
               </v-tooltip>
             </v-card>
