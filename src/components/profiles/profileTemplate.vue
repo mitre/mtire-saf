@@ -26,6 +26,7 @@
     <v-sheet
       v-for="cat in categorized"
       :key="cat"
+      flat
       class="ma-2 pa-2 google-font jump"
       :id="make_linkable(cat)"
     >
@@ -128,10 +129,11 @@ export default {
 };
 </script>
 <style scoped>
-.jump:before {
+*[id]:before {
   display: block;
-  content: "";
-  height: 30px;
-  margin: 30px 0 0;
+  content: " ";
+  margin-top: -26px;
+  height: 26px;
+  visibility: hidden;
 }
 </style>
