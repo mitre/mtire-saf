@@ -17,7 +17,7 @@
           "desc": "Align with security baselines using our Ansible, Chef, and Terraform content",
           "icon": "mdi-security",
           "svg": "",
-          "link": "/hardening",
+          "link": "#/hardening",
           "tools": ""
         },
         {
@@ -33,7 +33,7 @@
           "desc": "Learn how to write effective tests and apply them to the team's pipeline",
           "icon": "mdi-chair-school",
           "svg": "",
-          "link": "/training",
+          "link": "#/training",
           "tools": ""
         }
       ]

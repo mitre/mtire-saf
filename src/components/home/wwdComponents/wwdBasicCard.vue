@@ -1,5 +1,6 @@
 <template>
   <v-card outlined class="pa-2 ma-2 d-flex flex-column" :to="item.link" flat>
+
     <!--<toolBlock v-if="item.tools" :tools="item.tools" />-->
     <v-icon v-if="item.icon" large style="font-size:300%">{{ item.icon }}</v-icon>
     <img
