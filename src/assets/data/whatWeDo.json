@@ -17,7 +17,7 @@
           "desc": "Align with security baselines using our Ansible, Chef, and Terraform content",
           "icon": "mdi-security",
           "svg": "",
-          "link": "#/hardening",
+          "link": "hardening",
           "tools": ""
         },
         {
@@ -33,7 +33,7 @@
           "desc": "Learn how to write effective tests and apply them to the team's pipeline",
           "icon": "mdi-chair-school",
           "svg": "",
-          "link": "#/training",
+          "link": "training",
           "tools": ""
         }
       ]
@@ -52,7 +52,7 @@
             {
               "name": "InSpec Profiles",
               "svg": "inspec-blue-back-border",
-              "link": "/validation"
+              "link": "validation"
             },
             {
               "name": "InSpec Tools",
@@ -130,16 +130,16 @@
           "desc": "Use the SAF hardening baseline library to configure systems for security",
           "svg": "",
           "icon": "",
-          "tools": [ 
+          "tools": [
             {
               "name": "Ansible Profiles",
               "svg": "ansible",
-              "link": "/hardening"
+              "link": "hardening"
             },
             {
               "name": "Chef Profiles",
               "svg": "chef-2",
-              "link": "/hardening"
+              "link": "hardening"
             }
           ]
         }
@@ -159,7 +159,7 @@
           "doc_link": "https://heimdall.mitre.org",
           "github_link": "https://github.com/mitre/heimdall-lite",
           "svg": "",
-          "tools" : ""
+          "tools": ""
         },
         {
           "name": "Heimdall Server",
@@ -171,7 +171,19 @@
           "doc_link": "https://heimdall.mitre.org",
           "github_link": "https://github.com/mitre/heimdall",
           "svg": "",
-          "tools" : ""
+          "tools": ""
+        },
+        {
+          "name": "Vulcan (alpha)",
+          "link": "",
+          "desc": "Application for streamlining InSpec profile and overlay development using the Security Requirments Guide (SRG)",
+          "icon": "",
+          "app_link": "https://vulcan-demo.mitre.org",
+          "app_svg": "app",
+          "doc_link": "https://vulcan.mitre.org",
+          "github_link": "https://github.com/mitre/vulcan",
+          "svg": "",
+          "tools": ""
         },
         {
           "name": "InSpec_Tools",
@@ -183,7 +195,7 @@
           "doc_link": "https://inspec-tools.mitre.org",
           "github_link": "https://github.com/mitre/inspec_tools/",
           "svg": "",
-          "tools" : ""
+          "tools": ""
         },
         {
           "name": "Heimdall_Tools",
@@ -195,7 +207,7 @@
           "doc_link": "https://heimdall-tools.mitre.org",
           "github_link": "https://github.com/mitre/heimdall_tools",
           "svg": "",
-          "tools" : ""
+          "tools": ""
         },
         {
           "name": "InSpecJS",
@@ -207,7 +219,7 @@
           "doc_link": "https://inspecjs.mitre.org",
           "github_link": "https://github.com/mitre/inspecjs",
           "svg": "",
-          "tools" : ""
+          "tools": ""
         },
         {
           "name": "HeimdallJS_Tools (Coming Soon!)",
@@ -219,7 +231,7 @@
           "doc_link": "",
           "github_link": "",
           "svg": "",
-          "tools" : ""
+          "tools": ""
         },
         {
           "name": "InSpecJS_Tools",
@@ -231,19 +243,7 @@
           "doc_link": "https://inspec-tools-js.mitre.org",
           "github_link": "https://github.com/mitre/inspec_tools_js",
           "svg": "",
-          "tools" : ""
-        },
-        {
-          "name": "Vulcan",
-          "link": "",
-          "desc": "Application for streamlining InSpec profile and overlay development using the Security Requirments Guide (SRG)",
-          "icon": "",
-          "app_link": "https://vulcan-demo.mitre.org",
-          "app_svg": "app",
-          "doc_link": "https://vulcan.mitre.org",
-          "github_link": "https://github.com/mitre/vulcan",
-          "svg": "",
-          "tools" : ""
+          "tools": ""
         },
         {
           "name": "HDF Splunk Plugin",
@@ -255,7 +255,7 @@
           "doc_link": "https://hdf-json-to-splunk.mitre.org",
           "github_link": "https://github.com/mitre/hdf-json-to-splunk/",
           "svg": "",
-          "tools" : ""
+          "tools": ""
         }
       ]
     }

@@ -7,7 +7,7 @@ export default new Vuex.Store({
   state: {
     drawer: false,
     showFutureTraining: false,
-    isCompact: false,
+    isCompact: true,
     items: [
       {
         text: "Home",
@@ -73,49 +73,49 @@ export default new Vuex.Store({
     adminDrawer: true,
     adminLinks: [
       {
-        text: 'Home',
-        to: '/admin/dashboard/home',
-        icon: 'mdi-home',
+        text: "Home",
+        to: "/admin/dashboard/home",
+        icon: "mdi-home",
         meta: {
           showToolbar: false,
           showBottomNav: true
-        },
+        }
       },
       {
-        text: 'Events',
-        to: '/admin/dashboard/events',
-        icon: 'mdi-assistant',
+        text: "Events",
+        to: "/admin/dashboard/events",
+        icon: "mdi-assistant",
         meta: {
           showToolbar: false,
           showBottomNav: true
-        },
+        }
       },
       {
-        text: 'Team',
-        to: '/admin/dashboard/team',
-        icon: 'mdi-account-group',
+        text: "Team",
+        to: "/admin/dashboard/team",
+        icon: "mdi-account-group",
         meta: {
           showToolbar: false,
           showBottomNav: true
-        },
+        }
       },
       {
-        text: 'Speaker',
-        to: '/admin/dashboard/speaker',
-        icon: 'mdi-account-switch',
+        text: "Speaker",
+        to: "/admin/dashboard/speaker",
+        icon: "mdi-account-switch",
         meta: {
           showToolbar: false,
           showBottomNav: true
-        },
+        }
       }
     ]
   },
   getters: {
-    links: (state) => {
-      return state.items
+    links: state => {
+      return state.items;
     },
-    AdminLinks: (state) => {
-      return state.adminLinks
+    AdminLinks: state => {
+      return state.adminLinks;
     },
     isCompactGetter: state => {
       return state.isCompact;
