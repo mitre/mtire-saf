@@ -222,18 +222,6 @@
           "tools": ""
         },
         {
-          "name": "HeimdallJS_Tools (Coming Soon!)",
-          "link": "",
-          "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps",
-          "icon": "",
-          "app_link": "",
-          "app_svg": "",
-          "doc_link": "",
-          "github_link": "",
-          "svg": "",
-          "tools": ""
-        },
-        {
           "name": "InSpecJS_Tools",
           "link": "",
           "desc": "A set of JavaScript utilities for creating, converting, and processing security baseline formats, results, and data",
@@ -254,6 +242,18 @@
           "app_svg": "app",
           "doc_link": "https://hdf-json-to-splunk.mitre.org",
           "github_link": "https://github.com/mitre/hdf-json-to-splunk/",
+          "svg": "",
+          "tools": ""
+        },
+        {
+          "name": "HeimdallJS_Tools (Coming Soon!)",
+          "link": "",
+          "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps",
+          "icon": "",
+          "app_link": "",
+          "app_svg": "",
+          "doc_link": "",
+          "github_link": "",
           "svg": "",
           "tools": ""
         }

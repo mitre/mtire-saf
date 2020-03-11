@@ -4,7 +4,7 @@
       <v-divider />
       <wwdSection :topic="wwd[1]" xl="3"/>
       <v-divider />
-      <wwdSection :topic="wwd[2]" />
+      <wwdSection :topic="wwd[2]" md="4" lg="4" xl="4"/>
   </v-container>
 </template>
 

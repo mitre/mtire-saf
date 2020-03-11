@@ -1,7 +1,7 @@
 <template>
-  <v-card outlined class="pa-2 ma-2 d-flex flex-column" :to="item.link" flat style="width: 100%">
+  <v-card outlined class="d-flex flex-column" :to="item.link" flat style="width: 100%">
     <!--<toolBlock v-if="item.tools" :tools="item.tools" />-->
-    <v-icon v-if="item.icon" large style="font-size:300%">{{ item.icon }}</v-icon>
+    <v-icon v-if="item.icon" large style="font-size:300%" class="mt-4">{{ item.icon }}</v-icon>
     <img
       v-else-if="item.svg"
       :src="require('@/assets/img/svg/' + item.svg + '.svg')"
@@ -12,41 +12,57 @@
     <v-card-title
       class="google-font mt-2 title align-bottom justify-center break-word"
     >{{ make_readable(item.name) }}</v-card-title>
-    <v-card-text class="google-font">{{ item.desc }}</v-card-text>
-    <v-spacer></v-spacer>
-    <v-card-actions>
+    <v-spacer />
+    <v-card-text class="google-font pa-2">{{ item.desc }}</v-card-text>
+    <v-spacer />
+    <v-card-actions class="pa-0">
       <v-container row dense>
         <v-row justify="center">
-          <v-btn
-            color="primary"
-            v-if="item.app_link"
-            :href="item.app_link"
-            :target="item.app_link[0] == '/' ? '' : '_blank'"
-            text
-          >
-            <v-icon>mdi-desktop-classic</v-icon>
-            <span class="d-none d-sm-inline pl-3">Demo</span>
-          </v-btn>
-          <v-btn
-            color="primary"
-            v-if="item.doc_link"
-            :href="item.doc_link"
-            :target="item.doc_link[0] == '/' ? '' : '_blank'"
-            text
-          >
-            <v-icon>mdi-file-document</v-icon>
-            <span class="d-none d-sm-inline pl-3">Docs</span>
-          </v-btn>
-          <v-btn
-            color="primary"
-            v-if="item.github_link"
-            :href="item.github_link"
-            :target="item.github_link[0] == '/' ? '' : '_blank'"
-            text
-          >
-            <v-icon>mdi-github-circle</v-icon>
-            <span class="d-none d-sm-inline pl-3">GitHub</span>
-          </v-btn>
+          <v-tooltip top>
+            <template v-slot:activator="{ on }">
+              <v-btn
+                color="primary"
+                v-if="item.app_link"
+                :href="item.app_link"
+                target="_blank"
+                text
+                v-on="on"
+              >
+                <v-icon>mdi-desktop-classic</v-icon>
+              </v-btn>
+            </template>
+            <span>Demo</span>
+          </v-tooltip>
+          <v-tooltip top>
+            <template v-slot:activator="{ on }">
+              <v-btn
+                color="primary"
+                v-if="item.doc_link"
+                :href="item.doc_link"
+                target="_blank"
+                text
+                v-on="on"
+              >
+                <v-icon>mdi-file-document</v-icon>
+              </v-btn>
+            </template>
+            <span>Documentation</span>
+          </v-tooltip>
+          <v-tooltip top>
+            <template v-slot:activator="{ on }">
+              <v-btn
+                color="primary"
+                v-if="item.github_link"
+                :href="item.github_link"
+                target="_blank"
+                text
+                v-on="on"
+              >
+                <v-icon>mdi-github-box</v-icon>
+              </v-btn>
+            </template>
+            <span>GitHub</span>
+          </v-tooltip>
         </v-row>
       </v-container>
     </v-card-actions>
