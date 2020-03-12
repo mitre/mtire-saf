@@ -160,7 +160,7 @@ export default {
   }),
   mounted() {
     if (firebase.auth.currentUser) {
-      console.log("found");
+    //console.log("found");
     } else {
       this.$router.replace("/admin");
     }

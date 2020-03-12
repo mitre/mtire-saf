@@ -135,8 +135,8 @@ export default {
           this.speakerLoader = false;
           this.loading = false;
         })
-        .catch(err => {
-          console.log("Error getting documents", err);
+        .catch(() => {
+        //console.log("Error getting documents", err);
         });
     }
   }

@@ -137,8 +137,8 @@
 
 <script>
 import firebase from 'firebase/app'
-import { firestore } from 'firebase';
-import { configData } from "@/config/config";
+// import { firestore } from 'firebase';
+// import { configData } from "@/config/config";
 import removeTeam from '../../../components/Admin/Team/removeTeam'
 import editTeam from '../../../components/Admin/Team/editTeam'
 export default {
@@ -157,7 +157,7 @@ export default {
         loading:true,
        
         teamData:[],
-        snackbarSuccess:false
+        //snackbarSuccess:false
     }),
     created(){
         if(this.$route.params.id){
@@ -179,7 +179,7 @@ export default {
         window.open(routeData.href, '_blank');
       },
       editedSuccessFun(){
-        console.log('calls')
+      //console.log('calls')
         this.snackbarSuccess = true
         this.getTeamData()
       },
@@ -188,7 +188,7 @@ export default {
           this.showTeamData = false
           this.userNotFound = false
           firebase.firestore().collection('team').doc(this.$route.params.id).get().then(doc=>{
-            console.log(doc.data())
+          //console.log(doc.data())
             if(doc.data() == undefined){
                 this.showLoader = false
                 this.showTeamData = false

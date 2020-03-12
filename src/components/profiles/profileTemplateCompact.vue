@@ -1,5 +1,5 @@
 <template>
-  <v-content>
+  <v-content class="pa-0">
     <v-card v-for="cat in categorized" :key="cat" outlined class="ma-2">
       <v-row align="center" dense no-gutters justify="start">
         <v-col cols="2" v-show="$vuetify.breakpoint.smAndUp">

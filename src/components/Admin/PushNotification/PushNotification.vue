@@ -72,12 +72,12 @@ export default {
               })
             };
             options.body = JSON.stringify(body);
-            console.log(options.body);
+            //console.log(options.body);
             fetch("", options)
               .then(res => res.json())
-              .then(data => {
+              .then(() => {
                 this.isSuccessAlert = true;
-                console.log(data);
+                //console.log(data);
               })
               .catch(err => alert(err));
           });
@@ -109,11 +109,11 @@ export default {
                         headers: new Headers({"Authorization": "key=",'Content-Type': 'application/json',}),
                     };
                     options.body = JSON.stringify(body);
-                    console.log(options.body)
+                    //console.log(options.body)
                     fetch('', options).then((res) => res.json())
-                    .then((data) =>{
+                    .then(() =>{
                         this.isSuccessAlert = true;
-                        console.log(data);
+                        //console.log(data);
                         this.isLoading = false;
                     })
                     .catch((err)=>alert(err));

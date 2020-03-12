@@ -213,12 +213,12 @@ export default {
     uploadImage() {
       this.imageUploading = true;
       var fileName = `${this.userId}.${this.imageUpload.name.split(".")[1]}`;
-      console.log(fileName);
+      //console.log(fileName);
       var refLink = firebase.storage.ref("speakers/" + fileName);
-      refLink.put(this.imageUpload).then(file => {
-        console.log(file);
+      refLink.put(this.imageUpload).then(() => {
+        //console.log(file);
         refLink.getDownloadURL().then(a => {
-          console.log(a);
+          //console.log(a);
           this.imageURL = a;
           this.imageUploading = false;
           this.uploadImage = "Uploaded";
@@ -256,14 +256,14 @@ export default {
         .collection("speakers")
         .doc(Data.id)
         .set(Data)
-        .then(res => {
-          console.log(res);
+        .then(() => {
+          //console.log(res);
           this.dialog = false;
           this.addSpeakerLoading = false;
           this.$emit("showSuccess", true);
         })
-        .catch(e => {
-          console.log(e);
+        .catch(() => {
+          //console.log(e);
         });
     }
   }

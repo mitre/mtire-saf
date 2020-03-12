@@ -95,7 +95,7 @@
 
 <script>
 import firebase from 'firebase/app'
-import { firestore } from 'firebase';
+
 export default {
   components: {
   },
@@ -134,7 +134,7 @@ export default {
           this.showTeamData = false
           this.userNotFound = false
           firebase.firestore().collection('team').doc(this.$route.params.id).get().then(doc=>{
-            console.log(doc.data())
+          //console.log(doc.data())
             if(doc.data() == undefined){
                 this.showLoader = false
                 this.showTeamData = false

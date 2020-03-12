@@ -54,12 +54,12 @@ export default {
               })
             };
             options.body = JSON.stringify(body);
-            console.log(options.body);
+          //console.log(options.body);
             fetch("https://fcm.googleapis.com/fcm/send", options)
               .then(res => res.json())
-              .then(data => {
+              .then(() => {
                 this.isSuccessAlert = true;
-                console.log(data);
+              //console.log(data);
               })
               .catch(err => alert(err));
           });

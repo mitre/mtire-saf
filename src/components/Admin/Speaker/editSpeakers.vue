@@ -284,7 +284,7 @@ export default {
       }`;
       var refLink = firebase.storage.ref("speakers/" + fileName);
       refLink.put(this.imageUpload).then(file => {
-        console.log(file);
+        //console.log(file);
         refLink.getDownloadURL().then(a => {
           this.updatedData.image = a;
           this.imageUploading = false;
@@ -325,7 +325,7 @@ export default {
             this.dialog = false;
             this.$emit("showEditSuccess", true);
         }).catch(err=>{
-            console.log(err);
+            //console.log(err);
             this.isUpdating = false;
         });
     }

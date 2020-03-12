@@ -3,7 +3,7 @@
       v-model="dialog"
       width="1200"
     >
-      <template v-slot:activator="{ on }">
+      <!--<template v-slot:activator="{ on }">-->
         <v-tooltip bottom>
           <template v-slot:activator="{ on }">
               <v-btn
@@ -19,7 +19,7 @@
           </template>
           <span>Edit {{teamData.name}} Details </span>
         </v-tooltip>
-      </template>
+      <!--</template>-->
 
       <v-card v-if="dialog">
         <v-card-title
@@ -306,8 +306,8 @@
 
 <script>
 import firebase from 'firebase/app'
-import { firestore } from 'firebase';
-import { storage } from 'firebase';
+//import { firestore } from 'firebase';
+//import { storage } from 'firebase';
   export default {
     props:{
         teamData:{}
@@ -381,11 +381,11 @@ import { storage } from 'firebase';
       uploadImage() {
         this.imageUploading = true;
         var fileName = `${this.userId}.${this.imageUpload.name.split(".")[1]}`;
-        console.log(fileName);
+      //console.log(fileName);
         var refLink = firebase.storage().ref("team/" + fileName);
-        refLink.put(this.imageUpload).then(file => {
+        refLink.put(this.imageUpload).then(() => {
           refLink.getDownloadURL().then(a => {
-            console.log(a);
+          //console.log(a);
             this.imageURL = a;
             this.imageUploading = false;
             this.uploadImage = "Uploaded";
@@ -397,15 +397,15 @@ import { storage } from 'firebase';
             var self =this
             self.loading = true
             if (this.$refs.form.validate()) {
-                console.log(this.updatedData)
-                console.log(this.teamData.id)
+              //console.log(this.updatedData)
+              //console.log(this.teamData.id)
                 
 
                 firebase.firestore().collection("team").where("id", "==", this.teamData.id)
                 .get()
                 .then(function(querySnapshot) {
                     querySnapshot.forEach(function(doc) {
-                        console.log(doc.id, " => ", doc.data());
+                      //console.log(doc.id, " => ", doc.data());
                         // Build doc ref from doc.id
                         
                         firebase.firestore().collection("team").doc(doc.id).update({
@@ -434,8 +434,8 @@ import { storage } from 'firebase';
                   self.loading = false
                   self.dialog = false 
                   self.$emit('editedSuccess')
-                }).catch(e=>{
-                    console.log(e)
+                }).catch(()=>{
+                  //console.log(e)
                     self.loading = false
                 })
 
@@ -446,7 +446,7 @@ import { storage } from 'firebase';
                 //     this.dialog = false
                 //     this.$emit('showSuccess')
                 // }).catch(e=>{
-                //     console.log(e)
+                //   //console.log(e)
                 // })
             }
             

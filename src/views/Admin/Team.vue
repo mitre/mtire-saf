@@ -118,14 +118,14 @@
 
 <script>
 import firebase from 'firebase/app'
-import { firestore } from 'firebase';
-import { configData } from "@/config/config";
+// import { firestore } from 'firebase';
+// import { configData } from "@/config/config";
 import AddTeam from '../../components/Admin/Team/addTeam'
-import Team from '../../components/Admin/Team/viewTeam'
+//import Team from '../../components/Admin/Team/viewTeam'
 export default {
     components:{
       AddTeam,
-      Team
+      //Team
     },
     name:"admin-dashboard",
     data:()=>({
@@ -178,7 +178,7 @@ export default {
           this.teamLoader = true
           // this.dataLoadingStatus = true
           this.teamData = []
-          console.log('Calling Show Data')
+        //console.log('Calling Show Data')
           firebase.firestore().collection('team').get()
           .then((snapshot) => {
               snapshot.forEach((doc) => {
@@ -194,8 +194,8 @@ export default {
               this.teamLoader = false
               this.loading = false
           })
-          .catch((err) => {
-              console.log('Error getting documents', err);
+          .catch(() => {
+            //console.log('Error getting documents', err);
           });
           // this.snackbarSuccess = true
           // this.dataLoadingStatus = false

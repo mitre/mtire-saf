@@ -1,14 +1,18 @@
 <template>
   <v-content class="pa-0">
     <v-container fluid class="pa-0 mt-2">
-      <v-row justify="center" align="center" class="py-0 my-0"
-      :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'">
+      <v-row
+        justify="center"
+        align="center"
+        class="py-0 my-0"
+        :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
+      >
         <v-col md="12" lg="10" xs="12" class="py-3 my-0">
           <profileHeader>Hardening</profileHeader>
         </v-col>
       </v-row>
     </v-container>
-    <v-container fluid class="pa-0 pt-5 mt-2">
+    <v-container fluid>
       <v-row justify="center" align="center" class="py-0 my-0">
         <v-col md="12" lg="10" xs="12" class="py-3 my-0">
           <div class="ma-2 pa-2 google-font">
@@ -18,19 +22,7 @@
                 :href="mail_link"
               >{{ db.communityEmail }}</a>.
             </p>
-
-            <v-switch
-              class="ma-2"
-              :input-value="showCompact"
-              @change="toggleCompact"
-              label="Compact View"
-            />
-            <div v-show="showCompact">
-              <profileTemplateCompact :profiles="hardening.hardening" />
-            </div>
-            <div v-show="!showCompact">
-              <profileTemplate :profiles="hardening.hardening" />
-            </div>
+            <profileTemplateCompact :profiles="hardening.hardening" />
           </div>
         </v-col>
       </v-row>
@@ -39,7 +31,6 @@
 </template>
 
 <script>
-import profileTemplate from "@/components/profiles/profileTemplate.vue";
 import profileTemplateCompact from "@/components/profiles/profileTemplateCompact.vue";
 import profileHeader from "@/components/profiles/profileHeader.vue";
 import hardening from "@/assets/data/hardening.json";
@@ -48,7 +39,6 @@ import { mapMutations, mapGetters } from "vuex";
 
 export default {
   components: {
-    profileTemplate,
     profileTemplateCompact,
     profileHeader
   },

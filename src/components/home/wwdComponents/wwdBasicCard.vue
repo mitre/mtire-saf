@@ -58,7 +58,7 @@
                 text
                 v-on="on"
               >
-                <v-icon>mdi-github-box</v-icon>
+                <v-icon>mdi-github</v-icon>
               </v-btn>
             </template>
             <span>GitHub</span>

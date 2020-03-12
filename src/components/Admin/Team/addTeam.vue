@@ -353,11 +353,11 @@ import { storage } from 'firebase';
       uploadImage() {
         this.imageUploading = true;
         var fileName = `${this.userId}.${this.imageUpload.name.split(".")[1]}`;
-        console.log(fileName);
+        //console.log(fileName);
         var refLink = firebase.storage().ref("team/" + fileName);
         refLink.put(this.imageUpload).then(file => {
           refLink.getDownloadURL().then(a => {
-            console.log(a);
+            //console.log(a);
             this.imageURL = a;
             this.imageUploading = false;
             this.uploadImage = "Uploaded";
@@ -391,7 +391,7 @@ import { storage } from 'firebase';
                 this.dialog = false
                 this.$emit('showSuccess')
             }).catch(e=>{
-                console.log(e)
+                //console.log(e)
             })
         }
           
