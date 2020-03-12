@@ -79,7 +79,7 @@
             <p
               class="google-font pl-0"
               :style="this.$vuetify.breakpoint.smAndDown ? 'font-size:75%' : ''"
-            >The MITRE Corporation © 2019</p>
+            >The MITRE Corporation © 2020</p>
 
             <!-- <v-btn
               v-for="(item,i) in FooterData.FooterEndSession"
