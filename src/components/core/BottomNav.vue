@@ -5,14 +5,15 @@
     :dark="this.$vuetify.theme.dark"
     :background-color="this.$vuetify.theme.dark?'#212121':'white'"
     :color="this.$vuetify.theme.dark?'white':'primary'"
+    class="ps-2"
   >
+  <div v-for="(link, i) in links"
+      :key="i" class="ma-0">
     <v-btn
-      v-for="(link, i) in links"
-      :key="i"
       :to="link.to"
       small
       v-if="link.meta.showBottomNav && link.meta.enabled"
-      class="ml-0 google-font"
+      class="mt-2 ps-0 google-font"
       style="text-transform: capitalize; "
       text
       @click="onClick($event, link)"
@@ -20,6 +21,7 @@
       <span>{{ link.text }}</span>
       <v-icon>{{ link.icon }}</v-icon>
     </v-btn>
+  </div>
   </v-bottom-navigation>
 </template>
 

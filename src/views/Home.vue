@@ -65,18 +65,18 @@
 <script>
 import homeStartScreen from "../components/home/homeScreen";
 import whatwedo from "../components/home/whatwedo";
-import aboutCommunity from "../components/home/aboutCommunity";
-import events from "../components/home/events";
-import featureEvents from "../components/home/featureEvents";
+//import aboutCommunity from "../components/home/aboutCommunity";
+//import events from "../components/home/events";
+//import featureEvents from "../components/home/featureEvents";
 import partners from "../components/common/partners";
 
 export default {
   components: {
     homeStartScreen,
     whatwedo,
-    aboutCommunity,
-    events,
-    featureEvents,
+    //aboutCommunity,
+    //events,
+    //featureEvents,
     partners
   },
   computed: {

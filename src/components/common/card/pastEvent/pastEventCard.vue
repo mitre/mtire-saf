@@ -9,7 +9,7 @@
       >
         <p class="google-font mt-1 mb-0" style="font-size:90%">{{item.date}}</p>
         <p class="google-font ma-0 mt-0" style="font-size:120%;">{{item.name}}</p>
-        <v-btn v-on="on" >See More</v-btn>            
+        <v-btn v-on="on" >See More</v-btn>
       </div>   
      </template>
 
@@ -58,12 +58,12 @@
 export default {
   name: "App",
   components: {
-    pasteventCard,
-    pastEventCardLoader
+    //pasteventCard,
+    //pastEventCardLoader
   },
   data: () => ({
-    communityData: communityData,
-    pasttrainingdata: pasttrainingdata,
+    //communityData: communityData,
+    //pasttrainingdata: pasttrainingdata,
     dialog: false
   })
 };

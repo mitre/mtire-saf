@@ -5,7 +5,7 @@
       v-model="dialog"
       max-width="300"
     >
-      <template v-slot:activator="{ on }">
+      <!--<template v-slot:activator="{ on }">-->
         <v-tooltip bottom>
           <template v-slot:activator="{ on }">
             <v-btn
@@ -22,7 +22,7 @@
         </v-tooltip>
 
         
-      </template>
+      <!--</template>-->
       <v-card>
         <v-card-title class="headline">Are you sure?</v-card-title>
 
@@ -57,7 +57,7 @@
 
 <script>
   import firebase from 'firebase/app'
-  import { firestore } from 'firebase';
+  //import { firestore } from 'firebase';
   export default {
     props:{
         teamData:{}

@@ -34,24 +34,24 @@
     <v-divider></v-divider>
 
     <v-list dense>
-      <v-list-item
-        v-for="(link, i) in links"
-        :key="i"
-        :to="link.to"
-        :href="link.href"
-        @click="onClick($event, link)"
-        class="google-font my-0 py-0"
-        color="primary"
-        v-if="link.meta.enabled"
-      >
-        <v-list-item-icon>
-          <v-icon>{{ link.meta.enabled ? link.icon : 'mdi-close-circle-outline' }}</v-icon>
-        </v-list-item-icon>
+      <ul v-for="(link, i) in links" :key="i" class="ma-0 pa-0">
+        <v-list-item
+          v-show="link.meta.enabled"
+          :to="link.to"
+          :href="link.href"
+          @click="onClick($event, link)"
+          class="google-font pl-0"
+          color="primary"
+        >
+          <v-list-item-icon class="pl-4"> 
+            <v-icon>{{ link.meta.enabled ? link.icon : 'mdi-close-circle-outline' }}</v-icon>
+          </v-list-item-icon>
 
-        <v-list-item-content>
-          <v-list-item-title v-text="link.text" />
-        </v-list-item-content>
-      </v-list-item>
+          <v-list-item-content>
+            <v-list-item-title v-text="link.text" />
+          </v-list-item-content>
+        </v-list-item>
+      </ul>
     </v-list>
 
     <!--<template v-slot:append>
