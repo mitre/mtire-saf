@@ -6,7 +6,9 @@
           class="google-font"
           style="color: #1a73e8; font-weight: 200; font-size:120% "
         >{{faq.question}}</v-expansion-panel-header>
-        <v-expansion-panel-content>{{faq.answer}}</v-expansion-panel-content>
+        <v-expansion-panel-content>
+          <span v-html="faq.answer"></span>
+        </v-expansion-panel-content>
         <v-expansion-panel-content v-if="faq.links">
           <div v-for="link in faq.links" :key="link">
             <a
@@ -56,7 +58,7 @@ import faqs from "@/assets/data/faqs.json";
 export default {
   data: () => ({
     faqs: faqs.faqs,
-    panel: [0, 1],
+    panel: [0, 1]
   })
 };
 </script>

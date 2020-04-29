@@ -20,6 +20,24 @@
           "link": "https://mitre-inspec-advanced-developer.netlify.com/course/4.html"
         }
       ]
+    },
+    {
+      "question": "What is the difference between Chef InSpec and CINC Auditor",
+      "answer": "<p>All Chef software source code, including Chef InSpec, is open source under the Apache-2.0 license. Use of Chef's binary builds requires a paid license for use in production. Use of Chef binaries and releases in development, test, evaluation and demonstration do not require a formal support agreement. </p> <p> This is a common model in Enterprise Open Source software companies. The first major example of this was when Red Hat updated its licensing model. The open-community created the CentOS project to produce distributions of the RedHat OSS licensed code as a fully open-source software distribution. </p> <p> For more information about Chef's goals and intentions for this update, please see <a href='https://blog.chef.io/chef-software-announces-the-enterprise-automation-stack/'>https://blog.chef.io/chef-software-announces-the-enterprise-automation-stack/</a> and the <a href='https://www.chef.io/subscription-model-faq/'>https://www.chef.io/subscription-model-faq/</a>.</p><p>Chef Inc. is working with the Cinc Project and the OSU Open Source Lab in support of the open source community. Chef and Cinc have worked hard to ensure that both the commercial-support and community-support model is easy for the end-user community.</p><p>The Cinc project is creating community distributions that follow the Apache-2.0 and Chef End User License Agreement - aka EULA - for the community to use freely and without a license.</p><p>If you need Chef support for production use and deployment of Chef binaries, please <a href='https://pages.chef.io/2020-OSS-LandingPage.html'>https://pages.chef.io/2020-OSS-LandingPage.html</a> about their various options.</p><p>The Cinc project is not a fork, the Cinc and Chef binaries are functionally identical and build from the exact same OSS code on GitHub. The Cinc distributions remove all trademarked and Chef owned intellectual property and images, etc. This makes them compliant - to the best of Chef' s abilities - with the Chef Software Trademark policy and EULA and provides the community with a freely distributable and purely open-source option to use Chef's open source technology.</p>",
+      "links": [
+        {
+          "name": "CINC Project",
+          "link": "https://cinc.sh"
+        },
+        {
+          "name": "Chef EULA Changes",
+          "link": "https://blog.chef.io/chef-software-announces-the-enterprise-automation-stack/"
+        },
+        {
+          "name": "Chef Subscription Model FAQ",
+          "link": "https://www.chef.io/subscription-model-faq/"
+        }
+      ]
     }
   ]
 }
