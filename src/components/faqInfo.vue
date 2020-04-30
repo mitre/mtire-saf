@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-    <v-expansion-panels accordion tile v-model="panel" multiple flat>
-      <v-expansion-panel v-for="faq in faqs" :key="faq">
+    <v-expansion-panels focusable hover tile v-model="panel">
+      <v-expansion-panel v-for="(faq, index) in faqs" :key="faq" v-bind:id="index++">
         <v-expansion-panel-header
           class="google-font"
           style="color: #1a73e8; font-weight: 200; font-size:120% "
