@@ -17,7 +17,7 @@
           class="py-0"
           :class="this.$vuetify.theme.dark == true?'darkModeContainer':'lightModeContainer'"
         >
-          <whatwedo />
+          <whatwedo :whatwedodata="wwd" />
         </v-col>
       </v-row>
     </v-container>
@@ -65,12 +65,16 @@
 <script>
 import homeStartScreen from "../components/home/homeScreen";
 import whatwedo from "../components/home/whatwedo";
+import whatwedodata from "@/assets/data/whatWeDo.json";
 //import aboutCommunity from "../components/home/aboutCommunity";
 //import events from "../components/home/events";
 //import featureEvents from "../components/home/featureEvents";
 import partners from "../components/common/partners";
 
 export default {
+  data: () => ({
+    wwd: whatwedodata.whatWeDo,
+  }),
   components: {
     homeStartScreen,
     whatwedo,

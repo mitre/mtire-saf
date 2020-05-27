@@ -1,25 +1,37 @@
 <template>
   <v-container fluid>
-      <wwdSection :topic="wwd[0]" />
-      <v-divider />
-      <wwdSection :topic="wwd[1]" xl="3"/>
-      <v-divider />
-      <wwdSection :topic="wwd[2]" md="4" lg="4" xl="4"/>
+    <wwdSection :topic="whatwedodata[0]" md="3" lg="3" xl="3" />
+    <v-divider />
+    <wwdSection :topic="whatwedodata[1]" md="3" lg="3" xl="3" />
+    <v-divider />
+    <wwdSection :topic="whatwedodata[2]" md="4" lg="4" xl="4">
+      <template v-slot:image>
+      <v-row justify="center">
+        <v-img
+          :src="require('@/assets/img/what-we-do/' + whatwedodata[2].image + '.png')"
+          class="ma-2"
+        />
+      </v-row>
+    </template>
+    </wwdSection>
   </v-container>
 </template>
 
 <script>
-import whatwedodata from "@/assets/data/whatWeDo.json";
 import wwdSection from "@/components/home/wwdComponents/wwdSection.vue";
 
 export default {
-
-  components : {
-    wwdSection,
+  props: {
+    whatwedodata: Array
   },
-  data: () => ({
-    wwd : whatwedodata.whatWeDo
-  }),
+  // data() {
+  //   return {
+  //     item: Object
+  //   };
+  // },
 
+  components: {
+    wwdSection
+  }
 };
 </script>
