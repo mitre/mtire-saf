@@ -5,7 +5,7 @@
         <p class="google-font mb-1" style="font-weight: 350;font-size:200%">
           <b>
             The
-            <span style="color: #1a73e8;">SAF</span>
+            <span  class="primary--text">SAF</span>
             Community
           </b>
         </p>

@@ -50,7 +50,3 @@ body {
     hyphens: auto;
 }
 
-a:hover,
-a:focus {
-    filter: brightness(150%);
-}

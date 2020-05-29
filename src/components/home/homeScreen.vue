@@ -19,7 +19,7 @@
         <p class="google-font mb-1" style="font-weight: 350;color: #616161;font-size:200%">
           <b :style="this.$vuetify.theme.dark ? 'color: white' : 'color:#616161'">
             <span :style="color_mode">Security
-            <span style="color: #1a73e8;">Automation</span>
+            <span class="primary--text">Automation</span>
             Framework</span>
           </b>
         </p>
