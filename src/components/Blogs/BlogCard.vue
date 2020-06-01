@@ -29,8 +29,8 @@
           text
           small
           :href="data.data.link"
-          class="mb-0 mt-0 google-font"
-          style="color:#1a73e8;text-decoration:none"
+          class="mb-0 mt-0 google-font primary--text"
+          style="text-decoration:none"
         >Read</v-btn>
       </div>
     </div>

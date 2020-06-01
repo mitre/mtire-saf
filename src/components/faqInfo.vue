@@ -3,8 +3,8 @@
     <v-expansion-panels focusable hover tile v-model="panel">
       <v-expansion-panel v-for="(faq, index) in faqs" :key="faq" v-bind:id="index++">
         <v-expansion-panel-header
-          class="google-font"
-          style="color: #1a73e8; font-weight: 200; font-size:120% "
+          class="google-font primary--text"
+          style="font-weight: 200; font-size:120% "
         >{{faq.question}}</v-expansion-panel-header>
         <v-expansion-panel-content>
           <span v-html="faq.answer"></span>

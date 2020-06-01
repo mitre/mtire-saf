@@ -90,4 +90,5 @@ export default {
 .snack >>> .v-snack__content {
   padding-right: 16px;
 }
+
 </style>

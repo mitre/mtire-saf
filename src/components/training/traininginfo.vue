@@ -1,12 +1,12 @@
 <template>
   <v-container fluid>
     <p
-      class="google-font mb-0"
-      style="font-size:150%;color: #1a73e8;"
+      class="google-font mb-0 primary--text"
+      style="font-size:150%;"
     >Training Courses Currently Offered</p>
     <br />
     <p class="google-font mb-0" style="font-size:100%">
-      <span style="color: #1a73e8;">
+      <span class="primary--text">
         <a
           href="https://mitre-inspec-developer.netlify.com/"
           target="_blank"
@@ -15,7 +15,7 @@
       - Reviews the basics on how to write and run tests
     </p>
     <p class="google-font mb-0" style="font-size:100%">
-      <span style="color: #1a73e8;">
+      <span class="primary--text">
         <a
           href="https://mitre-inspec-advanced-developer.netlify.com/"
           target="_blank"
@@ -26,7 +26,7 @@
 
     <br />
     <br />
-    <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Upcoming Training Sessions</p>
+    <p class="google-font mb-0 primary--text" style="font-size:150%;">Upcoming Training Sessions</p>
     <p
       class="google-font mt-0 mb-0"
       style="font-size:95%"
@@ -50,7 +50,7 @@
     </v-row>
     <br />
     <br />
-    <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">Past Training Sessions</p>
+    <p class="google-font mb-0 primary--text" style="font-size:150%;">Past Training Sessions</p>
     <p
       class="google-font mt-0 mb-0"
       style="font-size:95%"
@@ -80,7 +80,7 @@
               >
                 <p class="google-font mt-1 mb-0 break-word" style="font-size:90%">{{ item.date }}</p>
                 <p class="google-font ma-0 mt-0 break-word" style="font-size:120%;">{{ item.name }}</p>
-                <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
+                <p class="mb-0 mt-2 google-font primary--text">See More</p>
               </div>
             </template>
 
