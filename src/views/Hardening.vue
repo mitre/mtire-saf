@@ -1,28 +1,19 @@
 <template>
   <v-content class="pa-0">
-    <v-container fluid class="pa-0 mt-2">
-      <v-row
-        justify="center"
-        align="center"
-        class="py-0 my-0"
-        :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
-      >
-        <v-col md="12" lg="10" xs="12" class="py-3 my-0">
-          <Header><h3 slot="title">Hardening</h3></Header>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-container fluid>
-      <v-row justify="center" align="center" class="py-0 my-0">
-        <v-col md="12" lg="10" xs="12" class="py-3 my-0">
-          <div class="ma-2 pa-2 google-font">
-            <p>
+    <v-container fluid class="pa-0">
+      <v-row justify="center" align="center" class="pa-2">
+        <v-col md="12" lg="10" xs="12" class="pa-0 ma-0">
+          <Header>
+            <h3 slot="title">Hardening</h3>
+          </Header>
+          <div class="mx-4 google-font">
+            <p class="ma-0">
               These open-source community-based hardening baselines help to securely configure common system components. MITRE is helping to provide stewardship over these hardening baselines, hosted here and at other community vendor sites. If you are interested in new hardening baselines, please contact us at
               <a
                 :href="mail_link"
               >{{ db.communityEmail }}</a>.
             </p>
-            <profileTemplateCompact :profiles="hardening.hardening" />
+            <profileTemplateCompact :profiles="hardening.hardening" :categoryOrder="categoryOrder" />
           </div>
         </v-col>
       </v-row>
@@ -45,7 +36,14 @@ export default {
   data() {
     return {
       hardening: hardening,
-      db: db
+      db: db,
+      categoryOrder: [
+        "Cloud Service Providers",
+        "Databases",
+        "Operating Systems",
+        "Virtual Platforms",
+        "Web Servers"
+      ]
     };
   },
   computed: {

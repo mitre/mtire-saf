@@ -25,7 +25,7 @@
           "desc": "Dive deep into test results visually via rollups, charts, and timelines",
           "icon": "mdi-image-search",
           "svg": "",
-          "link": "",
+          "link": "https://heimdall-lite.mitre.org",
           "tools": ""
         },
         {
@@ -44,7 +44,7 @@
       "items": [
         {
           "name": "Standardizing Security Testing Content",
-          "link": "",
+          "router_link": "validation",
           "desc": "Build on the SAF community's library of standard security profiles",
           "svg": "",
           "icon": "",
@@ -73,7 +73,7 @@
         },
         {
           "name": "Normalizing Security Data",
-          "link": "",
+          "link": "https://heimdall-tools.mitre.org/",
           "desc": "Translate your data into a standard format to ensure interoperability",
           "svg": "",
           "icon": "",
@@ -107,7 +107,7 @@
         },
         {
           "name": "Analyzing Security Data",
-          "link": "",
+          "link": "https://heimdall-lite.mitre.orgc",
           "desc": "Deep dive into the data and make decisions on how best to reduce risk",
           "svg": "",
           "icon": "",
@@ -126,7 +126,7 @@
         },
         {
           "name": "Hardening Content",
-          "link": "",
+          "router_link": "hardening",
           "desc": "Use the SAF hardening baseline library to configure systems for security",
           "svg": "",
           "icon": "",

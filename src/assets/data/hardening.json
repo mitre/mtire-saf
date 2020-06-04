@@ -40,14 +40,14 @@
       "longName": "Docker CIS Benchmark",
       "link": "https://github.com/mitre/ansible-cis-docker-ce-hardening",
       "svg": "ansible",
-      "category": ["Application Logic"]
+      "category": ["Virtual Platforms"]
     },
     {
       "shortName": "Docker CIS Benchmark",
       "longName": "Docker CIS Benchmark",
       "link": "https://github.com/mitre/chef-cis-docker-ce-hardening",
       "svg": "chef-2",
-      "category": ["Application Logic"]
+      "category": ["Virtual Platforms"]
     },
     {
       "shortName": "Tomcat CIS Benchmark",
@@ -103,7 +103,7 @@
       "longName": "VMware vCenter Server Appliance 6.7 STIG",
       "link": "https://github.com/mitre/chef-stig-mongodb-enterprise-advanced-hardening",
       "svg": "ansible",
-      "category": ["Platform"]
+      "category": ["Virtual Platforms"] 
     }
   ]
 }

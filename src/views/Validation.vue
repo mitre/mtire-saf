@@ -1,22 +1,13 @@
 <template>
   <v-content class="pa-0">
-    <v-container fluid class="pa-0 mt-2">
-      <v-row
-        justify="center"
-        align="center"
-        class="py-0 my-0"
-        :class="this.$vuetify.theme.dark == true?'grey darken-4':'grey lighten-4'"
-      >
-        <v-col md="12" lg="10" xs="12" class="py-3 my-0">
-          <Header><h3 slot="title">Validation</h3></Header>
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-container fluid>
-      <v-row justify="center" align="center" class="py-0 my-0">
-        <v-col md="12" lg="10" xs="12" class="py-3 my-0">
-          <div class="ma-2 pa-2 google-font">
-            <p>
+    <v-container fluid class="pa-0">
+      <v-row justify="center" align="center" class="pa-2">
+        <v-col md="12" lg="10" xs="12" class="pa-0 ma-0">
+          <Header>
+            <h3 slot="title">Validation</h3>
+          </Header>
+          <div class="mx-4 google-font">
+            <p class="ma-0">
               These open-source community-based InSpec profiles validate the security of
               common system components. MITRE is helping to provide stewardship over
               these profiles, hosted here and at other community vendor sites. If you
@@ -24,9 +15,10 @@
               <a
                 :href="mail_link"
               >{{ db.communityEmail }}</a>. If you are interested in developing and contributing your own
-              profiles, please see our links to Training material.
+              profiles, please see our
+              <router-link to="training">training material</router-link>.
             </p>
-            <profileTemplateCompact :profiles="baselines.baselines" />
+            <profileTemplateCompact :profiles="baselines.baselines" :categoryOrder="categoryOrder" />
           </div>
         </v-col>
       </v-row>
@@ -50,7 +42,15 @@ export default {
     return {
       baselines: baselines,
       db: db,
-      isCompact: false
+      isCompact: false,
+      categoryOrder: [
+        "Cloud Service Providers",
+        "Application Logic",
+        "Databases",
+        "Operating Systems",
+        "Virtual Platforms",
+        "Web Servers"
+      ]
     };
   },
   computed: {

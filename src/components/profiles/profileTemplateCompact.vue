@@ -1,6 +1,6 @@
 <template>
   <v-content class="pa-0">
-    <v-card v-for="cat in categorized" :key="cat" outlined class="ma-2">
+    <v-card v-for="cat in categoryOrder" :key="cat" outlined class="ma-2">
       <v-row align="center" dense no-gutters justify="start">
         <v-col cols="2" v-show="$vuetify.breakpoint.smAndUp">
           <h2
@@ -48,11 +48,12 @@
 <script>
 export default {
   props: {
-    profiles: Array
+    profiles: Array,
+    categoryOrder: Array
   },
   data() {
     return {
-      fab: false
+      fab: false,
     };
   },
 
@@ -97,17 +98,20 @@ export default {
         return "";
       }
     },
-    categorized() {
-      var categories = new Set();
-      var i;
-      var j;
-      for (i = 0; i < this.profiles.length; i++) {
-        for (j = 0; j < this.profiles[i].category.length; j++) {
-          categories.add(this.profiles[i].category[j]);
-        }
-      }
-      return Array.from(categories);
-    }
+    // function no longer useable since there is a defined category ordr
+    // assume that all profiles fall in defined categories in the categoryOrder var,
+    // but any additional categories must be directly added to the order or they will not appear
+    // categorized() {
+    //   var categories = new Set();
+    //   var i;
+    //   var j;
+    //   for (i = 0; i < this.profiles.length; i++) {
+    //     for (j = 0; j < this.profiles[i].category.length; j++) {
+    //       categories.add(this.profiles[i].category[j]);
+    //     }
+    //   }
+    //   return Array.from(categories);
+    // }
   }
 };
 </script>

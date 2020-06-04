@@ -1,16 +1,16 @@
 <template>
   <v-container fluid>
     <v-expansion-panels focusable hover tile v-model="panel">
-      <v-expansion-panel v-for="(faq, index) in faqs" :key="faq" v-bind:id="index++">
+      <v-expansion-panel v-for="(faq, index) in faqs" :key="index" v-bind:id="index++">
         <v-expansion-panel-header
-          class="google-font primary--text"
-          style="font-weight: 200; font-size:120% "
+          class="google-font"
+          style="font-weight: 300; font-size:120% "
         >{{faq.question}}</v-expansion-panel-header>
-        <v-expansion-panel-content>
+        <v-expansion-panel-content class="my-2">
           <span v-html="faq.answer"></span>
         </v-expansion-panel-content>
         <v-expansion-panel-content v-if="faq.links">
-          <div v-for="link in faq.links" :key="link">
+          <div v-for="(link, index) in faq.links" :key="index">
             <a
               :href="link.download_link ? link.download_link : link.link"
               target="_blank"

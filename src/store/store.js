@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import controlTable from "./modules/controlTable.module";
+
 
 Vue.use(Vuex);
 
@@ -13,16 +13,6 @@ export default new Vuex.Store({
       {
         text: "Home",
         to: "/",
-        icon: "mdi-home",
-        meta: {
-          showToolbar: true,
-          enabled: true,
-          showBottomNav: false,
-        },
-      },
-      {
-        text: "Control Assessment Range",
-        to: "/controlTable",
         icon: "mdi-home",
         meta: {
           showToolbar: true,
@@ -152,7 +142,4 @@ export default new Vuex.Store({
     ADtoggleDrawer: (state) => (state.adminDrawer = !state.adminDrawer),
   },
   actions: {},
-  modules: {
-    controlTable,
-  },
 });

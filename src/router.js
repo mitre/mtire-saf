@@ -60,16 +60,6 @@ const router = new Router({
       },
     },
     {
-      path: "/controlTable",
-      name: "controlTable",
-      component: () => import("./components/ControlTable.vue"),
-      meta: {
-        title: "Control Table | " + communityData.communityName,
-        color: "#0277bd",
-        requiresAuth: false,
-      },
-    },
-    {
       path: "/contact",
       name: "contact",
       component: () => import("./views/Contact.vue"),
