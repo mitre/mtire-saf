@@ -1,47 +1,43 @@
 <template>
   <v-content class="pa-0">
-    <v-card v-for="cat in categoryOrder" :key="cat" outlined class="ma-2">
-      <v-row align="center" dense no-gutters justify="start">
-        <v-col cols="2" v-show="$vuetify.breakpoint.smAndUp">
-          <h2
-            class="font-weight-bold ma-2 pa-2 break-word justify-center text-center google-font"
-            :class="{'subtitle-2': $vuetify.breakpoint.mdAndDown}"
-          >{{ cat }}</h2>
-        </v-col>
-        <v-col cols="10">
-          <v-container>
-            <v-row dense no-gutters align="center" justify="start">
-              <v-col cols="auto" v-show="$vuetify.breakpoint.xs">
-                <h2
-                  class="font-weight-bold subtitle-2 ma-2 pa-2 break-word justify-center text-left google-font"
-                >{{ cat }}</h2>
-              </v-col>
-              <v-col cols="auto">
-                <v-chip
-                  v-for="(entry, i) in getByCategory(profiles, [cat])"
-                  :key="entry.category + entry.longName + i"
-                  :href="entry.link"
-                  target="_blank"
-                  class="google-font break-word ma-2 pa-2 text-none"
-                  label
-                  outlined
-                >
-                  <v-img
-                    v-show="entry.svg"
-                    :src="require('@/assets/img/svg/' + entry.svg + '.svg')"
-                    svg-inline
-                    style="max-width: 14px; max-height: 14px;"
-                    class="mr-2"
-                    contain
-                  />
-                  {{ entry.shortName }}
-                </v-chip>
-              </v-col>
-            </v-row>
-          </v-container>
+    <v-container fluid>
+      <v-row justify="center">
+        <v-col cols="auto" v-for="cat in categoryOrder" :key="cat" outlined class="ma-2">
+          <v-card class="ma-0 pa-0">
+            <h2
+              class="font-weight-bold break-word justify-center text-center google-font ma-2"
+              :class="{'subtitle-2': $vuetify.breakpoint.mdAndDown}"
+            >{{ cat }}</h2>
+
+            <v-card
+              v-for="(entry, i) in getByCategory(profiles, [cat])"
+              :key="entry.category + entry.longName + i"
+              :href="entry.link"
+              target="_blank"
+              class="google-font break-word text-none ma-2"
+              label
+              outlined
+            >
+              <v-list class="">
+                <v-list-item class="ma-0 pa-0">
+                  <v-list-item-action class="ma-0 pa-0">
+                    <v-img
+                      v-show="entry.svg"
+                      :src="require('@/assets/img/svg/' + entry.svg + '.svg')"
+                      svg-inline
+                      style="max-width: 14px; max-height: 14px;"
+                      class="mr-2"
+                      contain
+                    />
+                  </v-list-item-action>
+                  <v-list-item-title class="ma-0 pa-0" style="font-size:80%">{{ entry.shortName }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-card>
+          </v-card>
         </v-col>
       </v-row>
-    </v-card>
+    </v-container>
   </v-content>
 </template>
 
@@ -53,7 +49,7 @@ export default {
   },
   data() {
     return {
-      fab: false,
+      fab: false
     };
   },
 
@@ -97,7 +93,7 @@ export default {
       } else {
         return "";
       }
-    },
+    }
     // function no longer useable since there is a defined category ordr
     // assume that all profiles fall in defined categories in the categoryOrder var,
     // but any additional categories must be directly added to the order or they will not appear
