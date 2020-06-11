@@ -12,7 +12,7 @@
         <p class="google-font ma-0 mt-0" style="font-size:120%;">{{data.data.name }}</p>
         <p class="google-font mt-0 mb-0" style="font-size:90%;">{{data.data.local_time}}</p>
         <p class="google-font mt-0 mb-0" style="font-size:90%;">{{data.data.venue.name }}</p>
-        <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
+        <p class="mb-0 mt-2 google-font primary--text">See More</p>
       </div>
     </template>
     <!-- :style="{'background-image':'url('+require('@/assets/img/svg/footer.svg')+')'}" -->

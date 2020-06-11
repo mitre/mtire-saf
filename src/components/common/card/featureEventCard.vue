@@ -20,7 +20,7 @@
 
               <!-- <p class="google-font">{{data.data.EventDescription}}</p> -->
 
-              <p class="mb-0 mt-2 google-font" style="color:#1a73e8">See More</p>
+              <p class="mb-0 mt-2 google-font primary--text" >See More</p>
             </v-col>
           </v-row>
         </v-container>
@@ -46,7 +46,7 @@
         <p class="google-font mt-0" style="font-size:110%">{{data.data.EventDescription}}</p>
 
         <v-btn
-          color="#1a73e8"
+          color="primary"
           v-if="data.data.Links.RegistrationLink.length>0"
           :href="data.data.Links.RegistrationLink"
           target="_blank"

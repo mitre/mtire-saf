@@ -1,14 +1,14 @@
 <template>
-  <v-content class="px-0 mx-0 pt-5">
-    <v-container fluid class="px-0 pt-0 container-margin-top">
+  <v-content class="pa-0 ma-0">
+    <v-container fluid class="pa-0 container-margin-top">
       <v-row justify="center" align="center">
-        <v-col md="12" lg="10" xs="12" class="py-5">
+        <v-col md="12" lg="10" xs="12" class="">
           <homeStartScreen />
         </v-col>
       </v-row>
     </v-container>
 
-    <v-container fluid class="pa-0 py-2">
+    <v-container fluid class="pa-0">
       <v-row justify="center" align="center">
         <v-col
           md="12"
@@ -17,7 +17,7 @@
           class="py-0"
           :class="this.$vuetify.theme.dark == true?'darkModeContainer':'lightModeContainer'"
         >
-          <whatwedo />
+          <whatwedo :whatwedodata="wwd" />
         </v-col>
       </v-row>
     </v-container>
@@ -65,12 +65,16 @@
 <script>
 import homeStartScreen from "../components/home/homeScreen";
 import whatwedo from "../components/home/whatwedo";
+import whatwedodata from "@/assets/data/whatWeDo.json";
 //import aboutCommunity from "../components/home/aboutCommunity";
 //import events from "../components/home/events";
 //import featureEvents from "../components/home/featureEvents";
 import partners from "../components/common/partners";
 
 export default {
+  data: () => ({
+    wwd: whatwedodata.whatWeDo,
+  }),
   components: {
     homeStartScreen,
     whatwedo,
@@ -99,7 +103,7 @@ export default {
 /* for large screen */
 @media screen and (min-width: 600px) {
   .container-margin-top {
-    margin-top: 40px;
+    margin-top: 0px;
   }
 }
 /* for small screen */

@@ -40,7 +40,7 @@
       "longName": "Docker CE CIS",
       "link": "https://github.com/mitre/docker-ce-cis-baseline",
       "svg": "inspec-blue-back-border",
-      "category": ["Operating Systems"]
+      "category": ["Virtual Platforms"]
     },
     {
       "shortName": "Ubuntu 16.04 STIG",
@@ -208,35 +208,35 @@
       "longName": "DRAFT: VMWare ESXI 6.7 STIG",
       "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/6.7/vsphere/inspec/vmware-esxi-6.7-stig-baseline",
       "svg": "inspec-blue-back-border",
-      "category": ["Platform"]
+      "category": ["Virtual Platforms"]
     },
     {
       "shortName": "DRAFT: VMWare vSphere VM 6.7 STIG",
       "longName": "DRAFT: VMware vSphere Virtual Machines version 6.7 STIG",
       "link": "    https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/6.7/vsphere/inspec/vmware-vm-6.7-stig-baseline",
       "svg": "inspec-blue-back-border",
-      "category": ["Platform"]
+      "category": ["Virtual Platforms"]
     },
     {
       "shortName": "VMWare vSphere VM 6.5 STIG",
       "longName": "VMware vSphere Virtual Machines version 6.5 STIG",
       "link": "https://github.com/kclinden/vmware-vsphere-65-virtual-machine-stig-baseline",
       "svg": "inspec-blue-back-border",
-      "category": ["Platform"]
+      "category": ["Virtual Platforms"]
     },
     {
       "shortName": "VMWare ESXI 6.5 STIG",
       "longName": "VMWare ESXI 6.5 STIG",
       "link": "https://github.com/kclinden/vmware-esxi-6.5-stig-baseline",
       "svg": "inspec-blue-back-border",
-      "category": ["Platform"]
+      "category": ["Virtual Platforms"]
     },
     {
       "shortName": "DRAFT: VMWare VCSA 6.7 STIG",
       "longName": "DRAFT: VMware vCenter Service Appliance version 6.7",
       "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/6.7/vcsa/inspec/vmware-vcsa-6.7-stig-baseline",
       "svg": "inspec-blue-back-border",
-      "category": ["Platform"]
+      "category": ["Virtual Platforms"]
     }
   ]
 }

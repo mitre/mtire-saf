@@ -1,54 +1,51 @@
 <template>
   <v-content class="pa-0">
-    <v-card v-for="cat in categorized" :key="cat" outlined class="ma-2">
-      <v-row align="center" dense no-gutters justify="start">
-        <v-col cols="2" v-show="$vuetify.breakpoint.smAndUp">
-          <h2
-            class="font-weight-bold ma-2 pa-2 break-word justify-center text-center google-font"
-            :class="{'subtitle-2': $vuetify.breakpoint.mdAndDown}"
-          >{{ cat }}</h2>
-        </v-col>
-        <v-col cols="10">
-          <v-container>
-            <v-row dense no-gutters align="center" justify="start">
-              <v-col cols="auto" v-show="$vuetify.breakpoint.xs">
-                <h2
-                  class="font-weight-bold subtitle-2 ma-2 pa-2 break-word justify-center text-left google-font"
-                >{{ cat }}</h2>
-              </v-col>
-              <v-col cols="auto">
-                <v-chip
-                  v-for="(entry, i) in getByCategory(profiles, [cat])"
-                  :key="entry.category + entry.longName + i"
-                  :href="entry.link"
-                  target="_blank"
-                  class="google-font break-word ma-2 pa-2 text-none"
-                  label
-                  outlined
-                >
-                  <v-img
-                    v-show="entry.svg"
-                    :src="require('@/assets/img/svg/' + entry.svg + '.svg')"
-                    svg-inline
-                    style="max-width: 14px; max-height: 14px;"
-                    class="mr-2"
-                    contain
-                  />
-                  {{ entry.shortName }}
-                </v-chip>
-              </v-col>
-            </v-row>
-          </v-container>
+    <v-container fluid>
+      <v-row justify="center">
+        <v-col xs="12" sm="6" md="auto" lg="auto" xl="auto" v-for="cat in categoryOrder" :key="cat" outlined class="ma-0 pa-1 " :class="$vuetify.breakpoint.smAndDown ? 'flex-grow-1' : 'd-flex'">
+          <v-card class="ma-0 pa-1" outlined :class="$vuetify.theme.dark ?'grey darken-4':'grey lighten-3'">
+            <h2
+              class="font-weight-bold break-word justify-center text-center google-font ma-1"
+            >{{ cat }}</h2>
+
+            <v-card
+              v-for="(entry, i) in getByCategory(profiles, [cat])"
+              :key="entry.category + entry.longName + i"
+              :href="entry.link"
+              target="_blank"
+              class="google-font break-word text-none ma-1"
+              :class="$vuetify.theme.dark ?'grey darken-3':'grey lighten-4'"
+              label
+              outlined
+            >
+              <v-list class="pa-0">
+                <v-list-item class="ma-0 pa-0">
+                  <v-list-item-action class="ma-0 pa-0">
+                    <v-img
+                      v-show="entry.svg"
+                      :src="require('@/assets/img/svg/' + entry.svg + '.svg')"
+                      svg-inline
+                      style="max-width: 28px; max-height: 28px;"
+                      class="mx-2"
+                      contain
+                    />
+                  </v-list-item-action>
+                  <v-list-item-title class="ml-1 pa-1 " style="font-size:90%">{{ entry.shortName }}</v-list-item-title>
+                </v-list-item>
+              </v-list>
+            </v-card>
+          </v-card>
         </v-col>
       </v-row>
-    </v-card>
+    </v-container>
   </v-content>
 </template>
 
 <script>
 export default {
   props: {
-    profiles: Array
+    profiles: Array,
+    categoryOrder: Array
   },
   data() {
     return {
@@ -96,18 +93,21 @@ export default {
       } else {
         return "";
       }
-    },
-    categorized() {
-      var categories = new Set();
-      var i;
-      var j;
-      for (i = 0; i < this.profiles.length; i++) {
-        for (j = 0; j < this.profiles[i].category.length; j++) {
-          categories.add(this.profiles[i].category[j]);
-        }
-      }
-      return Array.from(categories);
     }
+    // function no longer useable since there is a defined category ordr
+    // assume that all profiles fall in defined categories in the categoryOrder var,
+    // but any additional categories must be directly added to the order or they will not appear
+    // categorized() {
+    //   var categories = new Set();
+    //   var i;
+    //   var j;
+    //   for (i = 0; i < this.profiles.length; i++) {
+    //     for (j = 0; j < this.profiles[i].category.length; j++) {
+    //       categories.add(this.profiles[i].category[j]);
+    //     }
+    //   }
+    //   return Array.from(categories);
+    // }
   }
 };
 </script>

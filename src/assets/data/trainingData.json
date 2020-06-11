@@ -1,48 +1,75 @@
 {
-  "pastTraining": {
-    "introTraining": [
-      {
-        "name": "Introductory InSpec Profile Developer Training",
-        "date": "March 7-8th 2019",
-        "description": "",
-        "link": ""
+  "training": [
+    {
+      "pastTraining": {
+        "introTraining": [
+          {
+            "name": "Introductory InSpec Profile Developer Training",
+            "date": "March 7-8th 2019",
+            "description": "",
+            "link": ""
+          },
+          {
+            "name": "Introductory InSpec Profile Developer Training",
+            "date": "March 13-14th 2019",
+            "description": "",
+            "link": ""
+          },
+          {
+            "name": "Introductory InSpec Profile Developer Training",
+            "date": "August 28-29th 2019",
+            "description": "",
+            "link": ""
+          },
+          {
+            "name": "Introductory InSpec Profile Developer Training",
+            "date": "November 13-14 2019",
+            "description": "",
+            "link": ""
+          }
+        ],
+        "advTraining": [
+          {
+            "name": "Advanced InSpec Profile Developer Training",
+            "date": "September 5-6th 2019",
+            "description": "",
+            "link": ""
+          }
+        ]
       },
-      {
-        "name": "Introductory InSpec Profile Developer Training",
-        "date": "March 13-14th 2019",
-        "description": "",
-        "link": ""
+      "upcomingTraining": {
+        "introTraining": [
+          {
+            "name": "Upcoming Training Sessions will appear here as they are announced!",
+            "date": "TBD",
+            "description": "",
+            "link": ""
+          }
+        ]
       },
-      {
-        "name": "Introductory InSpec Profile Developer Training",
-        "date": "August 28-29th 2019",
-        "description": "",
-        "link": ""
-      },
-      {
-        "name": "Introductory InSpec Profile Developer Training",
-        "date": "November 13-14 2019",
-        "description": "",
-        "link": ""
-      }
-    ],
-    "advTraining": [
-      {
-        "name": "Adavanced InSpec Profile Developer Training",
-        "date": "September 5-6th 2019",
-        "description": "",
-        "link": ""
-      }
-    ]
-  },
-  "upcomingTraining": {
-    "introTraining": [
-      {
-        "name": "Upcoming Training Sessions will appear here as they are announced!",
-        "date": "TBD",
-        "description": "",
-        "link": ""
-      }
-    ]
-  }
+      "courses" : [
+        {
+          "name" : "Inspec Profile Developer Course",
+          "link" : "https://mitre-inspec-developer.netlify.com/",
+          "desc" : "This course teaches the basics of writing and running InSpec test profiles. Note that basic knowledge of Ruby and CLI familiarity is required.",
+          "bullets" : [
+            "Learn about the InSpec framework and its capabilities",
+            "Write your own test profiles to learn InSpec profile architecture and best practices",
+            "Report, view, and analyze InSpec test results"
+          ]
+        },
+        {
+          "name" : "Inspec Advanced Developer Course",
+          "link" : "https://mitre-inspec-advanced-developer.netlify.app/",
+          "desc" : "This course provides a deep dive into InSpec's advanced capabilities.",
+          "bullets" : [
+            "Learn to use profile inheritance techniques to run multiple profiles against a target",
+            "Develop your own InSpec resource objects to cover application stack components",
+            "Expand your test-writing skills to handle more use cases"
+          ]
+        }
+      ]
+
+    }
+  ]
 }

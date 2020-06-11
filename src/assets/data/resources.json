@@ -1,6 +1,17 @@
 {
   "items": [
     {
+      "name": "Mature DevSecOps Best Practices",
+      "desc": "DevSecOps is a software development framework that stresses automation and rapid user feedback to deliver quality, secure software quickly. A DevSecOps pipline is a collection of tools and practices that can automate as much of development as possible, from testing to change management to deployment.",
+      "values" : [
+        {
+          "name" : "DevSecOps Best Practices Guide",
+          "desc" : "",
+          "download_link" : "DRAFT-DevSecOps_Best_Practices_Guide_01262020.pptx"
+        }
+      ]
+    },
+    {
       "name": "InSpec",
       "desc": "InSpec is a free and open-source Chef framework for testing and auditing applications and infrastructure. InSpec is designed to integrate very easily into existing DevOps pipelines. MITRE has partnered with the open-source community to create a growing number of baseline testing profiles to make it easy for developers to jump right in.",
       "values": [

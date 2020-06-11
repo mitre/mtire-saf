@@ -9,7 +9,7 @@
           "desc": "Produce detailed security testing data throughout development",
           "icon": "mdi-thumb-up",
           "svg": "",
-          "link": "validation",
+          "router_link": "validation",
           "tools": ""
         },
         {
@@ -17,7 +17,7 @@
           "desc": "Align with security baselines using our Ansible, Chef, and Terraform content",
           "icon": "mdi-security",
           "svg": "",
-          "link": "hardening",
+          "router_link": "hardening",
           "tools": ""
         },
         {
@@ -25,7 +25,7 @@
           "desc": "Dive deep into test results visually via rollups, charts, and timelines",
           "icon": "mdi-image-search",
           "svg": "",
-          "link": "",
+          "link": "https://heimdall-lite.mitre.org",
           "tools": ""
         },
         {
@@ -33,7 +33,7 @@
           "desc": "Learn how to write effective tests and apply them to the team's pipeline",
           "icon": "mdi-chair-school",
           "svg": "",
-          "link": "training",
+          "router_link": "training",
           "tools": ""
         }
       ]
@@ -44,7 +44,7 @@
       "items": [
         {
           "name": "Standardizing Security Testing Content",
-          "link": "",
+          "router_link": "validation",
           "desc": "Build on the SAF community's library of standard security profiles",
           "svg": "",
           "icon": "",
@@ -73,7 +73,7 @@
         },
         {
           "name": "Normalizing Security Data",
-          "link": "",
+          "link": "https://heimdall-tools.mitre.org/",
           "desc": "Translate your data into a standard format to ensure interoperability",
           "svg": "",
           "icon": "",
@@ -107,7 +107,7 @@
         },
         {
           "name": "Analyzing Security Data",
-          "link": "",
+          "link": "https://heimdall-lite.mitre.org",
           "desc": "Deep dive into the data and make decisions on how best to reduce risk",
           "svg": "",
           "icon": "",
@@ -126,7 +126,7 @@
         },
         {
           "name": "Hardening Content",
-          "link": "",
+          "router_link": "hardening",
           "desc": "Use the SAF hardening baseline library to configure systems for security",
           "svg": "",
           "icon": "",
@@ -148,6 +148,7 @@
     {
       "sectionHeader": "How We Support It",
       "sectionDesc": "Develop a toolchain to support the above areas of What and How for secure development",
+      "image" : "whatWeDo",
       "items": [
         {
           "name": "Heimdall Lite",

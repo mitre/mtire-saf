@@ -15,16 +15,14 @@
           </template>
         </v-img> 
       </v-col>-->
-      <v-col md="12" lg="10" xs="12">
-        <p class="google-font mb-1" style="font-weight: 350;color: #616161;font-size:200%">
-          <b :style="this.$vuetify.theme.dark ? 'color: white' : 'color:#616161'">
-            <span :style="color_mode">Security
-            <span style="color: #1a73e8;">Automation</span>
-            Framework</span>
+      <v-col >
+        <p class="google-font" style="font-weight: 350;color: #616161;font-size:300%">
+          <b class="primary--text">
+            Security Automation Framework
           </b>
         </p>
         <!-- <p class="google-font mt-0 mb-0" style="font-size:150%">{{communityData.community}}</p> -->
-        <p class="google-font" style="font-size:100%">{{communityData.communityShortDescription}}</p>
+        <p class="google-font" style="font-size:95%">{{communityData.communityShortDescription}}</p>
         <!-- <p class="google-font" style="font-size:100%;color:#9e9e9e">
           <span v-for="(item,i) in communityData.communityHashTags" :key="i">#{{item}} &nbsp;</span>
         </p>-->
@@ -59,12 +57,5 @@ export default {
       communityData: communityData
     };
   },
-
-  methods: {
-    color_mode() {
-      if (this.$vuetify.theme.dark) return "color:white";
-      return "color:grey lighten-4";
-    }
-  }
 };
 </script>

@@ -1,6 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
-import controlTable from "./modules/controlTable.module";
+
 
 Vue.use(Vuex);
 
@@ -67,7 +67,7 @@ export default new Vuex.Store({
         meta: {
           showToolbar: true,
           enabled: true,
-          showBottomNav: true,
+          showBottomNav: false,
         },
       },
       {
@@ -152,7 +152,4 @@ export default new Vuex.Store({
     ADtoggleDrawer: (state) => (state.adminDrawer = !state.adminDrawer),
   },
   actions: {},
-  modules: {
-    controlTable,
-  },
 });

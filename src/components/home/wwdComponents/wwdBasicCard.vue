@@ -1,15 +1,15 @@
 <template>
-  <!-- <v-hover v-slot:default="{ hover }"> -->
-    <!-- :color="hover && (item.router_link || item.link) ? 'grey' : ''" -->
+  <v-hover v-slot:default="{ hover }">
+    
     <v-card
       outlined
       class="d-flex flex-column"
       :to="item.router_link"
       :href="item.link"
-      
+      :color="hover && (item.router_link || item.link) ? get_highlight() : ''"
       :target="item.link ? '_blank' : ''"
       style="width: 100%"
-
+      :elevation="hover && (item.router_link || item.link) ? '20' : '' "
     >
       <!--<toolBlock v-if="item.tools" :tools="item.tools" />-->
       <!-- :color="hover && (item.router_link || item.link) ? '#1a73e8' : ''" -->
@@ -111,7 +111,7 @@
         </v-container>
       </v-card-actions>
     </v-card>
-  <!-- </v-hover> -->
+  </v-hover>
 </template>
 
 <script>
@@ -134,6 +134,13 @@ export default {
   methods: {
     make_readable(str) {
       return str.replace(/_/, " ");
+    },
+    get_highlight() { 
+      if (this.$vuetify.theme.dark) {
+        return ""
+      } else {
+        return ""
+      }
     }
   }
 };

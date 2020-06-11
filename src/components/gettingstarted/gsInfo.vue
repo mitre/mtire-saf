@@ -1,30 +1,25 @@
 <template>
   <v-container fluid>
-      <br>
-    <p class="google-font mb-0" style="font-size:150%;color: #1a73e8;">InSpec</p>
-      <v-list two-line>
-        <template v-for="item in resources.items">
-          <v-list-item :key="item.name">
-            <v-list-item-content>
-              <!-- <v-list-item-title style="font-size:150% ma-2">
-              <b>{{item.name}}</b>
-              </v-list-item-title>-->
-              <v-list-item class="google-font mt-0 mb-0">{{item.desc}}</v-list-item>
-              <v-list-item v-for="entry in item.values" :key="entry.name">
-                <div>
-                  <li>
-                    <span>
-                      <a :href="entry.link" target="_blank">{{entry.name}}</a>
-                      <span v-show="entry.desc"> -- {{entry.desc}}</span>
-                    </span>
-                  </li>
-                </div>
-              </v-list-item>
-            </v-list-item-content>
-          </v-list-item>
-        </template>
-      </v-list>
-      <br />
+    <template v-for="item in resources.items">
+      <div :key="item.name" class="ms-2">
+        <p class="google-font mb-2 wrap-list-text">
+          <b>{{item.name}}</b>
+        </p>
+        <p flat class="google-font ma-2">{{item.desc}}</p>
+        <p flat dense class="ma-2 google-font" v-for="entry in item.values" :key="entry.name">
+          <span>
+            <a v-if="entry.link" :href="entry.link" target="_blank">{{entry.name}}</a>
+            <a
+              v-if="entry.download_link"
+              :href="entry.download_link"
+              target="_blank"
+              download
+            >{{entry.name}}</a>
+            <!-- <span v-show="entry.desc"> -- {{entry.desc}}</span> -->
+          </span>
+        </p>
+      </div>
+    </template>
   </v-container>
 </template>
 
@@ -68,3 +63,16 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+.wrap-list-text {
+  -webkit-line-clamp: unset !important;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
+  font-size: 150%;
+  color: #1a73e8;
+}
+</style>
