@@ -157,7 +157,7 @@ export default {
         frozenRowsBgColor: "#BDBDBD",
         frozenRowsBorderColor: "#35495e"
       }),
-      darkTheme: {
+      darkTheme: materialDesignTheme.extends({
         color: "white",
         defaultBgColor({ row }) {
           // change the color of the checked row.
@@ -179,7 +179,7 @@ export default {
           color: "#FFF",
           bgColor: "#2c3e50"
         }
-      }
+      }),
     };
   },
   computed: {
