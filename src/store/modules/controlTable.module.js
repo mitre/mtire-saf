@@ -63,6 +63,7 @@ const getters = {
         type: "default",
         field: (rec) => rec[column] ? "InSpec" : "",
         checkmark: ["☒", "☑", "☐"][getters.getColumnFilters(state)[column] ?? 0],
+        checkmarkFont: "30px sans-serif",
       });
     }
 
@@ -71,6 +72,7 @@ const getters = {
       controlNames.align = 'start';
       controlNames.field = (rec) => rec[controlNames.value];
       controlNames.checkmark = "RESET";
+      controlNames.checkmarkFont = "16px sans-serif";
       controlNames.width = 100;
     }
     let all = undefined;
