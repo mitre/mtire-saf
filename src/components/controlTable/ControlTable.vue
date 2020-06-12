@@ -67,7 +67,7 @@
       :frozen-col-count="2"
       :theme="this.$vuetify.theme.dark ? darkTheme : lightTheme"
       :underlay-background-color="this.$vuetify.theme.dark ? 'black' : 'white'"
-      :headerRowHeight="[70, 20, 20]"
+      :headerRowHeight="[70, 25, 20]"
       :defaultRowHeight="20"
       :defaultColWidth="130"
     >
@@ -79,7 +79,7 @@
             :width="col.width ? col.width : undefined"
             :header-field="col.value"
             :header-type="'multilinetext'"
-            :header-style="{ autoWrapText: true, textAlign: 'center' }"
+            :header-style="{ autoWrapText: true, textAlign: 'center', textBaseline: 'middle' }"
             :header-action="'check'"
             @changed-header-value="onChangeHeaderValue"
           >
@@ -92,7 +92,7 @@
             :key="col.value"
             :width="col.width ? col.width : undefined"
             :header-field="col.value"
-            :header-style="{ ...{ textAlign: 'center' }, ...{ font: col.checkmarkFont } }"
+            :header-style="{ ...{ textAlign: 'center', textBaseline: 'middle' }, ...{ font: col.checkmarkFont } }"
             :header-action="'check'"
             @changed-header-value="onChangeHeaderValue"
           >
@@ -105,7 +105,7 @@
             :key="col.value"
             :width="col.width ? col.width : undefined"
             :header-field="col.value"
-            :header-style="{ textAlign: 'center' }"
+            :header-style="{ textAlign: 'center', textBaseline: 'middle' }"
             :header-action="'check'"
             @changed-header-value="onChangeHeaderValue"
           >
@@ -120,7 +120,7 @@
             :key="col.value"
             :field="col.field"
             :column-type="col.type"
-            :column-style="{ textAlign: col.align }"
+            :column-style="{ textAlign: col.align, textBaseline: 'middle' }"
           />
         </c-grid-layout-row>
       </template>
