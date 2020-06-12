@@ -61,6 +61,7 @@
       </v-row>
     </v-container>
     <c-grid
+      ref="grid"
       class="table ma-0"
       :data="data"
       :frozen-col-count="2"
@@ -222,6 +223,7 @@ export default {
     },
     onChangeHeaderValue({ field }) {
       this.updateColumnFilters(field);
+      this.$nextTick(() => this.$refs.grid.invalidate());
     }
   }
 };
