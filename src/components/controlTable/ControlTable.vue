@@ -21,9 +21,14 @@
 */
 <template>
   <div class="wrapper">
-    <v-container>
+    <v-container
+      class="d-flex flex-wrap flex-column"
+    >
       <v-row>
-        <v-col>
+        <v-col
+          cols="12"
+          sm="6"
+        >
           <v-combobox
             v-model="controlFilters"
             clearable
@@ -40,8 +45,10 @@
             small-chips
           />
         </v-col>
-        <v-spacer />
-        <v-col>
+        <v-col
+          cols="12"
+          sm="6"
+        >
           <v-combobox
             v-model="profileFilters"
             clearable
@@ -59,72 +66,76 @@
           />
         </v-col>
       </v-row>
+      <v-row>
+        <v-sheet :width="'100%'" :height="'70vh'">
+          <c-grid
+            ref="grid"
+            class="ma-0"
+            :data="data"
+            :frozen-col-count="2"
+            :theme="this.$vuetify.theme.dark ? darkTheme : lightTheme"
+            :underlay-background-color="this.$vuetify.theme.dark ? 'black' : 'white'"
+            :headerRowHeight="[70, 25, 20]"
+            :defaultRowHeight="20"
+            :defaultColWidth="130"
+          >
+            <template slot="layout-header">
+              <c-grid-layout-row>
+                <c-grid-header
+                  v-for="col of columns"
+                  :key="col.value"
+                  :width="col.width ? col.width : undefined"
+                  :header-field="col.value"
+                  :header-type="'multilinetext'"
+                  :header-style="{ autoWrapText: true, textAlign: 'center', textBaseline: 'middle' }"
+                  :header-action="'check'"
+                  @changed-header-value="onChangeHeaderValue"
+                >
+                  {{col.text}}
+                </c-grid-header>
+              </c-grid-layout-row>
+              <c-grid-layout-row>
+                <c-grid-header
+                  v-for="col of columns"
+                  :key="col.value"
+                  :width="col.width ? col.width : undefined"
+                  :header-field="col.value"
+                  :header-style="{ ...{ textAlign: 'center', textBaseline: 'middle' }, ...{ font: col.checkmarkFont } }"
+                  :header-action="'check'"
+                  @changed-header-value="onChangeHeaderValue"
+                >
+                  {{col.checkmark}}
+                </c-grid-header>
+              </c-grid-layout-row>
+              <c-grid-layout-row>
+                <c-grid-header
+                  v-for="col of columns"
+                  :key="col.value"
+                  :width="col.width ? col.width : undefined"
+                  :header-field="col.value"
+                  :header-style="{ textAlign: 'center', textBaseline: 'middle' }"
+                  :header-action="'check'"
+                  @changed-header-value="onChangeHeaderValue"
+                >
+                  {{data.filter(control => control[col.value]).length.toString()}}
+                </c-grid-header>
+              </c-grid-layout-row>
+            </template>
+            <template slot="layout-body">
+              <c-grid-layout-row>
+                <c-grid-column
+                  v-for="col of columns"
+                  :key="col.value"
+                  :field="col.field"
+                  :column-type="col.type"
+                  :column-style="{ textAlign: col.align, textBaseline: 'middle' }"
+                />
+              </c-grid-layout-row>
+            </template>
+          </c-grid>
+        </v-sheet>
+      </v-row>
     </v-container>
-    <c-grid
-      ref="grid"
-      class="table ma-0"
-      :data="data"
-      :frozen-col-count="2"
-      :theme="this.$vuetify.theme.dark ? darkTheme : lightTheme"
-      :underlay-background-color="this.$vuetify.theme.dark ? 'black' : 'white'"
-      :headerRowHeight="[70, 25, 20]"
-      :defaultRowHeight="20"
-      :defaultColWidth="130"
-    >
-      <template slot="layout-header">
-        <c-grid-layout-row>
-          <c-grid-header
-            v-for="col of columns"
-            :key="col.value"
-            :width="col.width ? col.width : undefined"
-            :header-field="col.value"
-            :header-type="'multilinetext'"
-            :header-style="{ autoWrapText: true, textAlign: 'center', textBaseline: 'middle' }"
-            :header-action="'check'"
-            @changed-header-value="onChangeHeaderValue"
-          >
-            {{col.text}}
-          </c-grid-header>
-        </c-grid-layout-row>
-        <c-grid-layout-row>
-          <c-grid-header
-            v-for="col of columns"
-            :key="col.value"
-            :width="col.width ? col.width : undefined"
-            :header-field="col.value"
-            :header-style="{ ...{ textAlign: 'center', textBaseline: 'middle' }, ...{ font: col.checkmarkFont } }"
-            :header-action="'check'"
-            @changed-header-value="onChangeHeaderValue"
-          >
-            {{col.checkmark}}
-          </c-grid-header>
-        </c-grid-layout-row>
-        <c-grid-layout-row>
-          <c-grid-header
-            v-for="col of columns"
-            :key="col.value"
-            :width="col.width ? col.width : undefined"
-            :header-field="col.value"
-            :header-style="{ textAlign: 'center', textBaseline: 'middle' }"
-            :header-action="'check'"
-            @changed-header-value="onChangeHeaderValue"
-          >
-            {{data.filter(control => control[col.value]).length.toString()}}
-          </c-grid-header>
-        </c-grid-layout-row>
-      </template>
-      <template slot="layout-body">
-        <c-grid-layout-row>
-          <c-grid-column
-            v-for="col of columns"
-            :key="col.value"
-            :field="col.field"
-            :column-type="col.type"
-            :column-style="{ textAlign: col.align, textBaseline: 'middle' }"
-          />
-        </c-grid-layout-row>
-      </template>
-    </c-grid>
   </div>
 </template>
 
@@ -250,20 +261,11 @@ export default {
 </script>
 
 <style lang='scss'>
-body {
-  background: white;
-  height: 100%;
+.wrapper {
   width: 100%;
-  margin: 0;
 
-  .wrapper {
-    width: 100%;
-    height: 98vh;
-
-    .table {
-      height: 90%;
-      color: white;
-    }
+  .container {
+    padding: 0;
   }
 }
 </style>
