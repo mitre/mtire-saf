@@ -22,7 +22,7 @@ module.exports = {
     },
   },
   productionSourceMap: false,
-  transpileDependencies: ["vuetify, dashify"],
+  transpileDependencies: ["vuetify, dashify", "register-service-worker", "vue-papa-parse", "vue-tabulator"],
   //  publicPath: process.env.NODE_ENV === 'production'
   //    ? '/mitre-saf/'
   //    : '/'
