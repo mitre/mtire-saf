@@ -67,73 +67,213 @@
         </v-col>
       </v-row>
       <v-row>
-        <v-sheet :width="'100%'" :height="'70vh'">
-          <c-grid
-            ref="grid"
-            class="ma-0"
-            :data="data"
-            :frozen-col-count="2"
-            :theme="this.$vuetify.theme.dark ? darkTheme : lightTheme"
-            :underlay-background-color="this.$vuetify.theme.dark ? 'black' : 'white'"
-            :headerRowHeight="[70, 25, 20]"
-            :defaultRowHeight="20"
-            :defaultColWidth="130"
-          >
-            <template slot="layout-header">
-              <c-grid-layout-row>
-                <c-grid-header
-                  v-for="col of columns"
-                  :key="col.value"
-                  :width="col.width ? col.width : undefined"
-                  :header-field="col.value"
-                  :header-type="'multilinetext'"
-                  :header-style="{ autoWrapText: true, textAlign: 'center', textBaseline: 'middle' }"
-                  :header-action="'check'"
-                  @changed-header-value="onChangeHeaderValue"
+        <v-col>
+          <v-sheet :width="'100%'" :height="'70vh'">
+            <c-grid
+              ref="grid"
+              class="ma-0"
+              :data="data"
+              :frozen-col-count="2"
+              :theme="this.$vuetify.theme.dark ? darkTheme : lightTheme"
+              :underlay-background-color="this.$vuetify.theme.dark ? 'black' : 'white'"
+              :headerRowHeight="[70, 25, 20]"
+              :defaultRowHeight="20"
+              :defaultColWidth="130"
+            >
+              <template slot="layout-header">
+                <c-grid-layout-row>
+                  <c-grid-header
+                    v-for="col of columns"
+                    :key="col.value"
+                    :width="col.width ? col.width : undefined"
+                    :header-field="col.value"
+                    :header-type="'multilinetext'"
+                    :header-style="{ autoWrapText: true, textAlign: 'center', textBaseline: 'middle' }"
+                    :header-action="'check'"
+                    @changed-header-value="onChangeHeaderValue"
+                  >
+                    {{col.text}}
+                  </c-grid-header>
+                </c-grid-layout-row>
+                <c-grid-layout-row>
+                  <c-grid-header
+                    v-for="col of columns"
+                    :key="col.value"
+                    :width="col.width ? col.width : undefined"
+                    :header-field="col.value"
+                    :header-style="{ ...{ textAlign: 'center', textBaseline: 'middle' }, ...{ font: col.checkmarkFont } }"
+                    :header-action="'check'"
+                    @changed-header-value="onChangeHeaderValue"
+                  >
+                    {{col.checkmark}}
+                  </c-grid-header>
+                </c-grid-layout-row>
+                <c-grid-layout-row>
+                  <c-grid-header
+                    v-for="col of columns"
+                    :key="col.value"
+                    :width="col.width ? col.width : undefined"
+                    :header-field="col.value"
+                    :header-style="{ textAlign: 'center', textBaseline: 'middle' }"
+                    :header-action="'check'"
+                    @changed-header-value="onChangeHeaderValue"
+                  >
+                    {{data.filter(control => control[col.value]).length.toString()}}
+                  </c-grid-header>
+                </c-grid-layout-row>
+              </template>
+              <template slot="layout-body">
+                <c-grid-layout-row>
+                  <c-grid-column
+                    v-for="col of columns"
+                    :key="col.value"
+                    :field="col.field"
+                    :column-type="col.type"
+                    :column-style="{ textAlign: col.align, textBaseline: 'middle' }"
+                  />
+                </c-grid-layout-row>
+              </template>
+            </c-grid>
+          </v-sheet>
+        </v-col>
+      </v-row>
+      <v-row>
+        <v-col>
+          <v-card>
+            <v-row
+              dense
+            >
+              <v-col>
+                <v-card
+                  class="d-flex justify-center"
+                  dense
+                  tile
                 >
-                  {{col.text}}
-                </c-grid-header>
-              </c-grid-layout-row>
-              <c-grid-layout-row>
-                <c-grid-header
-                  v-for="col of columns"
-                  :key="col.value"
-                  :width="col.width ? col.width : undefined"
-                  :header-field="col.value"
-                  :header-style="{ ...{ textAlign: 'center', textBaseline: 'middle' }, ...{ font: col.checkmarkFont } }"
-                  :header-action="'check'"
-                  @changed-header-value="onChangeHeaderValue"
+                  Legend
+                </v-card>
+              </v-col>
+            </v-row>
+            <v-row
+              dense
+            >
+              <v-col
+                cols="12"
+                sm="6"
+              >
+                <v-card
+                  :elevation="0"
+                  tile
                 >
-                  {{col.checkmark}}
-                </c-grid-header>
-              </c-grid-layout-row>
-              <c-grid-layout-row>
-                <c-grid-header
-                  v-for="col of columns"
-                  :key="col.value"
-                  :width="col.width ? col.width : undefined"
-                  :header-field="col.value"
-                  :header-style="{ textAlign: 'center', textBaseline: 'middle' }"
-                  :header-action="'check'"
-                  @changed-header-value="onChangeHeaderValue"
+                  <v-list-item
+                    dense
+                    two-line
+                  >
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        InSpec
+                      </v-list-item-title>
+                      <v-list-item-subtitle>
+                        Chef InSpec: profiles for assessing configuration settings, vulnerabilities, and least functionality
+                      </v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-card>
+              </v-col>
+              <v-col
+                cols="12"
+                sm="6"
+              >
+                <v-card
+                  :elevation="0"
+                  tile
                 >
-                  {{data.filter(control => control[col.value]).length.toString()}}
-                </c-grid-header>
-              </c-grid-layout-row>
-            </template>
-            <template slot="layout-body">
-              <c-grid-layout-row>
-                <c-grid-column
-                  v-for="col of columns"
-                  :key="col.value"
-                  :field="col.field"
-                  :column-type="col.type"
-                  :column-style="{ textAlign: col.align, textBaseline: 'middle' }"
-                />
-              </c-grid-layout-row>
-            </template>
-          </c-grid>
-        </v-sheet>
+                  <v-list-item
+                    dense
+                    two-line
+                  >
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        SonarQ
+                      </v-list-item-title>
+                      <v-list-item-subtitle>
+                        SonarQube: open-source static code security analysis tool
+                      </v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-card>
+              </v-col>
+              <v-col
+                cols="12"
+                sm="6"
+              >
+                <v-card
+                  :elevation="0"
+                  tile
+                >
+                  <v-list-item
+                    dense
+                    two-line
+                  >
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        Fortify
+                      </v-list-item-title>
+                      <v-list-item-subtitle>
+                        HP Fortify: commercial static code security analysis tool
+                      </v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-card>
+              </v-col>
+              <v-col
+                cols="12"
+                sm="6"
+              >
+                <v-card
+                  :elevation="0"
+                  tile
+                >
+                  <v-list-item
+                    dense
+                    two-line
+                  >
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        ZAP
+                      </v-list-item-title>
+                      <v-list-item-subtitle>
+                        OWASP ZAP: open-source dynamic application security analysis tool
+                      </v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-card>
+              </v-col>
+              <v-col
+                cols="12"
+                sm="6"
+              >
+                <v-card
+                  :elevation="0"
+                  tile
+                >
+                  <v-list-item
+                    dense
+                    two-line
+                  >
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        Burp
+                      </v-list-item-title>
+                      <v-list-item-subtitle>
+                        Burp Suite Pro: commercial dynamic application security analysis tool
+                      </v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-card>
+              </v-col>
+            </v-row>
+          </v-card>
+        </v-col>
       </v-row>
     </v-container>
   </div>
@@ -266,6 +406,10 @@ export default {
 
   .container {
     padding: 0;
+
+    .v-list-item__subtitle {
+      white-space: normal;
+    }
   }
 }
 </style>
