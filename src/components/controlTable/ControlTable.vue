@@ -1,24 +1,3 @@
-/*
-  phase 0 mvp:
-  vuex - dynamic data, totals underneath column, columns
-  click on header - as part of filter for true/false
-  filters - control names, header names
-  default filters
-  styling
-  */
-
-/*
-  ~~text search on first column
-  ~~columns = select
-  ~~click column = on/off/all
-  cosmetics:
-    zebra stripe for shading for columns
-    wrapping for column headers (no ...s)
-    pinstriping/borders on all cells
-    swap out the true for inspec/list of 3 things
-    ~~checkbox and blank for all
-    light + dark mode
-*/
 <template>
   <div class="wrapper">
     <v-container
