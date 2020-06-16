@@ -173,7 +173,7 @@
                         InSpec
                       </v-list-item-title>
                       <v-list-item-subtitle>
-                        Chef InSpec: profiles for assessing configuration settings, vulnerabilities, and least functionality
+                        Chef InSpec (and our InSpec profiles): tool for assessing configuration settings, vulnerabilities, and least functionality
                       </v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
