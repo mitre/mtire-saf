@@ -267,7 +267,7 @@
                         Column Selector Options
                       </v-list-item-title>
                       <v-list-item-subtitle>
-                        <span class="checkbox">☒</span>: all cells, <span class="checkbox">☑</span>: filled cells, <span class="checkbox">☐</span>: blank cells
+                        <span class="checkbox">☒</span>: show all cells, <span class="checkbox">☑</span>: show filled cells, <span class="checkbox">☐</span>: show blank cells
                       </v-list-item-subtitle>
                     </v-list-item-content>
                   </v-list-item>
