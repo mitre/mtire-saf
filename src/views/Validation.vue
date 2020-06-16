@@ -18,6 +18,10 @@
               profiles, please see our
               <router-link to="training">training material</router-link>.
             </p>
+            <p class="ma-0">
+              All assessment tests under SAF are associated with NIST SP 800-53 Security Controls. Explore these associations in this
+              <router-link to="control-table">Control Assessment Range table</router-link>!
+            </p>
           </div>
         </v-col>
       </v-row>

@@ -1,6 +1,17 @@
 {
   "faqs": [
     {
+      "question": "How many NIST SP 800-53 Security Controls are assessed under the SAF?",
+      "answer": "Currently, about 162 NIST SP 800-53 security controls are assessed under this framework. Note that assessment coverage varies based on the component type. For more information, explore this Control Assessment Range table!",
+      "links": [
+        {
+          "name": "Control Assessment Range table",
+          "router_link": "/control-table"
+        }
+      ],
+      "tag" : "faq-security-control-table"
+    },
+    {
       "question": "How are NIST SP 800-53 Security Control associations included in the assessment tests used in this framework?",
       "answer": "NIST SP 800-53 associations are included in all InSpec profiles and output from other security tools processed through Heimdall_tools. See our presentation to learn more!",
       "links": [
