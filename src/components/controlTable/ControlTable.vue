@@ -250,6 +250,29 @@
                   </v-list-item>
                 </v-card>
               </v-col>
+              <v-col
+                cols="12"
+                sm="6"
+              >
+                <v-card
+                  :elevation="0"
+                  tile
+                >
+                  <v-list-item
+                    dense
+                    two-line
+                  >
+                    <v-list-item-content>
+                      <v-list-item-title>
+                        Column Selector Options
+                      </v-list-item-title>
+                      <v-list-item-subtitle>
+                        <span class="checkbox">☒</span>: all cells, <span class="checkbox">☑</span>: filled cells, <span class="checkbox">☐</span>: blank cells
+                      </v-list-item-subtitle>
+                    </v-list-item-content>
+                  </v-list-item>
+                </v-card>
+              </v-col>
             </v-row>
           </v-card>
         </v-col>
@@ -388,6 +411,12 @@ export default {
 
     .v-list-item__subtitle {
       white-space: normal;
+    }
+
+    .checkbox {
+      font-size: 30px;
+      vertical-align: sub;
+      letter-spacing: -3px;
     }
   }
 }
