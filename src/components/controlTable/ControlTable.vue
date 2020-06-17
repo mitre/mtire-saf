@@ -119,7 +119,7 @@
                 :key="index"
                 class="pa-0"
               >
-                <div class="px-2 ma-1 google-font" :style="'border-left:1px solid ' + $vuetify.theme.themes.dark.primary">
+                <div class="px-2 ma-1 google-font" :style="'border-left:1px solid #35495e'">
                   <p class="ma-0" style="font-size:0.9rem">{{entry.name}}</p>
                   <span style="font-size:0.8rem" v-html="entry.desc" />
                 </div>
@@ -268,10 +268,6 @@ export default {
 
   .container {
     padding: 0;
-
-    .v-list-item__subtitle {
-      white-space: normal;
-    }
 
     .checkbox {
       font-size: 30px;
