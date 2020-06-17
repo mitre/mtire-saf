@@ -182,7 +182,7 @@ export default {
         defaultBgColor({ row, col, grid }) {
           // change the color of the checked row.
           if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
-            return "#008080";
+            return "#00804d";
           } else if (row % 2) {
             return "#d6dade";
           } else {
@@ -215,7 +215,7 @@ export default {
         defaultBgColor({ row, col, grid }) {
           // change the color of the checked row.
           if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
-            return "#008080";
+            return "#00804d";
           } else if (row % 2) {
             return "#253341";
           } else {
