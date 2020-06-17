@@ -326,57 +326,64 @@ export default {
       const that = this;
       return materialDesignTheme.extends({
         color: "black",
-        defaultBgColor({ row }) {
+        defaultBgColor({ row, col, grid }) {
           // change the color of the checked row.
-          if (row % 2) {
-            return "#EFEFEF";
+          if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
+            return "#008080";
+          } else if (row % 2) {
+            return "#d6dade";
           } else {
-            return "#BDBDBD";
+            return "#aeb6be";
           }
         },
-        borderColor: "#35495e",
-        frozenRowsColor: "black",
-        frozenRowsBgColor({row, col}) {
-          if (row === 1 && col !== 0 && that.columns[col].checkmark !== "☒") {
+        borderColor: "#2f4154",
+        frozenRowsColor: "white",
+        frozenRowsBgColor({col}) {
+          if (col !== 0 && that.columns[col].checkmark !== "☒") {
             return "#a88132";
           }
-          return "#BDBDBD";
+          return "#35495e";
         },
-        frozenRowsBorderColor: "#35495e",
-        selectionBgColor: "#868686",
-        highlightBgColor: "#868686",
+        frozenRowsBorderColor: "#2f4154",
+        selectionBgColor: "#495b6e",
+        selectionBorderColor: "#0f0",
+        highlightBgColor: "#495b6e",
+        highlightBorderColor: "#495b6e",
+        checkbox: {
+          checkBgColor: "#35495e",
+          borderColor: "#35495e"
+        },
       });
     },
     darkTheme() {
       const that = this;
       return materialDesignTheme.extends({
         color: "white",
-        defaultBgColor({row}) {
+        defaultBgColor({ row, col, grid }) {
           // change the color of the checked row.
-          if (row % 2) {
-            return "#424242";
+          if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
+            return "#008080";
+          } else if (row % 2) {
+            return "#253341";
           } else {
-            return "#212121";
+            return "#1a242f";
           }
         },
-        borderColor: "#35495e",
+        borderColor: "#2f4154",
         frozenRowsColor: "white",
-        frozenRowsBgColor({row, col}) {
-          if (row === 1 && col !== 0 && that.columns[col].checkmark !== "☒") {
+        frozenRowsBgColor({col}) {
+          if (col !== 0 && that.columns[col].checkmark !== "☒") {
             return "#a88132";
           }
-          return "#212121";
+          return "#35495e";
         },
-        frozenRowsBorderColor: "#35495e",
-        selectionBgColor: "#868686",
-        highlightBgColor: "#868686",
+        frozenRowsBorderColor: "#2f4154",
+        selectionBgColor: "#495b6e",
+        highlightBgColor: "#495b6e",
+        highlightBorderColor: "#495b6e",
         checkbox: {
           checkBgColor: "#35495e",
           borderColor: "#35495e"
-        },
-        button: {
-          color: "#FFF",
-          bgColor: "#2c3e50"
         },
       });
     },
