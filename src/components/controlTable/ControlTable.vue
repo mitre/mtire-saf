@@ -119,23 +119,10 @@
                 :key="index"
                 class="pa-0"
               >
-                <div class="px-2 ma-1 google-font" style="border-left:1px solid blue">
+                <div class="px-2 ma-1 google-font" :style="'border-left:1px solid ' + $vuetify.theme.themes.dark.primary">
                   <p class="ma-0" style="font-size:0.9rem">{{entry.name}}</p>
                   <span style="font-size:0.8rem" v-html="entry.desc" />
                 </div>
-                <!-- <v-card :elevation="0" tile>
-                  <v-list-item dense two-line class="py-0">
-                    <v-list-item-content
-                      class="pa-0"
-                      :style="{ 'align-items' : 'start'}"
-                    >
-                      <v-list-item-title>{{entry.name}}</v-list-item-title>
-                      <v-list-item-subtitle class="pa-0 pt-2">
-                        <span v-html="entry.desc" />
-                      </v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card>-->
               </v-col>
             </v-row>
           </v-card>
