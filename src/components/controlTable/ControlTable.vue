@@ -119,7 +119,7 @@
                 :key="index"
                 class="pa-0"
               >
-                <div class="px-2 ma-1 google-font" :style="'border-left:1px solid #35495e'">
+                <div class="px-2 ma-1 google-font" :style="'border-left:1px solid #a88132'">
                   <p class="ma-0" style="font-size:0.9rem">{{entry.name}}</p>
                   <span style="font-size:0.8rem" v-html="entry.desc" />
                 </div>
