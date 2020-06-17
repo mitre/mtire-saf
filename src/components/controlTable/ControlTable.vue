@@ -1,13 +1,8 @@
 <template>
   <div class="wrapper">
-    <v-container
-      class="d-flex flex-wrap flex-column"
-    >
+    <v-container class="d-flex flex-wrap flex-column">
       <v-row>
-        <v-col
-          cols="12"
-          sm="6"
-        >
+        <v-col cols="12" sm="6">
           <v-combobox
             v-model="controlFilters"
             clearable
@@ -24,10 +19,7 @@
             small-chips
           />
         </v-col>
-        <v-col
-          cols="12"
-          sm="6"
-        >
+        <v-col cols="12" sm="6">
           <v-combobox
             v-model="profileFilters"
             clearable
@@ -70,9 +62,7 @@
                     :header-style="{ autoWrapText: true, textAlign: 'center', textBaseline: 'middle' }"
                     :header-action="'check'"
                     @changed-header-value="onChangeHeaderValue"
-                  >
-                    {{col.text}}
-                  </c-grid-header>
+                  >{{col.text}}</c-grid-header>
                 </c-grid-layout-row>
                 <c-grid-layout-row>
                   <c-grid-header
@@ -83,9 +73,7 @@
                     :header-style="{ ...{ textAlign: 'center', textBaseline: 'middle' }, ...{ font: col.checkmarkFont } }"
                     :header-action="'check'"
                     @changed-header-value="onChangeHeaderValue"
-                  >
-                    {{col.checkmark}}
-                  </c-grid-header>
+                  >{{col.checkmark}}</c-grid-header>
                 </c-grid-layout-row>
                 <c-grid-layout-row>
                   <c-grid-header
@@ -96,9 +84,7 @@
                     :header-style="{ textAlign: 'center', textBaseline: 'middle' }"
                     :header-action="'check'"
                     @changed-header-value="onChangeHeaderValue"
-                  >
-                    {{data.filter(control => control[col.value]).length.toString()}}
-                  </c-grid-header>
+                  >{{data.filter(control => control[col.value]).length.toString()}}</c-grid-header>
                 </c-grid-layout-row>
               </template>
               <template slot="layout-body">
@@ -118,160 +104,25 @@
       </v-row>
       <v-row>
         <v-col>
-          <v-card>
-            <v-row
-              dense
-            >
+          <v-card flat outlined class="px-2">
+            <v-row dense>
               <v-col>
-                <v-card
-                  class="d-flex justify-center"
-                  dense
-                  tile
-                >
-                  Legend
-                </v-card>
+                <v-card class="d-flex justify-center" dense flat tile>Legend</v-card>
+                 <v-divider class="" />
               </v-col>
             </v-row>
-            <v-row
-              dense
-            >
+            <v-row dense>
               <v-col
                 cols="12"
                 sm="6"
+                v-for="(entry, index) of controlTable.legend"
+                :key="index"
+                class="pa-0"
               >
-                <v-card
-                  :elevation="0"
-                  tile
-                >
-                  <v-list-item
-                    dense
-                    two-line
-                  >
-                    <v-list-item-content>
-                      <v-list-item-title>
-                        InSpec
-                      </v-list-item-title>
-                      <v-list-item-subtitle>
-                        Chef InSpec (and our InSpec profiles): tool for assessing configuration settings, vulnerabilities, and least functionality
-                      </v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card>
-              </v-col>
-              <v-col
-                cols="12"
-                sm="6"
-              >
-                <v-card
-                  :elevation="0"
-                  tile
-                >
-                  <v-list-item
-                    dense
-                    two-line
-                  >
-                    <v-list-item-content>
-                      <v-list-item-title>
-                        SonarQ
-                      </v-list-item-title>
-                      <v-list-item-subtitle>
-                        SonarQube: open-source static code security analysis tool
-                      </v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card>
-              </v-col>
-              <v-col
-                cols="12"
-                sm="6"
-              >
-                <v-card
-                  :elevation="0"
-                  tile
-                >
-                  <v-list-item
-                    dense
-                    two-line
-                  >
-                    <v-list-item-content>
-                      <v-list-item-title>
-                        Fortify
-                      </v-list-item-title>
-                      <v-list-item-subtitle>
-                        HP Fortify: commercial static code security analysis tool
-                      </v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card>
-              </v-col>
-              <v-col
-                cols="12"
-                sm="6"
-              >
-                <v-card
-                  :elevation="0"
-                  tile
-                >
-                  <v-list-item
-                    dense
-                    two-line
-                  >
-                    <v-list-item-content>
-                      <v-list-item-title>
-                        ZAP
-                      </v-list-item-title>
-                      <v-list-item-subtitle>
-                        OWASP ZAP: open-source dynamic application security analysis tool
-                      </v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card>
-              </v-col>
-              <v-col
-                cols="12"
-                sm="6"
-              >
-                <v-card
-                  :elevation="0"
-                  tile
-                >
-                  <v-list-item
-                    dense
-                    two-line
-                  >
-                    <v-list-item-content>
-                      <v-list-item-title>
-                        Burp
-                      </v-list-item-title>
-                      <v-list-item-subtitle>
-                        Burp Suite Pro: commercial dynamic application security analysis tool
-                      </v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card>
-              </v-col>
-              <v-col
-                cols="12"
-                sm="6"
-              >
-                <v-card
-                  :elevation="0"
-                  tile
-                >
-                  <v-list-item
-                    dense
-                    two-line
-                  >
-                    <v-list-item-content>
-                      <v-list-item-title>
-                        Column Selector Options
-                      </v-list-item-title>
-                      <v-list-item-subtitle>
-                        <span class="checkbox">☒</span>: show all cells, <span class="checkbox">☑</span>: show filled cells, <span class="checkbox">☐</span>: show blank cells
-                      </v-list-item-subtitle>
-                    </v-list-item-content>
-                  </v-list-item>
-                </v-card>
+                <div class="px-2 ma-1 google-font" :style="'border-left:1px solid ' + $vuetify.theme.themes.dark.primary">
+                  <p class="ma-0" style="font-size:0.9rem">{{entry.name}}</p>
+                  <span style="font-size:0.8rem" v-html="entry.desc" />
+                </div>
               </v-col>
             </v-row>
           </v-card>
@@ -284,6 +135,7 @@
 <script>
 import { createNamespacedHelpers } from "vuex";
 import * as cGridAll from "vue-cheetah-grid";
+import controlTable from "@/assets/data/controltable.json";
 
 const { mapGetters, mapMutations } = createNamespacedHelpers("controlTable");
 
@@ -291,10 +143,11 @@ const materialDesignTheme = cGridAll.cheetahGrid.themes.MATERIAL_DESIGN;
 
 export default {
   components: {
-    ...cGridAll,
+    ...cGridAll
   },
   data() {
     return {
+      controlTable: controlTable.controlTable[0]
     };
   },
   computed: {
@@ -386,7 +239,7 @@ export default {
           borderColor: "#35495e"
         },
       });
-    },
+    }
   },
   watch: {},
   methods: {
@@ -423,7 +276,6 @@ export default {
     .checkbox {
       font-size: 30px;
       vertical-align: sub;
-      letter-spacing: -3px;
     }
   }
 }

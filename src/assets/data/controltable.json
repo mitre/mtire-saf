@@ -1,0 +1,32 @@
+{
+    "controlTable" : [
+        {
+            "legend" : [
+                {
+                    "name" : "InSpec",
+                    "desc" : "Chef InSpec (and our InSpec profiles): tool for assessing configuration settings, vulnerabilities, and least functionality"
+                },
+                {
+                    "name" : "SonarQ",
+                    "desc" : "SonarQube: open-source static code security analysis tool"
+                },
+                {
+                    "name" : "Fortify",
+                    "desc" : "HP Fortify: commercial static code security analysis tool"
+                },
+                {
+                    "name" : "ZAP",
+                    "desc" : "OWASP ZAP: open-source dynamic application security analysis tool"
+                },
+                {
+                    "name" : "Burp",
+                    "desc" : "Burp Suite Pro: commercial dynamic application security analysis tool"
+                },
+                {
+                    "name" : "Column Selector Options",
+                    "desc" : "<span class=\"checkbox\">☒</span> show all cells, <span class=\"checkbox\">☑</span> show filled cells, <span class=\"checkbox\">☐</span> show blank cells"
+                }
+            ]
+        }
+    ]
+}
