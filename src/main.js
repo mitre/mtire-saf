@@ -1,4 +1,5 @@
 import 'babel-polyfill';
+import "intersection-observer";
 import Vue from "vue";
 import App from "./App.vue";
 import router from "./router";
@@ -16,6 +17,8 @@ import cssVars from "css-vars-ponyfill";
 cssVars({
   watch: true,
 });
+
+IntersectionObserver.prototype.POLL_INTERVAL = 100; // time in ms
 
 Vue.config.productionTip = false;
 
