@@ -10,7 +10,12 @@ import firebase from "@/firebase";
 import vueDebounce from 'vue-debounce';
 import VueTabulator from "vue-tabulator";
 import VueCsvLoader from "vue-csv-loader";
+import cssVars from "css-vars-ponyfill";
 //import "material-design-icons-iconfont/dist/material-design-icons.css";
+
+cssVars({
+  watch: true,
+});
 
 Vue.config.productionTip = false;
 
