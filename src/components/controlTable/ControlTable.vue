@@ -178,30 +178,34 @@ export default {
     lightTheme() {
       const that = this;
       return materialDesignTheme.extends({
-        color: "black",
+        color({col}) {
+          if (col === 0) {
+            return "black";
+          }
+          return "white";
+        },
         defaultBgColor({ row, col, grid }) {
           // change the color of the checked row.
           if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
-            return "#00804d";
+            return "#4caf50";
           } else if (row % 2) {
-            return "#d6dade";
+            return "#f9f9f9";
           } else {
-            return "#aeb6be";
+            return "#ffffff";
           }
         },
-        borderColor: "#2f4154",
-        frozenRowsColor: "white",
+        borderColor: "#dddddd",
+        frozenRowsColor: "black",
         frozenRowsBgColor({col}) {
           if (col !== 0 && that.columns[col].checkmark !== "☒") {
-            return "#a88132";
+            return "#deaf50";
           }
-          return "#35495e";
+          return "white";
         },
-        frozenRowsBorderColor: "#2f4154",
-        selectionBgColor: "#495b6e",
-        selectionBorderColor: "#0f0",
-        highlightBgColor: "#495b6e",
-        highlightBorderColor: "#495b6e",
+        frozenRowsBorderColor: "#dddddd",
+        selectionBgColor: "#c7c7c7",
+        highlightBgColor: "#c7c7c7",
+        highlightBorderColor: "#c7c7c7",
         checkbox: {
           checkBgColor: "#35495e",
           borderColor: "#35495e"
@@ -215,7 +219,7 @@ export default {
         defaultBgColor({ row, col, grid }) {
           // change the color of the checked row.
           if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
-            return "#00804d";
+            return "#4caf50";
           } else if (row % 2) {
             return "#253341";
           } else {
@@ -241,7 +245,14 @@ export default {
       });
     }
   },
-  watch: {},
+  watch: {
+    /*
+    '$vuetify.theme.dark': function (val) {
+      console.log(val);
+      this.$refs.grid.invalidate();
+    }
+     */
+  },
   methods: {
     ...mapMutations({
       setControlFilters: "setControlFilters",
