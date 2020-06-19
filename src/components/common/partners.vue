@@ -5,11 +5,10 @@
         <p class="google-font mb-1 primary--text" style="font-weight: bold; font-size:200%">
           The SAF Community
         </p>
-        <p
-          class="google-font mt-1 mb-0"
-          style="font-size:120%"
-        >A very big thank you to our community members for their continued partnership.</p>
-        <p class="google-font mt-0 mb-0" style="font-size:120%">
+        <p class="google-font mt-1 mb-0">
+          A very big thank you to our community members for their continued partnership.
+        </p>
+        <p class="google-font mt-0 mb-0">
           If you’re interested in being showcased here, please contact
           <a
             style="text-decoration: none;"
