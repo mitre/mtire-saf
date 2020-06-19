@@ -1,11 +1,12 @@
 <template>
   <v-container fluid>
     <v-row align="center">
-      <!-- <v-col md="3" sm="5">
+      <!--<v-col md="3" sm="5">
         <v-img
           :src="require('@/assets/img/home.svg')"
           :lazy-src="require('@/assets/img/home.svg')"
           width="100%"
+          height="100px"
           style="border-radius:8px"
         >
           <template v-slot:placeholder>
@@ -13,7 +14,7 @@
               <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
             </v-row>
           </template>
-        </v-img> 
+        </v-img>
       </v-col>-->
       <v-col >
         <p class="google-font" style="font-weight: 350;color: #616161;font-size:300%">

@@ -27,7 +27,7 @@
           <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
         </v-col>
         <v-slide-group class="pa-2" show-arrows>
-          <v-col v-for="(item,j) in itemp" :key="j" class>
+          <v-slide-item v-for="(item,j) in itemp" :key="j">
               <!--:color="active ? 'primary' : '#574B75'"         // This was never configured properly - what is "active"? -->
             <v-card
               class="ma-4"
@@ -51,7 +51,7 @@
                 </template>
               </v-tooltip>
             </v-card>
-          </v-col>
+          </v-slide-item>
         </v-slide-group>
       </v-row>
     </v-container>
@@ -69,7 +69,7 @@
           <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
         </v-col>
         <v-slide-group class="pa-2" show-arrows>
-          <v-col v-for="(item,j) in itemp" :key="j" class>
+          <v-slide-item v-for="(item,j) in itemp" :key="j">
               <!--:color="active ? 'primary' : '#574B75'"-->
             <v-card
               class="ma-4"
@@ -92,7 +92,7 @@
                 </template>
               </v-tooltip>
             </v-card>
-          </v-col>
+          </v-slide-item>
         </v-slide-group>
       </v-row>
     </v-container>
