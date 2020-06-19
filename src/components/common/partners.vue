@@ -42,7 +42,6 @@
             >
               <v-img
                 :src="getImgUrl(sponsor.img)"
-                :lazy-src="getImgUrl(sponsor.img)"
                 class="white"
                 height="100"
                 width="200"
@@ -77,7 +76,6 @@
             >
               <v-img
                 :src="getImgUrl(partner.img)"
-                :lazy-src="getImgUrl(partner.img)"
                 class="white fixed-ratio-resize"
                 height="150"
                 width="200"

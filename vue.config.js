@@ -11,6 +11,9 @@ module.exports = {
         skipEmptyLines: true,
       })
       .end();
+    config.plugin('VuetifyLoaderPlugin').tap(args => [{
+      progressiveImages: true
+    }]);
   },
   pwa: {
     name: "MITRE SAF",
