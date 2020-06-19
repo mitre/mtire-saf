@@ -4,7 +4,7 @@
       <v-col cols="12" lg="10" class="pa-0 ma-0">
         <Header>
           <h3 slot="title">Hardening</h3>
-          <p slot="subtitle" class="ma-0 google-font">
+          <p slot="subtitle">
             These open-source community-based hardening baselines help to securely configure common system components. MITRE is helping to provide stewardship over these hardening baselines, hosted here and at other community vendor sites. If you are interested in new hardening baselines, please contact us at
             <a
               :href="mail_link"
