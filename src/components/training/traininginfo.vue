@@ -2,7 +2,7 @@
   <v-container fluid class="pa-0">
     <v-row align="center" justify="center" class="ma-0">
       <v-col class="pa-0">
-        <p class="google-font primary--text mb-2" style="font-size: 1.5rem">
+        <p class="primary--text mb-2" style="font-size: 1.5rem">
           <b>Training Courses Currently Offered</b>
         </p>
       </v-col>
@@ -25,7 +25,7 @@
         </p>
       </v-col>
     </v-row>
-    <v-row align="center" justify="left" class="ma-0">
+    <v-row align="center" justify="start" class="ma-0">
       <v-col
         cols="12"
         lg="10"
@@ -50,62 +50,63 @@
         </p>
       </v-col>
     </v-row>
-    <v-row :class="color_mode" class="ma-0 mb-3" style="height: 11rem">
-      <v-slide-group show-arrows class="py-3">
-        <v-slide-item
-          v-for="(item, i) in trainingData.pastTraining.introTraining"
-          :key="'past'+i"
-          class="mx-5"
-        >
-          <v-dialog v-model="dialog" :dialogData="item" width="700">
-            <template v-slot:activator="{ on }">
-              <div
-                v-on="on"
-                style="cursor: pointer; width: 275px; height: 150px; white-space: initial;"
-                :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'lightModeCard'"
-                class="pa-2"
-                @click="passItemData(item)"
-              >
-                <p class="mt-1 mb-0 break-word" style="font-size:90%">{{ item.date }}</p>
-                <p
-                  class="ma-0 mt-0 break-word"
-                  style="font-size:120%;"
-                >{{ item.name }}</p>
-                <p class="mb-0 mt-2 primary--text">See More</p>
-              </div>
-            </template>
+    <v-row :class="color_mode" class="ma-0 mb-3" style="height: 10rem">
+      <v-col class="pa-0">
+        <v-slide-group show-arrows class="py-3">
+          <v-slide-item
+            v-for="(item, i) in trainingData.pastTraining.introTraining"
+            :key="i"
+          >
+            <v-dialog v-model="dialog" :dialogData="item" width="33rem">
+              <template v-slot:activator="{ on }">
+                <v-card
+                  width="15rem"
+                  height="8rem"
+                  style="white-space: initial;"
+                  :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'lightModeCard'"
+                  class="pa-2 mx-2"
+                >
+                  <p class="ma-0 break-word" style="font-size: 0.9rem">{{ item.date }}</p>
+                  <p
+                    class="ma-0 mt-0 break-word"
+                    style="font-size: 1.2rem"
+                  >{{ item.name }}</p>
+                  <p class="mb-0 mt-2 primary--text" style="cursor: pointer" v-on="on" @click="passItemData(item)">See More</p>
+                </v-card>
+              </template>
 
-            <v-card color v-show="dialog" :data="dialogData">
-              <v-card-title
-                class="pa-5 break-word"
-                style="background-position:right bottom;"
-              >{{dialogData.name}}</v-card-title>
-
-              <v-card-text class="pa-5">
-                <p class="mt-3 mb-0 break-word" style="font-size:110%">
-                  <b>Name:</b>
-                  {{dialogData.name}}
-                </p>
-                <p class="mt-1 mb-0" style="font-size:110%">
-                  <b>Date:</b>
-                  {{dialogData.date}}
-                </p>
-                <v-spacer class="ma-2" />
-                <a
-                  v-if="dialogData.link != ''"
-                  :href="dialogData.link"
-                  target="_blank"
-                >Link to Recording</a>
-                <p v-else>
-                  <b>Link to Recording -</b>
-                  <span style="color:red">Video still being edited! Please check back later.</span>
-                </p>
-              </v-card-text>
-              <v-divider></v-divider>
-            </v-card>
-          </v-dialog>
-        </v-slide-item>
-      </v-slide-group>
+              <v-card v-show="dialog" :data="dialogData" class="pa-5">
+                <v-card-title class="pa-0 break-word">{{dialogData.name}}</v-card-title>
+                <v-card-text class="pa-0">
+                  <p class="mt-3 mb-0 break-word" style="font-size:1.1rem">
+                    <b>Name:</b>
+                    {{dialogData.name}}
+                  </p>
+                  <p class="mt-1 mb-0" style="font-size:1.1rem">
+                    <b>Date:</b>
+                    {{dialogData.date}}
+                  </p>
+                  <a
+                    v-if="dialogData.link != ''"
+                    :href="dialogData.link"
+                    target="_blank"
+                    class="mt-2"
+                  >
+                    Link to Recording
+                  </a>
+                  <p
+                    v-else
+                    class="mt-2"
+                  >
+                    <b>Link to Recording: </b>
+                    <span style="color: var(--v-error-base)">Video still being edited! Please check back later.</span>
+                  </p>
+                </v-card-text>
+              </v-card>
+            </v-dialog>
+          </v-slide-item>
+        </v-slide-group>
+      </v-col>
     </v-row>
   </v-container>
 </template>
