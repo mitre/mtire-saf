@@ -34,7 +34,6 @@ import profileTemplateCompact from "@/components/profiles/profileTemplateCompact
 import Header from "@/components/core/Header.vue";
 import baselines from "@/assets/data/baselines.json";
 import db from "@/assets/data/communityData.json";
-import { mapMutations } from "vuex";
 
 export default {
   components: {
@@ -45,7 +44,6 @@ export default {
     return {
       baselines: baselines,
       db: db,
-      isCompact: false,
       categoryOrder: [
         "Cloud Service Providers",
         "Virtual Platforms",
@@ -60,12 +58,6 @@ export default {
     mail_link() {
       return "mailto:" + db.communityEmail;
     },
-    showCompact() {
-      return this.$store.state.isCompact;
-    }
   },
-  methods: {
-    ...mapMutations(["toggleCompact"])
-  }
 };
 </script>
