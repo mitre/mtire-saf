@@ -21,7 +21,7 @@
     </v-row>
 
     <v-row :class="color_mode" class="mx-1 mb-5 flex-column" style="height: 17rem; min-height: 275px">
-      <v-col cols="2" class="pb-0">
+      <v-col class="pb-0" style="flex-grow: 1">
         <p
           class="google-font mb-0"
           style="font-size:1.3rem"
@@ -29,7 +29,7 @@
           Sponsors
         </p>
       </v-col>
-      <v-col class="py-0">
+      <v-col class="py-0" style="flex-grow: 5">
         <v-slide-group show-arrows>
           <v-slide-item v-for="(sponsor, i) in sponsors" :key="i">
             <v-card
@@ -54,8 +54,8 @@
       </v-col>
     </v-row>
 
-    <v-row :class="color_mode" class="mx-1 mt-5 flex-column" style="height: 17rem; min-height: 275px">
-      <v-col cols="2" class="pb-0">
+    <v-row :class="color_mode" class="mx-1 mt-5 flex-column" style="height: 15rem; min-height: 200px">
+      <v-col class="pb-0" style="flex-grow: 1">
         <p
           class="google-font mb-0"
           style="font-size:1.3rem"
@@ -63,7 +63,7 @@
           Commercial Partners
         </p>
       </v-col>
-      <v-col class="py-0">
+      <v-col class="py-0" style="flex-grow: 5">
         <v-slide-group show-arrows>
           <v-slide-item v-for="(partner, i) in partners" :key="i">
             <v-card
