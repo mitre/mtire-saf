@@ -17,7 +17,7 @@
         </Header>
       </v-col>
     </v-row>
-    <v-row justify="center" align="center" class="mx-0">
+    <v-row justify="center" align="center" class="mx-0 pb-5">
       <v-col cols="12" lg="10" class="pa-0">
         <faqInfo />
       </v-col>
