@@ -1,5 +1,5 @@
 module.exports = {
-  chainWebpack: (config) => {
+  chainWebpack: config => {
     config.module
       .rule("csv")
       .test(/\.csv$/)
