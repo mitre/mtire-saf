@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="pa-0 ma-0">
-    <v-row justify="center" align="center">
+    <v-row justify="center" align="center" class="mx-0">
       <v-col cols="12" lg="10" class="pa-0">
         <Header>
           <h3 slot="title">Our Training</h3>
@@ -17,7 +17,7 @@
         </Header>
       </v-col>
     </v-row>
-    <v-row justify="center" align="center">
+    <v-row justify="center" align="center" class="mx-0">
       <v-col cols="12" lg="10" class="pa-0">
         <pastTraining />
       </v-col>
