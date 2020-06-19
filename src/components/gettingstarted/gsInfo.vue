@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0">
+  <div class="pa-0">
     <div v-for="item in resources.items" :key="item.name">
       <p class="mb-2 wrap-list-text">
         <b>{{item.name}}</b>
@@ -19,7 +19,7 @@
         </span>
       </p>
     </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
