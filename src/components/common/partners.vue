@@ -2,13 +2,13 @@
   <v-container fluid>
     <v-row align="center" justify="center" class="mb-0">
       <v-col cols="12" class="mb-0">
-        <p class="google-font mb-1 primary--text" style="font-weight: bold; font-size:200%">
+        <p class="mb-1 primary--text" style="font-weight: bold; font-size:200%">
           The SAF Community
         </p>
-        <p class="google-font mt-1 mb-0">
+        <p class="mt-1 mb-0">
           A very big thank you to our community members for their continued partnership.
         </p>
-        <p class="google-font mt-0 mb-0">
+        <p class="mt-0 mb-0">
           If you’re interested in being showcased here, please contact
           <a
             style="text-decoration: none;"
@@ -22,7 +22,7 @@
     <v-row :class="color_mode" class="mx-1 mb-5 flex-column" style="height: 17rem; min-height: 275px">
       <v-col class="pb-0" style="flex-grow: 1">
         <p
-          class="google-font mb-0"
+          class="mb-0"
           style="font-size:1.3rem"
         >
           Sponsors
@@ -46,7 +46,7 @@
                 width="200"
                 contain
               ></v-img>
-              <v-card-subtitle class="google-font mb-0">{{sponsor.name}}</v-card-subtitle>
+              <v-card-subtitle class="mb-0">{{sponsor.name}}</v-card-subtitle>
             </v-card>
           </v-slide-item>
         </v-slide-group>
@@ -56,7 +56,7 @@
     <v-row :class="color_mode" class="mx-1 mt-5 flex-column" style="height: 15rem; min-height: 200px">
       <v-col class="pb-0" style="flex-grow: 1">
         <p
-          class="google-font mb-0"
+          class="mb-0"
           style="font-size:1.3rem"
         >
           Commercial Partners
