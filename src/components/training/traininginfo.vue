@@ -53,10 +53,7 @@
     <v-row :class="color_mode" class="ma-0 mb-3" style="height: 10rem">
       <v-col class="pa-0">
         <v-slide-group show-arrows class="py-3">
-          <v-slide-item
-            v-for="(item, i) in trainingData.pastTraining.introTraining"
-            :key="i"
-          >
+          <v-slide-item v-for="(item, i) in pastTrainings" :key="i">
             <v-dialog v-model="dialog" :dialogData="item" width="33rem">
               <template v-slot:activator="{ on }">
                 <v-card
@@ -132,6 +129,9 @@ export default {
     color_mode() {
       if (this.$vuetify.theme.dark) return "darkModeContainer";
       return "lightModeContainer";
+    },
+    pastTrainings() {
+      return this.trainingData.pastTraining.introTraining.concat(this.trainingData.pastTraining.advTraining);
     },
   },
   methods: {
