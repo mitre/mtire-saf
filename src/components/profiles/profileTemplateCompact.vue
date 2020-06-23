@@ -1,6 +1,6 @@
 <template>
   <v-row justify="center">
-    <v-col v-for="cat in categoryOrder" :key="cat" outlined class="ma-0 pa-1 d-flex">
+    <v-col v-for="cat in categoryOrder" :key="cat" outlined class="ma-0 pa-1 d-flex" style="max-width: 25rem">
       <v-card class="ma-0 pa-1" outlined :class="$vuetify.theme.dark ? 'grey darken-4' : 'grey lighten-3'" style="flex-grow: 1">
         <h2
           class="font-weight-bold justify-center text-center google-font ma-1"
