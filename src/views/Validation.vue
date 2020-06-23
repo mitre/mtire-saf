@@ -23,7 +23,7 @@
     </v-row>
     <v-row justify="center" align="center" class="mx-0">
       <v-col cols="12" lg="10">
-        <profileTemplateCompact :profiles="baselines.baselines" :categoryOrder="categoryOrder"/>
+        <profileTemplateCompact :profiles="baselines.baselines" :categoryOrder="categoryOrder" :maxWidth="25"/>
       </v-col>
     </v-row>
   </v-container>

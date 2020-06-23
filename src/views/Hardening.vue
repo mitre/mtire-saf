@@ -18,7 +18,7 @@
     </v-row>
     <v-row justify="center" align="center" class="mx-0">
       <v-col cols="12" lg="10">
-        <profileTemplateCompact :profiles="hardening.hardening" :categoryOrder="categoryOrder" />
+        <profileTemplateCompact :profiles="hardening.hardening" :categoryOrder="categoryOrder" :maxWidth="20"/>
       </v-col>
     </v-row>
   </v-container>
