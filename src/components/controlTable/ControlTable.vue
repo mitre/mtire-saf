@@ -45,7 +45,7 @@
               class="ma-0"
               :data="data"
               :frozen-col-count="2"
-              :theme="this.$vuetify.theme.dark ? darkTheme : lightTheme"
+              :theme="theme(this.$vuetify.theme.dark)"
               :underlay-background-color="this.$vuetify.theme.dark ? 'black' : 'white'"
               :headerRowHeight="[70, 25, 20]"
               :defaultRowHeight="20"
@@ -108,7 +108,7 @@
             <v-row dense>
               <v-col>
                 <v-card class="d-flex justify-center" dense flat tile>Legend</v-card>
-                 <v-divider class="" />
+                <v-divider class="" />
               </v-col>
             </v-row>
             <v-row dense>
@@ -175,83 +175,6 @@ export default {
         this.setProfileFilters(val);
       }
     },
-    lightTheme() {
-      const that = this;
-      return materialDesignTheme.extends({
-        color({col}) {
-          if (col === 0) {
-            return "black";
-          }
-          return "white";
-        },
-        defaultBgColor({ row, col, grid }) {
-          // change the color of the checked row.
-          if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
-            return "#4caf50";
-          } else if (row % 2) {
-            return "#f9f9f9";
-          } else {
-            return "#ffffff";
-          }
-        },
-        borderColor: "#dddddd",
-        frozenRowsColor: "black",
-        frozenRowsBgColor({col}) {
-          if (col !== 0 && that.columns[col].checkmark !== "☒") {
-            return "#deaf50";
-          }
-          return "white";
-        },
-        frozenRowsBorderColor: "#dddddd",
-        selectionBgColor: "#c7c7c7",
-        highlightBgColor: "#c7c7c7",
-        highlightBorderColor: "#c7c7c7",
-        checkbox: {
-          checkBgColor: "#35495e",
-          borderColor: "#35495e"
-        },
-      });
-    },
-    darkTheme() {
-      const that = this;
-      return materialDesignTheme.extends({
-        color: "white",
-        defaultBgColor({ row, col, grid }) {
-          // change the color of the checked row.
-          if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
-            return "#4caf50";
-          } else if (row % 2) {
-            return "#253341";
-          } else {
-            return "#1a242f";
-          }
-        },
-        borderColor: "#2f4154",
-        frozenRowsColor: "white",
-        frozenRowsBgColor({col}) {
-          if (col !== 0 && that.columns[col].checkmark !== "☒") {
-            return "#a88132";
-          }
-          return "#35495e";
-        },
-        frozenRowsBorderColor: "#2f4154",
-        selectionBgColor: "#495b6e",
-        highlightBgColor: "#495b6e",
-        highlightBorderColor: "#495b6e",
-        checkbox: {
-          checkBgColor: "#35495e",
-          borderColor: "#35495e"
-        },
-      });
-    }
-  },
-  watch: {
-    /*
-    '$vuetify.theme.dark': function (val) {
-      console.log(val);
-      this.$refs.grid.invalidate();
-    }
-     */
   },
   methods: {
     ...mapMutations({
@@ -268,7 +191,76 @@ export default {
     onChangeHeaderValue({ field }) {
       this.updateColumnFilters(field);
       this.$nextTick(() => this.$refs.grid.invalidate());
-    }
+    },
+    theme(isDark) {
+      const that = this;
+      if (isDark) {
+        return materialDesignTheme.extends({
+          color: "white",
+          defaultBgColor({ row, col, grid }) {
+            // change the color of the checked row.
+            if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
+              return "#4caf50";
+            } else if (row % 2) {
+              return "#253341";
+            } else {
+              return "#1a242f";
+            }
+          },
+          borderColor: "#2f4154",
+          frozenRowsColor: "white",
+          frozenRowsBgColor({col}) {
+            if (col !== 0 && that.columns[col].checkmark !== "☒") {
+              return "#a88132";
+            }
+            return "#35495e";
+          },
+          frozenRowsBorderColor: "#2f4154",
+          selectionBgColor: "#495b6e",
+          highlightBgColor: "#495b6e",
+          highlightBorderColor: "#495b6e",
+          checkbox: {
+            checkBgColor: "#35495e",
+            borderColor: "#35495e"
+          },
+        });
+      } else {
+        return materialDesignTheme.extends({
+          color({col}) {
+            if (col === 0) {
+              return "black";
+            }
+            return "white";
+          },
+          defaultBgColor({ row, col, grid }) {
+            // change the color of the checked row.
+            if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
+              return "#4caf50";
+            } else if (row % 2) {
+              return "#f9f9f9";
+            } else {
+              return "#ffffff";
+            }
+          },
+          borderColor: "#dddddd",
+          frozenRowsColor: "black",
+          frozenRowsBgColor({col}) {
+            if (col !== 0 && that.columns[col].checkmark !== "☒") {
+              return "#deaf50";
+            }
+            return "white";
+          },
+          frozenRowsBorderColor: "#dddddd",
+          selectionBgColor: "#c7c7c7",
+          highlightBgColor: "#c7c7c7",
+          highlightBorderColor: "#c7c7c7",
+          checkbox: {
+            checkBgColor: "#35495e",
+            borderColor: "#35495e"
+          },
+        });
+      }
+    },
   }
 };
 </script>
