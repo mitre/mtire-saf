@@ -1,24 +1,26 @@
 <template>
-  <v-app class="pa-0 ma-0">
+  <v-app class="google-font">
     <v-content>
-    <v-snackbar v-model="snackWithButtons" :timeout="timeout" bottom left class="snack">
-      {{ snackWithBtnText }}
-      <v-spacer />
-      <v-btn dark text color="#00f500" @click.native="refreshApp">{{ snackBtnText }}</v-btn>
-      <v-btn icon @click="snackWithButtons = false">
-        <v-icon>mdi-close</v-icon>
-      </v-btn>
-    </v-snackbar>
+      <v-snackbar v-model="snackWithButtons" :timeout="timeout" bottom left class="snack">
+        {{ snackWithBtnText }}
+        <v-spacer />
+        <v-btn dark text color="#00f500" @click.native="refreshApp">{{ snackBtnText }}</v-btn>
+        <v-btn icon @click="snackWithButtons = false">
+          <v-icon>mdi-close</v-icon>
+        </v-btn>
+      </v-snackbar>
 
-    <AdminToolbar v-if="$route.meta.requiresAuth" />
-    <AuraToolbar v-if="!$route.meta.requiresAuth" />
+      <AdminToolbar v-if="$route.meta.requiresAuth" />
+      <AuraToolbar v-if="!$route.meta.requiresAuth" />
 
-    <AdminDrawer v-if="$route.meta.requiresAuth"/>
-    <AuraDrawer v-if="!$route.meta.requiresAuth" />
+      <AdminDrawer v-if="$route.meta.requiresAuth"/>
+      <AuraDrawer v-if="!$route.meta.requiresAuth" />
 
-    <AuraView class />
-    <AuraFooter v-if="!$route.meta.requiresAuth" />
+      <AuraView class />
+
+      <AuraFooter v-if="!$route.meta.requiresAuth" />
     </v-content>
+
     <AuraBottomNav v-if="!$route.meta.requiresAuth" class="d-flex d-sm-none" />
   </v-app>
 </template>

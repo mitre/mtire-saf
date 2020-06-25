@@ -1,30 +1,20 @@
 <template>
-  <v-app-bar app fixed class>
+  <v-app-bar app>
     <v-app-bar-nav-icon class="d-md-none d-lg-none" @click="toggleDrawer"></v-app-bar-nav-icon>
 
-    <v-toolbar-title class="px-0">
-      <v-container fluid>
-        <v-row align="center">
-          <!-- <v-col class="px-0 hidden-sm-and-down">
-            <v-img
-              src="https://communityshare.mitre.org/sites/CCPA/Portfolio%20Images/mitrelogo-whiteonblue.jpg"
-              width="100"
-           ></v-img>
-          </v-col>-->
-          <v-col class="pl-2">
-            
-            <router-link
-              :to="{ name: 'home'}"
-              class="google-font"
-              style="text-decoration:none;font-size:110%"
-              :class="this.$vuetify.theme.dark?'whiteText':'blackText'"
-            >{{communityData.communityName}}</router-link>
-          </v-col>
-        </v-row>
-      </v-container>
+    <v-toolbar-title class="pl-2">
+      <router-link
+        :to="{ name: 'home'}"
+        class="google-font"
+        style="text-decoration:none; font-size:1.4rem"
+        :class="this.$vuetify.theme.dark ? 'whiteText' : 'blackText'"
+      >
+        {{communityData.communityName}}
+      </router-link>
     </v-toolbar-title>
 
-    <div class="flex-grow-1"></div>
+    <v-spacer />
+
     <v-btn
       v-for="(link, i) in metalinks"
       :key="i"
@@ -33,8 +23,10 @@
       style="text-transform: capitalize;"
       text
       @click="onClick($event, link)"
-    >{{ link.text }}</v-btn>
-    <!--<PushNotification />-->
+    >
+      {{ link.text }}
+    </v-btn>
+
     <v-btn icon v-on:click="darkMode" class="ml-2">
       <v-icon v-if="this.$vuetify.theme.dark">mdi-brightness-7</v-icon>
       <v-icon v-else>mdi-brightness-4</v-icon>
@@ -44,16 +36,12 @@
 
 <script>
 import communityData from "@/assets/data/communityData.json";
-// import PushNotification from "@/components/core/PushNotifications";
 import { mapMutations } from "vuex";
 export default {
   data() {
     return {
-      communityData: communityData
+      communityData: communityData,
     };
-  },
-  components: {
-    // PushNotification
   },
   computed: {
     metalinks() {
@@ -62,6 +50,7 @@ export default {
   },
   methods: {
     ...mapMutations(["toggleDrawer"]),
+
     onClick(e, item) {
       e.stopPropagation();
       if (item.to || !item.href) return;

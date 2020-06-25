@@ -1,23 +1,28 @@
 <template>
-  <v-content class="pa-0">
-    <v-container fluid class="pa-0 py-2">
-      <v-row justify="center" align="center">
-        <v-col md="12" lg="10" xs="12" class="py-0">
-          <Header>
-            <h3 slot="title">Frequently Asked Questions</h3>
-            <p slot="subtitle">
-              Have a question you don't see covered here? Please contact
-              <a
-                style="color:#1565C0;text-decoration: none;"
-                :href="`mailto:${communityData.communityEmail}`"
-              >{{communityData.communityEmail}}</a>
-            </p>
-          </Header>
-          <faqInfo />
-        </v-col>
-      </v-row>
-    </v-container>
-  </v-content>
+  <v-container fluid class="pa-0 ma-0">
+    <v-row justify="center" align="center" class="mx-0">
+      <v-col cols="12" lg="10" class="pa-0">
+        <Header>
+          <h3 slot="title">Frequently Asked Questions</h3>
+          <p slot="subtitle">
+            Have a question you don't see covered here? Please contact
+            <a
+              style="text-decoration: none;"
+              :href="`mailto:${communityData.communityEmail}`"
+            >
+              {{communityData.communityEmail}}
+            </a>
+            .
+          </p>
+        </Header>
+      </v-col>
+    </v-row>
+    <v-row justify="center" align="center" class="mx-0 pb-5">
+      <v-col cols="12" lg="10" class="pa-0">
+        <faqInfo />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -37,5 +42,3 @@ export default {
   }
 };
 </script>
-
-

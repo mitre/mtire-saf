@@ -1,8 +1,10 @@
 <template>
-  <div class="ml-4">
-    <p class="google-font primary--text pa-0 ma-0" style="font-weight: 350;font-size:200% ">
+  <div>
+    <div class="google-font primary--text pa-0 ma-0" style="font-weight: 350; font-size: 2.0rem">
       <slot name="title"></slot>
-    </p>
-    <slot name="subtitle" class="google-font ma-0 pa-0" style="font-size:50%"></slot>
+    </div>
+    <div class="google-font ma-0 pa-0" style="font-size: 1.0rem">
+      <slot name="subtitle"></slot>
+    </div>
   </div>
 </template>

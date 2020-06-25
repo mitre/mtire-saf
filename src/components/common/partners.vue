@@ -1,113 +1,102 @@
 <template>
   <v-container fluid>
     <v-row align="center" justify="center" class="mb-0">
-      <v-col cols="12" md="12" lg="12" sm="12" class="mb-0">
-        <p class="google-font mb-1 primary--text" style="font-weight: 350;font-size:200%">
-          <b>
-            The SAF Community
-          </b>
+      <v-col cols="12" class="mb-0">
+        <p class="mb-1 primary--text" style="font-weight: bold; font-size:200%">
+          The SAF Community
         </p>
-        <p
-          class="google-font mt-1 mb-0"
-          style="font-size:120%"
-        >A very big thank you to our community members for their continued partnership.</p>
-        <p class="google-font mt-0 mb-0" style="font-size:120%">
+        <p class="mt-1 mb-0">
+          A very big thank you to our community members for their continued partnership.
+        </p>
+        <p class="mt-0 mb-0">
           If you’re interested in being showcased here, please contact
           <a
-            style="color:#1565C0;text-decoration: none;"
+            style="text-decoration: none;"
             :href="`mailto:${communityData.communityEmail}`"
-          >{{communityData.communityEmail}}</a> to discuss opportunities.
+          >{{communityData.communityEmail}}</a>
+          to discuss opportunities.
         </p>
       </v-col>
     </v-row>
 
-    <v-container fluid>
-      <v-row justify="space-between" v-for="(itemp,i) in partnerData" :key="i" :class="color_mode">
-        <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0">
-          <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
-        </v-col>
-        <v-slide-group class="pa-2" show-arrows>
-          <v-col v-for="(item,j) in itemp" :key="j" class>
-              <!--:color="active ? 'primary' : '#574B75'"         // This was never configured properly - what is "active"? -->
+    <v-row :class="color_mode" class="mx-1 mb-5 flex-column" style="height: 17rem; min-height: 275px">
+      <v-col class="pb-0" style="flex-grow: 1">
+        <p
+          class="mb-0"
+          style="font-size:1.3rem"
+        >
+          Sponsors
+        </p>
+      </v-col>
+      <v-col class="py-0" style="flex-grow: 5">
+        <v-slide-group show-arrows>
+          <v-slide-item v-for="(sponsor, i) in sponsors" :key="i">
             <v-card
               class="ma-4"
               elevation="4"
               height="180"
               width="200"
-              v-bind:href="(itemp.length > 0 ) ? item.link : null"
+              v-bind:href="sponsor.link"
               target="_blank"
             >
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on }">
-                  <v-img
-                    :src="getImgUrl(item.img)"
-                    :lazy-src="getImgUrl(item.img)"
-                    class="white"
-                    height="100"
-                    width="200"
-                    contain
-                  ></v-img>
-                  <v-card-subtitle class="google-font mb-0">{{item.name}}</v-card-subtitle>
-                </template>
-              </v-tooltip>
+              <v-img
+                :src="getImgUrl(sponsor.img)"
+                class="white"
+                height="100"
+                width="200"
+                contain
+              ></v-img>
+              <v-card-subtitle class="mb-0">{{sponsor.name}}</v-card-subtitle>
             </v-card>
-          </v-col>
+          </v-slide-item>
         </v-slide-group>
-      </v-row>
-    </v-container>
+      </v-col>
+    </v-row>
 
-    <br />
-
-    <v-container fluid>
-      <v-row
-        justify="space-between"
-        v-for="(itemp,i) in commercialpart"
-        :key="i"
-        :class="color_mode"
-      >
-        <v-col cols="12" md="12" lg="12" sm="12" class="mx-1 mt-5" v-if="itemp.length>0">
-          <p class="google-font mb-0" style="font-size:130%">{{i}}</p>
-        </v-col>
-        <v-slide-group class="pa-2" show-arrows>
-          <v-col v-for="(item,j) in itemp" :key="j" class>
-              <!--:color="active ? 'primary' : '#574B75'"-->
+    <v-row :class="color_mode" class="mx-1 mt-5 flex-column" style="height: 15rem; min-height: 200px">
+      <v-col class="pb-0" style="flex-grow: 1">
+        <p
+          class="mb-0"
+          style="font-size:1.3rem"
+        >
+          Commercial Partners
+        </p>
+      </v-col>
+      <v-col class="py-0" style="flex-grow: 5">
+        <v-slide-group show-arrows>
+          <v-slide-item v-for="(partner, i) in partners" :key="i">
             <v-card
               class="ma-4"
               elevation="4"
               height="150"
               width="200"
-              v-bind:href="(itemp.length > 0 ) ? item.link : null"
+              v-bind:href="partner.link"
               target="_blank"
             >
-              <v-tooltip bottom>
-                <template v-slot:activator="{ on }">
-                  <v-img
-                    :src="getImgUrl(item.img)"
-                    :lazy-src="getImgUrl(item.img)"
-                    class="white fixed-ratio-resize"
-                    height="150"
-                    width="200"
-                    contain
-                  ></v-img>
-                </template>
-              </v-tooltip>
+              <v-img
+                :src="getImgUrl(partner.img)"
+                class="white fixed-ratio-resize"
+                height="150"
+                width="200"
+                contain
+              ></v-img>
             </v-card>
-          </v-col>
+          </v-slide-item>
         </v-slide-group>
-      </v-row>
-    </v-container>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
-import datap from "@/assets/data/partners.json";
-import commercialpart from "@/assets/data/commercialpart.json";
+import sponsorData from "@/assets/data/sponsors.json";
+import partnerData from "@/assets/data/partners.json";
 import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
-      partnerData: datap,
-      commercialpart: commercialpart,
+      sponsors: sponsorData['Sponsors'],
+      partners: partnerData['Commercial Partners'],
       communityData: communityData,
       showArrows: true
     };
@@ -119,8 +108,7 @@ export default {
   },
   computed: {
     color_mode() {
-      if (this.$vuetify.theme.dark) return "darkModeContainer";
-      return "lightModeContainer";
+      return this.$vuetify.theme.dark ? "darkModeContainer" : "lightModeContainer";
     }
   }
 };

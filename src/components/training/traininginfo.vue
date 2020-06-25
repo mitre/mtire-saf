@@ -1,113 +1,110 @@
 <template>
-  <v-container fluid class="py-0">
-    <div class="ma-2">
-      <p class="google-font primary--text mb-2" style="font-size:150%;">
-        <b>Training Courses Currently Offered</b>
-      </p>
-      <div v-for="(course, i) in trainingData.courses" :key="i" class="ma-2">
-        <a :href="course.link" target="_blank" style="font-size:125%">{{course.name}}</a>
-        <p class="google-font ma-2">
-          {{course.desc}}</p>
-          <li v-for="(bullet, j) in course.bullets" :key="j" class="google-font ms-2">{{bullet}}</li>
-        
-      </div>
-      <p class="google-font primary--text my-2" style="font-size:150%;">
-        <b>Upcoming Training Sessions</b>
-      </p>
-      <!-- <p
-        class="google-font mt-0 mb-0"
-        style="font-size:95%"
-      >Trainings are listed in chronological order by date.</p>-->
-      <v-row>
-        <v-col
-          md="12"
-          lg="10"
-          sm="12"
-          class="pa-2"
-          v-for="(item, i) in trainingData.upcomingTraining.introTraining"
-          :key="'upcoming'+i"
-        >
-          <v-dialog v-model="dialog">
-            <template v-slot:activator="{ on }">
-              <p class="google-font mb-0 ms-2" style="font-size:100%;">{{item.name}}</p>
-            </template>
-          </v-dialog>
-        </v-col>
-      </v-row>
-      <p class="google-font primary--text my-2" style="font-size:150%;">
-        <b>Past Training Sessions</b>
-      </p>
-      <p
-        class="google-font mt-0 mb-0 ml-2"
-        style
-      >Trainings are listed in chronological order by date.</p>
-      <p class="google-font mt-0 mb-0 ml-2" style>
-        <b>Note:</b> Video recordings of these trainings will be made available once they are edited for presentability.
-      </p>
-      <v-row justify="center" :class="color_mode" class="ma-2">
-        <v-slide-group class="pa-2 ma-2" show-arrows>
-          <v-col
-            md="3"
-            lg="3"
-            sm="3"
-            cols="3"
-            class="pa-2"
-            v-for="(item, i) in trainingData.pastTraining.introTraining"
-            :key="'past'+i"
-          >
-            <v-dialog v-model="dialog" :dialogData="item" width="700">
+  <v-container fluid class="pa-0">
+    <v-row align="center" justify="center" class="ma-0">
+      <v-col class="pa-0">
+        <p class="primary--text mb-2" style="font-size: 1.5rem">
+          <b>Training Courses Currently Offered</b>
+        </p>
+      </v-col>
+    </v-row>
+
+    <v-row align="center" justify="center" class="ma-0">
+      <v-col v-for="(course, i) in trainingData.courses" :key="i" class="pa-0 ps-2" style="border-left: 1px solid var(--v-primary-base)">
+        <a :href="course.link" target="_blank" style="font-size: 1.25rem">{{course.name}}</a>
+        <p class="my-2">{{course.desc}}</p>
+        <ul>
+          <li v-for="(bullet, j) in course.bullets" :key="j" class="ms-2">{{bullet}}</li>
+        </ul>
+      </v-col>
+    </v-row>
+
+    <v-row align="center" justify="center" class="ma-0 mt-2">
+      <v-col class="pa-0">
+        <p class="primary--text my-2" style="font-size: 1.5rem">
+          <b>Upcoming Training Sessions</b>
+        </p>
+      </v-col>
+    </v-row>
+    <v-row align="center" justify="start" class="ma-0">
+      <v-col
+        cols="12"
+        lg="10"
+        class="pa-0"
+        v-for="(item, i) in trainingData.upcomingTraining.introTraining"
+        :key="'upcoming'+i"
+      >
+        <p class="ma-0 pa-0">{{item.name}}</p>
+      </v-col>
+    </v-row>
+
+    <v-row align="center" justify="center" class="ma-0 mt-2">
+      <v-col class="pa-0">
+        <p class="primary--text my-2" style="font-size: 1.5rem">
+          <b>Past Training Sessions</b>
+        </p>
+        <p
+          class="ma-0"
+        >Trainings are listed in chronological order by date.</p>
+        <p class="ma-0">
+          <b>Note:</b> Video recordings of these trainings will be made available once they are edited for presentability.
+        </p>
+      </v-col>
+    </v-row>
+    <v-row :class="color_mode" class="ma-0 mb-3" style="height: 10rem">
+      <v-col class="pa-0">
+        <v-slide-group show-arrows class="py-3">
+          <v-slide-item v-for="(item, i) in pastTrainings" :key="i">
+            <v-dialog v-model="dialog" :dialogData="item" width="33rem">
               <template v-slot:activator="{ on }">
-                <div
-                  v-on="on"
-                  style="cursor: pointer;width: 275px; height: 150px; white-space: initial;"
-                  :class="$vuetify.theme.dark == true?'darkModeCard':'lightModeCard'"
-                  class="pa-2"
-                  @click="passItemData(item)"
+                <v-card
+                  width="15rem"
+                  height="8rem"
+                  style="white-space: initial;"
+                  :class="$vuetify.theme.dark == true ? 'darkModeCard' : 'lightModeCard'"
+                  class="pa-2 mx-2"
                 >
-                  <p class="google-font mt-1 mb-0 break-word" style="font-size:90%">{{ item.date }}</p>
+                  <p class="ma-0 break-word" style="font-size: 0.9rem">{{ item.date }}</p>
                   <p
-                    class="google-font ma-0 mt-0 break-word"
-                    style="font-size:120%;"
+                    class="ma-0 mt-0 break-word"
+                    style="font-size: 1.2rem"
                   >{{ item.name }}</p>
-                  <p class="mb-0 mt-2 google-font primary--text">See More</p>
-                </div>
+                  <p class="mb-0 mt-2 primary--text" style="cursor: pointer" v-on="on" @click="passItemData(item)">See More</p>
+                </v-card>
               </template>
 
-              <v-card color v-show="dialog" :data="dialogData">
-                <v-card-title
-                  class="px-5 py-5 google-font break-word"
-                  :class="{'x-small': $vuetify.breakpoint.mdAndDown}"
-                  style="background-position:right bottom;"
-                >{{dialogData.name}}</v-card-title>
-
-                <v-card-text class="pa-5">
-                  <p class="google-font mt-3 mb-0 break-word" style="font-size:110%">
+              <v-card v-show="dialog" :data="dialogData" class="pa-5">
+                <v-card-title class="pa-0 break-word">{{dialogData.name}}</v-card-title>
+                <v-card-text class="pa-0">
+                  <p class="mt-3 mb-0 break-word" style="font-size:1.1rem">
                     <b>Name:</b>
                     {{dialogData.name}}
                   </p>
-                  <p class="google-font mt-1 mb-0" style="font-size:110%">
+                  <p class="mt-1 mb-0" style="font-size:1.1rem">
                     <b>Date:</b>
                     {{dialogData.date}}
                   </p>
-                  <v-spacer class="ma-2" />
                   <a
                     v-if="dialogData.link != ''"
                     :href="dialogData.link"
                     target="_blank"
-                  >Link to Recording</a>
-                  <p v-else>
-                    <b>Link to Recording -</b>
-                    <span style="color:red">Video still being edited! Please check back later.</span>
+                    class="mt-2"
+                  >
+                    Link to Recording
+                  </a>
+                  <p
+                    v-else
+                    class="mt-2"
+                  >
+                    <b>Link to Recording: </b>
+                    <span style="color: var(--v-error-base)">Video still being edited! Please check back later.</span>
                   </p>
                 </v-card-text>
-
-                <v-divider></v-divider>
               </v-card>
             </v-dialog>
-          </v-col>
+          </v-slide-item>
         </v-slide-group>
-      </v-row>
-    </div>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
@@ -133,18 +130,11 @@ export default {
       if (this.$vuetify.theme.dark) return "darkModeContainer";
       return "lightModeContainer";
     },
-    moveForBottomNavStyle() {
-      if (this.$vuetify.breakpoint.smAndDown) {
-        return "z-index: 10; bottom: 60px";
-      } else {
-        return "";
-      }
-    }
+    pastTrainings() {
+      return this.trainingData.pastTraining.introTraining.concat(this.trainingData.pastTraining.advTraining);
+    },
   },
   methods: {
-    make_linkable(str) {
-      return str.replace(/\s+/g, "-").toLowerCase();
-    },
     passItemData(item) {
       this.dialogData = item;
     }

@@ -1,16 +1,18 @@
 <template>
-  <v-content class="pa-0">
-    <v-container fluid class="pa-0 py-2">
-      <v-row justify="center" align="center">
-        <v-col md="12" lg="10" xs="12" class="py-0">
-          <Header>
-            <h3 slot="title">Getting Started</h3>
-          </Header>
-          <gsInfo />
-        </v-col>
-      </v-row>
-    </v-container>
-  </v-content>
+  <v-container fluid class="pa-0 ma-0">
+    <v-row justify="center" align="center" class="mx-0">
+      <v-col cols="12" lg="10" class="pa-0">
+        <Header>
+          <h3 slot="title">Getting Started</h3>
+        </Header>
+      </v-col>
+    </v-row>
+    <v-row justify="center" align="center" class="mx-0">
+      <v-col cols="12" lg="10" class="pa-0">
+        <gsInfo />
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>

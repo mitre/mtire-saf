@@ -1,20 +1,17 @@
 <template>
-  <v-content class="pa-0">
-    <v-container fluid class="pa-0">
-      <v-row justify="center" align="center" class="pa-2">
-        <v-col md="12" lg="10" xs="12" class="pa-0 ma-0">
-          <Header>
-            <h3 slot="title">Validation</h3>
-          </Header>
-          <div class="mx-4 google-font">
-            <p class="ma-0">
+  <v-container fluid class="pa-0 ma-0">
+    <v-row justify="center" align="center" class="mx-0">
+      <v-col cols="12" lg="10" class="pa-0 ma-0">
+        <Header>
+          <h3 slot="title">Validation</h3>
+          <div slot="subtitle" class="ma-0">
+            <p class="ma-0"
               These open-source community-based InSpec profiles validate the security of
               common system components. MITRE is helping to provide stewardship over
               these profiles, hosted here and at other community vendor sites. If you
               are interested in new profiles, please contact us at
-              <a
-                :href="mail_link"
-              >{{ db.communityEmail }}</a>. If you are interested in developing and contributing your own
+              <a :href="mail_link">{{ db.communityEmail }}</a>
+              . If you are interested in developing and contributing your own
               profiles, please see our
               <router-link to="training">training material</router-link>.
             </p>
@@ -23,11 +20,15 @@
               <router-link to="control-table">Control Assessment Range table</router-link>!
             </p>
           </div>
-        </v-col>
-      </v-row>
-      <profileTemplateCompact :profiles="baselines.baselines" :categoryOrder="categoryOrder" class="mx-1"/>
-    </v-container>
-  </v-content>
+        </Header>
+      </v-col>
+    </v-row>
+    <v-row justify="center" align="center" class="mx-0">
+      <v-col cols="12" lg="10">
+        <profileTemplateCompact :profiles="baselines.baselines" :categoryOrder="categoryOrder" :maxWidth="25"/>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
 <script>
@@ -35,7 +36,6 @@ import profileTemplateCompact from "@/components/profiles/profileTemplateCompact
 import Header from "@/components/core/Header.vue";
 import baselines from "@/assets/data/baselines.json";
 import db from "@/assets/data/communityData.json";
-import { mapMutations } from "vuex";
 
 export default {
   components: {
@@ -46,7 +46,6 @@ export default {
     return {
       baselines: baselines,
       db: db,
-      isCompact: false,
       categoryOrder: [
         "Cloud Service Providers",
         "Virtual Platforms",
@@ -61,12 +60,6 @@ export default {
     mail_link() {
       return "mailto:" + db.communityEmail;
     },
-    showCompact() {
-      return this.$store.state.isCompact;
-    }
   },
-  methods: {
-    ...mapMutations(["toggleCompact"])
-  }
 };
 </script>
