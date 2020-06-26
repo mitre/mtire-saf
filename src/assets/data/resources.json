@@ -50,7 +50,7 @@
     { 
       "name": "InSpec",
       "desc": "InSpec is a free and open-source Chef framework for testing and auditing applications and infrastructure. InSpec is designed to integrate very easily into existing DevSecOps pipelines. CMS has partnered with the open-source community to create a growing number of baseline testing profiles to make it easy for developers to jump right in.",
-      "image": "inspec-runner.png"
+      "image": "inspec-runner.png" 
     }
   ],
   "videos": [
