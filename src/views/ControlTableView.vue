@@ -26,14 +26,8 @@
 <script>
 import Header from "@/components/core/Header.vue";
 import controlTable from "@/components/controlTable/ControlTable.vue";
-import communityData from "@/assets/data/communityData.json";
 
 export default {
-  data() {
-    return {
-      communityData: communityData
-    };
-  },
   components: {
     Header,
     controlTable
