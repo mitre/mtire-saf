@@ -9,7 +9,7 @@
           "download_link": "MITRE_InSpec_Profiles_and_HDF_include_NIST_SP-800-53_Associations.pdf"
         }
       ],
-      "tag" : "faq-security-control-associations"
+      "tag" : "security-control-associations"
     },
     {
       "question": "What is a recommended best practice for Code Review?",
@@ -20,7 +20,7 @@
           "download_link": "SAF_Code_Review_Recommendations.pdf"
         }
       ],
-      "tag" : "faq-code-review"
+      "tag" : "code-review"
     },
     {
       "question": "Which tools are supported by the SAF?",
@@ -64,7 +64,7 @@
           "desc": " converter to use Splunk to store HDF security data"
         }
       ],
-      "tag" : "faq-tools"
+      "tag" : "tools"
     },
     {
       "question": "How can I use InSpec tests in my CI/CD pipeline?",
@@ -76,7 +76,18 @@
           "link": "https://mitre-inspec-advanced-developer.netlify.com/course/4.html"
         }
       ],
-      "tag" : "faq-pipeline"
+      "tag" : "pipeline"
+    },
+    {
+      "question": "How is InSpec deployed?",
+      "answer": "It is intended and recommended that InSpec be installed on a \"runner\" host (such as a DevOps orchestration server, an administrative management system, or a developer's workstation/laptop) and run against the target remotely. However, InSpec may be deployed in various ways depending on the needs of the user:",
+      "images": [
+        {
+          "name": "Inspec Runners",
+          "path": "inspec-runner.png" 
+        }
+      ],
+      "tag": "runners"
     },
     {
       "question": "What is the difference between Chef InSpec and CINC Auditor?",
@@ -95,7 +106,7 @@
           "link": "https://www.chef.io/subscription-model-faq/"
         }
       ],
-      "tag" : "faq-cinc"
+      "tag" : "cinc"
     }
   ]
 }

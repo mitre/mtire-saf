@@ -1,11 +1,11 @@
 <template>
-  <div class="pa-0">
+  <div class="pa-2">
     <div v-for="item in resources.items" :key="item.name">
       <p class="mb-2 wrap-list-text">
         <b>{{item.name}}</b>
       </p>
-      <p flat class="my-2">{{item.desc}}</p>
-      <p flat dense class="my-2 " v-for="entry in item.values" :key="entry.name">
+      <p flat class="ma-2">{{item.desc}}</p>
+      <p flat dense class="ma-2 " v-for="entry in item.values" :key="entry.name">
         <span>
           <a v-if="entry.link" :href="entry.link" target="_blank">{{entry.name}}</a>
           <a
@@ -18,6 +18,7 @@
           </a>
         </span>
       </p>
+      <v-img v-if="item.image" :src="require('@/assets/img/tools/' + item.image)" />
     </div>
   </div>
 </template>
