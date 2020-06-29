@@ -2,7 +2,7 @@
   <v-content class="pa-0">
     <v-container fluid class="pa-0 py-2">
       <v-row justify="center" align="center">
-        <v-col md="12" lg="10" xs="12" class="py-0">
+        <v-col cols="12" lg="10" class="py-0">
           <Header>
             <h3 slot="title">Control Assessment Range</h3>
             <p slot="subtitle">
@@ -15,7 +15,7 @@
 
     <v-container fluid class="pa-0 py-2">
       <v-row justify="center" align="center">
-        <v-col md="12" lg="10" xs="12" class="py-0">
+        <v-col cols="12" lg="10" class="py-0">
           <controlTable />
         </v-col>
       </v-row>
