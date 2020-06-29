@@ -197,9 +197,10 @@ export default {
       if (isDark) {
         return materialDesignTheme.extends({
           color: "white",
-          defaultBgColor({ row, col, grid }) {
+          defaultBgColor({ row, col }) {
             // change the color of the checked row.
-            if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
+            // '-3' since the row value given is for the displayed table (we have 3 header rows) whereas the data index starts at 0
+            if (that.data[row-3][that.columns[col].value] === true) {
               return "#4caf50";
             } else if (row % 2) {
               return "#253341";
@@ -232,9 +233,10 @@ export default {
             }
             return "white";
           },
-          defaultBgColor({ row, col, grid }) {
+          defaultBgColor({ row, col }) {
             // change the color of the checked row.
-            if (grid.records[row-3][Object.keys(grid.records[row-3])[col]] === true) {
+            // '-3' since the row value given is for the displayed table (we have 3 header rows) whereas the data index starts at 0
+            if (that.data[row-3][that.columns[col].value] === true) {
               return "#4caf50";
             } else if (row % 2) {
               return "#f9f9f9";
