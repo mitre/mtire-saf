@@ -146,6 +146,10 @@
       ]
     },
     {
+      "sectionHeader": "When To Use It",
+      "image" : "lifecycle-dark"
+    },
+    {
       "sectionHeader": "How We Support It",
       "sectionDesc": "Develop a toolchain to support the above areas of What and How for secure development",
       "image" : "toolchain",

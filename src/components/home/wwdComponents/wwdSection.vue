@@ -7,7 +7,7 @@
       <p class="google-font mb-4 body-2">{{ topic.sectionDesc }}</p>
     </v-row>
     <slot name="image"></slot>
-    <v-row justify="center">
+    <v-row justify="center" v-if="topic.items">
       <v-col
         v-for="(item, i) in topic.items"
         :key="i"
@@ -66,6 +66,6 @@ export default {
 
 <style scoped>
 .tool-header {
-  font-size: 200%;
+  font-size: 300%;
 }
 </style>
