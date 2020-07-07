@@ -1,12 +1,21 @@
 <template>
   <v-container fluid class="pa-0">
-    <v-row align="center" justify="center" >
+    <v-row align="center" justify="center">
       <p class="google-font ma-0 tool-header primary--text">{{ topic.sectionHeader }}</p>
     </v-row>
     <v-row align="center" justify="center" v-if="topic.sectionDesc">
-      <p class="google-font mb-4 body-2">{{ topic.sectionDesc }}</p>
+      <p class="google-font">{{ topic.sectionDesc }}</p>
     </v-row>
-    <slot name="image"></slot>
+    <v-row justify="center" v-for="(image, index) in topic.images" :key="index" class="d-flex">
+      <v-col cols="12" class="d-flex flex-column">
+        <v-card
+          :to="image.router_link ? image.router_link : ''"
+          :href="image.link ? image.link : ''"
+        >
+          <v-img :src="require('@/assets/img/what-we-do/' + image.filename + '.png')" />
+        </v-card>
+      </v-col>
+    </v-row>
     <v-row justify="center" v-if="topic.items">
       <v-col
         v-for="(item, i) in topic.items"

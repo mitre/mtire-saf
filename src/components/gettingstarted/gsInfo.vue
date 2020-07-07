@@ -1,5 +1,8 @@
 <template>
   <div class="pa-2">
+    <p class="mb-2 wrap-list-text">
+        <b><a href="How to Use the MITRE SAF.pdf" download>How To Use MITRE SAF</a></b>
+      </p>
     <div v-for="item in resources.items" :key="item.name">
       <p class="mb-2 wrap-list-text">
         <b>{{item.name}}</b>

@@ -5,25 +5,9 @@
     <wwdSection :topic="whatwedodata[1]" md="3" lg="3" xl="3" />
     <v-divider class="ma-2" />
     <wwdSection :topic="whatwedodata[2]" md="3" lg="3" xl="3">
-      <template v-slot:image>
-        <v-row justify="center">
-          <v-img
-            :src="require('@/assets/img/what-we-do/' + whatwedodata[2].image + '.png')"
-            class="ma-2"
-          />
-        </v-row>
-      </template>
     </wwdSection>
     <v-divider class="ma-2" />
     <wwdSection :topic="whatwedodata[3]" md="4" lg="4" xl="4">
-      <template v-slot:image>
-        <v-row justify="center">
-          <v-img
-            :src="require('@/assets/img/what-we-do/' + whatwedodata[3].image + '.png')"
-            class="ma-2"
-          />
-        </v-row>
-      </template>
     </wwdSection>
   </v-container>
 </template>

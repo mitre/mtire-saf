@@ -147,12 +147,15 @@
     },
     {
       "sectionHeader": "When To Use It",
-      "image" : "lifecycle-dark"
+      "sectionDesc" : "The MITRE SAF helps organizations develop and programmatically automate security in their current internal planning, development, assessment, and operational activities.",
+      "images": [
+        { "filename": "lifecycle", "router_link": "gettingstarted" }
+      ]
     },
     {
       "sectionHeader": "How We Support It",
       "sectionDesc": "Develop a toolchain to support the above areas of What and How for secure development",
-      "image" : "toolchain",
+      "images": [{ "filename": "toolchain" }],
       "items": [
         {
           "name": "Heimdall Lite",
@@ -165,7 +168,7 @@
           "github_link": "https://github.com/mitre/heimdall-lite",
           "svg": "",
           "tools": "",
-          "shields" : [
+          "shields": [
             "https://img.shields.io/github/package-json/v/mitre/heimdall-lite",
             "https://img.shields.io/npm/dt/heimdall-lite?label=npm%20downloads",
             "https://img.shields.io/docker/pulls/mitre/heimdall-lite?label=docker%20hub%20pulls"
@@ -182,11 +185,10 @@
           "github_link": "https://github.com/mitre/heimdall",
           "svg": "",
           "tools": "",
-          "shields" : [
+          "shields": [
             "https://img.shields.io/github/v/tag/mitre/heimdall?label=version",
             "https://img.shields.io/npm/dt/heimdall?label=npm%20downloads",
             "https://img.shields.io/docker/pulls/mitre/heimdall?label=docker%20hub%20pulls"
-            
           ]
         },
         {
@@ -212,7 +214,7 @@
           "github_link": "https://github.com/mitre/inspec_tools/",
           "svg": "",
           "tools": "",
-          "shields" : [
+          "shields": [
             "https://img.shields.io/github/v/release/mitre/inspec_tools?label=version",
             "https://img.shields.io/gem/dt/inspec_tools?label=gem%20downloads"
           ]
@@ -228,7 +230,7 @@
           "github_link": "https://github.com/mitre/heimdall_tools",
           "svg": "",
           "tools": "",
-          "shields" : [
+          "shields": [
             "https://img.shields.io/github/v/release/mitre/heimdall_tools?label=version",
             "https://img.shields.io/gem/dt/heimdall_tools?label=gem%20downloads"
           ]
@@ -244,7 +246,7 @@
           "github_link": "https://github.com/mitre/inspecjs",
           "svg": "",
           "tools": "",
-          "shields" : [
+          "shields": [
             "https://img.shields.io/npm/v/inspecjs?label=version",
             "https://img.shields.io/npm/dt/inspecjs?label=npm%20downloads"
           ]
@@ -272,7 +274,7 @@
           "github_link": "https://github.com/mitre/hdf-json-to-splunk/",
           "svg": "",
           "tools": "",
-          "shields" : [
+          "shields": [
             "https://img.shields.io/github/v/release/mitre/hdf-json-to-splunk?label=version",
             "https://img.shields.io/github/downloads/mitre/hdf-json-to-splunk/total?label=github%20downloads"
           ]
