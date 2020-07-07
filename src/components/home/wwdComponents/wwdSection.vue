@@ -11,6 +11,7 @@
         <v-card
           :to="image.router_link ? image.router_link : ''"
           :href="image.link ? image.link : ''"
+          flat outlined
         >
           <v-img :src="require('@/assets/img/what-we-do/' + image.filename + '.png')" />
         </v-card>

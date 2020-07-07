@@ -147,7 +147,7 @@
     },
     {
       "sectionHeader": "When To Use It",
-      "sectionDesc" : "The MITRE SAF helps organizations develop and programmatically automate security in their current internal planning, development, assessment, and operational activities.",
+      "sectionDesc" : "Develop and programmatically automate security in planning, development, assessment, and operational activities",
       "images": [
         { "filename": "lifecycle", "router_link": "gettingstarted" }
       ]
