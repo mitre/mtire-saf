@@ -149,7 +149,7 @@
       "sectionHeader": "When To Use It",
       "sectionDesc" : "Develop and programmatically automate security in planning, development, assessment, and operational activities",
       "images": [
-        { "filename": "lifecycle", "router_link": "gettingstarted" }
+        { "filename": "whenToUseIt", "router_link": "gettingstarted" }
       ]
     },
     {
