@@ -155,6 +155,13 @@
       "category": ["Databases"]
     },
     {
+      "shortName": "AWS RDS Oracle Database 12c STIG",
+      "longName": "AWS RDS Oracle Database 12c STIG",
+      "link": "https://github.com/mitre/aws-rds-oracle-database-12c-stig-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": ["Databases"]
+    },
+    {
       "shortName": "Oracle Database 12c STIG",
       "longName": "Oracle Database 12c STIG",
       "link": "https://github.com/mitre/oracle-database-12c-stig-baseline",
