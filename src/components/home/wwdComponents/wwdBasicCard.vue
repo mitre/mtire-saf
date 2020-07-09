@@ -3,7 +3,7 @@
     
     <v-card
       outlined
-      class="d-flex flex-column"
+      class="pa-2"
       :to="item.router_link"
       :href="item.link"
       :color="hover && (item.router_link || item.link) ? get_highlight() : ''"
@@ -13,7 +13,7 @@
     >
       <!--<toolBlock v-if="item.tools" :tools="item.tools" />-->
       <!-- :color="hover && (item.router_link || item.link) ? '#1a73e8' : ''" -->
-      <v-icon v-if="item.icon" large style="font-size:300%" class="mt-4" >{{ item.icon }}</v-icon>
+      <v-icon v-if="item.icon" large style="font-size:300%" class="mt-2" >{{ item.icon }}</v-icon>
       <!-- <v-fade-transition v-if="item.graphic" mode="out-in">
       <v-img
         v-on:mouseover="mouseOverCheck = current"
@@ -47,11 +47,11 @@
       <v-spacer />
       <v-card-text v-if="item.desc" class="google-font pa-2 body-1">{{ item.desc }}</v-card-text>
       <template v-if="item.bullets">
-        <v-card-text class="justify-center">
-          <ul
+        <v-card-text class="text-left">
+          <ul 
             v-for="bullet in item.bullets"
             :key="bullet"
-            class="google-font pa-2 justify-center body-1 "
+            class="google-font body-1 "
           >• {{bullet}}</ul>
         </v-card-text>
       </template>
@@ -59,7 +59,7 @@
       <div justify="center" v-show="item.shields" class="mt-2">
         <img v-for="shield in item.shields" :key="shield" class="ms-2" :src="shield" />
       </div>
-      <v-card-actions class="pa-0">
+      <v-card-actions v-if="(item.app_link || item.doc_link || item.github_link)" class="pa-0">
         <v-container row dense>
           <v-row justify="center">
             <v-tooltip top>

@@ -150,12 +150,54 @@
       "sectionDesc" : "Develop and programmatically automate security in planning, development, assessment, and operational activities",
       "images": [
         { "filename": "whenToUseIt", "router_link": "gettingstarted" }
+      ],
+      "items": [
+        {
+          "name": "During PLANNING an organization can use SAF to:",
+          "link": "",
+          "bullets" : [
+            "Identify applicable security and privacy requirements",
+            "Assess development best practices guidance",
+            "Identify SAF tools to support development, assessment, & operations security processes",
+            "Become a participant through the Continuous Collaboration Agreement"
+          ]
+        },
+        {
+          "name": "During DEVELOPMENT an organization can use SAF to:",
+          "link": "",
+          "bullets" : [
+            "Implement relevant security hardening scripts",
+            "Validate security status and aggregate security testing data at each build",
+            "Drill-down in visualization tools to identify security defect root cause and mitigations",
+            "Set security testing results thresholds ","Assess development best practices guidance",
+            "Store or export “evidence” for assessors"
+          ]
+        },
+        {
+          "name": "During ASSESSMENT an organization can use SAF to:",
+          "link": "",
+          "bullets" : [
+            "Aggregate all security control assessment data ",
+            "Visualize security status to prioritize assessment activities",
+            "Run validation checks on prioritized areas",
+            "Drill-down in visualization tools to identify root cause and inform risk assessment"
+          ]
+        },
+        {
+          "name": "During OPERATIONS an organization can use SAF to:",
+          "link": "",
+          "bullets" : [
+            "Monitor security posture through validation checks",
+            "Aggregate normalized security testing content to enable data visualization, drill-down, and root cause analysis",
+            "Assign remediation actions for identified security risks"
+          ]
+        }
       ]
     },
     {
       "sectionHeader": "How We Support It",
       "sectionDesc": "Develop a toolchain to support the above areas of What and How for secure development",
-      "images": [{ "filename": "toolchain" }],
+      "images": [{ "filename": "howWeSupportIt" }],
       "items": [
         {
           "name": "Heimdall Lite",
