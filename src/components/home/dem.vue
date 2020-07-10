@@ -24,7 +24,7 @@
                         </template>
           </v-img>-->
           <div class="pa-5">
-            <p class="google-font mb-0" style="font-size:150%">About MITRE SAF</p>
+            <p class="google-font mb-0" style="font-size:150%">About MITRE | SAF</p>
             <p
               class="google-font mt-0"
               style="font-size:95%"

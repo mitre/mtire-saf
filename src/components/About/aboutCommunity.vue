@@ -18,7 +18,7 @@
       <v-col md="8" sm="8" cols="12" class="py-0 my-0">
         <p class="google-font mt-0" style="font-size:110%">{{ communityData.communityLongDec }}</p>
         <p class="google-font mt-0 mb-0" style="font-size:110%">
-          SAF focuses on building security into DevOps with the goal of
+          MITRE | SAF focuses on building security into DevOps with the goal of
           preventing vulnerable applications from reaching production.
         </p>
         <br />

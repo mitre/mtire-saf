@@ -1,8 +1,19 @@
 {
   "items": [
     {
+      "name": "Overview",
+      "desc": "See here for a one-page overview of how to use the MITRE | SAF to help developers, assessors, and operations teams automate security in their current processes.",
+      "values" : [
+        {
+          "name" : "How To Use The MITRE | SAF",
+          "desc" : "",
+          "download_link" : "How to Use the MITRE SAF.pdf"
+        }
+      ]
+    },
+    {
       "name": "Mature DevSecOps Best Practices",
-      "desc": "DevSecOps is a software development framework that stresses automation and rapid user feedback to deliver quality, secure software quickly. A DevSecOps pipline is a collection of tools and practices that can automate as much of development as possible, from testing to change management to deployment.",
+      "desc": "DevSecOps is a software development framework that stresses automation and rapid user feedback to deliver quality, secure software quickly. A DevSecOps pipeline is a collection of tools and practices that can automate as much of development as possible, from testing to change management to deployment.",
       "values" : [
         {
           "name" : "DevSecOps Best Practices Guide",

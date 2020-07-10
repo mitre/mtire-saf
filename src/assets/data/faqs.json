@@ -1,7 +1,7 @@
 {
   "faqs": [
     {
-      "question": "How many NIST SP 800-53 Security Controls are assessed under the SAF?",
+      "question": "How many NIST SP 800-53 Security Controls are assessed under the MITRE | SAF?",
       "answer": "Currently, about 162 NIST SP 800-53 security controls are assessed under this framework. Note that assessment coverage varies based on the component type. For more information, explore this Control Assessment Range table!",
       "links": [
         {
@@ -27,14 +27,14 @@
       "answer": "Teams should follow the code review recommendations given here:",
       "links": [
         {
-          "name": "SAF Code Review Recommendations",
-          "download_link": "SAF_Code_Review_Recommendations.pdf"
+          "name": "MITRE | SAF Code Review Recommendations",
+          "download_link": "MITRE_SAF_Code_Review_Recommendations.pdf"
         }
       ],
       "tag" : "code-review"
     },
     {
-      "question": "Which tools are supported by the SAF?",
+      "question": "Which tools are supported by the MITRE | SAF?",
       "answer": "",
       "links": [
         {

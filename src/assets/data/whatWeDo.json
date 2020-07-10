@@ -45,7 +45,7 @@
         {
           "name": "Standardizing Security Testing Content",
           "router_link": "validation",
-          "desc": "Build on the SAF community's library of standard security profiles",
+          "desc": "Build on the MITRE | SAF community's library of standard security profiles",
           "svg": "",
           "icon": "",
           "tools": [
@@ -127,7 +127,7 @@
         {
           "name": "Hardening Content",
           "router_link": "hardening",
-          "desc": "Use the SAF hardening baseline library to configure systems for security",
+          "desc": "Use the MITRE | SAF hardening baseline library to configure systems for security",
           "svg": "",
           "icon": "",
           "tools": [
@@ -153,17 +153,17 @@
       ],
       "items": [
         {
-          "name": "During PLANNING an organization can use SAF to:",
+          "name": "During PLANNING an organization can use MITRE | SAF to:",
           "link": "",
           "bullets" : [
             "Identify applicable security and privacy requirements",
             "Assess development best practices guidance",
-            "Identify SAF tools to support development, assessment, & operations security processes",
+            "Identify MITRE | SAF tools to support development, assessment, & operations security processes",
             "Become a participant through the Continuous Collaboration Agreement"
           ]
         },
         {
-          "name": "During DEVELOPMENT an organization can use SAF to:",
+          "name": "During DEVELOPMENT an organization can use MITRE | SAF to:",
           "link": "",
           "bullets" : [
             "Implement relevant security hardening scripts",
@@ -174,7 +174,7 @@
           ]
         },
         {
-          "name": "During ASSESSMENT an organization can use SAF to:",
+          "name": "During ASSESSMENT an organization can use MITRE | SAF to:",
           "link": "",
           "bullets" : [
             "Aggregate all security control assessment data ",
@@ -184,7 +184,7 @@
           ]
         },
         {
-          "name": "During OPERATIONS an organization can use SAF to:",
+          "name": "During OPERATIONS an organization can use MITRE | SAF to:",
           "link": "",
           "bullets" : [
             "Monitor security posture through validation checks",

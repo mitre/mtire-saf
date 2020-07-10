@@ -74,7 +74,7 @@
             <p
               class="google-font pl-0 ml-0 mr-3"
               :style="this.$vuetify.breakpoint.smAndDown ? '' : 'font-size:200%'"
-            >MITRE SAF</p>
+            >MITRE | SAF</p>
             <v-spacer />
             <p
               class="google-font pl-0"

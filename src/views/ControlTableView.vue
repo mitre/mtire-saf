@@ -6,7 +6,7 @@
           <Header>
             <h3 slot="title">Control Assessment Range</h3>
             <p slot="subtitle">
-              All assessment tests under SAF are associated with NIST SP 800-53 Security Controls. Explore these associations in the table below!
+              All assessment tests under MITRE | SAF are associated with NIST SP 800-53 Security Controls. Explore these associations in the table below!
             </p>
           </Header>
         </v-col>

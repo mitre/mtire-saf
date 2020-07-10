@@ -11,7 +11,7 @@
         </p>
         <p
           class="google-font mt-0 hidden-sm-and-down"
-        >MITRE SAF is a group of Security SMEs and DevSecOps SME which engage with Sponsors in the areas of DevOps, Security Automation and Secure Pipeline deployment, and allow MITRE to be a ‘steel-thread,’ steward and force multiplier between Sponsors, Vendors and Performers.</p>
+        >MITRE | SAF is a group of Security SMEs and DevSecOps SME which engage with Sponsors in the areas of DevOps, Security Automation and Secure Pipeline deployment, and allow MITRE to be a ‘steel-thread,’ steward and force multiplier between Sponsors, Vendors and Performers.</p>
         <p
           class="google-font mt-0"
         >Our goal in DevSecOps is to accelerate the development process with simplified security reviews, and maintain consistent security levels by enabling developers and ISSOs to verify security and compliance early and often each Sprint.</p>
