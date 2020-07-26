@@ -220,7 +220,7 @@
     {
       "shortName": "DRAFT: VMWare vSphere VM 6.7 STIG",
       "longName": "DRAFT: VMware vSphere Virtual Machines version 6.7 STIG",
-      "link": "    https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/6.7/vsphere/inspec/vmware-vm-6.7-stig-baseline",
+      "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/6.7/vsphere/inspec/vmware-vm-6.7-stig-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Virtual Platforms"]
     },
