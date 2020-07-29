@@ -51,14 +51,14 @@
     },
     {
       "shortName": "Tomcat CIS Benchmark",
-      "longName": "Tomcat CIS Benchmark",
+      "longName": "Apache Tomcat 7 and 8 CIS Benchmark",
       "link": "https://github.com/mitre/ansible-cis-tomcat-hardening",
       "svg": "ansible",
       "category": ["Web Servers"]
     },
     {
       "shortName": "Tomcat CIS Benchmark",
-      "longName": "Tomcat CIS Benchmark",
+      "longName": "Apache Tomcat 8 CIS Benchmark",
       "link": "https://github.com/mitre/chef-cis-tomcat-hardening",
       "svg": "chef-2",
       "category": ["Web Servers"]

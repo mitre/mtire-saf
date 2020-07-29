@@ -244,6 +244,20 @@
       "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/6.7/vcsa/inspec/vmware-vcsa-6.7-stig-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Virtual Platforms"]
+    },
+    {
+      "shortName": "Tomcat 8 CIS",
+      "longName": "Apache Tomcat 8 CIS",
+      "link": "https://github.com/mitre/apache-tomcat-8-cis-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": ["Web Servers"]
+    },
+    {
+      "shortName": "Tomcat 7 CIS",
+      "longName": "Apache Tomcat 7 CIS",
+      "link": "https://github.com/mitre/cis_apache_tomcat_benchmark_7",
+      "svg": "inspec-blue-back-border",
+      "category": ["Web Servers"]
     }
   ]
 }
