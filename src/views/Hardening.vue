@@ -44,6 +44,7 @@ export default {
         "Virtual Platforms",
         "Operating Systems",
         "Databases",
+        "Application Logic",
         "Web Servers"
       ]
     };

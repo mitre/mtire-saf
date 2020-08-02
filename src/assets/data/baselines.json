@@ -258,6 +258,41 @@
       "link": "https://github.com/mitre/cis_apache_tomcat_benchmark_7",
       "svg": "inspec-blue-back-border",
       "category": ["Web Servers"]
+    },
+    {
+      "shortName": "CentOS 7",
+      "longName": "CentOS 7",
+      "link": "https://github.com/mitre/centos-7-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": ["Operating Systems"]
+    },
+    {
+      "shortName": "Elasticsearch STIG",
+      "longName": "Elasticsearch STIG",
+      "link": "https://github.com/mitre/elasticsearch-stig-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": ["Application Logic"]
+    },
+    {
+      "shortName": "Kubernetes CIS",
+      "longName": "Kubernetes CIS",
+      "link": "https://github.com/mitre/kubernetes-cis-benchmark",
+      "svg": "inspec-blue-back-border",
+      "category": ["Application Logic"]
+    },
+    {
+      "shortName": "Apache Server STIG",
+      "longName": "Apache Server 2.2 STIG",
+      "link": "https://github.com/mitre/apache-server-2.2-stig-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": ["Web Servers"]
+    },
+    {
+      "shortName": "Apache Site STIG",
+      "longName": "Apache Site 2.2 STIG",
+      "link": "https://github.com/mitre/apache-site-2.2-stig-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": ["Web Servers"]
     }
   ]
 }

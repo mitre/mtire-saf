@@ -104,6 +104,20 @@
       "link": "https://github.com/mitre/chef-stig-mongodb-enterprise-advanced-hardening",
       "svg": "ansible",
       "category": ["Virtual Platforms"] 
+    },
+    {
+      "shortName": "Elasticsearch",
+      "longName": "Elasticsearch",
+      "link": "https://github.com/mitre/elasticsearch-hardening",
+      "svg": "chef-2",
+      "category": ["Application Logic"] 
+    },
+    {
+      "shortName": "JRE 8 STIG",
+      "longName": "Oracle Java Runtime Environment 8 Unix STIG",
+      "link": "https://github.com/mitre/jre8-stig-hardening",
+      "svg": "chef-2",
+      "category": ["Application Logic"] 
     }
   ]
 }
