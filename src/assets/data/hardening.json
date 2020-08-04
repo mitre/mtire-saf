@@ -115,7 +115,7 @@
     {
       "shortName": "JRE 8 STIG",
       "longName": "Oracle Java Runtime Environment 8 Unix STIG",
-      "link": "https://github.com/mitre/jre8-stig-hardening",
+      "link": "https://github.com/mitre/oracle-java-runtime-environment-8-stig-hardening",
       "svg": "chef-2",
       "category": ["Application Logic"] 
     }
