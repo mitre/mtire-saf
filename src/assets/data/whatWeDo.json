@@ -8,33 +8,25 @@
           "name": "Validation",
           "desc": "Produce detailed security testing data throughout development",
           "icon": "mdi-thumb-up",
-          "svg": "",
-          "router_link": "validation",
-          "tools": ""
+          "router_link": "validation"
         },
         {
           "name": "Hardening",
           "desc": "Align with security baselines using our Ansible, Chef, and Terraform content",
           "icon": "mdi-security",
-          "svg": "",
-          "router_link": "hardening",
-          "tools": ""
+          "router_link": "hardening"
         },
         {
           "name": "Visualization",
           "desc": "Dive deep into test results visually via rollups, charts, and timelines",
           "icon": "mdi-image-search",
-          "svg": "",
-          "link": "https://heimdall-lite.mitre.org",
-          "tools": ""
+          "link": "https://heimdall-lite.mitre.org"
         },
         {
           "name": "Training",
           "desc": "Learn how to write effective tests and apply them to the team's pipeline",
           "icon": "mdi-chair-school",
-          "svg": "",
-          "router_link": "training",
-          "tools": ""
+          "router_link": "training"
         }
       ]
     },
@@ -148,9 +140,10 @@
     {
       "sectionHeader": "When To Use It",
       "sectionDesc" : "Develop and programmatically automate security in planning, development, assessment, and operational activities",
-      "images": [
-        { "filename": "whenToUseIt", "router_link": "gettingstarted" }
-      ],
+      "image": {
+        "filename": "whenToUseIt",
+        "router_link": "gettingstarted"
+      },
       "items": [
         {
           "name": "During PLANNING an organization can use MITRE | SAF to:",
@@ -197,13 +190,13 @@
     {
       "sectionHeader": "How We Support It",
       "sectionDesc": "Develop a toolchain to support the above areas of What and How for secure development",
-      "images": [{ "filename": "howWeSupportIt" }],
+      "image": {
+        "filename": "howWeSupportIt"
+      },
       "items": [
         {
           "name": "Heimdall Lite",
-          "link": "",
           "desc": "A lightweight version of Heimdall for simple use cases",
-          "icon": "",
           "app_link": "https://heimdall-lite.mitre.org",
           "app_svg": "app",
           "doc_link": "https://heimdall.mitre.org",
@@ -218,9 +211,7 @@
         },
         {
           "name": "Heimdall Server",
-          "link": "",
           "desc": "The complete Heimdall application - store results, coordinate across the development team, and more",
-          "icon": "",
           "app_link": "https://heimdall-demo.mitre.org",
           "app_svg": "app",
           "doc_link": "https://heimdall.mitre.org",
@@ -235,9 +226,7 @@
         },
         {
           "name": "Vulcan (alpha)",
-          "link": "",
           "desc": "Application for streamlining InSpec profile and overlay development using the Security Requirements Guide (SRG)",
-          "icon": "",
           "app_link": "https://vulcan-demo.mitre.org",
           "app_svg": "app",
           "doc_link": "https://vulcan.mitre.org",
@@ -247,9 +236,7 @@
         },
         {
           "name": "InSpec_Tools",
-          "link": "",
           "desc": "A set of Ruby utilities for creating, converting, and processing security baseline formats, results, and data",
-          "icon": "",
           "app_link": "",
           "app_svg": "app",
           "doc_link": "https://inspec-tools.mitre.org",
@@ -263,9 +250,7 @@
         },
         {
           "name": "Heimdall_Tools",
-          "link": "",
           "desc": "A set of Ruby utilities for converting and working with compliance data for use in Heimdall apps",
-          "icon": "",
           "app_link": "",
           "app_svg": "app",
           "doc_link": "https://heimdall-tools.mitre.org",
@@ -279,9 +264,7 @@
         },
         {
           "name": "InSpecJS",
-          "link": "",
           "desc": "A Typescript library for working with InSpec data",
-          "icon": "",
           "app_link": "",
           "app_svg": "app",
           "doc_link": "https://inspecjs.mitre.org",
@@ -295,9 +278,7 @@
         },
         {
           "name": "InSpecJS_Tools",
-          "link": "",
           "desc": "A set of JavaScript utilities for creating, converting, and processing security baseline formats, results, and data",
-          "icon": "",
           "app_link": "",
           "app_svg": "app",
           "doc_link": "https://inspec-tools-js.mitre.org",
@@ -307,9 +288,7 @@
         },
         {
           "name": "HDF Splunk Plugin",
-          "link": "",
           "desc": "Splunk plugin to upload Inspec output, Heimdall Tools output, and any other HDF format files to Splunk, for consumption by Heimdall Lite",
-          "icon": "",
           "app_link": "",
           "app_svg": "app",
           "doc_link": "https://hdf-json-to-splunk.mitre.org",
@@ -323,9 +302,7 @@
         },
         {
           "name": "HeimdallJS_Tools (Coming Soon!)",
-          "link": "",
           "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps",
-          "icon": "",
           "app_link": "",
           "app_svg": "",
           "doc_link": "",
