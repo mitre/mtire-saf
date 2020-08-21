@@ -66,7 +66,7 @@
     {
       "shortName": "Red Hat Jboss 6.3 STIG",
       "longName": "Red Hat Jboss Enterprise Application Server 6.3 STIG",
-      "link": "https://github.com/mitre/red-hat-jboss-eap-6.3-stig-baseline",
+      "link": "https://github.com/mitre/chef-red-hat-jboss-eap-6.3-stig-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Application Logic"]
     },
