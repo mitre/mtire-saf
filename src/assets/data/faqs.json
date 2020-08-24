@@ -118,6 +118,17 @@
         }
       ],
       "tag" : "cinc"
+    },
+    {
+      "question": "How can a MITRE employee contribute to SAF as part of sponsor work?",
+      "answer": "Since MITRE SAF is open source, a MITRE employee who wants to develop content for the framework in relation to sponsor work (e.g. create InSpec profiles tailored to a sponsor's environment) must fill out a request for Continuous Open Source Collaboration agreement (CCA). See below for the instructions and request template!",
+      "links": [
+        {
+          "name": "MITRE SAF CCA Template",
+          "download_link": "MITRE-SAF-CCA-Template.doc"
+        }
+      ],
+      "tag" : "cca"
     }
   ]
 }
