@@ -24,12 +24,11 @@
       :class="color_mode"
       class="mx-1 mb-5 flex-column"
       style="height: 17rem; min-height: 275px"
-      ref="sponsors"
     >
       <v-col class="pb-0" style="flex-grow: 1">
-        <p class="mb-0" style="font-size:1.3rem">
+        <p class="mb-0" style="font-size:1.3rem" ref="sponsors">
           Sponsors
-          <v-btn icon to="#sponsors" class="ml-2">
+          <v-btn icon to="#sponsors" @click="jump('sponsors')" class="ml-2">
             <v-icon>mdi-link</v-icon>
           </v-btn>
         </p>
@@ -57,10 +56,9 @@
       :class="color_mode"
       class="mx-1 mt-5 flex-column"
       style="height: 15rem; min-height: 200px"
-      ref="commercial-partners"
     >
       <v-col class="pb-0" style="flex-grow: 1">
-        <p class="mb-0" style="font-size:1.3rem">
+        <p class="mb-0" style="font-size:1.3rem" ref="commercial-partners">
           Commercial Partners
           <v-btn icon to="#commercial-partners" class="ml-2">
             <v-icon>mdi-link</v-icon>
@@ -110,6 +108,12 @@ export default {
     getImgUrl(pic) {
       return require("@/assets/img/partners/" + pic);
     },
+    jump (ref) {
+      var element = this.$refs[ref];
+      var top = element.offsetTop;
+      this.$vuetify.goTo(top);
+      console.log('jumping')
+    }
   },
   computed: {
     color_mode() {
@@ -120,11 +124,10 @@ export default {
   },
   mounted: function () {
     if (this.$route.hash) {
-      var element = this.$refs[this.$route.hash.substring(1)];
-      var top = element.offsetTop;
-      window.scrollTo(0, top);
+      this.jump(this.$route.hash.substring(1))
     }
   },
+  
 };
 </script>
 
