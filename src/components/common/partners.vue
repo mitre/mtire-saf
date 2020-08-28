@@ -60,7 +60,7 @@
       <v-col class="pb-0" style="flex-grow: 1">
         <p class="mb-0" style="font-size:1.3rem" ref="commercial-partners">
           Commercial Partners
-          <v-btn icon to="#commercial-partners" class="ml-2">
+          <v-btn icon to="#commercial-partners" @click="jump('commercial-partners')" class="ml-2">
             <v-icon>mdi-link</v-icon>
           </v-btn>
         </p>
@@ -112,7 +112,6 @@ export default {
       var element = this.$refs[ref];
       var top = element.offsetTop;
       this.$vuetify.goTo(top);
-      console.log('jumping')
     }
   },
   computed: {
