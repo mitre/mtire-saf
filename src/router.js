@@ -2,20 +2,20 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 import communityData from "./assets/data/communityData.json";
-import goTo from 'vuetify/es5/services/goto'
+// import goTo from "vuetify/es5/services/goto";
 Vue.use(Router);
 
 const router = new Router({
   //  mode: "history",
   //  base: process.env.BASE_URL,
-  scrollBehavior(to) {
-    let scrollTo = 0;
+  scrollBehavior(to, from, savedPosition) {
     if (to.hash) {
-      scrollTo = to.hash;
+      return { selector: to.hash };
+    } else if (savedPosition) {
+      return savedPosition;
     } else {
-      scrollTo = 0;
+      return { x: 0, y: 0 };
     }
-    return goTo(scrollTo, { 'duration': 0 })
   },
   routes: [
     {
@@ -175,16 +175,16 @@ const router = new Router({
       meta: {
         title: `FAQs | ${communityData.communityName}`,
         color: "#0277bd",
-        requiresAuth: false
-      }
+        requiresAuth: false,
+      },
     },
     {
-      path:'/admin/dashboard/events',
-      name:"admin-events",
-      component:()=> import('@/views/Admin/Events'),
-      meta:{
-        title:`Admin Dashboard | ${communityData.CommunityName}`,
-        color:"#0277bd",
+      path: "/admin/dashboard/events",
+      name: "admin-events",
+      component: () => import("@/views/Admin/Events"),
+      meta: {
+        title: `Admin Dashboard | ${communityData.CommunityName}`,
+        color: "#0277bd",
         requiresAuth: true,
       },
     },
