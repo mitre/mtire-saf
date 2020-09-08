@@ -1,6 +1,6 @@
 <template>
   <v-container fluid>
-    <v-row class='d-flex flex-column'>
+    <v-row class="ma-0">
       <v-col class="pa-0">
         <sec :topic="appsAndTools" :md="4" :lg="4" :xl="4" />
       </v-col>
