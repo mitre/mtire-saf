@@ -51,14 +51,14 @@
     },
     {
       "shortName": "Tomcat CIS Benchmark",
-      "longName": "Tomcat CIS Benchmark",
+      "longName": "Apache Tomcat 7 and 8 CIS Benchmark",
       "link": "https://github.com/mitre/ansible-cis-tomcat-hardening",
       "svg": "ansible",
       "category": ["Web Servers"]
     },
     {
       "shortName": "Tomcat CIS Benchmark",
-      "longName": "Tomcat CIS Benchmark",
+      "longName": "Apache Tomcat 8 CIS Benchmark",
       "link": "https://github.com/mitre/chef-cis-tomcat-hardening",
       "svg": "chef-2",
       "category": ["Web Servers"]
@@ -104,6 +104,20 @@
       "link": "https://github.com/mitre/chef-stig-mongodb-enterprise-advanced-hardening",
       "svg": "ansible",
       "category": ["Virtual Platforms"] 
+    },
+    {
+      "shortName": "Elasticsearch",
+      "longName": "Elasticsearch",
+      "link": "https://github.com/mitre/elasticsearch-hardening",
+      "svg": "chef-2",
+      "category": ["Application Logic"] 
+    },
+    {
+      "shortName": "JRE 8 STIG",
+      "longName": "Oracle Java Runtime Environment 8 Unix STIG",
+      "link": "https://github.com/mitre/oracle-java-runtime-environment-8-stig-hardening",
+      "svg": "chef-2",
+      "category": ["Application Logic"] 
     }
   ]
 }

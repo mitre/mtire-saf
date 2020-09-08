@@ -118,6 +118,17 @@
         }
       ],
       "tag" : "cinc"
+    },
+    {
+      "question": "How can I as a MITRE, government or vendor employee contribute to MITRE SAF?",
+      "answer": "<p>MITRE SAF has created the Continuous Collaboration Agreement to help sponsors for MITRE projects easily work with the SAF, and have MITRE support their contributions to the shared community. For more information, please review the MITRE SAF CCA Template.</p><p>Vendors and the open source community can contribute to MITRE SAF via the Apache 2.0 OSS License.</p>",
+      "links": [
+        {
+          "name": "MITRE SAF CCA Template",
+          "download_link": "MITRE-SAF-CCA-Template.docx"
+        }
+      ],
+      "tag" : "cca"
     }
   ]
 }

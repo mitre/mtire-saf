@@ -2,12 +2,13 @@
   <v-container fluid>
     <v-row align="center" justify="center" class="mb-0">
       <v-col cols="12" class="mb-0">
-        <p class="mb-1 primary--text" style="font-weight: bold; font-size:200%">
-          The MITRE | SAF Community
-        </p>
-        <p class="mt-1 mb-0">
-          A very big thank you to our community members for their continued partnership.
-        </p>
+        <p
+          class="mb-1 primary--text"
+          style="font-weight: bold; font-size:200%"
+        >The MITRE | SAF Community</p>
+        <p
+          class="mt-1 mb-0"
+        >A very big thank you to our community members for their continued partnership.</p>
         <p class="mt-0 mb-0">
           If you’re interested in being showcased here, please contact
           <a
@@ -19,13 +20,17 @@
       </v-col>
     </v-row>
 
-    <v-row :class="color_mode" class="mx-1 mb-5 flex-column" style="height: 17rem; min-height: 275px">
+    <v-row
+      :class="color_mode"
+      class="mx-1 mb-5 flex-column"
+      style="height: 17rem; min-height: 275px"
+    >
       <v-col class="pb-0" style="flex-grow: 1">
-        <p
-          class="mb-0"
-          style="font-size:1.3rem"
-        >
+        <p class="mb-0" style="font-size:1.3rem" ref="sponsors">
           Sponsors
+          <v-btn icon to="#sponsors" @click="jump('sponsors')" class="ml-2">
+            <v-icon>mdi-link</v-icon>
+          </v-btn>
         </p>
       </v-col>
       <v-col class="py-0" style="flex-grow: 5">
@@ -39,13 +44,7 @@
               v-bind:href="sponsor.link"
               target="_blank"
             >
-              <v-img
-                :src="getImgUrl(sponsor.img)"
-                class="white"
-                height="100"
-                width="200"
-                contain
-              ></v-img>
+              <v-img :src="getImgUrl(sponsor.img)" class="white" height="100" width="200" contain></v-img>
               <v-card-subtitle class="mb-0">{{sponsor.name}}</v-card-subtitle>
             </v-card>
           </v-slide-item>
@@ -53,13 +52,17 @@
       </v-col>
     </v-row>
 
-    <v-row :class="color_mode" class="mx-1 mt-5 flex-column" style="height: 15rem; min-height: 200px">
+    <v-row
+      :class="color_mode"
+      class="mx-1 mt-5 flex-column"
+      style="height: 15rem; min-height: 200px"
+    >
       <v-col class="pb-0" style="flex-grow: 1">
-        <p
-          class="mb-0"
-          style="font-size:1.3rem"
-        >
+        <p class="mb-0" style="font-size:1.3rem" ref="commercial-partners">
           Commercial Partners
+          <v-btn icon to="#commercial-partners" @click="jump('commercial-partners')" class="ml-2">
+            <v-icon>mdi-link</v-icon>
+          </v-btn>
         </p>
       </v-col>
       <v-col class="py-0" style="flex-grow: 5">
@@ -95,22 +98,35 @@ import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
-      sponsors: sponsorData['Sponsors'],
-      partners: partnerData['Commercial Partners'],
+      sponsors: sponsorData["Sponsors"],
+      partners: partnerData["Commercial Partners"],
       communityData: communityData,
-      showArrows: true
+      showArrows: true,
     };
   },
   methods: {
     getImgUrl(pic) {
       return require("@/assets/img/partners/" + pic);
+    },
+    jump (ref) {
+      var element = this.$refs[ref];
+      var top = element.offsetTop;
+      this.$vuetify.goTo(top);
     }
   },
   computed: {
     color_mode() {
-      return this.$vuetify.theme.dark ? "darkModeContainer" : "lightModeContainer";
+      return this.$vuetify.theme.dark
+        ? "darkModeContainer"
+        : "lightModeContainer";
+    },
+  },
+  mounted: function () {
+    if (this.$route.hash) {
+      this.jump(this.$route.hash.substring(1))
     }
-  }
+  },
+  
 };
 </script>
 
