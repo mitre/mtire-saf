@@ -1,7 +1,7 @@
 <template>
   <v-container fluid>
-    <v-row class='d-flex flex-column'>
-      <v-col v-for="(topic, index) in whatwedodata" :key="index" class="pa-0">
+    <v-row v-for="(topic, index) in whatwedodata" :key="index">
+      <v-col class="pa-0">
         <sec :topic="topic" :md="widths[index][0]" :lg="widths[index][1]" :xl="widths[index][2]" />
         <v-divider v-if="index + 1 < whatwedodata.length" class="ma-2" />
       </v-col>
