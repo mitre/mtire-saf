@@ -10,14 +10,14 @@
     {
       "shortName": "Red Hat 7 STIG",
       "longName": "Red Hat 7 STIG",
-      "link": "https://github.com/mitre/redhat-enterprise-linux-7-stig-baseline",
+      "link": "https://github.com/mitre/red-hat-enterprise-linux-7-stig-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Operating Systems"]
     },
     {
       "shortName": "Red Hat CVE Scan",
       "longName": "Red Hat CVE Vulnerability Scan",
-      "link": "https://github.com/CMSgov/rhel_cve_vulnerability_scan_baseline",
+      "link": "https://github.com/CMSgov/red-hat-enterprise-linux-cve-vulnerability-scan-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Operating Systems"]
     },
@@ -64,9 +64,9 @@
       "category": ["Application Logic"]
     },
     {
-      "shortName": "Red Hat Jboss 6.3 STIG",
+      "shortName": "Red Hat Jboss EAP 6.3 STIG",
       "longName": "Red Hat Jboss Enterprise Application Server 6.3 STIG",
-      "link": "https://github.com/mitre/red-hat-jboss-eap-6.3-stig-baseline",
+      "link": "https://github.com/mitre/red-hat-jboss-enterprise-application-platform-6.3-stig-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Application Logic"]
     },
@@ -99,9 +99,9 @@
       "category": ["Web Servers"]
     },
     {
-      "shortName": "NGINX",
-      "longName": "NGINX",
-      "link": "https://github.com/mitre/nginx-baseline",
+      "shortName": "NGINX STIG",
+      "longName": "NGINX STIG",
+      "link": "https://github.com/mitre/nginx-stig-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Web Servers"]
     },
@@ -178,7 +178,7 @@
     {
       "shortName": "AWS CIS",
       "longName": "AWS CIS Foundations",
-      "link": "https://github.com/mitre/cis-aws-foundations-baseline",
+      "link": "https://github.com/mitre/aws-foundations-cis-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Cloud Service Providers"]
     },
@@ -255,14 +255,14 @@
     {
       "shortName": "Tomcat 7 CIS",
       "longName": "Apache Tomcat 7 CIS",
-      "link": "https://github.com/mitre/cis_apache_tomcat_benchmark_7",
+      "link": "https://github.com/mitre/apache-tomcat-7-cis-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Web Servers"]
     },
     {
-      "shortName": "CentOS 7",
-      "longName": "CentOS 7",
-      "link": "https://github.com/mitre/centos-7-baseline",
+      "shortName": "CentOS 7 CDC SBC",
+      "longName": "CentOS 7 CDC SBC",
+      "link": "https://github.com/mitre/centos-7-cdc-sbc-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Operating Systems"]
     },
@@ -276,7 +276,7 @@
     {
       "shortName": "Kubernetes CIS",
       "longName": "Kubernetes CIS",
-      "link": "https://github.com/mitre/kubernetes-cis-benchmark",
+      "link": "https://github.com/mitre/kubernetes-cis-baseline",
       "svg": "inspec-blue-back-border",
       "category": ["Application Logic"]
     },
