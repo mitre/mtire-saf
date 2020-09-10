@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Artboard</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-3" fill="#449BBB">
+            <path d="M6.49292793,28.8704495 L11.8914387,24.0096087 C13.1231365,24.6426858 14.5198407,25 16,25 C20.9705627,25 25,20.9705627 25,16 C25,11.0294373 20.9705627,7 16,7 C11.0294373,7 7,11.0294373 7,16 C7,17.6668476 7.45313232,19.2278604 8.24293286,20.5665744 L2.98164237,25.3038616 C1.10471383,22.6822602 0,19.47014 0,16 C0,7.163444 7.163444,0 16,0 C24.836556,0 32,7.163444 32,16 C32,24.836556 24.836556,32 16,32 C12.4396681,32 9.15094254,30.837115 6.49292793,28.8704495 Z" id="Combined-Shape"></path>
+            <circle id="Oval" cx="16" cy="16" r="5.25"></circle>
+        </g>
+    </g>
+</svg>
