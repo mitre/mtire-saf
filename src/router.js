@@ -239,6 +239,22 @@ const router = new Router({
       },
     },
     {
+      path: "/validation",
+      redirect: "/validate"
+    },
+    {
+      path: "/hardening",
+      redirect: "/harden"
+    },
+    {
+      path: "/gettingstarted",
+      redirect: "/getstarted"
+    },
+    {
+      path: "/training",
+      redirect: "/train"
+    },
+    {
       path: "*",
       name: "redirect",
       redirect: { path: "/" },
