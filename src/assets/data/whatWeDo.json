@@ -189,7 +189,7 @@
           "tools": ""
         },
         {
-          "name": "Baseline Parser (WIP)",
+          "name": "Baseline Parser",
           "link": "",
           "desc": "Script to determine the set of NIST SP 800-53 controls covered by a baseline stored in GitHub",
           "icon": "",
