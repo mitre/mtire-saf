@@ -187,6 +187,18 @@
           "github_link": "",
           "svg": "",
           "tools": ""
+        },
+        {
+          "name": "Baseline Parser (WIP)",
+          "link": "",
+          "desc": "Script to determine the set of NIST SP 800-53 controls covered by a baseline stored in GitHub",
+          "icon": "",
+          "app_link": "",
+          "app_svg": "",
+          "doc_link": "",
+          "github_link": "https://github.com/mitre/saf-baseline-ingestion",
+          "svg": "",
+          "tools": ""
         }
       ]
     }
