@@ -26,12 +26,30 @@
             "date": "November 13-14 2019",
             "description": "",
             "link": ""
+          },
+          {
+            "name": "Introductory InSpec Profile Developer Training",
+            "date": "April 30th 2020, May 1st 2020",
+            "description": "",
+            "link": ""
+          },
+          {
+            "name": "Introductory InSpec Profile Developer Training",
+            "date": "September 15-16th, 2020",
+            "description": "",
+            "link": ""
           }
         ],
         "advTraining": [
           {
             "name": "Advanced InSpec Profile Developer Training",
             "date": "September 5-6th 2019",
+            "description": "",
+            "link": ""
+          },
+          {
+            "name": "Advanced InSpec Profile Developer Training",
+            "date": "September 22-23th 2020",
             "description": "",
             "link": ""
           }
