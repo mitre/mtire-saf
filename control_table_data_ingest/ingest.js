@@ -21,6 +21,7 @@ const getAllControlsCanonized = () => {
   const allControlsCanonized = [];
   for (const control of allControls) {
     const canonized = control.canonize({max_specifiers: 3, allow_letters: false, add_spaces: false});
+    console.log('canonized', canonized);
     if (!allControlsCanonized.includes(canonized)) {
       allControlsCanonized.push(canonized);
     }
@@ -69,8 +70,10 @@ const generateProfileJson = async (profile) => {
 
 const getProfileControls = (allControls, profileText) => {
   const hdf = inspec.parse.convertFile(profileText);
+  console.log('hdf', hdf);
 
   const profiles = hdf["1_0_ExecJson"] ? hdf["1_0_ExecJson"].profiles : [hdf["1_0_ProfileJson"]];
+  console.log('profiles', profiles);
 
   const controls = [];
   for (const profile of profiles) {
@@ -78,6 +81,7 @@ const getProfileControls = (allControls, profileText) => {
       controls.push(inspec.hdfWrapControl(control));
     }
   }
+  console.log('controls', controls);
 
   const nistTagHits = new Set();
   for (const control of controls) {
@@ -89,6 +93,7 @@ const getProfileControls = (allControls, profileText) => {
       }
     }
   }
+  console.log('nist tag hits', nistTagHits);
 
   return [...nistTagHits];
 }
@@ -110,6 +115,7 @@ const controlsType = 'NIST SP 800-53 Control';
 
       try {
         profileText = await generateProfileJson(profile);
+        console.log('profile text', profileText);
       } catch (error) {
         console.log('inspec error that we\'re just gonna ignore', error);
       }
