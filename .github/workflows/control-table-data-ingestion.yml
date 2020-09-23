@@ -12,7 +12,7 @@ jobs:
         run: curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P inspec
       - uses: actions/checkout@v2
       - name: Ingest data
-        run: node ./control_table_data_ingest/ingest.js
+        run: node ingest.js
       - name: Commit processed data
         # modify the git config stuff to be some 'official' saf account
         run: |

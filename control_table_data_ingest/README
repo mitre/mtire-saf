@@ -1,7 +1,0 @@
-For testing purposes:
-
-Build the minimal image (off of the vpn): `docker build --no-cache -t 'controltable' ./control_table_data_ingest`
-
-Install `act` to run github actions locally: https://github.com/nektos/act
-
-Trigger the event: `act -P ubuntu-latest=controltable workflow_dispatch`
