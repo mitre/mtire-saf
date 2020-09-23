@@ -124,7 +124,6 @@ const controlsType = 'NIST SP 800-53 Control';
       let profileText = '';
 
       const hash = await getGitHash(profile);
-      console.log('old hash', profile.gitHash, 'new hash', hash);
       if (profile.gitHash && profile.gitHash === hash) {
         profileText = await fs.readFile(`./control_table_data_ingest/profiles${profile.link.substr(profile.link.lastIndexOf('/'))}.json`, 'utf8');
       } else {
@@ -155,7 +154,7 @@ const controlsType = 'NIST SP 800-53 Control';
 
       const hash = await getGitHash(extra);
       if (extra.gitHash && extra.gitHash === hash) {
-        csv = await fs.readFile(`./control_table_data_ingest/profiles${extra.link.substr(extra.link.lastIndexOf('/'))}.csv`, 'utf8');
+        csv = await fs.readFile(`./control_table_data_ingest/profiles${extra.link.substr(extra.link.lastIndexOf('/'))}.json`, 'utf8');
       } else {
         await downloadGitRepo(extra);
 
