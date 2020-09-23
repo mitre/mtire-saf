@@ -34,6 +34,9 @@ jobs:
       - name: Ingest and process data
         run: |
           node ./control_table_data_ingest/ingest.js
+          jq '.' ./src/assets/data/baselines.json > ./control_table_data_ingest/tmp_baselines.json && mv ./control_table_data_ingest/tmp_baselines.json ./src/assets/data/baselines.json
+          jq '.' ./src/assets/data/mitre-saf-control-mapping.json > ./control_table_data_ingest/tmp_mitre-saf-control-mapping.json && mv ./control_table_data_ingest/tmp_mitre-saf-control-mapping.json ./src/assets/data/mitre-saf-control-mapping.json
+          find control_table_data_ingest/profiles/ -name \*.json | xargs -I{} sh -c 'jq "." "$1" > ./control_table_data_ingest/tmp.json && mv ./control_table_data_ingest/tmp.json "$1"' sh {}
       - name: Commit processed data
         run: |
           git config --global user.name 'MITRE SAF'
