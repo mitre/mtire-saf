@@ -9,5 +9,3 @@ Trigger the event: `act -P ubuntu-latest=controltable workflow_dispatch`
 The event will fail at the end due to not being able to push since GITHUB_TOKEN isn't defined.  If you manually define it locally (using a secret generated from the repo as the value), then it'll probably work.
 
 If you need to go in and manually inspect the situation, insert a run step into the workflow consisting of `sleep infinity` to 'pause' execution at that point in the process.  This lets you run `docker exec -it act-Control-Table-Data-Ingestion-control-table-ingest bash` and explore the container.
-
-I don't believe `act` supports caching, so ignore the errors related to that, but be aware that it will also always be a fresh container with nothing cached.
