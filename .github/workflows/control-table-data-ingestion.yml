@@ -8,7 +8,6 @@ on:
 jobs:
   control-table-ingest:
     runs-on: ubuntu-latest
-    name: Control table ingest
     steps:
       - name: Pull down this repo
         uses: actions/checkout@v2
@@ -31,8 +30,8 @@ jobs:
       - name: Install dependencies
         run: |
           [ -f /opt/inspec/bin/inspec ] && sudo ln -s /opt/inspec/bin/inspec /usr/bin/inspec || curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P inspec -v 4.18.108
-          export INSPECJS_VER=`node -p "require('./package-lock.json').dependencies.inspecjs.version"`
-          export CSVPARSE_VER=`node -p "require('./package-lock.json').dependencies['csv-parse'].version"`
+          export INSPECJS_VER=`node -p -e "require('./package-lock.json').dependencies.inspecjs.version"`
+          export CSVPARSE_VER=`node -p -e "require('./package-lock.json').dependencies['csv-parse'].version"`
           npm install --no-save --no-package-lock inspecjs@"$INSPECJS_VER" csv-parse@"$CSVPARSE_VER"
       - name: Ingest and process data
         run: |
