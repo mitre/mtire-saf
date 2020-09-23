@@ -5,5 +5,3 @@ Build the minimal image (off of the vpn): `docker build --no-cache -t 'controlta
 Install `act` to run github actions locally: https://github.com/nektos/act
 
 Trigger the event: `act -P ubuntu-latest=controltable workflow_dispatch`
-
-The event will fail at the end due to not being able to push since GITHUB_TOKEN isn't defined.  If you manually define it locally (using a secret generated from the repo as the value), then it'll probably work.

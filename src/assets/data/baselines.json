@@ -294,16 +294,5 @@
       "svg": "inspec-blue-back-border",
       "category": ["Web Servers"]
     }
-  ],
-  "extras": {
-    "csv": [
-      {
-        "shortName": "Heimdall_tools",
-        "longName": "CWE tool data mapped by Heimdall_tools",
-        "link": "https://github.com/mitre/heimdall_tools",
-        "path": "Heimdall_tools/lib/data/cwe-nist-mapping.csv",
-        "column": "NIST-ID"
-      }
-    ]
-  }
+  ]
 }
