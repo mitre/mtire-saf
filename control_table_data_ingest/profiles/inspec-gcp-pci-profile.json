@@ -1,0 +1,28 @@
+{
+  "platform": {
+    "name": "null",
+    "release": "0"
+  },
+  "profiles": [
+    {
+      "name": "",
+      "version": "0",
+      "sha256": ".",
+      "title": "Null",
+      "maintainer": ".",
+      "summary": ".",
+      "license": "Apache-2.0",
+      "copyright": ".",
+      "copyright_email": ".",
+      "supports": [],
+      "attributes": [],
+      "groups": [],
+      "controls": [],
+      "status": "loaded"
+    }
+  ],
+  "statistics": {
+    "duration": 10
+  },
+  "version": "Z.0"
+}
