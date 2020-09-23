@@ -44,5 +44,5 @@ jobs:
           git add ./control_table_data_ingest/profiles
           git add ./src/assets/data/baselines.json
           git add ./src/assets/data/mitre-saf-control-mapping.json
-          git commit -m 'Automated ingestion of profiles' || true
+          git commit -m 'Automated ingestion of profiles'
           git push "https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
