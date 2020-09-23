@@ -15,10 +15,8 @@ jobs:
         run: |
           curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P inspec -v 4.18.108
           npm install --only=dev
-      - name: Ingest and process data
-        run: |
-          node ./control_table_data_ingest/ingest.js
-          jq '.' ./src/assets/data/mitre-saf-control-mapping.json > ./control_table_data_ingest/tmp.json && mv ./control_table_data_ingest/tmp.json ./src/assets/data/mitre-saf-control-mapping.json
+      - name: Ingest data
+        run: node ./control_table_data_ingest/ingest.js
       - name: Commit processed data
         run: |
           git config --global user.name 'MITRE SAF'
