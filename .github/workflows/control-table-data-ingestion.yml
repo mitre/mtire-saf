@@ -15,7 +15,6 @@ jobs:
         run: node ./control_table_data_ingest/ingest.js
       - name: Commit processed data
         # modify the git config stuff to be some 'official' saf account
-        # modify to not add all, just the generated file (currently will add on a lot of temporary directories)
         run: |
           git config --global user.name 'Amndeep Singh Mann'
           git config --global user.email 'amann@mitre.org'
