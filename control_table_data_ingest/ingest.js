@@ -30,42 +30,23 @@ const getAllControlsCanonized = () => {
   return allControlsCanonized;
 }
 
-const vmwareGitUrl = 'https://github.com/vmware/dod-compliance-and-automation.git';
-
-const getGitHash = async (profile) => {
-  console.log('git hash', profile.shortName);
-  if (profile.link.startsWith('https://github.com/vmware')) {
-    const { stdout, stderr } = await exec(`git ls-remote --symref ${vmwareGitUrl} HEAD | awk 'FNR == 2 {print $1}'`);
-    console.log('stdout:', stdout);
-    console.log('stderr:', stderr);
-    return stdout.trim();
-  } else if (profile.longName.includes('Google')) {
-    console.log('skipping google cause their repos aren\'t set up for inspec json nor do they generate validate profiles');
-    return '0';
-  } else if (profile.shortName === 'AWS S3' || profile.shortName === 'AWS RDS CIS') {
-    console.log('skipping these two aws repos due to inspec issues');
-    return '0';
-  } else {
-    const { stdout, stderr } = await exec(`git ls-remote --symref ${profile.link} HEAD | awk 'FNR == 2 {print $1}'`);
-    console.log('stdout:', stdout);
-    console.log('stderr:', stderr);
-    return stdout.trim();
-  }
-}
-
 const downloadGitRepo = async (profile) => {
   if (profile.link.startsWith('https://github.com/vmware')) {
     try {
-      const { stdout, stderr } = await exec(`[ ! -d "./vmware" ] && git clone --depth=1 ${vmwareGitUrl} "./vmware"`);
-      console.log('stdout:', stdout);
-      console.log('stderr:', stderr);
+      const { stdout: gitStdout, stderr: gitStderr } = await exec(`[ ! -d "./vmware" ] && git clone --depth=1 https://github.com/vmware/dod-compliance-and-automation.git "./vmware"`);
+      console.log('stdout:', gitStdout);
+      console.log('stderr:', gitStderr);
     } catch (error) {
       console.log('git error that we\'re just gonna ignore cause it\'s probably the "is this directory already here" conditional failing which is the point cause git clone fails on attempted overwrite', error);
     }
+  } else if (profile.longName.includes('Google')) {
+    console.log('skipping google cause their repos aren\'t set up for inspec json nor do they generate validate profiles');
+  } else if (profile.shortName === 'AWS S3' || profile.shortName === 'AWS RDS CIS') {
+    console.log('skipping these two aws repos due to inspec issues');
   } else {
-    const { stdout, stderr } = await exec(`git clone --depth=1 ${profile.link} "${profile.shortName}"`);
-    console.log('stdout:', stdout);
-    console.log('stderr:', stderr);
+    const { stdout: gitStdout, stderr: gitStderr } = await exec(`git clone --depth=1 ${profile.link} "${profile.shortName}"`);
+    console.log('stdout:', gitStdout);
+    console.log('stderr:', gitStderr);
   }
 }
 
@@ -75,6 +56,8 @@ const generateProfileJson = async (profile) => {
 
   if (profile.link.startsWith('https://github.com/vmware')) {
     ({ stdout: inspecStdout, stderr: inspecStderr } = await exec(`inspec json --chef-license=accept-silent "./vmware/${profile.link.substr(profile.link.indexOf('vsphere')).concat(profile.link.includes('vcsa') ? '/wrapper' : '')}"`, { maxBuffer: maxBuffer }));
+  } else if (profile.longName.includes('Google') || profile.shortName === 'AWS S3' || profile.shortName === 'AWS RDS CIS') {
+    inspecStdout = await fs.readFile(`./control_table_data_ingest${profile.link.substr(profile.link.lastIndexOf('/'))}.json`, 'utf8');
   } else {
     ({ stdout: inspecStdout, stderr: inspecStderr } = await exec(`inspec json --chef-license=accept-silent "./${profile.shortName}"`, { maxBuffer: maxBuffer }));
   }
@@ -121,22 +104,14 @@ const controlsType = 'NIST SP 800-53 Control';
 
     const allProfileControls = {};
     for (const profile of baselines) {
+      await downloadGitRepo(profile);
+
       let profileText = '';
 
-      const hash = await getGitHash(profile);
-      if (profile.gitHash && profile.gitHash === hash) {
-        profileText = await fs.readFile(`./control_table_data_ingest/profiles${profile.link.substr(profile.link.lastIndexOf('/'))}.json`, 'utf8');
-      } else {
-        await downloadGitRepo(profile);
-
-        try {
-          profileText = await generateProfileJson(profile);
-        } catch (error) {
-          console.log('inspec error that we\'re just gonna ignore', error);
-        }
-
-        await fs.writeFile(`./control_table_data_ingest/profiles${profile.link.substr(profile.link.lastIndexOf('/'))}.json`, profileText, 'utf8');
-        profile.gitHash = hash;
+      try {
+        profileText = await generateProfileJson(profile);
+      } catch (error) {
+        console.log('inspec error that we\'re just gonna ignore', error);
       }
 
       try {
@@ -150,28 +125,14 @@ const controlsType = 'NIST SP 800-53 Control';
 
     const allExtraControls = {};
     for (const extra of extras.csv) {
-      let csv = '';
+      await downloadGitRepo(extra);
 
-      const hash = await getGitHash(extra);
-      if (extra.gitHash && extra.gitHash === hash) {
-        csv = await fs.readFile(`./control_table_data_ingest/profiles${extra.link.substr(extra.link.lastIndexOf('/'))}.json`, 'utf8');
-      } else {
-        await downloadGitRepo(extra);
-
-        csv = await fs.readFile(`./${extra.path}`, 'utf8');
-
-        await fs.copyFile(`./${extra.path}`, `./control_table_data_ingest/profiles${extra.link.substr(extra.link.lastIndexOf('/'))}.json`);
-        extra.gitHash = hash;
-      }
-
+      const csv = await fs.readFile(`./${extra.path}`, 'utf8');
       const asJson = parse(csv, { columns: true, skip_empty_lines: true });
 
       allExtraControls[extra.longName] = asJson.reduce((acc, row) => acc.includes(row[extra.column]) ? acc : acc.concat(row[extra.column]), []);
       console.log('controls that the extra thing has', extra.longName, allExtraControls[extra.longName]);
     }
-
-    await fs.writeFile('./src/assets/data/baselines.json', JSON.stringify({baselines, extras}), 'utf8');
-    console.log('overwrite baselines with new hashes');
 
     const controlMapping = [];
     for (const control of allControls) {
