@@ -1,9 +1,8 @@
 name: Control Table Data Ingestion
 
 on:
+  # swap to schedule later on
   workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *'
 
 jobs:
   control-table-ingest:
