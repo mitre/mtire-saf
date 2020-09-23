@@ -160,7 +160,7 @@ const controlsType = 'NIST SP 800-53 Control';
 
         csv = await fs.readFile(`./${extra.path}`, 'utf8');
 
-        await fs.copyFile(`./${extra.path}`, `./control_table_data_ingest/profiles${extra.link.substr(extra.link.lastIndexOf('/'))}.csv`);
+        await fs.copyFile(`./${extra.path}`, `./control_table_data_ingest/profiles${extra.link.substr(extra.link.lastIndexOf('/'))}.json`);
         extra.gitHash = hash;
       }
 
