@@ -8,18 +8,16 @@ jobs:
   control-table-ingest:
     runs-on: ubuntu-latest
     steps:
-      - name: Pull down this repo
-        uses: actions/checkout@v2
       - name: Install dependencies
-        run: |
-          curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P inspec -v 4.18.108
-          npm install --only=dev
+        run: curl https://omnitruck.chef.io/install.sh | sudo bash -s -- -P inspec
+      - uses: actions/checkout@v2
       - name: Ingest data
         run: node ./control_table_data_ingest/ingest.js
       - name: Commit processed data
+        # modify the git config stuff to be some 'official' saf account
+        # modify to not add all, just the generated file (currently will add on a lot of temporary directories)
         run: |
-          git config --global user.name 'MITRE SAF'
-          git config --global user.email 'saf@groups.mitre.org'
-          git add ./src/assets/data/mitre-saf-control-mapping.json
-          git commit -m 'Automated ingestion of profiles'
-          git push "https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
+          git config --global user.name 'Amndeep Singh Mann'
+          git config --global user.email 'amann@mitre.org'
+          git commit -am 'Automated ingestion of profiles'
+          git push
