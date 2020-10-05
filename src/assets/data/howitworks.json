@@ -218,7 +218,7 @@
             {
               "title": "Heimdall Data Format (HDF)",
               "subtitle": "<b>Normalize data</b> for portability and aggregation",
-              "router_link" : "/visualize"
+              "router_link" : "/normalize"
             },
             {
               "title": "Heimdall_Tools",

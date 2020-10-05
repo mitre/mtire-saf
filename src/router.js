@@ -254,6 +254,7 @@ const router = new Router({
       path: "/training",
       redirect: "/train"
     },
+    { path: '/hdf', redirect: { name: 'normalize' }},
     {
       path: "*",
       name: "redirect",
