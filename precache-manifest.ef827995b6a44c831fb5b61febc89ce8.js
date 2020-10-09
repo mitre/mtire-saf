@@ -356,20 +356,20 @@ self.__precacheManifest = [
     "url": "/img/Shield.0ce0914f.png"
   },
   {
-    "revision": "c32505e8c654310ece1da4e1c10eeb57",
-    "url": "/fonts/materialdesignicons-webfont.c32505e8.woff"
-  },
-  {
     "revision": "dc85ceeb0daba687e36d8dde4ed4d352",
     "url": "/fonts/materialdesignicons-webfont.dc85ceeb.woff2"
   },
   {
-    "revision": "6a2ddad1092a0a1c326b6d0e738e682b",
-    "url": "/fonts/materialdesignicons-webfont.6a2ddad1.ttf"
+    "revision": "c32505e8c654310ece1da4e1c10eeb57",
+    "url": "/fonts/materialdesignicons-webfont.c32505e8.woff"
   },
   {
     "revision": "8a67040660444e8d8ee82a406d580d8f",
     "url": "/fonts/materialdesignicons-webfont.8a670406.eot"
+  },
+  {
+    "revision": "6a2ddad1092a0a1c326b6d0e738e682b",
+    "url": "/fonts/materialdesignicons-webfont.6a2ddad1.ttf"
   },
   {
     "revision": "a1e9ab061bb78195d37748b7c538b5c6",
