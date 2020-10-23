@@ -101,7 +101,7 @@
           "tools": ""
         },
         {
-          "name": "InSpec_Tools",
+          "name": "InSpec Tools",
           "link": "",
           "desc": "A set of Ruby utilities for creating, converting, and processing security baseline formats, results, and data",
           "icon": "",
@@ -117,7 +117,19 @@
           ]
         },
         {
-          "name": "Heimdall_Tools",
+          "name": "InSpec Tools GitHub Action",
+          "link": "",
+          "desc": "Add InSpec Tools to your GitHub Actions workflow",
+          "icon": "",
+          "app_link": "",
+          "app_svg": "",
+          "doc_link": "https://github.com/marketplace/actions/inspec-tools-action",
+          "github_link": "https://github.com/mitre/inspec_tools_action",
+          "svg": "",
+          "tools": ""
+        },
+        {
+          "name": "Heimdall Tools",
           "link": "",
           "desc": "A set of Ruby utilities for converting and working with compliance data for use in Heimdall apps",
           "icon": "",
@@ -131,6 +143,17 @@
             "https://img.shields.io/github/v/release/mitre/heimdall_tools?label=version",
             "https://img.shields.io/gem/dt/heimdall_tools?label=gem%20downloads"
           ]
+        },
+        {
+          "name": "Heimdall Tools GitHub Action",
+          "link": "",
+          "desc": "Add Heimdall Tools to your GitHub Actions workflow",
+          "icon": "",
+          "app_link": "",
+          "app_svg": "",
+          "doc_link": "https://github.com/marketplace/actions/heimdall-tools-action",
+          "github_link": "https://github.com/mitre/heimdall_tools_action",
+          "svg": ""
         },
         {
           "name": "InSpecJS",
@@ -149,7 +172,7 @@
           ]
         },
         {
-          "name": "InSpecJS_Tools",
+          "name": "InSpecJS Tools",
           "link": "",
           "desc": "A set of JavaScript utilities for creating, converting, and processing security baseline formats, results, and data",
           "icon": "",
@@ -177,18 +200,6 @@
           ]
         },
         {
-          "name": "HeimdallJS_Tools (Coming Soon!)",
-          "link": "",
-          "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps",
-          "icon": "",
-          "app_link": "",
-          "app_svg": "",
-          "doc_link": "",
-          "github_link": "",
-          "svg": "",
-          "tools": ""
-        },
-        {
           "name": "Baseline Parser",
           "link": "",
           "desc": "Script to determine the set of NIST SP 800-53 controls covered by a baseline stored in GitHub",
@@ -199,7 +210,19 @@
           "github_link": "https://github.com/mitre/saf-baseline-ingestion",
           "svg": "",
           "tools": ""
-        }
+        },
+        {
+          "name": "HeimdallJS Tools (Coming Soon!)",
+          "link": "",
+          "desc": "A set of JavaScript utilities for converting and working with compliance data for use in Heimdall apps",
+          "icon": "",
+          "app_link": "",
+          "app_svg": "",
+          "doc_link": "",
+          "github_link": "",
+          "svg": "",
+          "tools": ""
+        }        
       ]
     }
   ]
