@@ -20,6 +20,9 @@
           <prism :language="ex.syntax">{{ex.code}}</prism>
         </div>
       </div>
+      <p v-if="row.footer" class="ma-2">
+        <span v-html="row.footer" />
+      </p>
     </div>
   </v-container>
 </template>

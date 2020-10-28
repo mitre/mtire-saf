@@ -1,0 +1,81 @@
+{
+  "platform": { "name": "ubuntu", "release": "16.04" },
+  "profiles": [
+    {
+      "name": "Canonical Ubuntu 16.04 LTS Security Technical Implementation Guide",
+      "version": "0.2.0",
+      "sha256": "b5d892ca3aeef2a34bbb1621ca1aa3837c056b41dc04f1ba39a522ee1b9ac31d",
+      "title": "Canonical Ubuntu 16.04 LTS Security Technical Implementation Guide",
+      "maintainer": "The Authors",
+      "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.",
+      "license": "Apache-2.0",
+      "copyright": "The Authors",
+      "copyright_email": "you@example.com",
+      "supports": [{ "platform-name": "ubuntu", "release": "16.04" }],
+      "attributes": [],
+      "groups": [
+        { "id": "controls/V-75443.rb", "controls": ["V-75443"] }
+      ],
+      "controls": [
+        {
+          "id": "V-75443",
+          "title": "The Ubuntu operating system must limit the number of concurrent\nsessions to ten for all accounts and/or account types.",
+          "desc": "Ubuntu operating system management includes the ability to control the\nnumber of users and user sessions that utilize an Ubuntu operating system.\nLimiting the number of allowed users and sessions per user is helpful in\nreducing the risks related to DoS attacks.\n\n    This requirement addresses concurrent sessions for information system\naccounts and does not address concurrent sessions by single users via multiple\nsystem accounts. The maximum number of concurrent sessions should be defined\nbased upon mission needs and the operational environment for each system.",
+          "descriptions": [
+            {
+              "label": "default",
+              "data": "Ubuntu operating system management includes the ability to control the\nnumber of users and user sessions that utilize an Ubuntu operating system.\nLimiting the number of allowed users and sessions per user is helpful in\nreducing the risks related to DoS attacks.\n\n    This requirement addresses concurrent sessions for information system\naccounts and does not address concurrent sessions by single users via multiple\nsystem accounts. The maximum number of concurrent sessions should be defined\nbased upon mission needs and the operational environment for each system."
+            },
+            {
+              "label": "check",
+              "data": "Verify that the Ubuntu operating system limits the number of\nconcurrent sessions to \"10\" for all accounts and/or account types by running\nthe following command:\n\n# grep maxlogins /etc/security/limits.conf\n\nThe result must contain the following line:\n\n* hard maxlogins 10\n\nIf the \"maxlogins\" item is missing or the value is not set to \"10\" or less,\nor is commented out,  this is a finding."
+            },
+            {
+              "label": "fix",
+              "data": "Configure the Ubuntu operating system to limit the number of\nconcurrent sessions to ten for all accounts and/or account types.\n\nAdd the following line to the top of the /etc/security/limits.conf:\n\n* hard maxlogins 10"
+            }
+          ],
+          "impact": 0.3,
+          "refs": [],
+          "tags": {
+            "gtitle": "SRG-OS-000027-GPOS-00008",
+            "gid": "V-75443",
+            "rid": "SV-90123r2_rule",
+            "stig_id": "UBTU-16-010070",
+            "fix_id": "F-82071r1_fix",
+            "cci": ["CCI-000054"],
+            "nist": ["AC-10", "Rev_4"],
+            "false_negatives": null,
+            "false_positives": null,
+            "documentable": false,
+            "mitigations": null,
+            "severity_override_guidance": false,
+            "potential_impacts": null,
+            "third_party_tools": null,
+            "mitigation_controls": null,
+            "responsibility": null,
+            "ia_controls": null
+          },
+          "code": "control 'V-75443' do\n  title \"The Ubuntu operating system must limit the number of concurrent\nsessions to ten for all accounts and/or account types.\"\n  desc  \"Ubuntu operating system management includes the ability to control the\nnumber of users and user sessions that utilize an Ubuntu operating system.\nLimiting the number of allowed users and sessions per user is helpful in\nreducing the risks related to DoS attacks.\n\n    This requirement addresses concurrent sessions for information system\naccounts and does not address concurrent sessions by single users via multiple\nsystem accounts. The maximum number of concurrent sessions should be defined\nbased upon mission needs and the operational environment for each system.\n  \"\n  impact 0.3\n  tag \"gtitle\": 'SRG-OS-000027-GPOS-00008'\n  tag \"gid\": 'V-75443'\n  tag \"rid\": 'SV-90123r2_rule'\n  tag \"stig_id\": 'UBTU-16-010070'\n  tag \"fix_id\": 'F-82071r1_fix'\n  tag \"cci\": ['CCI-000054']\n  tag \"nist\": %w[AC-10 Rev_4]\n  tag \"false_negatives\": nil\n  tag \"false_positives\": nil\n  tag \"documentable\": false\n  tag \"mitigations\": nil\n  tag \"severity_override_guidance\": false\n  tag \"potential_impacts\": nil\n  tag \"third_party_tools\": nil\n  tag \"mitigation_controls\": nil\n  tag \"responsibility\": nil\n  tag \"ia_controls\": nil\n  desc 'check', \"Verify that the Ubuntu operating system limits the number of\nconcurrent sessions to \\\"10\\\" for all accounts and/or account types by running\nthe following command:\n\n# grep maxlogins /etc/security/limits.conf\n\nThe result must contain the following line:\n\n* hard maxlogins 10\n\nIf the \\\"maxlogins\\\" item is missing or the value is not set to \\\"10\\\" or less,\nor is commented out,  this is a finding.\"\n  desc 'fix', \"Configure the Ubuntu operating system to limit the number of\nconcurrent sessions to ten for all accounts and/or account types.\n\nAdd the following line to the top of the /etc/security/limits.conf:\n\n* hard maxlogins 10\"\n\n  describe limits_conf do\n    its('*') { should include ['hard', 'maxlogins', input('maxlogins').to_s] }\n  end\nend\n",
+          "source_location": {
+            "line": 3,
+            "ref": "canonical-ubuntu-16.04-lts-stig-baseline-master/controls/V-75443.rb"
+          },
+          "waiver_data": {},
+          "results": [
+            {
+              "status": "failed",
+              "code_desc": "limits.conf * is expected to include [\"hard\", \"maxlogins\", \"10\"]",
+              "run_time": 0.000519,
+              "start_time": "2020-05-14T17:47:39-04:00",
+              "message": "expected [[\"hard\", \"core\", \"0\"]] to include [\"hard\", \"maxlogins\", \"10\"]"
+            }
+          ]
+        }
+      ],
+      "status": "loaded"
+    }
+  ],
+  "statistics": { "duration": 23.865506 },
+  "version": "4.18.100"
+}

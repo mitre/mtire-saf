@@ -6,22 +6,25 @@
     },
     {
       "header": "HDF Core Elements",
-      "desc": "HDF uses a common alignment point of the core elements of testing results data so that we can transform multiple formats. The goal is to preserve metadata from unique testing formats as tags when translated into HDF. HDF defines the following core data elements to standardize the testing results data from various formats.",
+      "desc": "HDF uses a common alignment point of the core elements of testing results data so that we can transform multiple formats. The goal is to preserve metadata from unique testing formats as tags when translated into HDF. HDF requires the following core data elements to standardize the testing results data from various formats.",
       "bullets": [
-        { "main": "Test Title (required) – High level overview of the test(s) goal" },
-        { "main": "Test Description (required) – Details on the intent and possible impact" },
-        { "main": "Test Elements (required) – the individual tests that make up the actions in the ‘Check Text’" },
-        { "main": "Test Audit, aka ‘check text’ (required) – the validation actions we are asking of the end user" },
-        { "main": "Test Remediation, aka ‘fix text’ (required) – the remediation actions we are asking of the end user" },
-        { "main": "NIST SP 800-53 Control Alignment(s) (required) – the NIST SP 800-53 security control this test(s) relates to" },
-        { 
-          "main": "Tags of other data tags specific to the source benchmark – other data elements that enhance the context of the test(s)",
+        { "main": "Test Title – High level overview of the test(s) goal" },
+        { "main": "Test Description  – Details on the intent and possible impact" },
+        { "main": "Test Audit, aka ‘check text’ – the validation actions we are asking of the end user" },
+        { "main": "Test Remediation, aka ‘fix text’ – the remediation actions we are asking of the end user" },
+        { "main": "NIST SP 800-53 Control Alignment(s) – the NIST SP 800-53 security control this test(s) relates to" },
+        { "main": "Test Severity - The static default of the control categorization impact" },
+        { "main": "Test Impact - The context-specific severity during testing" },
+        {
+          "main": "Other data tags specific to the source benchmark – other data elements that enhance the context of the test(s)",
           "sub": [
             "CIS - tags such as the level, version and scoring status of the CIS benchmark",
             "DISA STIG - tags such as the DISA Common Correlation Index Identifier (CCI)"
           ]
-        }
-      ]
+        },
+        { "main": "Test Elements – the individual tests that make up the actions in the ‘Check Text’" }
+      ],
+      "footer" : "Properly created InSpec profiles naturally produce results in this format. To create HDF files using non-InSpec tool output, we provide Heimdall Tools."
     },
     {
       "header": "Heimdall Tools",
@@ -41,70 +44,100 @@
       "desc": "As we have developed HDF, we have found these common elements help structure well-written and complete security automation baselines. Below are some examples of InSpec control structures that align to the MITRE HDF format.",
       "examples": [
         {
-          "code": "# encoding: UTF-8\n \ncontrol 'V-63319' do\n  title \"Domain-joined systems must use Windows 10 Enterprise Edition 64-bit\n        version.\"\n  desc  \"Features such as Credential Guard use virtualization based security to\n        protect information that could be used in credential theft attacks if\n        compromised. There are a number of system requirements that must be met in\n        order for Credential Guard to be configured and enabled properly.\n        Virtualization based security and Credential Guard are only available with\n        Windows 10 Enterprise 64-bit version.\"\n  impact 0.5\n  tag severity: 'medium'\n  tag gtitle: 'WN10-00-000005'\n  tag gid: 'V-63319'\n  tag rid: 'SV-77809r3_rule'\n  tag stig_id: 'WN10-00-000005'\n  tag fix_id: 'F-69237r2_fix'\n  tag cci: ['CCI-000366']\n  tag nist: ['CM-6 b']\n  tag false_negatives: nil\n  tag false_positives: nil\n  tag documentable: false\n  tag mitigations: nil\n  tag severity_override_guidance: false\n  tag potential_impacts: nil\n  tag third_party_tools: nil\n  tag mitigation_controls: nil\n  tag responsibility: nil\n  tag ia_controls: nil\n  desc \"check\", \"Verify domain-joined systems are using Windows 10 Enterprise\n        Edition 64-bit version.\n        For standalone systems, this is NA.\n        Open \"Settings\".\n        Select \"System\", then \"About\".\n        If \"Edition\" is not \"Windows 10 Enterprise\", this is a finding.\n        If \"System type\" is not \"64-bit operating system…\", this is a finding.\"\n  desc \"fix\", 'Use Windows 10 Enterprise 64-bit version for domain-joined systems.'\n  describe os.arch do\n    it { should eq 'x86_64' }\n  end\n  describe os.name do\n    it { should eq 'windows_10_enterprise' }\n  end\nend\n",
+          "code": "control 'V-75443' do\n  title \"The Ubuntu operating system must limit the number of concurrent\nsessions to ten for all accounts and/or account types.\"\n  desc  \"Ubuntu operating system management includes the ability to control the\nnumber of users and user sessions that utilize an Ubuntu operating system.\nLimiting the number of allowed users and sessions per user is helpful in\nreducing the risks related to DoS attacks.\n\n    This requirement addresses concurrent sessions for information system\naccounts and does not address concurrent sessions by single users via multiple\nsystem accounts. The maximum number of concurrent sessions should be defined\nbased upon mission needs and the operational environment for each system.\n  \"\n  impact 0.3\n  tag \"gtitle\": 'SRG-OS-000027-GPOS-00008'\n  tag \"gid\": 'V-75443'\n  tag \"rid\": 'SV-90123r2_rule'\n  tag \"stig_id\": 'UBTU-16-010070'\n  tag \"fix_id\": 'F-82071r1_fix'\n  tag \"cci\": ['CCI-000054']\n  tag \"nist\": %w[AC-10 Rev_4]\n  tag \"false_negatives\": nil\n  tag \"false_positives\": nil\n  tag \"documentable\": false\n  tag \"mitigations\": nil\n  tag \"severity_override_guidance\": false\n  tag \"potential_impacts\": nil\n  tag \"third_party_tools\": nil\n  tag \"mitigation_controls\": nil\n  tag \"responsibility\": nil\n  tag \"ia_controls\": nil\n  desc 'check', \"Verify that the Ubuntu operating system limits the number of\nconcurrent sessions to \\\"10\\\" for all accounts and/or account types by running\nthe following command:\n\n# grep maxlogins /etc/security/limits.conf\n\nThe result must contain the following line:\n\n* hard maxlogins 10\n\nIf the \\\"maxlogins\\\" item is missing or the value is not set to \\\"10\\\" or less,\nor is commented out,  this is a finding.\"\n  desc 'fix', \"Configure the Ubuntu operating system to limit the number of\nconcurrent sessions to ten for all accounts and/or account types.\n\nAdd the following line to the top of the /etc/security/limits.conf:\n\n* hard maxlogins 10\"\n\n  describe limits_conf do\n    its('*') { should include ['hard', 'maxlogins', input('maxlogins').to_s] }\n  end\nend\n",
           "syntax": "markup",
           "title": "STIG/SRG Template"
         },
         {
-          "code": "# encoding: UTF-8\n \ncontrol \"C-1.1.1.1\" do\n  title \"Ensure mounting of cramfs filesystems is disabled\"\n  desc  \"The `cramfs` filesystem type is a compressed read-only Linux\n  filesystem embedded in small footprint systems. A `cramfs` image can be \n  used without having to first decompress the image.\"\n \n  desc  \"rationale\", \"Removing support for unneeded filesystem types reduces\n  the local attack surface of the server. If this filesystem type is not needed,\n  disable it.\"\n  \n  impact 0.7\n  tag severity: 'high'\n  tag nist: [\"CM-6\"]\n  tag cis_scored: true\n  tag cis_version: 1.2.0\n  tag cis_level: 3\n  tag cis_controls: [\"5.1\"]\n  tag cis_cdc_version: 7\n  tag cis_rid: \"1.1.1.1\"\n \n  desc  \"check\", \"Run the following commands and verify the output is as \n  indicated:\n \n   # modprobe -n -v cramfs | grep -v mtd\n   install /bin/true\n   # lsmod | grep cramfs\"\n \n  desc \"fix\", \"Edit or create a file in the `/etc/modprobe.d/` directory ending in \n  .conf\n  Example: `vi /etc/modprobe.d/cramfs.conf`\n  and add the following line:\n  install cramfs /bin/true\n  Run the following command to unload the `cramfs` module:\n  # rmmod cramfs\"\n  \n  describe system do\n    it { should rock }\n  end\n \nend\n",
+          "code": "# encoding: UTF-8\n \ncontrol \"C-1.1.1.1\" do\n  title \"Ensure mounting of cramfs filesystems is disabled\"\n  desc  \"The `cramfs` filesystem type is a compressed read-only Linux\n  filesystem embedded in small footprint systems. A `cramfs` image can be \n  used without having to first decompress the image.\"\n \n  desc  \"rationale\", \"Removing support for unneeded filesystem types reduces\n  the local attack surface of the server. If this filesystem type is not needed,\n  disable it.\"\n  \n  impact 0.7\n  tag severity: 'high'\n  tag nist: [\"CM-6\"]\n  tag cis_scored: true\n  tag cis_version: 1.2.0\n  tag cis_level: 3\n  tag cis_controls: [\"5.1\"]\n  tag cis_cdc_version: 7\n  tag cis_rid: \"1.1.1.1\"\n \n  desc  \"check\", \"Run the following commands and verify the output is as \n  indicated:\n \n   # modprobe -n -v cramfs | grep -v mtd\n   install /bin/true\n   # lsmod | grep cramfs\"\n \n  desc \"fix\", \"Edit or create a file in the `/etc/modprobe.d/` directory ending in \n  .conf\n  Example: `vi /etc/modprobe.d/cramfs.conf`\n  and add the following line:\n  install cramfs /bin/true\n  Run the following command to unload the `cramfs` module:\n  # rmmod cramfs\"\n  \n  describe kernel_module('cramfs') do\n   it { should_not be_loaded }\n   it { should be_disabled }\n   it { should be_blacklisted }\n  end\n \nend\n",
           "syntax": "markup",
           "title": "CIS Template"
         },
         {
           "code": {
-            "platform": { "name": "aws", "release": "aws-sdk-v2.11.162" },
+            "platform": { "name": "ubuntu", "release": "16.04" },
             "profiles": [
               {
-                "attributes": [". . ."],
+                "name": "Canonical Ubuntu 16.04 LTS Security Technical Implementation Guide",
+                "version": "0.2.0",
+                "sha256": "b5d892ca3aeef2a34bbb1621ca1aa3837c056b41dc04f1ba39a522ee1b9ac31d",
+                "title": "Canonical Ubuntu 16.04 LTS Security Technical Implementation Guide",
+                "maintainer": "The Authors",
+                "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.",
+                "license": "Apache-2.0",
+                "copyright": "The Authors",
+                "copyright_email": "you@example.com",
+                "supports": [{ "platform-name": "ubuntu", "release": "16.04" }],
+                "attributes": [],
+                "groups": [
+                  { "id": "controls/V-75443.rb", "controls": ["V-75443"] }
+                ],
                 "controls": [
                   {
-                    "code": ". . .",
-                    "desc": "Ensure there are no publicly accessible S3 buckets",
+                    "id": "V-75443",
+                    "title": "The Ubuntu operating system must limit the number of concurrent\nsessions to ten for all accounts and/or account types.",
+                    "desc": "Ubuntu operating system management includes the ability to control the\nnumber of users and user sessions that utilize an Ubuntu operating system.\nLimiting the number of allowed users and sessions per user is helpful in\nreducing the risks related to DoS attacks.\n\n    This requirement addresses concurrent sessions for information system\naccounts and does not address concurrent sessions by single users via multiple\nsystem accounts. The maximum number of concurrent sessions should be defined\nbased upon mission needs and the operational environment for each system.",
                     "descriptions": [
                       {
-                        "data": "Ensure there are no publicly accessible S3 buckets",
-                        "label": "default"
+                        "label": "default",
+                        "data": "Ubuntu operating system management includes the ability to control the\nnumber of users and user sessions that utilize an Ubuntu operating system.\nLimiting the number of allowed users and sessions per user is helpful in\nreducing the risks related to DoS attacks.\n\n    This requirement addresses concurrent sessions for information system\naccounts and does not address concurrent sessions by single users via multiple\nsystem accounts. The maximum number of concurrent sessions should be defined\nbased upon mission needs and the operational environment for each system."
+                      },
+                      {
+                        "label": "check",
+                        "data": "Verify that the Ubuntu operating system limits the number of\nconcurrent sessions to \"10\" for all accounts and/or account types by running\nthe following command:\n\n# grep maxlogins /etc/security/limits.conf\n\nThe result must contain the following line:\n\n* hard maxlogins 10\n\nIf the \"maxlogins\" item is missing or the value is not set to \"10\" or less,\nor is commented out,  this is a finding."
+                      },
+                      {
+                        "label": "fix",
+                        "data": "Configure the Ubuntu operating system to limit the number of\nconcurrent sessions to ten for all accounts and/or account types.\n\nAdd the following line to the top of the /etc/security/limits.conf:\n\n* hard maxlogins 10"
                       }
                     ],
-                    "id": "s3-buckets-no-public-access",
-                    "impact": 0.7,
+                    "impact": 0.3,
                     "refs": [],
+                    "tags": {
+                      "gtitle": "SRG-OS-000027-GPOS-00008",
+                      "gid": "V-75443",
+                      "rid": "SV-90123r2_rule",
+                      "stig_id": "UBTU-16-010070",
+                      "fix_id": "F-82071r1_fix",
+                      "cci": ["CCI-000054"],
+                      "nist": ["AC-10", "Rev_4"],
+                      "false_negatives": null,
+                      "false_positives": null,
+                      "documentable": false,
+                      "mitigations": null,
+                      "severity_override_guidance": false,
+                      "potential_impacts": null,
+                      "third_party_tools": null,
+                      "mitigation_controls": null,
+                      "responsibility": null,
+                      "ia_controls": null
+                    },
+                    "code": "control 'V-75443' do\n  title \"The Ubuntu operating system must limit the number of concurrent\nsessions to ten for all accounts and/or account types.\"\n  desc  \"Ubuntu operating system management includes the ability to control the\nnumber of users and user sessions that utilize an Ubuntu operating system.\nLimiting the number of allowed users and sessions per user is helpful in\nreducing the risks related to DoS attacks.\n\n    This requirement addresses concurrent sessions for information system\naccounts and does not address concurrent sessions by single users via multiple\nsystem accounts. The maximum number of concurrent sessions should be defined\nbased upon mission needs and the operational environment for each system.\n  \"\n  impact 0.3\n  tag \"gtitle\": 'SRG-OS-000027-GPOS-00008'\n  tag \"gid\": 'V-75443'\n  tag \"rid\": 'SV-90123r2_rule'\n  tag \"stig_id\": 'UBTU-16-010070'\n  tag \"fix_id\": 'F-82071r1_fix'\n  tag \"cci\": ['CCI-000054']\n  tag \"nist\": %w[AC-10 Rev_4]\n  tag \"false_negatives\": nil\n  tag \"false_positives\": nil\n  tag \"documentable\": false\n  tag \"mitigations\": nil\n  tag \"severity_override_guidance\": false\n  tag \"potential_impacts\": nil\n  tag \"third_party_tools\": nil\n  tag \"mitigation_controls\": nil\n  tag \"responsibility\": nil\n  tag \"ia_controls\": nil\n  desc 'check', \"Verify that the Ubuntu operating system limits the number of\nconcurrent sessions to \\\"10\\\" for all accounts and/or account types by running\nthe following command:\n\n# grep maxlogins /etc/security/limits.conf\n\nThe result must contain the following line:\n\n* hard maxlogins 10\n\nIf the \\\"maxlogins\\\" item is missing or the value is not set to \\\"10\\\" or less,\nor is commented out,  this is a finding.\"\n  desc 'fix', \"Configure the Ubuntu operating system to limit the number of\nconcurrent sessions to ten for all accounts and/or account types.\n\nAdd the following line to the top of the /etc/security/limits.conf:\n\n* hard maxlogins 10\"\n\n  describe limits_conf do\n    its('*') { should include ['hard', 'maxlogins', input('maxlogins').to_s] }\n  end\nend\n",
+                    "source_location": {
+                      "line": 3,
+                      "ref": "canonical-ubuntu-16.04-lts-stig-baseline-master/controls/V-75443.rb"
+                    },
+                    "waiver_data": {},
                     "results": [
                       {
-                        "code_desc": "S3 Bucket s3-demo-bucket-with-public-objects should not be public",
-                        "run_time": 0.130646,
-                        "start_time": "2018-11-18T21:02:51-05:00",
-                        "status": "passed"
+                        "status": "failed",
+                        "code_desc": "limits.conf * is expected to include [\"hard\", \"maxlogins\", \"10\"]",
+                        "run_time": 0.000519,
+                        "start_time": "2020-05-14T17:47:39-04:00",
+                        "message": "expected [[\"hard\", \"core\", \"0\"]] to include [\"hard\", \"maxlogins\", \"10\"]"
                       }
-                    ],
-                    "source_location": {
-                      "line": 1,
-                      "ref": "./controls/aws_s3_bucket.rb"
-                    },
-                    "tags": {
-                      "check": "Review your AWS console and note if any S3 buckets are set to 'Public' . . .",
-                      "nist": ["AC-6", "Rev_4"],
-                      "severity": "high"
-                    },
-                    "title": "Ensure there are no publicly accessible S3 buckets"
+                    ]
                   }
                 ],
-                "copyright": "MITRE, 2018",
-                "copyright_email": "inspec@mitre.org",
-                "groups": [
-                  {
-                    "controls": ["s3-buckets-no-public-access"],
-                    "id": "controls/aws_s3_bucket.rb"
-                  }
-                ]
+                "status": "loaded"
               }
             ],
-            "statistics": { "duration": 0.774471 },
-            "version": "3.0.46"
-          },
+            "statistics": { "duration": 23.865506 },
+            "version": "4.18.100"
+          },          
           "syntax": "javascript",
           "title": "Example Simple HDF JSON",
-          "desc": "Below is an example of an HDF JSON file that could be loaded by MITRE's Heimdall security results viewer application. It includes information on the platform a validation test ran on (\"platform\"), the test itself (\"attributes\", \"tags\", \"code\"), and the test's results (\"results\")."
+          "desc": "This HDF file can be generated by running the example STIG template InSpec test given above - note how the code of that test is captured in the \"code\" field in the HDF file. The format includes information on the platform a validation test ran on (\"platform\"), the test itself (\"tags\", \"code\"), and the test's results (\"results\")."
         }
       ]
     }
