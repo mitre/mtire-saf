@@ -40,7 +40,7 @@
       ]
     },
     {
-      "header": "HDF InSpec Control Template Examples",
+      "header": "InSpec Control Template Examples That Support Proper Generation of HDF Output",
       "desc": "As we have developed HDF, we have found these common elements help structure well-written and complete security automation baselines. Below are some examples of InSpec control structures that align to the MITRE HDF format.",
       "examples": [
         {
