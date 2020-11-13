@@ -23,3 +23,13 @@ jobs:
           git add ./src/assets/data/mitre-saf-control-mapping.json
           git commit -s -m 'Automated ingestion of profiles' || true
           git push "https://${GITHUB_ACTOR}:${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git" HEAD:master
+      - name: install
+        run: npm install
+      - name: build
+        run: npm run build
+      - name: deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          publish_branch: gh-pages
+          publish_dir: ./dist
