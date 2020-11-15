@@ -664,12 +664,12 @@ self.__precacheManifest = [
     "url": "/MITRE_SAF_Code_Review_Recommendations.pdf"
   },
   {
-    "revision": "a48a7158644611f15540718769019d62",
-    "url": "/MITRE-SAF-CCA-Template.docx"
-  },
-  {
     "revision": "b6216d61c03e6ce0c9aea6ca7808f7ca",
     "url": "/robots.txt"
+  },
+  {
+    "revision": "a48a7158644611f15540718769019d62",
+    "url": "/MITRE-SAF-CCA-Template.docx"
   },
   {
     "revision": "feaf4d40246265ef2f029983770e5a9f",
