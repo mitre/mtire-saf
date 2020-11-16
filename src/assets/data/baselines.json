@@ -311,6 +311,16 @@
       "gitHash": "0"
     },
     {
+      "shortName": "DRAFT: GKE CIS Benchmark",
+      "longName": "DRAFT: Google Kubernetes Engine CIS Benchmark",
+      "link": "https://github.com/GoogleCloudPlatform/inspec-gke-cis-benchmark",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Cloud Service Providers"
+      ],
+      "gitHash": "0"
+    },
+    {
       "shortName": "DRAFT: VMWare ESXI 6.7 STIG",
       "longName": "DRAFT: VMWare ESXI 6.7 STIG",
       "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/6.7/vsphere/inspec/vmware-esxi-6.7-stig-baseline",
