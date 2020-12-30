@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "06bcd0ac2c0ed50e2f13",
+    "revision": "070fbdc1cb202c3fe960",
     "url": "/css/app.c149762a.css"
   },
   {
-    "revision": "06bcd0ac2c0ed50e2f13",
-    "url": "/js/app.5691a664.js"
+    "revision": "070fbdc1cb202c3fe960",
+    "url": "/js/app.178ea182.js"
   },
   {
     "revision": "9d0c0802c583865ed323",
@@ -640,7 +640,7 @@ self.__precacheManifest = [
     "url": "/img/Army.6f6cb924.png"
   },
   {
-    "revision": "12d8c94597896afc2693640e394627e2",
+    "revision": "0beb6fb1252a260a2129edca1504fbc5",
     "url": "/index.html"
   },
   {
