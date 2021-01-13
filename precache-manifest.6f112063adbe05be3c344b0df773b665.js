@@ -292,12 +292,12 @@ self.__precacheManifest = [
     "url": "/fonts/google-font.923a543c.woff2"
   },
   {
-    "revision": "a01595df6b30fa4b14e7f87de7831852",
-    "url": "/fonts/google-font.a01595df.woff"
-  },
-  {
     "revision": "52ee8b598488b1ffbaa93e50cbd6a2f4",
     "url": "/fonts/RobotoCondensed-Regular.52ee8b59.ttf"
+  },
+  {
+    "revision": "a01595df6b30fa4b14e7f87de7831852",
+    "url": "/fonts/google-font.a01595df.woff"
   },
   {
     "revision": "9efce66edb4017122a28926161a685e7",
