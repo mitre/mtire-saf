@@ -1,9 +1,14 @@
 <template>
   <Header>
-    <h3 slot="title" style="font-size: 3.0rem">
-      Security Automation Framework
+    <h3 slot="title" style="font-size: 3rem">
+      <img
+        slot="img"
+        :src="require('@/assets/img/svg/saf_logo.svg')"
+        style="max-width: 5rem; max-height: 5rem; vertical-align:middle"
+        class="mr-2"
+      />Security Automation Framework
     </h3>
-    <p slot="subtitle">{{communityData.communityShortDescription}}</p>
+    <p slot="subtitle">{{ communityData.communityShortDescription }}</p>
   </Header>
 </template>
 
@@ -13,7 +18,7 @@ import communityData from "@/assets/data/communityData.json";
 export default {
   data() {
     return {
-      communityData: communityData
+      communityData: communityData,
     };
   },
   components: {
