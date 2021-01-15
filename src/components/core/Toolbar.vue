@@ -1,15 +1,23 @@
 <template>
   <v-app-bar app>
-    <v-app-bar-nav-icon class="d-md-none d-lg-none" @click="toggleDrawer"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon
+      class="d-md-none d-lg-none"
+      @click="toggleDrawer"
+    ></v-app-bar-nav-icon>
 
     <v-toolbar-title class="pl-2">
       <router-link
-        :to="{ name: 'home'}"
+        :to="{ name: 'home' }"
         class="google-font"
-        style="text-decoration:none; font-size:1.4rem"
+        style="text-decoration: none; font-size: 1.4rem"
         :class="this.$vuetify.theme.dark ? 'whiteText' : 'blackText'"
       >
-        {{communityData.communityName}}
+        <img
+          :src="require('@/assets/img/svg/saf_logo.svg')"
+          style="width:2rem;height:2rem;vertical-align: middle"
+          class="mr-2"
+        />
+        {{ communityData.communityName }}
       </router-link>
     </v-toolbar-title>
 
@@ -20,7 +28,7 @@
       :key="i"
       :to="link.to"
       class="ml-2 google-font hidden-sm-and-down"
-      style="text-transform: capitalize;"
+      style="text-transform: capitalize"
       text
       @click="onClick($event, link)"
     >
@@ -45,8 +53,8 @@ export default {
   },
   computed: {
     metalinks() {
-      return this.$store.getters.links.filter(link => link.meta.enabled);
-    }
+      return this.$store.getters.links.filter((link) => link.meta.enabled);
+    },
   },
   methods: {
     ...mapMutations(["toggleDrawer"]),
@@ -67,8 +75,8 @@ export default {
       } else {
         metaThemeColor.setAttribute("content", "#0277bd");
       }
-    }
-  }
+    },
+  },
 };
 </script>
 

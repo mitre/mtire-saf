@@ -4,11 +4,11 @@
       <img
         slot="img"
         :src="require('@/assets/img/svg/saf_logo.svg')"
-        style="max-width: 5rem; max-height: 5rem; vertical-align:middle"
+        style="width: 5rem; height: 5rem; vertical-align:middle"
         class="mr-2"
       />Security Automation Framework
     </h3>
-    <p slot="subtitle">{{ communityData.communityShortDescription }}</p>
+    <p slot="subtitle" class="mt-4">{{ communityData.communityShortDescription }}</p>
   </Header>
 </template>
 
