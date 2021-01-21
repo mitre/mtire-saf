@@ -684,11 +684,11 @@ self.__precacheManifest = [
     "url": "/saf_logo.svg"
   },
   {
-    "revision": "4b00a811782f7fa776f060ad7ca0e6de",
-    "url": "/MITRE_InSpec_Profiles_and_HDF_include_NIST_SP-800-53_Associations.pdf"
-  },
-  {
     "revision": "feaf4d40246265ef2f029983770e5a9f",
     "url": "/DRAFT-DevSecOps_Best_Practices_Guide_01262020.pdf"
+  },
+  {
+    "revision": "4b00a811782f7fa776f060ad7ca0e6de",
+    "url": "/MITRE_InSpec_Profiles_and_HDF_include_NIST_SP-800-53_Associations.pdf"
   }
 ];
