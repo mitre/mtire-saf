@@ -16,11 +16,13 @@ export default new Vuetify({
       dark: {
         primary: "#1a73e8",
         background: "#000000",
+        accent: "#FFDE11"
       },
       light: {
         
         primary: "#1a73e8",
         background: "#d0f0c0",
+        accent: "#FFDE11"
       },
     },
   },

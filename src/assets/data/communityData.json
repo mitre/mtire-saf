@@ -7,6 +7,10 @@
   "website": "https://mitre-saf.netlify.com",
   "programWebsite": "",
   "communityHashTags": ["MTIRESAF", "MITRE_SAF"],
+  "trainingSiteBasic" : "https://mitre-inspec-developer.netlify.com/",
+  "trainingSiteAdvanced" : "https://mitre-inspec-advanced-developer.netlify.app/",
+  "trainingSignUpLink" : "https://forms.office.com/Pages/ResponsePage.aspx?id=SNwgxlAdUkmLOd9NVNdNgkOA91ej9MNHss6_kcyA_29UMFAzTkFSSkFaMVdWRUZFREo5QzBNTkUyRy4u",
+  "trainingContactEmail" : "saf@groups.mitre.org",
   "socialLinks": [
     {
       "name": "Facebook",

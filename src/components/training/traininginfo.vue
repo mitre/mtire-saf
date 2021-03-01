@@ -18,7 +18,7 @@
       </v-col>
     </v-row>
 
-    <v-row align="center" justify="center" class="ma-0 mt-2">
+    <!-- <v-row align="center" justify="center" class="ma-0 mt-2">
       <v-col class="pa-0">
         <p class="primary--text my-2" style="font-size: 1.5rem">
           <b>Upcoming Training Sessions</b>
@@ -35,7 +35,8 @@
       >
         <p class="ma-0 pa-0">{{item.name}}</p>
       </v-col>
-    </v-row>
+    </v-row> -->
+    <RSVPBlock class="mt-4" />
 
     <v-row align="center" justify="center" class="ma-0 mt-2">
       <v-col class="pa-0">
@@ -112,6 +113,7 @@
 import communityData from "@/assets/data/communityData.json";
 import trainingData from "@/assets/data/trainingData.json";
 import resources from "@/assets/data/resources.json";
+import RSVPBlock from "@/components/training/RSVPBlock.vue"
 export default {
   name: "App",
   data: () => ({
@@ -133,6 +135,9 @@ export default {
     pastTrainings() {
       return this.trainingData.pastTraining.introTraining.concat(this.trainingData.pastTraining.advTraining);
     },
+  },
+  components: {
+    RSVPBlock
   },
   methods: {
     passItemData(item) {
