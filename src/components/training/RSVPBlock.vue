@@ -2,7 +2,7 @@
   <div>
     <h2>RSVP – InSpec profile developer training for March/April 2021!</h2>
     <p>
-      The MITRE Security Automation Framework is happy
+      Sponsored by CMS under the CMS Security Automation Framework, we’re happy
       to announce plans to again provide training to developers interested in
       learning to create and maintain InSpec profiles.
     </p>
