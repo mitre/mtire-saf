@@ -2,7 +2,7 @@
   <div>
     <h2>RSVP – InSpec profile developer training for March/April 2021!</h2>
     <p>
-      Sponsored by CMS under the CMS Security Automation Framework, we’re happy
+      Sponsored by CMS under the <a href="https://saf.cms.gov" target="_blank">CMS Security Automation Framework</a>, we’re happy
       to announce plans to again provide training to developers interested in
       learning to create and maintain InSpec profiles.
     </p>
