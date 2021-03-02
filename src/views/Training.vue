@@ -4,7 +4,7 @@
       <v-col cols="12" lg="10" class="pa-0">
         <Header>
           <h3 slot="title">Our Training</h3>
-          <p slot="subtitle">
+          <!-- <p slot="subtitle">
             Contact us at
             <a
               style="text-decoration: none"
@@ -13,7 +13,7 @@
               {{communityData.communityEmail}}
             </a>
             to sign up for instructor-led training. See below for dates and times!
-          </p>
+          </p> -->
         </Header>
       </v-col>
     </v-row>
