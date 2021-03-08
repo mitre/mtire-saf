@@ -2,7 +2,7 @@
   <v-footer
     height="auto"
     class="ma-0"
-    :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'"
+    :class="this.$vuetify.theme.dark == true ? 'grey darken-4' : 'white'"
   >
     <!-- style="border-color:#e0e0e0;border-width: 1px;border-style: solid;border-bottom: 0;border-left:0;border-right:0" -->
     <!--<v-container fluid>
@@ -68,18 +68,32 @@
           <v-toolbar
             text
             class="pa-0 px-0 mt-3 mx-0 elevation-0"
-            style="padding:0 !important"
-            :class="this.$vuetify.theme.dark == true?'grey darken-4':'white'"
+            style="padding: 0 !important"
+            :class="
+              this.$vuetify.theme.dark == true ? 'grey darken-4' : 'white'
+            "
           >
             <p
               class="google-font pl-0 ml-0 mr-3"
-              :style="this.$vuetify.breakpoint.smAndDown ? '' : 'font-size:200%'"
-            >MITRE SAF</p>
+              :style="
+                this.$vuetify.breakpoint.smAndDown ? '' : 'font-size:200%'
+              "
+            >
+              <img
+                slot="img"
+                :src="require('@/assets/img/svg/saf_logo.svg')"
+                style="width: 2rem; height: 2rem; vertical-align: middle"
+                class="mr-2"
+              />
+              MITRE SAF
+            </p>
             <v-spacer />
             <p
               class="google-font pl-0"
               :style="this.$vuetify.breakpoint.smAndDown ? 'font-size:75%' : ''"
-            >The MITRE Corporation © 2020</p>
+            >
+              The MITRE Corporation © 2021
+            </p>
 
             <!-- <v-btn
               v-for="(item,i) in FooterData.FooterEndSession"
@@ -105,9 +119,9 @@ export default {
   data() {
     return {
       communityData: communityData,
-      FooterData: FooterData
+      FooterData: FooterData,
     };
-  }
+  },
 };
 </script>
 
