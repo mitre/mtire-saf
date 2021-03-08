@@ -62,6 +62,16 @@ export default new Vuex.Store({
         },
       },
       {
+        text: "Normalize",
+        to: "/normalize",
+        icon: "mdi-format-vertical-align-center",
+        meta: {
+          showToolbar: true,
+          enabled: true,
+          showBottomNav: true,
+        },
+      },
+      {
         text: "Train [InSpec Training in March!]",
         to: "/train",
         icon: "mdi-chair-school",
