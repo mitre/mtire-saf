@@ -21,7 +21,7 @@
       <AuraFooter v-if="!$route.meta.requiresAuth" />
     </v-content>
 
-    <AuraBottomNav v-if="!$route.meta.requiresAuth" class="d-flex d-sm-none" />
+    <!-- <AuraBottomNav v-if="!$route.meta.requiresAuth" class="d-flex d-sm-none" /> -->
   </v-app>
 </template>
 
