@@ -62,7 +62,7 @@
     "@babel/preset-env": "^7.13.10",
     "@vue/cli": "^4.5.12",
     "@vue/cli-plugin-babel": "^4.5.12",
-    "@vue/cli-plugin-eslint": "^4.5.11",
+    "@vue/cli-plugin-eslint": "^4.5.12",
     "@vue/cli-plugin-pwa": "^4.5.12",
     "@vue/cli-service": "^3.12.1",
     "@vue/cli-service-global": "^4.5.12",
