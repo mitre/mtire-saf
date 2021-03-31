@@ -40,7 +40,7 @@
     "@mdi/font": "^5.9.55",
     "babel-plugin-prismjs": "^2.0.1",
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.9.1",
+    "core-js": "^3.10.0",
     "css-vars-ponyfill": "^2.4.3",
     "firebase": "^8.3.1",
     "intersection-observer": "^0.12.0",
