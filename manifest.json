@@ -1,1 +1,11 @@
-{"name":"MITRE Security Automation Framework","short_name":"MITRE SAF","theme_color":"#0277bd","icons":[],"start_url":"./index.html","display":"standalone","background_color":"#fff"}
+{
+  "name": "MITRE Security Automation Framework",
+  "short_name": "MITRE SAF",
+  "icons": [
+
+  ],
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#fff",
+  "theme_color": "#0277bd"
+}
