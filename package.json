@@ -50,7 +50,7 @@
     "register-service-worker": "^1.7.2",
     "vue": "^2.6.12",
     "vue-cheetah-grid": "^1.0.0",
-    "vue-code-highlight": "^0.7.6",
+    "vue-code-highlight": "^0.7.8",
     "vue-prism-component": "1.2.0",
     "vue-prismjs": "1.2.0",
     "vue-router": "^3.5.1",
