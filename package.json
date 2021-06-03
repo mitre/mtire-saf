@@ -43,7 +43,7 @@
     "babel-polyfill": "^6.26.0",
     "core-js": "^3.13.0",
     "css-vars-ponyfill": "^2.4.5",
-    "firebase": "^8.6.2",
+    "firebase": "^8.6.4",
     "intersection-observer": "^0.12.0",
     "material-design-icons": "^3.0.1",
     "prismjs": "1.23.0",
