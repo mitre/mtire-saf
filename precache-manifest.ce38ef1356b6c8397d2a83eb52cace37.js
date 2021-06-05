@@ -360,12 +360,12 @@ self.__precacheManifest = [
     "url": "/fonts/materialdesignicons-webfont.147e3378.woff"
   },
   {
-    "revision": "174c02fc4609e8fc4389f5d21f16a296",
-    "url": "/fonts/materialdesignicons-webfont.174c02fc.ttf"
-  },
-  {
     "revision": "64d4cf64afd77a4ad2713f648eb920e6",
     "url": "/fonts/materialdesignicons-webfont.64d4cf64.eot"
+  },
+  {
+    "revision": "174c02fc4609e8fc4389f5d21f16a296",
+    "url": "/fonts/materialdesignicons-webfont.174c02fc.ttf"
   },
   {
     "revision": "a1e9ab061bb78195d37748b7c538b5c6",
@@ -656,10 +656,6 @@ self.__precacheManifest = [
     "url": "/CNAME"
   },
   {
-    "revision": "9483ef8d5efaa30a766c061918d4fb2c",
-    "url": "/How to Use the MITRE SAF.pdf"
-  },
-  {
     "revision": "b2174230811e6edd524d5c338620a264",
     "url": "/img/mitrelogo-whiteonblue.jpg"
   },
@@ -678,6 +674,10 @@ self.__precacheManifest = [
   {
     "revision": "ead02b50240e013e32f975d3e1ed1d27",
     "url": "/saf_logo.svg"
+  },
+  {
+    "revision": "9483ef8d5efaa30a766c061918d4fb2c",
+    "url": "/How to Use the MITRE SAF.pdf"
   },
   {
     "revision": "1a5420dc8f48626bf361019f8062df1b",
