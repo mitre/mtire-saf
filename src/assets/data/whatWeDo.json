@@ -4,8 +4,11 @@
     {
       "sectionHeader": "When To Use It",
       "sectionDesc" : "Develop and programmatically automate security in planning, development, assessment, and operational activities",
-      "images": [
-        { "filename": "whenToUseIt" }
+      "chevrons": [
+        "planning_chevron",
+        "development_chevron",
+        "assessment_chevron",
+        "operations_chevron"
       ],
       "items": [
         {

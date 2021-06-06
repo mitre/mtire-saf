@@ -1,6 +1,6 @@
 <template>
   <v-container fluid class="pa-0">
-    <v-row align="center" justify="center">
+    <v-row align="center" justify="center" class="my-4">
       <p class="google-font ma-0 tool-header primary--text" style="text-align:center">{{ topic.sectionHeader }}</p>
     </v-row>
     <v-row align="center" justify="center" v-if="topic.sectionDesc">
@@ -16,6 +16,9 @@
           <v-img :src="require('@/assets/img/what-we-do/' + image.filename + '.png')" />
         </v-card>
       </v-col>
+    </v-row>
+    <v-row justify="center" v-if="topic.chevrons" class="d-flex">
+        <Chevrons :chevrons="topic.chevrons" />
     </v-row>
     <v-row justify="center" v-if="topic.items">
       <v-col
@@ -36,9 +39,11 @@
 
 <script>
 import wwdBasicCard from "@/components/home/wwdComponents/wwdBasicCard.vue";
+import Chevrons from "@/components/home/wwdComponents/Chevrons.vue"
 export default {
   components: {
-    wwdBasicCard
+    wwdBasicCard,
+    Chevrons
   },
   props: {
     topic: Object,

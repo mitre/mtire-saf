@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="310px" height="200px" viewBox="0 0 310 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>chevron</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M279.5,0.5 L279.5,2.23938394 L308.977985,100.499999 L279.5,198.758615 L279.5,199.792893 L0.671655107,199.501201 L30.5220153,100 L0.672015325,0.5 L279.5,0.5 Z" id="Combined-Shape" stroke="#979797" fill="#1A73E8"></path>
+        <text id="DEVELOPMENT" fill="#FFFFFF" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Medium, Roboto Mono Medium for Powerline" font-size="24" font-weight="400">
+            <tspan x="74.2871094" y="46">DEVELOPMENT</tspan>
+            <tspan x="153.5" y="74"></tspan>
+            <tspan x="153.5" y="102"></tspan>
+            <tspan x="153.5" y="130"></tspan>
+        </text>
+        <text id="•-Harden-with-SAF-•" fill="#FFFFFF" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Medium, Roboto Mono Medium for Powerline" font-size="16" font-weight="400">
+            <tspan x="38" y="74">	•	Harden with SAF</tspan>
+            <tspan x="38" y="98">	</tspan>
+            <tspan x="49" y="98">•	Validate/Aggregate</tspan>
+            <tspan x="38" y="122">	•	Detect Root Cause</tspan>
+            <tspan x="38" y="146">	•	Set Thresholds</tspan>
+            <tspan x="38" y="170">	•	Store Evidence</tspan>
+            <tspan x="208.421875" y="170"></tspan>
+        </text>
+    </g>
+</svg>

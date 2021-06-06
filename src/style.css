@@ -58,6 +58,17 @@ body {
   hyphens: auto;
 }
 
+.header {
+  font-size: 150%;
+  font-weight: bold;
+  color: #1a73e8;
+}
+.subheader {
+  font-size: 125%;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
 h2 {
   color: #1a73e8;
   overflow-wrap: break-word;
