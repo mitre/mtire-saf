@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "c7f73fbf9a4026d78b91",
+    "revision": "d69e8b676cc439539464",
     "url": "/css/app.d73a05bf.css"
   },
   {
-    "revision": "c7f73fbf9a4026d78b91",
-    "url": "/js/app.38a77d17.js"
+    "revision": "d69e8b676cc439539464",
+    "url": "/js/app.970a6d6f.js"
   },
   {
     "revision": "f639d20bac6e3a87713a",
@@ -156,8 +156,8 @@ self.__precacheManifest = [
     "url": "/js/chunk-d6660196.91a59bef.js"
   },
   {
-    "revision": "ab86043bb5dbc5d0ade7",
-    "url": "/js/chunk-d87ccfba.8449c333.js"
+    "revision": "47d6429efe10c4e44126",
+    "url": "/js/chunk-d87ccfba.b4bfabca.js"
   },
   {
     "revision": "a991fc5a7ec087ec666e",
@@ -660,7 +660,7 @@ self.__precacheManifest = [
     "url": "/img/Army.6f6cb924.png"
   },
   {
-    "revision": "c0547a89c5668fd3a381915d77d0ed85",
+    "revision": "465a10b3c0ce95cd1e96a5867ee28e9c",
     "url": "/index.html"
   },
   {
@@ -696,12 +696,12 @@ self.__precacheManifest = [
     "url": "/saf_logo.svg"
   },
   {
-    "revision": "feaf4d40246265ef2f029983770e5a9f",
-    "url": "/DRAFT-DevSecOps_Best_Practices_Guide_01262020.pdf"
-  },
-  {
     "revision": "1a5420dc8f48626bf361019f8062df1b",
     "url": "/DevSecOps_Best_Practices_Guide_01262020.pdf"
+  },
+  {
+    "revision": "feaf4d40246265ef2f029983770e5a9f",
+    "url": "/DRAFT-DevSecOps_Best_Practices_Guide_01262020.pdf"
   },
   {
     "revision": "4b00a811782f7fa776f060ad7ca0e6de",
