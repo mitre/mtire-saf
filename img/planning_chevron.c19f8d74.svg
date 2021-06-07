@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="310px" height="200px" viewBox="0 0 310 200" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>chevron</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <path d="M279.627985,0.5 L309.477985,100 L279.627985,199.5 L0.672015325,199.5 L30.5220153,100 L0.672015325,0.5 L279.627985,0.5 Z" id="Combined-Shape" stroke="#979797" fill="#1A73E8"></path>
+        <text id="PLANNING" fill="#FFFFFF" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Medium, Roboto Mono Medium for Powerline" font-size="24" font-weight="400">
+            <tspan x="95.890625" y="46">PLANNING</tspan>
+            <tspan x="153.5" y="74"></tspan>
+            <tspan x="153.5" y="102"></tspan>
+            <tspan x="153.5" y="130"></tspan>
+        </text>
+        <text id="•-Identify-Potential" fill="#FFFFFF" fill-rule="nonzero" font-family="RobotoMonoForPowerline-Medium, Roboto Mono Medium for Powerline" font-size="16" font-weight="400">
+            <tspan x="38" y="74">	•	Identify Potential SAF </tspan>
+            <tspan x="74" y="93">Requirements</tspan>
+            <tspan x="38" y="117">	•	Assess Best Practices</tspan>
+            <tspan x="38" y="141">	•	Identify SAF Tools</tspan>
+            <tspan x="246.828125" y="141"></tspan>
+            <tspan x="38" y="165">	•	Participate in SAF</tspan>
+            <tspan x="246.828125" y="165"></tspan>
+        </text>
+    </g>
+</svg>

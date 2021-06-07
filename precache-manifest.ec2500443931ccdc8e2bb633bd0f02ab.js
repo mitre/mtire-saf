@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "6f218a52bf3ceb07a156",
-    "url": "/css/app.f85eef7c.css"
+    "revision": "c7f73fbf9a4026d78b91",
+    "url": "/css/app.d73a05bf.css"
   },
   {
-    "revision": "6f218a52bf3ceb07a156",
-    "url": "/js/app.23b4ec1b.js"
+    "revision": "c7f73fbf9a4026d78b91",
+    "url": "/js/app.38a77d17.js"
   },
   {
     "revision": "f639d20bac6e3a87713a",
@@ -30,14 +30,6 @@ self.__precacheManifest = [
   {
     "revision": "ddeb2b1e597bd7c11b4a",
     "url": "/js/chunk-1a58f2ee.a492b4c8.js"
-  },
-  {
-    "revision": "b14e169679ccb6ef20ab",
-    "url": "/css/chunk-1b406f8d.b256969b.css"
-  },
-  {
-    "revision": "b14e169679ccb6ef20ab",
-    "url": "/js/chunk-1b406f8d.861e9128.js"
   },
   {
     "revision": "254677092e955a46a36f",
@@ -68,20 +60,20 @@ self.__precacheManifest = [
     "url": "/js/chunk-2d22d746.27dc1b83.js"
   },
   {
+    "revision": "e8470e2dc980cc5a2ae7",
+    "url": "/css/chunk-30d1799d.65dd9ca2.css"
+  },
+  {
+    "revision": "e8470e2dc980cc5a2ae7",
+    "url": "/js/chunk-30d1799d.31e7145b.js"
+  },
+  {
     "revision": "52d57cf35f730cebd04f",
     "url": "/css/chunk-3816e009.b6b92317.css"
   },
   {
     "revision": "52d57cf35f730cebd04f",
     "url": "/js/chunk-3816e009.4f340c0f.js"
-  },
-  {
-    "revision": "e59a2b7f3176a76116b3",
-    "url": "/css/chunk-4719ec6d.03e73218.css"
-  },
-  {
-    "revision": "e59a2b7f3176a76116b3",
-    "url": "/js/chunk-4719ec6d.238bc8ae.js"
   },
   {
     "revision": "7938e6247e8d54dce308",
@@ -124,6 +116,14 @@ self.__precacheManifest = [
     "url": "/js/chunk-7ae111c1.9d8a3468.js"
   },
   {
+    "revision": "72cf51ffca094eb597bb",
+    "url": "/css/chunk-8d7d86fa.03e73218.css"
+  },
+  {
+    "revision": "72cf51ffca094eb597bb",
+    "url": "/js/chunk-8d7d86fa.ad7fae88.js"
+  },
+  {
     "revision": "dc65b1dab2e6da1d2225",
     "url": "/css/chunk-994557aa.eb4ea6f7.css"
   },
@@ -156,8 +156,8 @@ self.__precacheManifest = [
     "url": "/js/chunk-d6660196.91a59bef.js"
   },
   {
-    "revision": "6d49fdf96542100aa0bf",
-    "url": "/js/chunk-d87ccfba.496aeda6.js"
+    "revision": "ab86043bb5dbc5d0ade7",
+    "url": "/js/chunk-d87ccfba.8449c333.js"
   },
   {
     "revision": "a991fc5a7ec087ec666e",
@@ -186,6 +186,10 @@ self.__precacheManifest = [
   {
     "revision": "a4264745b34146c4648f3095eef02e59",
     "url": "/img/Validate Icon-Dark.a4264745.svg"
+  },
+  {
+    "revision": "bebc7022ea87c499dd70ad44d409fb6b",
+    "url": "/img/assessment_chevron.bebc7022.svg"
   },
   {
     "revision": "9ed3b7669abed32a871a12f06740ddd9",
@@ -312,6 +316,10 @@ self.__precacheManifest = [
     "url": "/img/Harden Icon-Dark-NoColor.64d42737.svg"
   },
   {
+    "revision": "c19f8d74c5d22496e905733ad30668c6",
+    "url": "/img/planning_chevron.c19f8d74.svg"
+  },
+  {
     "revision": "26393bb571d60703809652b1bdd124fc",
     "url": "/img/CHEF Typemark-Dark.26393bb5.svg"
   },
@@ -376,6 +384,10 @@ self.__precacheManifest = [
     "url": "/img/CDC.83cf6980.png"
   },
   {
+    "revision": "1439d60f32ac3a5a3b41e0b2ac60e9f4",
+    "url": "/img/development_chevron.1439d60f.svg"
+  },
+  {
     "revision": "8ff7afbd9a84b51e2c1d1fb5d948f172",
     "url": "/img/VA.8ff7afbd.png"
   },
@@ -430,6 +442,10 @@ self.__precacheManifest = [
   {
     "revision": "bca50c8cea88abb1961abe911f16e227",
     "url": "/img/Terraform Icon and Typemark-Light.bca50c8c.svg"
+  },
+  {
+    "revision": "6382fb37e273f9b9d7a24a98c2bfa468",
+    "url": "/img/operations_chevron.6382fb37.svg"
   },
   {
     "revision": "f8fb99f2d34c78761130651f9d46c5ed",
@@ -644,7 +660,7 @@ self.__precacheManifest = [
     "url": "/img/Army.6f6cb924.png"
   },
   {
-    "revision": "cba04f8c2b1423c7817b9ef921770701",
+    "revision": "c0547a89c5668fd3a381915d77d0ed85",
     "url": "/index.html"
   },
   {
@@ -680,12 +696,12 @@ self.__precacheManifest = [
     "url": "/saf_logo.svg"
   },
   {
-    "revision": "1a5420dc8f48626bf361019f8062df1b",
-    "url": "/DevSecOps_Best_Practices_Guide_01262020.pdf"
-  },
-  {
     "revision": "feaf4d40246265ef2f029983770e5a9f",
     "url": "/DRAFT-DevSecOps_Best_Practices_Guide_01262020.pdf"
+  },
+  {
+    "revision": "1a5420dc8f48626bf361019f8062df1b",
+    "url": "/DevSecOps_Best_Practices_Guide_01262020.pdf"
   },
   {
     "revision": "4b00a811782f7fa776f060ad7ca0e6de",
