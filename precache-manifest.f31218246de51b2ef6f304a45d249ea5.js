@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "47c7fab4a95dfc88e7da",
+    "revision": "0e2c422f5c5ba53d9c3a",
     "url": "/css/app.d73a05bf.css"
   },
   {
-    "revision": "47c7fab4a95dfc88e7da",
-    "url": "/js/app.fe087bc7.js"
+    "revision": "0e2c422f5c5ba53d9c3a",
+    "url": "/js/app.4749f210.js"
   },
   {
     "revision": "b2ed93c9ecc69227ac1c",
@@ -188,8 +188,8 @@ self.__precacheManifest = [
     "url": "/img/Validate Icon-Dark.a4264745.svg"
   },
   {
-    "revision": "bebc7022ea87c499dd70ad44d409fb6b",
-    "url": "/img/assessment_chevron.bebc7022.svg"
+    "revision": "d7550fef4789625deb75d7c92e1758c6",
+    "url": "/img/assessment_chevron.d7550fef.svg"
   },
   {
     "revision": "9ed3b7669abed32a871a12f06740ddd9",
@@ -660,7 +660,7 @@ self.__precacheManifest = [
     "url": "/img/Army.6f6cb924.png"
   },
   {
-    "revision": "108f066d9f1ec3b627f71d954fd45424",
+    "revision": "1c7be93ae7266fb50a12eb2acb534326",
     "url": "/index.html"
   },
   {
@@ -696,12 +696,12 @@ self.__precacheManifest = [
     "url": "/saf_logo.svg"
   },
   {
-    "revision": "1a5420dc8f48626bf361019f8062df1b",
-    "url": "/DevSecOps_Best_Practices_Guide_01262020.pdf"
-  },
-  {
     "revision": "feaf4d40246265ef2f029983770e5a9f",
     "url": "/DRAFT-DevSecOps_Best_Practices_Guide_01262020.pdf"
+  },
+  {
+    "revision": "1a5420dc8f48626bf361019f8062df1b",
+    "url": "/DevSecOps_Best_Practices_Guide_01262020.pdf"
   },
   {
     "revision": "4b00a811782f7fa776f060ad7ca0e6de",
