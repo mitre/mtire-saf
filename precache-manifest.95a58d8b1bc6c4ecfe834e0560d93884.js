@@ -688,10 +688,6 @@ self.__precacheManifest = [
     "url": "/CNAME"
   },
   {
-    "revision": "9483ef8d5efaa30a766c061918d4fb2c",
-    "url": "/How to Use the MITRE SAF.pdf"
-  },
-  {
     "revision": "b2174230811e6edd524d5c338620a264",
     "url": "/img/mitrelogo-whiteonblue.jpg"
   },
@@ -718,6 +714,10 @@ self.__precacheManifest = [
   {
     "revision": "feaf4d40246265ef2f029983770e5a9f",
     "url": "/DRAFT-DevSecOps_Best_Practices_Guide_01262020.pdf"
+  },
+  {
+    "revision": "9483ef8d5efaa30a766c061918d4fb2c",
+    "url": "/How to Use the MITRE SAF.pdf"
   },
   {
     "revision": "4b00a811782f7fa776f060ad7ca0e6de",
