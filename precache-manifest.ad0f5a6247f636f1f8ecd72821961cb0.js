@@ -692,12 +692,12 @@ self.__precacheManifest = [
     "url": "/CNAME"
   },
   {
-    "revision": "b2174230811e6edd524d5c338620a264",
-    "url": "/img/mitrelogo-whiteonblue.jpg"
-  },
-  {
     "revision": "9483ef8d5efaa30a766c061918d4fb2c",
     "url": "/How to Use the MITRE SAF.pdf"
+  },
+  {
+    "revision": "b2174230811e6edd524d5c338620a264",
+    "url": "/img/mitrelogo-whiteonblue.jpg"
   },
   {
     "revision": "3dd94439cde3ac312817c641949abb10",
