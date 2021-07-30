@@ -41,7 +41,7 @@
     "@types/prismjs": "^1.16.6",
     "babel-plugin-prismjs": "2.0.1",
     "babel-polyfill": "^6.26.0",
-    "core-js": "^3.15.2",
+    "core-js": "^3.16.0",
     "css-vars-ponyfill": "^2.4.6",
     "firebase": "^8.8.1",
     "intersection-observer": "^0.12.0",
