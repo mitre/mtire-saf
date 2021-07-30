@@ -70,7 +70,7 @@
     "@vue/cli-service-global": "^3.12.1",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.31.0",
-    "eslint-plugin-vue": "^7.14.0",
+    "eslint-plugin-vue": "^7.15.0",
     "fibers": "^5.0.0",
     "sass": "^1.36.0",
     "sass-loader": "^7.3.1",
