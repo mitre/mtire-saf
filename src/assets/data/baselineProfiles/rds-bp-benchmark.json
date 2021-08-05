@@ -18,63 +18,6 @@
   "inputs": [],
   "controls": [
     {
-      "title": "storage encrypted is on",
-      "desc": null,
-      "descriptions": {},
-      "impact": 0.5,
-      "refs": [],
-      "tags": {
-        "nist": [
-          "CM-6"
-        ],
-        "severity": "medium"
-      },
-      "code": "control 'encrypted storage' do\n  impact 0.5\n  tag nist: ['CM-6']\n  tag severity: 'medium'\n  title 'storage encrypted is on'\n  describe aws_rds_instance(input('rds_name')) do\n    its('storage_encrypted') { should eq input('rds_storage_encrypted') }\n  end\nend\n",
-      "source_location": {
-        "ref": "./AWS RDS BP Benchmark/controls/storage.rb",
-        "line": 3
-      },
-      "id": "encrypted storage"
-    },
-    {
-      "title": "necessary allocated storage provided",
-      "desc": null,
-      "descriptions": {},
-      "impact": 0.5,
-      "refs": [],
-      "tags": {
-        "nist": [
-          "CM-6"
-        ],
-        "severity": "medium"
-      },
-      "code": "control 'allocated_storage' do\n  impact 0.5\n  tag nist: ['CM-6']\n  tag severity: 'medium'\n  title 'necessary allocated storage provided'\n  describe aws_rds_instance(input('rds_name')) do\n    its('allocated_storage') { should eq input('rds_allocated_storage') }\n  end\nend\n",
-      "source_location": {
-        "ref": "./AWS RDS BP Benchmark/controls/storage.rb",
-        "line": 13
-      },
-      "id": "allocated_storage"
-    },
-    {
-      "title": "tags are copied to snapshots",
-      "desc": null,
-      "descriptions": {},
-      "impact": 0.5,
-      "refs": [],
-      "tags": {
-        "nist": [
-          "CM-6"
-        ],
-        "severity": "medium"
-      },
-      "code": "control 'snapshot tags' do\n  impact 0.5\n  tag nist: ['CM-6']\n  tag severity: 'medium'\n  title 'tags are copied to snapshots'\n  describe aws_rds_instance(input('rds_name')) do\n    its('copy_tags_to_snapshot') { should eq input('rds_copy_tags_to_snapshot') }\n  end\nend\n",
-      "source_location": {
-        "ref": "./AWS RDS BP Benchmark/controls/storage.rb",
-        "line": 23
-      },
-      "id": "snapshot tags"
-    },
-    {
       "title": "instance port is not default",
       "desc": null,
       "descriptions": {},
@@ -282,18 +225,66 @@
         "line": 73
       },
       "id": "tags"
+    },
+    {
+      "title": "storage encrypted is on",
+      "desc": null,
+      "descriptions": {},
+      "impact": 0.5,
+      "refs": [],
+      "tags": {
+        "nist": [
+          "CM-6"
+        ],
+        "severity": "medium"
+      },
+      "code": "control 'encrypted storage' do\n  impact 0.5\n  tag nist: ['CM-6']\n  tag severity: 'medium'\n  title 'storage encrypted is on'\n  describe aws_rds_instance(input('rds_name')) do\n    its('storage_encrypted') { should eq input('rds_storage_encrypted') }\n  end\nend\n",
+      "source_location": {
+        "ref": "./AWS RDS BP Benchmark/controls/storage.rb",
+        "line": 3
+      },
+      "id": "encrypted storage"
+    },
+    {
+      "title": "necessary allocated storage provided",
+      "desc": null,
+      "descriptions": {},
+      "impact": 0.5,
+      "refs": [],
+      "tags": {
+        "nist": [
+          "CM-6"
+        ],
+        "severity": "medium"
+      },
+      "code": "control 'allocated_storage' do\n  impact 0.5\n  tag nist: ['CM-6']\n  tag severity: 'medium'\n  title 'necessary allocated storage provided'\n  describe aws_rds_instance(input('rds_name')) do\n    its('allocated_storage') { should eq input('rds_allocated_storage') }\n  end\nend\n",
+      "source_location": {
+        "ref": "./AWS RDS BP Benchmark/controls/storage.rb",
+        "line": 13
+      },
+      "id": "allocated_storage"
+    },
+    {
+      "title": "tags are copied to snapshots",
+      "desc": null,
+      "descriptions": {},
+      "impact": 0.5,
+      "refs": [],
+      "tags": {
+        "nist": [
+          "CM-6"
+        ],
+        "severity": "medium"
+      },
+      "code": "control 'snapshot tags' do\n  impact 0.5\n  tag nist: ['CM-6']\n  tag severity: 'medium'\n  title 'tags are copied to snapshots'\n  describe aws_rds_instance(input('rds_name')) do\n    its('copy_tags_to_snapshot') { should eq input('rds_copy_tags_to_snapshot') }\n  end\nend\n",
+      "source_location": {
+        "ref": "./AWS RDS BP Benchmark/controls/storage.rb",
+        "line": 23
+      },
+      "id": "snapshot tags"
     }
   ],
   "groups": [
-    {
-      "title": "RDS - Best Practice - Storage",
-      "controls": [
-        "encrypted storage",
-        "allocated_storage",
-        "snapshot tags"
-      ],
-      "id": "controls/storage.rb"
-    },
     {
       "title": "RDS - Best Practice - Network",
       "controls": [
@@ -316,9 +307,18 @@
         "tags"
       ],
       "id": "controls/configuration.rb"
+    },
+    {
+      "title": "RDS - Best Practice - Storage",
+      "controls": [
+        "encrypted storage",
+        "allocated_storage",
+        "snapshot tags"
+      ],
+      "id": "controls/storage.rb"
     }
   ],
-  "sha256": "098da8108d4c872701263f135ee5d40385e35edd9457567b44b9e25b75d1a614",
+  "sha256": "a8dff803dd52e3d359003803839b932c5ab6552fe55ab6881a24b492a900d850",
   "status_message": "",
   "status": "loaded",
   "generator": {

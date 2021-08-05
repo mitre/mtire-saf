@@ -265,6 +265,55 @@
       "link": "https://github.com/ansible-lockdown/TOMCAT-9-STIG",
       "svg": "ansible",
       "category": ["Web Servers"]
+    },
+    {
+      "shortName": "Ubuntu 18.04 STIG",
+      "longName": "Ubuntu 18.04 Linux STIG",
+      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_CAN_Ubuntu_18-04_LTS_V2R2_STIG_Ansible.zip",
+      "svg": "ansible",
+      "category": ["Operating Systems"]
+    },
+    {
+      "shortName": "Cisco IOS XE NDM/RTR STIG",
+      "longName": "Cisco IOS XE NDM and RTR STIG",
+      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Cisco_IOS_XE_Router_NDM_RTR_V1R3_STIG_Ansible.zip",
+      "svg": "ansible",
+      "category": ["Network"]
+    },
+    {
+      "shortName": "Cisco IOS XE Router STIG",
+      "longName": "Cisco IOS XE Router STIG",
+      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Cisco_IOS_XE_Router_V2R1_STIG_Ansible.zip",
+      "svg": "ansible",
+      "category": ["Network"]
+    },
+    {
+      "shortName": "Docker Enterprise 2.x STIG",
+      "longName": "Docker Enterprise 2.x Linux/Unix STIG",
+      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Docker_Enterprise_2-x_Linux_Unix_V1R1_STIG_Ansible.zip",
+      "svg": "ansible",
+      "category": ["Virtual Platforms"]
+    },
+    {
+      "shortName": "Juniper SRX SG STIG",
+      "longName": "Juniper SRX SG STIG",
+      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Juniper_SRX_SG_V1R1_STIG_Ansible.zip",
+      "svg": "ansible",
+      "category": ["Network"]
+    },
+    {
+      "shortName": "VMware vSphere 6.5 STIG",
+      "longName": "VMware vSphere 6.5 STIG",
+      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_VMW_vSphere_6-5_V1R2_STIG_Ansible.zip",
+      "svg": "ansible",
+      "category": ["Virtual Platforms"]
+    },
+    {
+      "shortName": "Windows 2016 STIG",
+      "longName": "Windows 2016 r2 STIG",
+      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_MS_Windows_Server_2016_V1R3_STIG_PowerShell_DSC.zip",
+      "svg": "powershell-logo",
+      "category": ["Operating Systems"]
     }
   ]
 }

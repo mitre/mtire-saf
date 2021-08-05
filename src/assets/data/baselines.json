@@ -401,6 +401,16 @@
       "gitHash": "b4af1143ace12739bb52f1aa2a4b832ebcde5e40"
     },
     {
+      "shortName": "Tomcat 9 STIG",
+      "longName": "Apache Tomcat 9 STIG",
+      "link": "https://gitlab.dsolab.io/scv-content/inspec/apache/tomcat_9.x",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Web Servers"
+      ],
+      "gitHash": "0"
+    },
+    {
       "shortName": "Kubernetes CIS",
       "longName": "Kubernetes CIS",
       "link": "https://github.com/mitre/kubernetes-cis-baseline",
@@ -411,7 +421,47 @@
       "gitHash": "f820e6c9f3f165ffd3150fb2cd0d7d065a404023"
     },
     {
-      "shortName": "Apache Server STIG",
+      "shortName": "Kubernetes Cluster STIG",
+      "longName": "Kubernetes Cluster STIG",
+      "link": "https://gitlab.dsolab.io/scv-content/inspec/kubernetes/baselines/k8s-cluster-stig-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "Kubernetes Node STIG",
+      "longName": "Kubernetes Node STIG",
+      "link": "https://gitlab.dsolab.io/scv-content/inspec/kubernetes/baselines/k8s-node-stig-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "K3S Node STIG",
+      "longName": "K3S Node STIG",
+      "link": "https://gitlab.dsolab.io/scv-content/inspec/kubernetes/k3s/k3s-node-stig-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "K3S Cluster STIG",
+      "longName": "K3S Cluster STIG",
+      "link": "https://gitlab.dsolab.io/scv-content/inspec/kubernetes/k3s/k3s-cluster-stig-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "Apache Server 2.2 STIG",
       "longName": "Apache Server 2.2 STIG",
       "link": "https://github.com/mitre/apache-server-2.2-stig-baseline",
       "svg": "inspec-blue-back-border",
@@ -421,7 +471,7 @@
       "gitHash": "8e40e22de5cfdad3a6fb409e008009dfeadbcc8d"
     },
     {
-      "shortName": "Apache Site STIG",
+      "shortName": "Apache Site 2.2 STIG",
       "longName": "Apache Site 2.2 STIG",
       "link": "https://github.com/mitre/apache-site-2.2-stig-baseline",
       "svg": "inspec-blue-back-border",
@@ -429,6 +479,46 @@
         "Web Servers"
       ],
       "gitHash": "62da29b74b831de8b984a439df8aa88bc1edfa51"
+    },
+    {
+      "shortName": "Apache Server 2.4 STIG",
+      "longName": "Apache Server 2.4 STIG",
+      "link": "https://gitlab.dsolab.io/scv-content/inspec/apache/httpd_2.4x_server",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Web Servers"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "Apache Site 2.4 STIG",
+      "longName": "Apache Site 2.4 STIG",
+      "link": "https://gitlab.dsolab.io/scv-content/inspec/apache/httpd_2.4x_site",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Web Servers"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "AWS RDS Best Practices Benchmark",
+      "longName": "AWS RDS Best Practices Benchmark",
+      "link": "https://github.com/Staggerlee011/rds-bp-benchmark",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Cloud Service Providers"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "AWS S3 Best Practices Benchmark",
+      "longName": "AWS S3 Best Practices Benchmark",
+      "link": "https://github.com/Staggerlee011/s3-bp-benchmark",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Cloud Service Providers"
+      ],
+      "gitHash": "0"
     }
   ],
   "extras": {

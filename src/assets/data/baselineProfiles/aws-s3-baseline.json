@@ -23,30 +23,6 @@
   "inputs": [],
   "controls": [
     {
-      "title": "Ensure there are no publicly accessible S3 objects",
-      "desc": "Ensure there are no publicly accessible S3 objects",
-      "descriptions": {
-        "default": "Ensure there are no publicly accessible S3 objects"
-      },
-      "impact": 0.7,
-      "refs": [],
-      "tags": {
-        "nist": [
-          "AC-6",
-          "Rev_4"
-        ],
-        "severity": "high",
-        "check": "Review your AWS console and note if any S3 bucket objects are set to\n        'Public'. If any objects are listed as 'Public', then this is\n        a finding.",
-        "fix": "Log into your AWS console and select the S3 buckets section. Select\n        the buckets found in your review. For each object in the bucket\n        select the permissions tab for the object and remove\n        the Public Access permission."
-      },
-      "code": "control 's3-objects-no-public-access' do\n  impact 0.7\n  title 'Ensure there are no publicly accessible S3 objects'\n  desc 'Ensure there are no publicly accessible S3 objects'\n  tag \"nist\": ['AC-6', 'Rev_4']\n  tag \"severity\": 'high'\n\n  tag \"check\": \"Review your AWS console and note if any S3 bucket objects are set to\n        'Public'. If any objects are listed as 'Public', then this is\n        a finding.\"\n\n  tag \"fix\": \"Log into your AWS console and select the S3 buckets section. Select\n        the buckets found in your review. For each object in the bucket\n        select the permissions tab for the object and remove\n        the Public Access permission.\"\n\n  exception_bucket_list = input('exception_bucket_list')\n\n  aws_s3_buckets.bucket_names.each do |bucket|\n    next if exception_bucket_list.include?(bucket)\n\n    describe \"Public objects in Bucket: #{bucket}\" do\n      subject { aws_s3_bucket_objects(bucket).where { public }.keys }\n      it { should cmp [] }\n    end\n  end\n\n  if aws_s3_buckets.bucket_names.empty?\n    impact 0.0\n    desc 'This control is Non Applicable since no S3 buckets were found.'\n\n    describe 'This control is Non Applicable since no S3 buckets were found.' do\n      skip 'This control is Non Applicable since no S3 buckets were found.'\n    end\n  end\nend\n",
-      "source_location": {
-        "ref": "./AWS S3/controls/aws_s3_bucket_objects.rb",
-        "line": 1
-      },
-      "id": "s3-objects-no-public-access"
-    },
-    {
       "title": "Ensure there are no publicly accessible S3 buckets",
       "desc": "Ensure there are no publicly accessible S3 buckets",
       "descriptions": {
@@ -69,25 +45,49 @@
         "line": 1
       },
       "id": "s3-buckets-no-public-access"
+    },
+    {
+      "title": "Ensure there are no publicly accessible S3 objects",
+      "desc": "Ensure there are no publicly accessible S3 objects",
+      "descriptions": {
+        "default": "Ensure there are no publicly accessible S3 objects"
+      },
+      "impact": 0.7,
+      "refs": [],
+      "tags": {
+        "nist": [
+          "AC-6",
+          "Rev_4"
+        ],
+        "severity": "high",
+        "check": "Review your AWS console and note if any S3 bucket objects are set to\n        'Public'. If any objects are listed as 'Public', then this is\n        a finding.",
+        "fix": "Log into your AWS console and select the S3 buckets section. Select\n        the buckets found in your review. For each object in the bucket\n        select the permissions tab for the object and remove\n        the Public Access permission."
+      },
+      "code": "control 's3-objects-no-public-access' do\n  impact 0.7\n  title 'Ensure there are no publicly accessible S3 objects'\n  desc 'Ensure there are no publicly accessible S3 objects'\n  tag \"nist\": ['AC-6', 'Rev_4']\n  tag \"severity\": 'high'\n\n  tag \"check\": \"Review your AWS console and note if any S3 bucket objects are set to\n        'Public'. If any objects are listed as 'Public', then this is\n        a finding.\"\n\n  tag \"fix\": \"Log into your AWS console and select the S3 buckets section. Select\n        the buckets found in your review. For each object in the bucket\n        select the permissions tab for the object and remove\n        the Public Access permission.\"\n\n  exception_bucket_list = input('exception_bucket_list')\n\n  aws_s3_buckets.bucket_names.each do |bucket|\n    next if exception_bucket_list.include?(bucket)\n\n    describe \"Public objects in Bucket: #{bucket}\" do\n      subject { aws_s3_bucket_objects(bucket).where { public }.keys }\n      it { should cmp [] }\n    end\n  end\n\n  if aws_s3_buckets.bucket_names.empty?\n    impact 0.0\n    desc 'This control is Non Applicable since no S3 buckets were found.'\n\n    describe 'This control is Non Applicable since no S3 buckets were found.' do\n      skip 'This control is Non Applicable since no S3 buckets were found.'\n    end\n  end\nend\n",
+      "source_location": {
+        "ref": "./AWS S3/controls/aws_s3_bucket_objects.rb",
+        "line": 1
+      },
+      "id": "s3-objects-no-public-access"
     }
   ],
   "groups": [
     {
       "title": null,
       "controls": [
-        "s3-objects-no-public-access"
+        "s3-buckets-no-public-access"
       ],
-      "id": "controls/aws_s3_bucket_objects.rb"
+      "id": "controls/aws_s3_bucket.rb"
     },
     {
       "title": null,
       "controls": [
-        "s3-buckets-no-public-access"
+        "s3-objects-no-public-access"
       ],
-      "id": "controls/aws_s3_bucket.rb"
+      "id": "controls/aws_s3_bucket_objects.rb"
     }
   ],
-  "sha256": "e1bd8c6dde8fc8da3a9a6d79a1b917098f538c8243af3b9d8d838b9cb43b1876",
+  "sha256": "97ab1fba4d0b387d1c97e8548ba28bbffdfd44e3c48c4e072244445fe566f1ad",
   "status_message": "",
   "status": "loaded",
   "generator": {
