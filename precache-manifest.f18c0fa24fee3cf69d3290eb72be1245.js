@@ -388,12 +388,12 @@ self.__precacheManifest = [
     "url": "/fonts/materialdesignicons-webfont.147e3378.woff"
   },
   {
-    "revision": "174c02fc4609e8fc4389f5d21f16a296",
-    "url": "/fonts/materialdesignicons-webfont.174c02fc.ttf"
-  },
-  {
     "revision": "64d4cf64afd77a4ad2713f648eb920e6",
     "url": "/fonts/materialdesignicons-webfont.64d4cf64.eot"
+  },
+  {
+    "revision": "174c02fc4609e8fc4389f5d21f16a296",
+    "url": "/fonts/materialdesignicons-webfont.174c02fc.ttf"
   },
   {
     "revision": "a1e9ab061bb78195d37748b7c538b5c6",
@@ -720,12 +720,12 @@ self.__precacheManifest = [
     "url": "/saf_logo.svg"
   },
   {
-    "revision": "1a5420dc8f48626bf361019f8062df1b",
-    "url": "/DevSecOps_Best_Practices_Guide_01262020.pdf"
-  },
-  {
     "revision": "feaf4d40246265ef2f029983770e5a9f",
     "url": "/DRAFT-DevSecOps_Best_Practices_Guide_01262020.pdf"
+  },
+  {
+    "revision": "1a5420dc8f48626bf361019f8062df1b",
+    "url": "/DevSecOps_Best_Practices_Guide_01262020.pdf"
   },
   {
     "revision": "4b00a811782f7fa776f060ad7ca0e6de",
