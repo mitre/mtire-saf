@@ -704,10 +704,6 @@ self.__precacheManifest = [
     "url": "/img/mitrelogo-whiteonblue.jpg"
   },
   {
-    "revision": "3dd94439cde3ac312817c641949abb10",
-    "url": "/MITRE_SAF_Code_Review_Recommendations.pdf"
-  },
-  {
     "revision": "a48a7158644611f15540718769019d62",
     "url": "/MITRE-SAF-CCA-Template.docx"
   },
@@ -718,6 +714,10 @@ self.__precacheManifest = [
   {
     "revision": "ead02b50240e013e32f975d3e1ed1d27",
     "url": "/saf_logo.svg"
+  },
+  {
+    "revision": "3dd94439cde3ac312817c641949abb10",
+    "url": "/MITRE_SAF_Code_Review_Recommendations.pdf"
   },
   {
     "revision": "1a5420dc8f48626bf361019f8062df1b",
