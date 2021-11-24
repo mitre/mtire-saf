@@ -1,0 +1,24 @@
+{
+    "whatsnew" : {
+        "new" : {
+            "header" : "New",
+            "content" : [
+                "<a href=\"https://heimdall-tools.mitre.org/\">Heimdall</a> is improving its UI! You can now drag and drop files directly into the app.",
+                "<a href=\"https://heimdall-tools.mitre.org/\">Heimdall-tools</a> now supports AWS Security Hub data conversion for viewing in Heimdall!",
+                "The SAF team has published <a href=\"https://github.com/mitre/emasser\">eMASSer</a>, a CLI tool providing utilities for interacting with the eMASS API!"
+            ]
+        },
+        "reminders" : {
+            "header" : "Reminders",
+            "content" : [
+                "Check back often to find the latest information on <a href=\"https://saf.mitre.org/#/validate\">InSpec profiles</a>, <a href='https://heimdall-tools.mitre.org/'>Heimdall-tool converters</a>, and <a href=\"https://github.com/mitre/heimdall2/releases\">Heimdall updates!</a>"
+            ]
+        },
+        "coming-soon" : {
+            "header" : "Coming Soon",
+            "content" : [
+                "Heimdall Tools will soon be refactoring to use TypeScript!"
+            ]
+        }
+    }
+}

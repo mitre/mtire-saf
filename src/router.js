@@ -239,6 +239,16 @@ const router = new Router({
       },
     },
     {
+      path: "/whats-new",
+      name: "whats-new",
+      component: () => import("@/views/News.vue"),
+      meta: {
+        title: `What's New | ${communityData.CommunityName}`,
+        color: "#0277bd",
+        requiresAuth: false,
+      },
+    },
+    {
       path: "/validation",
       redirect: "/validate"
     },
