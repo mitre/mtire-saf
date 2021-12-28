@@ -3,8 +3,7 @@
         "new" : {
             "header" : "New",
             "content" : [
-                "<a href=\"https://heimdall-tools.mitre.org/\">Heimdall</a> is improving its UI! You can now drag and drop files directly into the app.",
-                "<a href=\"https://heimdall-tools.mitre.org/\">Heimdall-tools</a> now supports AWS Security Hub data conversion for viewing in Heimdall!",
+                "<a href=\"https://heimdall-lite.mitre.org/\">Heimdall</a> can now auto-convert native security data file formats just through drag and drop! These are the same formats supported by the <a href=\"https://github.com/mitre/saf#convert\">saf convert</a> tool (formerly  <a href=\"https://heimdall-tools.mitre.org/\">Heimdall-tools</a>)",
                 "The SAF team has published <a href=\"https://github.com/mitre/emasser\">eMASSer</a>, a CLI tool providing utilities for interacting with the eMASS API!"
             ]
         },
