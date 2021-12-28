@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid class="pa-0 ma-0">
+  <v-container fluid class="pa-0 pb-4 ma-0">
     <v-row justify="center" align="center" class="mx-0">
       <v-col cols="12" lg="10" class="pa-0">
         <Header>
@@ -16,23 +16,21 @@
 </template>
 
 <script>
-import Header from "@/components/core/Header.vue";
-import gsInfo from "../components/gettingstarted/gsInfo";
+  import Header from "@/components/core/Header.vue";
+  import gsInfo from "../components/gettingstarted/gsInfo";
 
-export default {
-  components: {
-    Header,
-    gsInfo
-  },
-  created() {
-    let metaThemeColor = document.querySelector("meta[name=theme-color]");
-    if (this.$vuetify.theme.dark) {
-      metaThemeColor.setAttribute("content", "#212121");
-    } else {
-      metaThemeColor.setAttribute("content", "#0277bd");
-    }
-  }
-};
+  export default {
+    components: {
+      Header,
+      gsInfo,
+    },
+    created() {
+      let metaThemeColor = document.querySelector("meta[name=theme-color]");
+      if (this.$vuetify.theme.dark) {
+        metaThemeColor.setAttribute("content", "#212121");
+      } else {
+        metaThemeColor.setAttribute("content", "#0277bd");
+      }
+    },
+  };
 </script>
-
-

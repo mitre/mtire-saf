@@ -58,16 +58,9 @@
           "desc": " to visualize security data easily from anywhere, using a lightweight in-browser version of Heimdall for simple use cases"
         },
         {
-          "name": "Heimdall_tools",
+          "name": "Heimdall Tools",
           "link": "https://heimdall-tools.mitre.org/",
-          "desc": " to convert data from these tools (to Heimdall Data Format - HDF) to be viewed in Heimdall:",
-          "bullets": [
-            "SonarQube",
-            "Fortify",
-            "OWASP ZAP",
-            "Burp Suite Pro",
-            "Nessus"
-          ]
+          "desc": " to convert data from common security tools into Heimdall Data Format (HDF) to be viewed in Heimdall"
         },
         {
           "name": "HDF-to-Splunk",

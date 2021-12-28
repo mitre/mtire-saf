@@ -123,19 +123,14 @@
     },
     {
       "header": "Heimdall Tools",
-      "desc": "MITRE created the <a href='https://heimdall-tools.mitre.org/' target='_blank'>Heimdall Tools</a> command line toolset to allow the conversion of output from widely used automated security testing tools into HDF. At present, Heimdall Tools can convert output from:",
+      "desc": "MITRE created the Heimdall Tools command line toolset to allow the conversion of output from widely used automated security testing tools into HDF. Heimdall Tools can convert output from tools such as:",
       "bullets": [
-        { "main": "Sonarqube", "link" : "https://www.sonarqube.org/" },
-        { "main": "Fortify", "link" : "https://www.microfocus.com/en-us/products/static-code-analysis-sast/overview" },
-        { "main": "OWASP ZAP", "link" : "https://www.zaproxy.org/" },
-        { "main": "Burp Suite", "link" : "https://portswigger.net/burp" },
-        { "main": "Nessus", "link" : "https://www.tenable.com/products/nessus" },
-        { "main": "Snyk", "link" : "https://snyk.io/" },
-        { "main": "Nikto", "link" : "https://cirt.net/Nikto2" },
-        { "main": "JFrog Xray", "link" : "https://jfrog.com/xray/" },
-        { "main": "DbProtect", "link": "https://www.trustwave.com/en-us/services/technology/dbprotect/" },
-        { "main": "AWS Config", "link" : "https://aws.amazon.com/config/"}
-      ]
+        { "main": "Nessus", "link" : "https://heimdall-tools.mitre.org/#nessus_mapper" },
+        { "main": "AWS Security Hub", "link" : "https://heimdall-tools.mitre.org/#asff_mapper" },
+        { "main": "Sonarqube", "link": "https://heimdall-tools.mitre.org/#sonarqube_mapper" },
+        { "main": "Burp Suite", "link" : "https://heimdall-tools.mitre.org/#burpsuite_mapper" }
+      ],
+      "footer": "For the full list of supported tools, check out the <a target='_blank' href=\"https://heimdall-tools.mitre.org\">Heimdall Tools page</a>."
     },
     {
       "header": "InSpec Control Template Examples That Support Proper Generation of HDF Output",

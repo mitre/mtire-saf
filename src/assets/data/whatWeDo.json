@@ -237,7 +237,25 @@
           "border_color": "#4783B2"
         },
         {
-          "name": "eMASSer",
+          "name": "Serverless Heimdall Pusher (AWS)",
+          "link": "",
+          "desc": "Lambda function that pushes HDF results stored in an s3 bucket to Heimdall Server",
+          "icon": "",
+          "png" : "aws_lambda_logo",
+          "app_link": "",
+          "app_svg": "app",
+          "doc_link": "",
+          "github_link": "https://github.com/mitre/serverless-heimdall-pusher-lambda",
+          "svg": "",
+          "tools": "",
+          "shields": [
+            "https://img.shields.io/github/v/release/mitre/serverless-heimdall-pusher-lambda?label=version",
+            "https://img.shields.io/github/downloads/mitre/serverless-heimdall-pusher-lambda/total?label=github%20downloads"
+          ],
+          "border_color": "#4783B2"
+        },
+        {
+          "name": "emasser",
           "link": "",
           "desc": "CLI tool providing utilities for the Enterprise Mission Assurance Support Service (eMASS) via its REST API",
           "icon": "",

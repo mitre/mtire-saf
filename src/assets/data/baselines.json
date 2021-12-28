@@ -21,6 +21,16 @@
       "gitHash": "2000fb9978a92b81739c4db661dae356dd5d5918"
     },
     {
+      "shortName": "Red Hat 8 STIG",
+      "longName": "Red Hat 8 STIG",
+      "link": "https://gitlab.dsolab.io/scv-content/inspec/operating-systems/redhat-enterprise-linux-8-stig-baseline",
+      "svg": "inspec-blue-back-border",
+      "category": [
+        "Operating Systems"
+      ],
+      "gitHash": "0"
+    },
+    {
       "shortName": "Red Hat CVE Scan",
       "longName": "Red Hat CVE Vulnerability Scan",
       "link": "https://github.com/CMSgov/redhat-enterprise-linux-cve-vulnerability-scan-baseline",
