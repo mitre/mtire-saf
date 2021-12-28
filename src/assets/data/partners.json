@@ -7,7 +7,7 @@
     },
     {
       "name": "Google",
-      "link": "https://www.google.com",
+      "link": "https://cloud.google.com/",
       "img": "gcp.png"
     },
     {
@@ -41,7 +41,7 @@
       "img": "github.png"
     },
     {
-      "name": "VmWare",
+      "name": "Refactr",
       "link": "https://www.refactr.it/",
       "img": "refactr.png"
     }
