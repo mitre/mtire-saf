@@ -82,6 +82,16 @@ export default new Vuex.Store({
         }
       },
       {
+        text: "What's New",
+        to: "/whats-new",
+        icon: "mdi-newspaper",
+        meta: {
+          showToolbar: true,
+          enabled: true,
+          showBottomNav: true
+        }
+      },
+      {
         text: "FAQ",
         to: "/faq",
         icon: "mdi-frequently-asked-questions",
