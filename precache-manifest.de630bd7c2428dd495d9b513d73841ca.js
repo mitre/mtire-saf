@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "130b7d8985534cf09d90",
+    "revision": "47fa9b20311fad0a7ec4",
     "url": "/css/app.d2dc7465.css"
   },
   {
-    "revision": "130b7d8985534cf09d90",
-    "url": "/js/app.e38066e4.js"
+    "revision": "47fa9b20311fad0a7ec4",
+    "url": "/js/app.d023f325.js"
   },
   {
     "revision": "8c54913568a183dcb236",
@@ -64,10 +64,6 @@ self.__precacheManifest = [
     "url": "/js/chunk-243aefa7.4ac6dd61.js"
   },
   {
-    "revision": "d7d5693aa4cf1ee62912",
-    "url": "/js/chunk-25f95466.845b576e.js"
-  },
-  {
     "revision": "18dfca09beaa3f35229f",
     "url": "/js/chunk-2d0b5a71.e3b7746c.js"
   },
@@ -86,6 +82,10 @@ self.__precacheManifest = [
   {
     "revision": "60316ff8426d764a42e8",
     "url": "/js/chunk-30d1799d.e01b2b4f.js"
+  },
+  {
+    "revision": "58c1b4e417a0c7bd8840",
+    "url": "/js/chunk-3ea0e284.6521936f.js"
   },
   {
     "revision": "5f21e96e05d6b050debb",
@@ -108,6 +108,10 @@ self.__precacheManifest = [
     "url": "/js/chunk-50264c18.5ffa061c.js"
   },
   {
+    "revision": "4c00dbc3d0c5c212f27d",
+    "url": "/js/chunk-57a0a704.2f31623a.js"
+  },
+  {
     "revision": "e18ed4e3d53b327ee9b0",
     "url": "/css/chunk-58205207.8a0e8df7.css"
   },
@@ -124,12 +128,12 @@ self.__precacheManifest = [
     "url": "/js/chunk-5f5ffa18.8bba7610.js"
   },
   {
-    "revision": "e166f87b1f4705225934",
-    "url": "/js/chunk-7ae111c1.e62eec33.js"
+    "revision": "9dcef1a25cd954941169",
+    "url": "/js/chunk-73876859.b2f8771a.js"
   },
   {
-    "revision": "bfaa30e3681cd5fcf6d5",
-    "url": "/js/chunk-7ccac687.915e610f.js"
+    "revision": "c39325f9996c0fa6a521",
+    "url": "/js/chunk-7ae2bba6.614a2034.js"
   },
   {
     "revision": "23a1354c05d66e7a3602",
@@ -146,10 +150,6 @@ self.__precacheManifest = [
   {
     "revision": "7b6598190cb4925e0d88",
     "url": "/js/chunk-bc690020.6feb5c7d.js"
-  },
-  {
-    "revision": "aef7b98c08560de36c31",
-    "url": "/js/chunk-d87ccfba.9836ae92.js"
   },
   {
     "revision": "c6fc4014f9d7afe61615",
@@ -304,12 +304,12 @@ self.__precacheManifest = [
     "url": "/img/aws_lambda_logo.c8913dcd.png"
   },
   {
-    "revision": "a01595df6b30fa4b14e7f87de7831852",
-    "url": "/fonts/google-font.a01595df.woff"
-  },
-  {
     "revision": "923a543cc619ea568f91b723d9fb1ef0",
     "url": "/fonts/google-font.923a543c.woff2"
+  },
+  {
+    "revision": "a01595df6b30fa4b14e7f87de7831852",
+    "url": "/fonts/google-font.a01595df.woff"
   },
   {
     "revision": "52ee8b598488b1ffbaa93e50cbd6a2f4",
@@ -448,6 +448,10 @@ self.__precacheManifest = [
     "url": "/img/CHEF Icon and Typemark-Dark.119a77ba.svg"
   },
   {
+    "revision": "4afd3f2cb02cfde4a1549a6c34434c14",
+    "url": "/img/saf_logo.4afd3f2c.png"
+  },
+  {
     "revision": "48ae79d99d69739a8022593da1ece32f",
     "url": "/img/angular.48ae79d9.svg"
   },
@@ -532,6 +536,10 @@ self.__precacheManifest = [
     "url": "/img/wtm.ef7918b4.svg"
   },
   {
+    "revision": "367a322a75e617a7c794a504247194f7",
+    "url": "/img/ansible-lockdown.367a322a.png"
+  },
+  {
     "revision": "ac5800f4d1d620e2af48b2b9066caaf0",
     "url": "/img/Ansible Logo and Typemark-Dark.ac5800f4.svg"
   },
@@ -546,6 +554,10 @@ self.__precacheManifest = [
   {
     "revision": "2bcbaa1d1bfd2b79c26db24214ce77ea",
     "url": "/img/terraform-full.2bcbaa1d.svg"
+  },
+  {
+    "revision": "2d331695eb1c43caac0e3d9523192bec",
+    "url": "/img/vmware-logo.2d331695.png"
   },
   {
     "revision": "da0df9f6409c6be1623945bcf900fd32",
@@ -692,7 +704,7 @@ self.__precacheManifest = [
     "url": "/img/Army.6f6cb924.png"
   },
   {
-    "revision": "477fc3100c0fec2f406b5e7009989d8d",
+    "revision": "72eb625865a0955efddd0083140c158c",
     "url": "/index.html"
   },
   {
