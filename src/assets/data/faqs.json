@@ -71,6 +71,17 @@
       "tag" : "tools"
     },
     {
+      "question": "What happened to Heimdall_Tools and InSpec_Tools?",
+      "answer": "MITRE SAF has combined a number of its tools, including Heimdall_Tools and InSpec_Tools, into a single utility called saf cli. The new tool covers the same use cases as the old ones in a more convenient package. See our page for saf cli for details.",
+      "links": [
+        {
+          "name": "saf cli",
+          "link": "http://saf-cli.mitre.org/"
+        }
+      ],
+      "tag" : "deprecated_tools"
+    },
+    {
       "question": "How can I use InSpec tests in my CI/CD pipeline?",
       "answer": "InSpec tests can be integrated as part of a test battery in your favorite CI platform. For example, you can add InSpec testing to your Travis CI file to run InSpec automatically. For further details, please see our Advanced InSpec Developer's Course.",
       "code": "// travis.yml\n\nsudo: required\n\n# blocklist\n#branches:\n#  except:\n#  - development\n\n# safelist\n#branches:\n#  only:\n#  - master\n#  - stable\n\nlanguage: ruby\nrvm:\n  - 2.6.1\n\ncache: bundler\n\naddons:\n  apt:\n    sources:\n      - chef-current-xenial\n    # packages:\n    #   - chef-workstation\n  #artifacts: true\n\n# Don't `bundle install` which takes about 1.5 mins\ninstall:\n\nservices: docker\n\nenv:\n  matrix:\n  - INSTANCE=default-ubuntu-1604\n\nbefore_script:\n  - wget https://packages.chef.io/files/stable/chef-workstation/0.5.1/ubuntu/16.04/chef-workstation_0.5.1-1_amd64.deb\n  - sudo dpkg -i chef-workstation_*.deb\n  - rm chef-workstation_*.deb\n  - sudo iptables -L DOCKER || ( echo \"DOCKER iptables chain missing\" ; sudo iptables -N DOCKER )\n  - eval\\$(chef shell-init bash)\"\n  - gem install bundler:2.0.1\n  - gem install inspec_tools\n  - inspec --version\n  - CHEF_LICENSE=accept chef gem update inspec\n  - CHEF_LICENSE=accept chef gem update inspec-bin\n  - /opt/chef-workstation/embedded/bin/gem update inspec\n  - /opt/chef-workstation/embedded/bin/gem update inspec-bin\n  - inspec --version\n  - bundle update --bundler\n  - bundle install\n  - chef --version\n  - cookstyle --version\n  - foodcritic --version\n\nscript: \n  - CHEF_LICENSE=accept-no-persist KITCHEN_LOCAL_YAML=kitchen.dokken.yml CHEF_VERSION=\\${CHEF_VERSION} kitchen verify \\${INSTANCE} || true\n  - export RESULTS=\\$(ls results/*.json)\n  - inspec_tools compliance -j $RESULTS -f threshold.yml",

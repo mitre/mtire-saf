@@ -24,7 +24,7 @@
         },
         { "main": "Test Elements – the individual tests that make up the actions in the ‘Check Text’" }
       ],
-      "footer" : "Properly created InSpec profiles naturally produce results in this format. To create HDF files using non-InSpec tool output, we provide Heimdall Tools."
+      "footer" : "Properly created InSpec profiles naturally produce results in this format. To create HDF files using non-InSpec tool output, we provide <a href='https://saf-cli.mitre.org/#convert' target='_blank'>saf convert:2hdf</a>."
     },
     {
       "header": "HDF Schema",
@@ -122,15 +122,15 @@
       "image": "hdf-schema-diagram"
     },
     {
-      "header": "Heimdall Tools",
-      "desc": "MITRE created the Heimdall Tools command line toolset to allow the conversion of output from widely used automated security testing tools into HDF. Heimdall Tools can convert output from tools such as:",
+      "header": "saf convert",
+      "desc": "MITRE SAF's <a href='https://saf-cli.mitre.org/#convert' target='_blank'>saf convert:2hdf option</a> allows the conversion of output from widely used automated security testing tools into HDF (and from HDF into other common formats). saf cli has converters for tools such as:",
       "bullets": [
-        { "main": "Nessus", "link" : "https://heimdall-tools.mitre.org/#nessus_mapper" },
-        { "main": "AWS Security Hub", "link" : "https://heimdall-tools.mitre.org/#asff_mapper" },
-        { "main": "Sonarqube", "link": "https://heimdall-tools.mitre.org/#sonarqube_mapper" },
-        { "main": "Burp Suite", "link" : "https://heimdall-tools.mitre.org/#burpsuite_mapper" }
+        { "main": "AWS Security Hub" },
+        { "main": "Nessus" },
+        { "main": "Sonarqube" },
+        { "main": "Burp Suite" }
       ],
-      "footer": "For the full list of supported tools, check out the <a target='_blank' href=\"https://heimdall-tools.mitre.org\">Heimdall Tools page</a>."
+      "footer": "For the full list of supported tools, check out the page for saf cli linked above. If you need a converter that is not on the list, reach out to us to discuss creating a new one (or write your own!)."
     },
     {
       "header": "InSpec Control Template Examples That Support Proper Generation of HDF Output",
