@@ -24,7 +24,7 @@
         },
         { "main": "Test Elements – the individual tests that make up the actions in the ‘Check Text’" }
       ],
-      "footer" : "Properly created InSpec profiles naturally produce results in this format. To create HDF files using non-InSpec tool output, we provide <a href='https://saf-cli.mitre.org/#convert' target='_blank'>saf convert:2hdf</a>."
+      "footer" : "Properly created InSpec profiles naturally produce results in this format. To create HDF files using non-InSpec tool output, we provide <a href='https://saf-cli.mitre.org/#convert' target='_blank'>saf convert</a>."
     },
     {
       "header": "HDF Schema",
@@ -123,7 +123,7 @@
     },
     {
       "header": "saf convert",
-      "desc": "MITRE SAF's <a href='https://saf-cli.mitre.org/#convert' target='_blank'>saf convert:2hdf option</a> allows the conversion of output from widely used automated security testing tools into HDF (and from HDF into other common formats). saf cli has converters for tools such as:",
+      "desc": "MITRE SAF's <a href='https://saf-cli.mitre.org/#convert' target='_blank'>saf convert option</a> allows the conversion of output from widely used automated security testing tools into HDF (and from HDF into other common formats). saf cli has converters for tools such as:",
       "bullets": [
         { "main": "AWS Security Hub" },
         { "main": "Nessus" },
