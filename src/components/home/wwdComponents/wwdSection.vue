@@ -8,8 +8,13 @@
         {{ topic.sectionHeader }}
       </p>
     </v-row>
-    <v-row align="center" justify="center" v-if="topic.sectionDesc">
-      <p class="google-font pa-2">{{ topic.sectionDesc }}</p>
+    <v-row
+      align="center"
+      justify="center"
+      v-if="topic.sectionDesc"
+      v-for="(item, i) in topic.sectionDesc"
+      :key="i">
+      <span class="google-font pa-2" v-html="topic.sectionDesc[i]"></span>
     </v-row>
     <v-row
       justify="center"

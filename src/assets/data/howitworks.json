@@ -149,7 +149,7 @@
             "sm" : "6",
             "xs" : "12"
           },
-          "min_height" : "400px"
+          "min_height" : "500px"
         },
         {
           "subcards": [
@@ -234,7 +234,7 @@
             "sm" : "6",
             "xs" : "12"
           },
-          "min_height" : "400px"
+          "min_height" : "500px"
         },
         {
           "subcards": [
@@ -245,7 +245,7 @@
             },
             {
               "title": "saf convert:2hdf",
-              "subtitle": "(Formerly Heimdall_Tools) <b>Convert Output</b> from non-InSpec tools to HDF",
+              "subtitle": "(formerly Heimdall_Tools) <b>Convert Output</b> from non-InSpec tools to HDF",
               "link" : "https://saf-cli.mitre.org/#convert"
             },
             {
@@ -275,7 +275,7 @@
             "sm" : "6",
             "xs" : "12"
           },
-          "min_height" : "400px"
+          "min_height" : "500px"
         },
         {
           "subcards": [
@@ -291,7 +291,7 @@
             },
             {
               "title": "saf convert:hdf2",
-              "subtitle": "(Formerly InSpec_Tools) <b>Convert HDF</b> to other tool formats and report styles (e.g. csv, html)",
+              "subtitle": "(formerly InSpec_Tools) <b>Convert HDF</b> to other tool formats and report styles (e.g. csv, html)",
               "link" : "https://saf-cli.mitre.org/#convert"
             },
             {
@@ -308,7 +308,7 @@
             "sm" : "6",
             "xs" : "12"
           },
-          "min_height" : "400px"
+          "min_height" : "500px"
         }
       ],
       "row_height": "20rem"
