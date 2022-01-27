@@ -62,7 +62,14 @@
         {
           "name": "saf cli",
           "link": "",
-          "desc": "Command-line tool supporting multiple stages of security pipelining: profile creation, data normalization and results visualization",
+          "desc": "Consolidates SAF automation goals into a convenient command-line tool, including commands to:",
+          "font_size" : "175",
+          "bullets" : [
+            "Generate InSpec security validation code",
+            "Set and validate threshold checks within a pipeline",
+            "Convert security tool test data to and from our standard Heimdall Data Format (HDF)",
+            "Automate Heimdall setup and deployment"
+          ],
           "icon": "",
           "png" : "saf_logo",
           "app_link": "",

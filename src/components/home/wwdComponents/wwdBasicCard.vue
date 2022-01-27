@@ -33,9 +33,10 @@
       <!-- :style="hover && (item.router_link || item.link) ? 'color:#1a73e8' : ''" -->
       <v-card-title
         class="google-font mt-2 title align-bottom justify-center break-word"
+        :style="item.font_size ? 'font-size:' + item.font_size + '% !important' : ''"
       >
         <!-- :color="hover && (item.router_link || item.link) ? '#1a73e8' : ''" -->
-        <v-icon class="mr-2">mdi-{{ item.side_icon }}</v-icon>
+        <v-icon v-if="item.side_icon" class="mr-2">mdi-{{ item.side_icon }}</v-icon>
         <span v-html="make_readable(item.name)" />
       </v-card-title>
       <v-spacer />
