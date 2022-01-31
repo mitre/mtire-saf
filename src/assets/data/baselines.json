@@ -318,6 +318,7 @@
     {
       "shortName": "AWS RDS PostgreSQL 9.x STIG",
       "longName": "AWS RDS Crunchy Data PostgreSQL 9.x STIG",
+      "link": "https://github.com/mitre/aws-rds-crunchy-data-postgresql-9-stig-baseline",      
       "platform_name": "InSpec",
       "platform_img": "inspec-blue-back-border.svg",
       "platform_link": "https://docs.chef.io/inspec/",
