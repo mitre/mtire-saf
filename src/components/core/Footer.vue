@@ -92,7 +92,7 @@
               class="google-font pl-0"
               :style="this.$vuetify.breakpoint.smAndDown ? 'font-size:75%' : ''"
             >
-              The MITRE Corporation © 2021
+              The MITRE Corporation © {{ new Date().getFullYear() }}
             </p>
 
             <!-- <v-btn
