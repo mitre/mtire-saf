@@ -6,7 +6,7 @@
         :src="require('@/assets/img/svg/saf_logo.svg')"
         style="width: 5rem; height: 5rem; vertical-align: middle"
         class="mr-2"
-      />FOOBAR
+      />BARFOO
     </h3>
     <p slot="subtitle" class="mt-4">
       {{ communityData.communityShortDescription }}
