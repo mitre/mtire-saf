@@ -126,6 +126,11 @@
       "desc": "MITRE SAF's <a href='https://saf-cli.mitre.org/#convert' target='_blank'>saf convert option</a> allows the conversion of output from widely used automated security testing tools into HDF (and from HDF into other common formats). saf cli has converters for tools such as:",
       "bullets": [
         { "main": "AWS Security Hub" },
+        { "main": "Condensed JSON" },
+        { "main": "DISA Checklist" },
+        { "main": "CSV" },
+        { "main": "AWS Config Rules" },
+        { "main": "POA&M" },
         { "main": "Nessus" },
         { "main": "Sonarqube" },
         { "main": "Burp Suite" }
