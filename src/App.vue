@@ -1,7 +1,7 @@
 <template>
   <v-app class="google-font">
     <v-content>
-      <v-snackbar
+      <!-- <v-snackbar
         v-model="snackWithButtons"
         :timeout="timeout"
         bottom
@@ -16,7 +16,7 @@
         <v-btn icon @click="snackWithButtons = false">
           <v-icon>mdi-close</v-icon>
         </v-btn>
-      </v-snackbar>
+      </v-snackbar> -->
 
       <AdminToolbar v-if="$route.meta.requiresAuth" />
       <AuraToolbar v-if="!$route.meta.requiresAuth" />
@@ -64,7 +64,7 @@
     }),
     created() {
       // Listen for swUpdated event and display refresh snackbar as required.
-      document.addEventListener("swUpdated", this.showRefreshUI, {once: true});
+      document.addEventListener("swUpdated", this.refreshApp, {once: true});
       console.log("eventListener added");
       // Refresh all open app tabs when a new service worker is installed.
       navigator.serviceWorker.addEventListener("controllerchange", () => {
@@ -75,16 +75,16 @@
       });
     },
     methods: {
-      showRefreshUI(e) {
-        console.log("showRefresh called");
-        this.registration = e.detail;
-        this.snackBtnText = "Refresh";
-        this.snackWithBtnText = "New version available!";
-        this.snackWithButtons = true;
-      },
+      // showRefreshUI(e) {
+      //   console.log("showRefresh called");
+      //   this.registration = e.detail;
+      //   this.snackBtnText = "Refresh";
+      //   this.snackWithBtnText = "New version available!";
+      //   this.snackWithButtons = true;
+      // },
       refreshApp() {
         console.log("refreshApp called");
-        this.snackWithButtons = false;
+        // this.snackWithButtons = false;
         if (!this.registration || !this.registration.waiting) {
           return;
         }
