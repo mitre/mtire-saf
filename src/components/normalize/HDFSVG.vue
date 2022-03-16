@@ -1,4 +1,5 @@
 <template>
+  <!-- Generated with https://jlblcc.github.io/json-schema-viewer/ --> 
   <svg id="jsv-tree" class="overlay" viewBox="0 0 1720 1500">
     <g id="node-group" transform="translate(10,0)" style="width: 100%;">
       <path
