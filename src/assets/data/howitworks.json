@@ -244,28 +244,15 @@
               "router_link" : "/normalize"
             },
             {
-              "title": "saf convert:2hdf",
+              "title": "saf convert *2hdf",
               "subtitle": "(formerly Heimdall_Tools) <b>Convert Output</b> from non-InSpec tools to HDF",
               "link" : "https://saf-cli.mitre.org/#convert"
             },
             {
 
-              "title": [
-                {
-                  "type": "text",
-                  "contents": "HDF to "
-                },
-                {
-                  "type": "svg",
-                  "contents": "Splunk Icon"
-                },
-                {
-                  "type": "text",
-                  "contents": " plugin"
-                }
-              ],
+              "title": "saf convert hdf2splunk",
               "subtitle" : "<b>Store HDF</b> output into Splunk for later retrieval / visualization using Heimdall",
-              "link" : "https://hdf-json-to-splunk.mitre.org"
+              "link" : "https://saf-cli.mitre.org/#hdf-to-splunk"
             }
           ],
           "cols": {

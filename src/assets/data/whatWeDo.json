@@ -117,25 +117,6 @@
           "border_color": "orange"
         },
         {
-          "name": "HDF Splunk Plugin",
-          "link": "",
-          "desc": "Splunk plugin to upload Inspec output, Heimdall Tools output, and any other HDF format files to Splunk, for consumption by Heimdall Lite",
-          "icon": "",
-          "png" : "splunk-white-black-bg",
-          "png_dark" : "splunk-black-white-bg",
-          "app_link": "",
-          "app_svg": "app",
-          "doc_link": "https://hdf-json-to-splunk.mitre.org",
-          "github_link": "https://github.com/mitre/hdf-json-to-splunk/",
-          "svg": "",
-          "tools": "",
-          "shields": [
-            "https://img.shields.io/github/v/release/mitre/hdf-json-to-splunk?label=version",
-            "https://img.shields.io/github/downloads/mitre/hdf-json-to-splunk/total?label=github%20downloads"
-          ],
-          "border_color": "orange"
-        },
-        {
           "name": "SAF CLI GitHub Action",
           "link": "",
           "desc": "Add SAF CLI functions to your GitHub Actions workflow",
