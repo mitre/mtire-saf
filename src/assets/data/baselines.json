@@ -527,7 +527,7 @@
     },
     {
       "shortName": "VMWare VCSA 6.7 STIG",
-      "longName": "VMware vCenter Service Appliance version 6.7",
+      "longName": "VMware vCenter Server Appliance 6.7 STIG",
       "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/6.7/vcsa/inspec/vmware-vcsa-6.7-stig-baseline",
       "platform_name": "InSpec",
       "platform_img": "inspec-blue-back-border.svg",
@@ -539,6 +539,36 @@
         "Virtual Platforms"
       ],
       "gitHash": "61bc21d6699a286cc06ef84abc5734d8eb065366"
+    },
+    {
+      "shortName": "VMWare vSphere 7.0 STIG Readiness Guide",
+      "longName": "VMware vSphere(ESXi,vCenter,VMs) 7.0 STIG Readiness Guide",
+      "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/7.0/vsphere/inspec/vmware-vsphere-7.0-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "VMWare",
+      "sponsor_img": "vmware-logo.png",
+      "sponsor_link": "https://www.vmware.com/",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "bd9e7ebb58dcbc47cc320cb46ce393c1680dfc46"
+    },
+    {
+      "shortName": "VMWare VCSA 7.0 STIG Readiness Guide",
+      "longName": "VMware vCenter Service Appliance version 7.0 STIG Readiness Guide",
+      "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/7.0/vcsa/inspec/vmware-vcsa-7.0-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "VMWare",
+      "sponsor_img": "vmware-logo.png",
+      "sponsor_link": "https://www.vmware.com/",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "bd9e7ebb58dcbc47cc320cb46ce393c1680dfc46"
     },
     {
       "shortName": "DRAFT: Tomcat 8 CIS",

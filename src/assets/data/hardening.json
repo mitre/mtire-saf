@@ -157,15 +157,39 @@
       "category": ["Databases"]
     },
     {
-      "shortName": "DRAFT: VMWARE VCSA 6.7 STIG",
+      "shortName": "VMware VCSA 6.7 STIG",
       "longName": "VMware vCenter Server Appliance 6.7 STIG",
-      "link": "https://github.com/mitre/chef-stig-mongodb-enterprise-advanced-hardening",
+      "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/6.7/vcsa/ansible/vmware-vcsa-6.7-stig-ansible-hardening",
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
-      "sponsor_name" : "MITRE SAF",
-      "sponsor_img": "saf_logo.png",
-      "sponsor_link": "/",
+      "sponsor_name" : "VMWare",
+      "sponsor_img": "vmware-logo.png",
+      "sponsor_link": "https://www.vmware.com/",
+      "category": ["Virtual Platforms"] 
+    },
+    {
+      "shortName": "VMware VCSA 7.0 STIG Readiness Guide",
+      "longName": "VMware vCenter Server Appliance 7.0 STIG Readiness Guide",
+      "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/7.0/vcsa/ansible/vmware-vcsa-7.0-stig-ansible-hardening",
+      "platform_name": "Ansible",
+      "platform_img": "ansible.svg",
+      "platform_link": "https://www.ansible.com/",
+      "sponsor_name" : "VMWare",
+      "sponsor_img": "vmware-logo.png",
+      "sponsor_link": "https://www.vmware.com/",
+      "category": ["Virtual Platforms"] 
+    },
+    {
+      "shortName": "VMware vSphere 7.0 STIG Readiness Guide",
+      "longName": "VMware vSphere 7.0 STIG Readiness Guide",
+      "link": "https://github.com/vmware/dod-compliance-and-automation/tree/master/vsphere/7.0/vsphere/powercli",
+      "platform_name": "PowerCLI",
+      "platform_img": "powershell-logo.svg",
+      "platform_link": "https://developer.vmware.com/powercli",
+      "sponsor_name" : "VMWare",
+      "sponsor_img": "vmware-logo.png",
+      "sponsor_link": "https://www.vmware.com/",
       "category": ["Virtual Platforms"] 
     },
     {
