@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/DevSecOps_Best_Practices_Guide_01262020.pdf"
   },
   {
-    "revision": "9483ef8d5efaa30a766c061918d4fb2c",
+    "revision": "9d54b02de22f5398973236cb72ccc758",
     "url": "/How to Use the MITRE SAF.pdf"
   },
   {
@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/_redirects"
   },
   {
-    "revision": "3cd78d7d5995e630f506",
+    "revision": "76009164e9e12a886c0c",
     "url": "/css/app.182355b8.css"
   },
   {
@@ -72,7 +72,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/css/chunk-4d6c229f.f4782e4d.css"
   },
   {
-    "revision": "b759ae0e93fe82a6e44f",
+    "revision": "fed66d7bd1b18d0d319a",
     "url": "/css/chunk-537c3265.b61af8da.css"
   },
   {
@@ -644,12 +644,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/wtm.ef7918b4.svg"
   },
   {
-    "revision": "e002b5061757daab844628292cbfe5bb",
+    "revision": "a9c9881914c80fdff19d33cbcb743870",
     "url": "/index.html"
   },
   {
-    "revision": "3cd78d7d5995e630f506",
-    "url": "/js/app.2d87946f.js"
+    "revision": "76009164e9e12a886c0c",
+    "url": "/js/app.226a2bca.js"
   },
   {
     "revision": "7f3d727e8dd3813ccb92",
@@ -708,16 +708,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-4d6c229f.c06600d3.js"
   },
   {
-    "revision": "b759ae0e93fe82a6e44f",
-    "url": "/js/chunk-537c3265.083b9653.js"
+    "revision": "fed66d7bd1b18d0d319a",
+    "url": "/js/chunk-537c3265.a5d21d35.js"
   },
   {
     "revision": "503af3c1a569d41dd87b",
     "url": "/js/chunk-579e1ea3.e88e3819.js"
   },
   {
-    "revision": "ebf0f2e91a98817d8f13",
-    "url": "/js/chunk-57a0a704.19567ff8.js"
+    "revision": "e07dc2c3a292ea77fc32",
+    "url": "/js/chunk-57a0a704.d3df345a.js"
   },
   {
     "revision": "60a4c59bf5619d12eead",
