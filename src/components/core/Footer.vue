@@ -88,6 +88,14 @@
               MITRE SAF
             </p>
             <v-spacer />
+            <a href="https://www.netlify.com"> 
+            <img
+              :src="require('@/assets/img/svg/netlify' + imgVersion + '.svg')"
+              style="width: 9rem; height: 9rem"
+              class="mt-1"
+            />
+            </a>
+            <v-spacer />
             <p
               class="google-font pl-0"
               :style="this.$vuetify.breakpoint.smAndDown ? 'font-size:75%' : ''"
@@ -121,6 +129,15 @@ export default {
       communityData: communityData,
       FooterData: FooterData,
     };
+  },
+  computed : {
+    imgVersion()  {
+      if (this.$vuetify.theme.dark) {
+        return '-light';
+      } else {
+        return '-dark';
+      }
+    }
   },
 };
 </script>
