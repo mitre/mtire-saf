@@ -16,13 +16,14 @@
           <p
               class="google-font pl-0 ml-0"
               :style="
-                this.$vuetify.breakpoint.smAndDown ? '' : 'font-size:200%'
+                this.$vuetify.breakpoint.smAndDown ? '' : 'font-size: 1.4rem'
               "
             >
               <img
                 slot="img"
                 :src="require('@/assets/img/svg/saf_logo.svg')"
                 style="width: 2rem; height: 2rem; vertical-align: middle"
+                class="mr-2"
               />
               MITRE SAF
             </p>
@@ -31,15 +32,15 @@
             <a href="https://www.netlify.com"> 
               <img
                 :src="require('@/assets/img/svg/netlify' + imgVersion + '.svg')"
-                style="width: 2.5rem; height: 2.5rem; vertical-align: middle"
+                style="width: 2rem; height: 2rem; vertical-align: middle"
                 class="mr-5"
               />
               </a>
               <a href="https://github.com/mitre/mitre-saf" style="text-decoration: none">
-                <v-icon v-if="this.$vuetify.theme.dark == true" href="https://github.com/mitre/mitre-saf" x-large color="white">mdi-github</v-icon>
+                <v-icon v-if="this.$vuetify.theme.dark == true" href="https://github.com/mitre/mitre-saf" large color="white">mdi-github</v-icon>
               </a>
               <a href="https://github.com/mitre/mitre-saf" style="text-decoration: none">
-                <v-icon v-if="this.$vuetify.theme.dark == false" href="https://github.com/mitre/mitre-saf" x-large color="black">mdi-github</v-icon>
+                <v-icon v-if="this.$vuetify.theme.dark == false" href="https://github.com/mitre/mitre-saf" large color="black">mdi-github</v-icon>
               </a>
             <v-spacer />
             <p
