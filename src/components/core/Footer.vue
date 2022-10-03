@@ -35,8 +35,12 @@
                 class="mr-5"
               />
               </a>
-              <v-icon v-if="this.$vuetify.theme.dark == true" href="https://github.com/mitre/mitre-saf" x-large color="white">mdi-github</v-icon>
-              <v-icon v-if="this.$vuetify.theme.dark == false" href="https://github.com/mitre/mitre-saf" x-large color="black">mdi-github</v-icon>
+              <a href="https://github.com/mitre/mitre-saf" style="text-decoration: none">
+                <v-icon v-if="this.$vuetify.theme.dark == true" href="https://github.com/mitre/mitre-saf" x-large color="white">mdi-github</v-icon>
+              </a>
+              <a href="https://github.com/mitre/mitre-saf" style="text-decoration: none">
+                <v-icon v-if="this.$vuetify.theme.dark == false" href="https://github.com/mitre/mitre-saf" x-large color="black">mdi-github</v-icon>
+              </a>
             <v-spacer />
             <p
               class="google-font pl-0"
