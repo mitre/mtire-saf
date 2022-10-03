@@ -91,7 +91,7 @@
             <a href="https://www.netlify.com"> 
             <img
               :src="require('@/assets/img/svg/netlify' + imgVersion + '.svg')"
-              style="width: 9rem; height: 9rem"
+              style="width: 6rem; height: 6rem"
               class="mt-1"
             />
             </a>
