@@ -73,8 +73,16 @@
               this.$vuetify.theme.dark == true ? 'grey darken-4' : 'white'
             "
           >
+          <a href="https://www.netlify.com"> 
+            <img
+              :src="require('@/assets/img/svg/netlify' + imgVersion + '.svg')"
+              style="width: 6rem; height: 6rem"
+              class="mt-1"
+            />
+            </a>
+            <v-spacer />
             <p
-              class="google-font pl-0 ml-0 mr-3"
+              class="google-font pl-0 ml-0"
               :style="
                 this.$vuetify.breakpoint.smAndDown ? '' : 'font-size:200%'
               "
@@ -83,18 +91,9 @@
                 slot="img"
                 :src="require('@/assets/img/svg/saf_logo.svg')"
                 style="width: 2rem; height: 2rem; vertical-align: middle"
-                class="mr-2"
               />
               MITRE SAF
             </p>
-            <v-spacer />
-            <a href="https://www.netlify.com"> 
-            <img
-              :src="require('@/assets/img/svg/netlify' + imgVersion + '.svg')"
-              style="width: 6rem; height: 6rem"
-              class="mt-1"
-            />
-            </a>
             <v-spacer />
             <p
               class="google-font pl-0"
