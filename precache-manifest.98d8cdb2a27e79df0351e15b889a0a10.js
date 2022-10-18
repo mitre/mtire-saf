@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/_redirects"
   },
   {
-    "revision": "a6350dc4b355ba0d2884",
+    "revision": "becb23a926730dcd950c",
     "url": "/css/app.d7d3b943.css"
   },
   {
@@ -258,6 +258,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "0c4b2aea0fe900d301456fa11a4a045c",
     "url": "/img/Normalize Icon-Light.0c4b2aea.svg"
+  },
+  {
+    "revision": "ac5f40bb917f844848cffe4701e2650a",
+    "url": "/img/Progress_Chef_Primary_Logo_Stacked.ac5f40bb.png"
   },
   {
     "revision": "8a97ea32dce781bb5ccdad7f33926c98",
@@ -520,6 +524,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/lipee-vora.fa9e2a60.png"
   },
   {
+    "revision": "0cfcc6ced364a23c2807ef9de1161973",
+    "url": "/img/lockheed-martin-logo.0cfcc6ce.png"
+  },
+  {
     "revision": "86c05650c0b96d90b52b991c403d0ce2",
     "url": "/img/luke-malinowski.86c05650.png"
   },
@@ -652,12 +660,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/wtm.ef7918b4.svg"
   },
   {
-    "revision": "479e49b2b7fc905b687d7b664b391dd8",
+    "revision": "0e18310589f4280543a493a3545107c6",
     "url": "/index.html"
   },
   {
-    "revision": "a6350dc4b355ba0d2884",
-    "url": "/js/app.78390c78.js"
+    "revision": "becb23a926730dcd950c",
+    "url": "/js/app.080569db.js"
   },
   {
     "revision": "7f3d727e8dd3813ccb92",
