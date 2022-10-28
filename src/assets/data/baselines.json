@@ -646,8 +646,8 @@
       "gitHash": "f820e6c9f3f165ffd3150fb2cd0d7d065a404023"
     },
     {
-      "shortName": "K8s Node STIG",
-      "longName": "K8s Node STIG",
+      "shortName": "Kubernetes (k8s) Node STIG",
+      "longName": "Kubernetes (k8s) Node STIG",
       "link": "https://github.com/mitre/k8s-node-stig-baseline",
       "platform_name": "InSpec",
       "platform_img": "inspec-blue-back-border.svg",
@@ -661,8 +661,8 @@
       "gitHash": "0"
     },
     {
-      "shortName": "K8s Cluster STIG",
-      "longName": "K8s Cluster STIG",
+      "shortName": "Kubernetes (k8s) Cluster STIG",
+      "longName": "Kubernetes (k8s) Cluster STIG",
       "link": "https://github.com/mitre/k8s-cluster-stig-baseline",
       "platform_name": "InSpec",
       "platform_img": "inspec-blue-back-border.svg",
