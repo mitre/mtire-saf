@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/_redirects"
   },
   {
-    "revision": "1792efd38d62d0faf736",
+    "revision": "50972aa7e5ec3b9a7722",
     "url": "/css/app.d7d3b943.css"
   },
   {
@@ -524,6 +524,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/jacob-henry.777debb2.png"
   },
   {
+    "revision": "27003c8ab3a6ddef350fbc1551e1117b",
+    "url": "/img/keycloak.27003c8a.svg"
+  },
+  {
     "revision": "fa9e2a60d29dc1c1af94cda8ce5677ca",
     "url": "/img/lipee-vora.fa9e2a60.png"
   },
@@ -664,12 +668,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/wtm.ef7918b4.svg"
   },
   {
-    "revision": "8c0a72484ab7d6a64b1616359ae2ee1f",
+    "revision": "804e61cc79493f7a8ce478dd2a77496b",
     "url": "/index.html"
   },
   {
-    "revision": "1792efd38d62d0faf736",
-    "url": "/js/app.80456ea7.js"
+    "revision": "50972aa7e5ec3b9a7722",
+    "url": "/js/app.e837e19e.js"
   },
   {
     "revision": "c9d9ad02b5e5b7a24b7a",
@@ -708,8 +712,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-2d22d746.33068a30.js"
   },
   {
-    "revision": "63d85a55725973be2dc4",
-    "url": "/js/chunk-3ea0e284.d7ec2b1d.js"
+    "revision": "95b92f9f33212b081967",
+    "url": "/js/chunk-3ea0e284.354aadf0.js"
   },
   {
     "revision": "a34331f81a2f37398d1a",
@@ -752,8 +756,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/js/chunk-7ad4a3a5.c081a6d3.js"
   },
   {
-    "revision": "bb4d5d66385f1b548da7",
-    "url": "/js/chunk-7ae2bba6.d233de27.js"
+    "revision": "983068e57a4a29ecd0f5",
+    "url": "/js/chunk-7ae2bba6.5be54f68.js"
   },
   {
     "revision": "230d11bc2ee46ee5fe37",
