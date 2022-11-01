@@ -691,8 +691,8 @@
       "gitHash": "0"
     },
     {
-      "shortName": "Amazon Elastic Kubernetes Service Node CIS",
-      "longName": "EKS Node CIS",
+      "shortName": "EKS Node CIS",
+      "longName": "Amazon Elastic Kubernetes Service Node CIS",
       "link": "https://github.com/mitre/eks-cis-node-baseline",
       "platform_name": "InSpec",
       "platform_img": "inspec-blue-back-border.svg",
@@ -706,8 +706,8 @@
       "gitHash": "0"
     },
     {
-      "shortName": "Amazon Elastic Kubernetes Service Cluster CIS",
-      "longName": "EKS Cluster CIS",
+      "shortName": "EKS Cluster CIS",
+      "longName": "Amazon Elastic Kubernetes Service Cluster CIS",
       "link": "https://github.com/mitre/eks-cis-cluster-baseline",
       "platform_name": "InSpec",
       "platform_img": "inspec-blue-back-border.svg",
