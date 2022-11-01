@@ -316,6 +316,21 @@
       "gitHash": "9136f50250adaa59d22f842660945389a57a8c77"
     },
     {
+      "shortName": "PostgreSQL 10-13 STIG",
+      "longName": "Crunchy Data PostgreSQL 10-13 STIG",
+      "link": "https://github.com/mitre/crunchy-data-postgresql-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Databases"
+      ],
+      "gitHash": "9136f50250adaa59d22f842660945389a57a8c77"
+    },
+    {
       "shortName": "AWS RDS PostgreSQL 9.x STIG",
       "longName": "AWS RDS Crunchy Data PostgreSQL 9.x STIG",
       "link": "https://github.com/mitre/aws-rds-crunchy-data-postgresql-9-stig-baseline",      
@@ -664,6 +679,36 @@
       "shortName": "Kubernetes Cluster STIG",
       "longName": "Kubernetes Cluster STIG",
       "link": "https://github.com/mitre/k8s-cluster-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "Amazon Elastic Kubernetes Service Node CIS",
+      "longName": "EKS Node CIS",
+      "link": "https://github.com/mitre/eks-cis-node-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "Amazon Elastic Kubernetes Service Cluster CIS",
+      "longName": "EKS Cluster CIS",
+      "link": "https://github.com/mitre/eks-cis-cluster-baseline",
       "platform_name": "InSpec",
       "platform_img": "inspec-blue-back-border.svg",
       "platform_link": "https://docs.chef.io/inspec/",
