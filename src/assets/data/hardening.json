@@ -363,7 +363,7 @@
     {
       "shortName": "Ubuntu 18.04 LTS STIG",
       "longName": "Ubuntu 18.04 LTS STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_CAN_Ubuntu_18-04_LTS_V2R9_STIG_Ansible.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
@@ -375,7 +375,7 @@
     {
       "shortName": "Ubuntu 20.04 LTS STIG",
       "longName": "Ubuntu 20.04 LTS STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_CAN_Ubuntu_20-04_LTS_V1R6_STIG_Ansible.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
@@ -519,7 +519,7 @@
     {
       "shortName": "Ubuntu 18.04 STIG",
       "longName": "Ubuntu 18.04 Linux STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_CAN_Ubuntu_18-04_LTS_V2R5_STIG_Ansible.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
@@ -531,7 +531,7 @@
     {
       "shortName": "Cisco IOS XE NDM/RTR STIG",
       "longName": "Cisco IOS XE NDM and RTR STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Cisco_IOS_XE_Router_NDM_RTR_V2R3_STIG_Ansible.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
@@ -543,7 +543,7 @@
     {
       "shortName": "Cisco IOS XE Router STIG",
       "longName": "Cisco IOS XE Router STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Cisco_IOS_XE_Router_V2R1_STIG_Ansible.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
@@ -555,7 +555,7 @@
     {
       "shortName": "Docker Enterprise 2.x STIG",
       "longName": "Docker Enterprise 2.x Linux/Unix STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Docker_Enterprise_2-x_Linux_Unix_V1R1_STIG_Ansible.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
@@ -567,7 +567,7 @@
     {
       "shortName": "Juniper SRX SG STIG",
       "longName": "Juniper SRX SG STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_Juniper_SRX_SG_V1R1_STIG_Ansible.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
@@ -579,7 +579,7 @@
     {
       "shortName": "VMware vSphere 6.5 STIG",
       "longName": "VMware vSphere 6.5 STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_VMW_vSphere_6-5_V1R2_STIG_Ansible.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
@@ -591,7 +591,7 @@
     {
       "shortName": "Windows 2016 STIG",
       "longName": "Windows 2016 r2 STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_MS_Windows_Server_2016_V1R3_STIG_PowerShell_DSC.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "PowerCLI",
       "platform_img": "powershell-logo.svg",
       "platform_link": "https://developer.vmware.com/powercli",
@@ -603,7 +603,7 @@
     {
       "shortName": "SUSE 15 STIG",
       "longName": "SUSE 15 STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_SLES_15_V1R8_STIG_Ansible.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
@@ -627,7 +627,7 @@
     {
       "shortName": "Windows Server 2016 STIG",
       "longName": "Windows Server 2016 STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_MS_Windows_Server_2016_V1R3_STIG_Chef.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Chef",
       "platform_img": "chef-2.svg",
       "platform_link": "https://www.chef.io/",
@@ -639,7 +639,7 @@
     {
       "shortName": "Windows Server 2019 STIG",
       "longName": "Windows Server 2019 STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_MS_Windows_Server_2019_V1R2_STIG_Chef.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Chef",
       "platform_img": "chef-2.svg",
       "platform_link": "https://www.chef.io/",
@@ -651,7 +651,7 @@
     {
       "shortName": "Red Hat 7 STIG",
       "longName": "Red Hat 7 STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RHEL_7_V3R8_STIG_Chef.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Chef",
       "platform_img": "chef-2.svg",
       "platform_link": "https://www.chef.io/",
@@ -663,7 +663,7 @@
     {
       "shortName": "Red Hat 8 STIG",
       "longName": "Red Hat 8 STIG",
-      "link": "https://dl.dod.cyber.mil/wp-content/uploads/stigs/zip/U_RHEL_8_V1R7_STIG_Chef.zip",
+      "link": "https://public.cyber.mil/stigs/downloads/",
       "platform_name": "Chef",
       "platform_img": "chef-2.svg",
       "platform_link": "https://www.chef.io/",
