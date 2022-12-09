@@ -826,21 +826,6 @@
       "gitHash": "0"
     },
     {
-      "shortName": "Oracle Database 12c STIG",
-      "longName": "Oracle Database 12c STIG",
-      "link": "https://github.com/mitre/oracle-database-12c-stig-baseline",
-      "platform_name": "InSpec",
-      "platform_img": "inspec-blue-back-border.svg",
-      "platform_link": "https://docs.chef.io/inspec/",
-      "sponsor_name" : "MITRE SAF",
-      "sponsor_img": "saf_logo.png",
-      "sponsor_link": "/",
-      "category": [
-        "Databases"
-      ],
-      "gitHash": "0"
-    },
-    {
       "shortName": "Oracle Database 19c CIS",
       "longName": "Oracle Database 19c CIS Benchmark",
       "link": "https://github.com/mitre/oracle-database-19c-cis-baseline",
