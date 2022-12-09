@@ -136,6 +136,21 @@
       "gitHash": "4a56525199ecc0bd6ba9c18ad163264bae6112ae"
     },
     {
+      "shortName": "Ubuntu 20.04 STIG",
+      "longName": "Canonical Ubuntu 20.04 STIG",
+      "link": "https://github.com/mitre/canonical-ubuntu-20.04-lts-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Operating Systems"
+      ],
+      "gitHash": "0"
+    },
+    {
       "shortName": "Windows 10 STIG",
       "longName": "Microsoft Windows 10 STIG v1r19",
       "link": "https://github.com/mitre/microsoft-windows-10-stig-baseline",
@@ -646,6 +661,36 @@
       "gitHash": "f820e6c9f3f165ffd3150fb2cd0d7d065a404023"
     },
     {
+      "shortName": "K3s Node STIG",
+      "longName": "K3s Node STIG",
+      "link": "https://github.com/mitre/k3s-node-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "K3s Cluster STIG",
+      "longName": "K3s Cluster STIG",
+      "link": "https://github.com/mitre/k3s-cluster-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "0"
+    },
+    {
       "shortName": "Kubernetes Node STIG",
       "longName": "Kubernetes Node STIG",
       "link": "https://github.com/mitre/k8s-node-stig-baseline",
@@ -706,15 +751,60 @@
       "gitHash": "62da29b74b831de8b984a439df8aa88bc1edfa51"
     },
     {
+      "shortName": "Apache Server 2.4x STIG",
+      "longName": "Apache Server 2.4x STIG",
+      "link": "https://github.com/mitre/apache-server-2.4x-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Web Servers"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "Apache Site 2.4x STIG",
+      "longName": "Apache Site 2.4x STIG",
+      "link": "https://github.com/mitre/apache-site-2.4x-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Web Servers"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "Apache Tomcat 9.x STIG",
+      "longName": "Apache Tomcat 9.x STIG",
+      "link": "https://github.com/mitre/apache-tomcat-9.x-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name": "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Web Servers"
+      ],
+      "gitHash": "0"
+    },
+    {
       "shortName": "AWS RDS Best Practices Benchmark",
       "longName": "AWS RDS Best Practices Benchmark",
       "link": "https://github.com/Staggerlee011/rds-bp-benchmark",
       "platform_name": "InSpec",
       "platform_img": "inspec-blue-back-border.svg",
       "platform_link": "https://docs.chef.io/inspec/",
-      "sponsor_name" : "DISA",
-      "sponsor_img": "DISA.png",
-      "sponsor_link": "https://www.disa.mil/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
       "category": [
         "Cloud Service Providers"
       ],
@@ -727,8 +817,26 @@
       "platform_name": "InSpec",
       "platform_img": "inspec-blue-back-border.svg",
       "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
       "category": [
         "Cloud Service Providers"
+      ],
+      "gitHash": "0"
+    },
+    {
+      "shortName": "Oracle Database 12c STIG",
+      "longName": "Oracle Database 12c STIG",
+      "link": "https://github.com/mitre/oracle-database-12c-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Databases"
       ],
       "gitHash": "0"
     },
