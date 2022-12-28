@@ -316,6 +316,21 @@
       "gitHash": "9136f50250adaa59d22f842660945389a57a8c77"
     },
     {
+      "shortName": "PostgreSQL STIG",
+      "longName": "Crunchy Data PostgreSQL STIG",
+      "link": "https://github.com/mitre/crunchy-data-postgresql-stig-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Databases"
+      ],
+      "gitHash": "0"
+    },
+    {
       "shortName": "AWS RDS PostgreSQL 9.x STIG",
       "longName": "AWS RDS Crunchy Data PostgreSQL 9.x STIG",
       "link": "https://github.com/mitre/aws-rds-crunchy-data-postgresql-9-stig-baseline",      
@@ -329,6 +344,21 @@
         "Databases"
       ],
       "gitHash": "12cbd79265f878bbdda4219745abeaa64dd71b96"
+    },
+    {
+      "shortName": "AWS RDS PostgreSQL STIG",
+      "longName": "AWS RDS Crunchy Data PostgreSQL STIG",
+      "link": "https://github.com/mitre/aws-rds-crunchy-data-postgresql-stig-baseline",      
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Databases"
+      ],
+      "gitHash": "0"
     },
     {
       "shortName": "MSQL 2014 Database STIG",
