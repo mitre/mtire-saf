@@ -4787,7 +4787,7 @@
       "id": "crunchy-data-postgresql-stig-baseline-main/controls/V-233623.rb"
     }
   ],
-  "sha256": "6fcc312515c5c53a643031360031fc59d0f184fb707f9f5a4e6febe9ddb38ec2",
+  "sha256": "6431172891c10261492aed4e612830491e4cf05c171b20edb93686711d90f8b1",
   "status_message": "",
   "status": "loaded",
   "generator": {
