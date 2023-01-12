@@ -1,44 +1,42 @@
 <template>
   <div>
-    <h2 class="mb-2">Coming Soon! – SAF training Fall 2022!</h2>
+    <div class="seperator">
+      <h1><u>Upcoming Class Offerings: </u></h1>
+    </div>
+    <h2 class="mb-2">SAF training February 2023!</h2>
     <p >
-      We’re happy to announce plans to provide training to SAF Users and Developers. 
+      Sponsored by MDA, the MITRE SAF team is happy to announce plans to provide training about Security Automation Development. 
       These are free, on-line virtual, hands-on, instructor-led 1-2 day classes.
     </p>
     <p >
-      Sponsored by MDA, the
       <a :href="communityData.trainingSiteBasic" target="_blank"
-        >Beginner Security Automation Developer Class</a
+        >The Beginner Security Automation Developer Class</a
       >
-      will again be offered in late Fall (10am-5pm ET both days) (12 CPE). Check back in for more details to come!
+      will again be offered February 8-9, 2023 (10am-5pm ET both days) (12 CPE).
+      <br>
+      <a :href="communityData.trainingSiteAdvanced" target="_blank"
+        >The follow-on Advanced Security Automation Developer Class</a
+      >
+      will again be offered in Febraury 22-23, 2023 (10am-5pm ET both days) (12 CPE).
     </p>
     <p >
-      Sponsored by MDA, the
-      <a :href="communityData.trainingSiteAdvanced" target="_blank"
-        >follow-on Advanced Security Automation Developer Class</a
+      <v-btn
+        elevation="8"
+        large
+        outlined
+        text
+        x-large
+        :href="communityData.trainingSignUpLink"
+        target="_blank"
+        class="ma-8"
+        color="accent"
+        >RSVP!</v-btn
       >
-      will again be offered in late Fall (10am-5pm ET both days) (12 CPE). Check back in for more details to come!
-    </p>
-    <!-- <p >
-      Please RSVP if you are interested in attending or have additional
-      questions. If you are having trouble with the form, please email
+      Please RSVP if you are interested in attending. If you are having trouble with the form, please email
       <a :href="'mailto:' + communityData.trainingContactEmail" target="_blank"
         >SAF@groups.mitre.org.</a
       >
-    </p> -->
-    <!-- <v-btn
-      elevation="8"
-      large
-      outlined
-      text
-      x-large
-      :href="communityData.trainingSignUpLink"
-      target="_blank"
-      class="ma-8"
-      color="accent"
-      >RSVP!</v-btn
-    > -->
-    <p >
+      <br>
       For information on prerequisites and resources for learning Ruby, look at the saf-training material available 
       <a
         href="https://mitre.github.io/saf-training/"
@@ -51,6 +49,9 @@
         >here.</a
       >
     </p>
+    <div class="seperator">
+      <h1><u>Class List: </u></h1>
+    </div>
   </div>
 </template>
 <script>
