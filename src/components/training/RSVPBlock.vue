@@ -1,24 +1,22 @@
 <template>
   <div>
-    <div class="seperator">
-      <h1><u>Upcoming Class Offerings: </u></h1>
-    </div>
-    <h2 class="mb-2">SAF training February 2023!</h2>
+    <h2 class="mb-2">Upcoming Class Offerings: SAF Training February 2023!</h2>
     <p >
-      Sponsored by MDA, the MITRE SAF team is happy to announce plans to provide training about Security Automation Development. 
-      These are free, on-line virtual, hands-on, instructor-led 1-2 day classes.
+      Sponsored by <a href="https://www.mda.mil/" target="_blank">MDA</a>, the MITRE SAF Team is happy to announce its first round of security automation training courses for 2023. 
+      These are free, on-line virtual, hands-on, instructor-led two-day courses.
     </p>
-    <p >
-      <a :href="communityData.trainingSiteBasic" target="_blank"
+    <ul>
+      <li><a :href="communityData.trainingSiteBasic" target="_blank"
         >The Beginner Security Automation Developer Class</a
       >
       will again be offered February 8-9, 2023 (10am-5pm ET both days) (12 CPE).
-      <br>
+      </li>
+      <li>The follow-on 
       <a :href="communityData.trainingSiteAdvanced" target="_blank"
-        >The follow-on Advanced Security Automation Developer Class</a
+        >Advanced Security Automation Developer Class</a
       >
-      will again be offered in Febraury 22-23, 2023 (10am-5pm ET both days) (12 CPE).
-    </p>
+      will again be offered in Febraury 22-23, 2023 (10am-5pm ET both days) (12 CPE).</li>
+    </ul>
     <p >
       <v-btn
         elevation="8"
@@ -49,9 +47,6 @@
         >here.</a
       >
     </p>
-    <div class="seperator">
-      <h1><u>Class List: </u></h1>
-    </div>
   </div>
 </template>
 <script>
