@@ -87,40 +87,30 @@
               "subtitle": [
                 {
                   "type": "text",
-                  "contents": "<b>Author standards</b> to create "
-                },
-                {
-                  "type": "svg",
-                  "contents": "InSpec Icon"
-                },
-                {
-                  "type": "svg",
-                  "contents": "InSpec Typemark"
-                },
-                {
-                  "type": "text",
-                  "contents": " validation code"
+                  "contents": "Generate and tailor <b>security guidance</b> based on Security Requirements Guides (SRGs)"
                 }
               ],
               "link" : "https://vulcan.mitre.org"
             },
             {
-              "title": "Unite Guidance with Automation",
+              "title": "Training Classes",
               "subtitle" : [
                 {
                   "type": "text",
-                  "contents": "Develop automated compliance-as-code alongside standards"
+                  "contents": "Learn to use and develop SAF security tools appropriate to your mission"
                 }
-              ]
+              ],
+              "router_link": "/train"
             },
             {
-              "title": "Bake in Compliance",
+              "title": "Getting Started",
               "subtitle" : [
                 {
                   "type": "text",
-                  "contents": "Ensure all automated tests have a metadata binding to the requirement they validate"
+                  "contents": "Step through and refine your user story"
                 }
-              ]
+              ],
+              "router_link": "/gettingstarted"
             }
           ],
           "min_height" : "500px"
@@ -192,6 +182,28 @@
               "title": "saf validate",
               "subtitle": "<b>Validate threshold checks</b> within the pipeline",
               "link" : "https://saf-cli.mitre.org/#validate"
+            },
+            {
+              "title": "Vulcan",
+              "subtitle": [
+                {
+                  "type": "text",
+                  "contents": "Generate "
+                },
+                {
+                  "type": "svg",
+                  "contents": "InSpec Icon"
+                },
+                {
+                  "type": "svg",
+                  "contents": "InSpec Typemark"
+                },
+                {
+                  "type": "text",
+                  "contents": " validation code to current, tailored, or authored standards"                  
+                }
+              ],
+              "link" : "https://vulcan.mitre.org"
             }
           ],
           "min_height" : "500px"
