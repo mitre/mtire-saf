@@ -4,20 +4,21 @@
       "name": "GOAL",
       "data": [
         {
+          "svg": "Plan Icon",
+          "title": {
+            "text" : "<b>PLAN</b>",
+            "size" : "2rem"
+          },
+          "subtitle": "Choose, tailor, and create <b>security guidance</b> appropriate for your mission",
+          "link" : "https://vulcan.mitre.org/"
+        },{
           "svg": "Harden Icon",
           "title": {
             "text" : "<b>HARDEN</b>",
             "size" : "2rem"
           },
           "subtitle": "<b>Implement security baselines</b> using our Ansible, Chef, and Terraform content",
-          "router_link" : "/harden",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          }
+          "router_link" : "/harden"
         },
         {
           "svg": "Validate Icon",
@@ -26,14 +27,7 @@
             "size" : "2rem"
           },
           "subtitle": "<b>Generate detailed security testing results</b> throughout the lifecycle of a system via <b>automated tests</b> and <b>manual attestation</b>",
-          "router_link" : "/validate",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          }
+          "router_link" : "/validate"
         },
         {
           "svg": "Normalize Icon",
@@ -42,14 +36,7 @@
             "size" : "2rem"
           },
           "subtitle": "<b>Convert security results</b> from all your security tools into a common data format",
-          "router_link" : "/normalize",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          }
+          "router_link" : "/normalize"
         },
         {
           "svg": "Visualize Icon",
@@ -58,14 +45,7 @@
             "size" : "2rem"
           },
           "subtitle": "<b>Identify overall security status</b> and deep-dive to solve specific security defects",
-          "link" : "https://heimdall-lite.mitre.org",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          }
+          "link" : "https://heimdall-lite.mitre.org"
         }
       ],
       "row_height": "10rem"
@@ -78,42 +58,21 @@
             "text" : "<b>Based On Standards</b>",
             "size" : "1.5rem"
           },
-          "subtitle": "(STIGs, CIS Benchmarks, Agency Baselines)",
-          "cols": {
-            "xl" : "6",
-            "lg" : "6",
-            "md" : "6",
-            "sm" : "6",
-            "xs" : "12"
-          }
+          "subtitle": "(STIGs, CIS Benchmarks, Agency Baselines)"
         },
         {
           "title": {
             "text" : "<b>Security Tool Output</b>",
             "size" : "1.5rem"
           },
-          "subtitle": "(Code Analysis, Continuous Monitoring, Security Operations)",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "3",
-            "xs" : "12"
-          }
+          "subtitle": "(Code Analysis, Continuous Monitoring, Security Operations)"
         },
         {
           "title": {
             "text" : "<b>Aggregated Data</b>",
             "size" : "1.5rem"
           },
-          "subtitle": "(Compile All Results For Analysis)",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "3",
-            "xs" : "12"
-          }
+          "subtitle": "(Compile All Results For Analysis)"
         }
       ],
       "row_height": "9rem"
@@ -123,52 +82,6 @@
       "data": [
         {
           "subcards": [
-            {
-              "svg": "Hardening Lib Icon",
-              "title": "Hardening",
-              "subtitle": "Content Library",
-              "router_link" : "/harden"
-            },
-            {
-              "svg": "Terraform Icon and Typemark",
-              "link" : "https://www.terraform.io/"
-            },
-            {
-              "svg": "CHEF Icon and Typemark",
-              "link" : "https://docs.chef.io/workstation/kitchen/"
-            },
-            {
-              "svg": "Ansible Logo and Typemark",
-              "link" : "https://www.ansible.com/"
-            }
-          ],
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          },
-          "min_height" : "500px"
-        },
-        {
-          "subcards": [
-            {
-              "svg": "Validation Lib Icon",
-              "title": "Validation",
-              "subtitle": "Content Library",
-              "router_link" : "/validate"
-            },
-            {
-              "title": "saf attest",
-              "subtitle": [
-                {
-                  "type": "text",
-                  "contents": "Add manual attestation (collected via interviews and examination) to security scan output"
-                }
-              ],
-              "link" : "https://saf-cli.mitre.org/#attest"
-            },
             {
               "title": "Vulcan",
               "subtitle": [
@@ -190,6 +103,68 @@
                 }
               ],
               "link" : "https://vulcan.mitre.org"
+            },
+            {
+              "title": "Unite Guidance with Automation",
+              "subtitle" : [
+                {
+                  "type": "text",
+                  "contents": "Develop automated compliance-as-code alongside standards"
+                }
+              ]
+            },
+            {
+              "title": "Bake in Compliance",
+              "subtitle" : [
+                {
+                  "type": "text",
+                  "contents": "Ensure all automated tests have a metadata binding to the requirement they validate"
+                }
+              ]
+            }
+          ],
+          "min_height" : "500px"
+        },
+        {
+          "subcards": [
+            {
+              "svg": "Hardening Lib Icon",
+              "title": "Hardening",
+              "subtitle": "Content Library",
+              "router_link" : "/harden"
+            },
+            {
+              "svg": "Terraform Icon and Typemark",
+              "link" : "https://www.terraform.io/"
+            },
+            {
+              "svg": "CHEF Icon and Typemark",
+              "link" : "https://docs.chef.io/workstation/kitchen/"
+            },
+            {
+              "svg": "Ansible Logo and Typemark",
+              "link" : "https://www.ansible.com/"
+            }
+          ],
+          "min_height" : "500px"
+        },
+        {
+          "subcards": [
+            {
+              "svg": "Validation Lib Icon",
+              "title": "Validation",
+              "subtitle": "Content Library",
+              "router_link" : "/validate"
+            },
+            {
+              "title": "saf attest",
+              "subtitle": [
+                {
+                  "type": "text",
+                  "contents": "Add manual attestation (collected via interviews and examination) to security scan output"
+                }
+              ],
+              "link" : "https://saf-cli.mitre.org/#attest"
             },
             {
               "title": "saf generate",
@@ -219,13 +194,6 @@
               "link" : "https://saf-cli.mitre.org/#validate"
             }
           ],
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          },
           "min_height" : "500px"
         },
         {
@@ -247,13 +215,6 @@
               "link" : "https://saf-cli.mitre.org/#hdf-to-splunk"
             }
           ],
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          },
           "min_height" : "500px"
         },
         {
@@ -279,14 +240,6 @@
               "link" : "https://saf-cli.mitre.org/#view"
             }
           ],
-
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          },
           "min_height" : "500px"
         }
       ],
