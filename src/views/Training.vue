@@ -5,8 +5,8 @@
         <Header>
           <h3 slot="title">Our Training</h3>
           <div class="mt-2" slot="subtitle">
-            The MITRE SAF team regularly offers training courses. Dates and sign-up links for
-            future courses are posted on this page when training dates are
+            The MITRE SAF team regularly offers training classes. Dates and sign-up links for
+            future classes are posted on this page when training dates are
             finalized. See below for course details, materials, and recordings.
           </div>
         </Header>
