@@ -4,68 +4,48 @@
       "name": "GOAL",
       "data": [
         {
+          "svg": "Plan Icon",
+          "title": {
+            "text" : "<b>PLAN</b>",
+            "size" : "1.5rem"
+          },
+          "subtitle": "Choose, tailor, and create <b>security guidance</b> appropriate for your mission",
+          "link" : "https://vulcan.mitre.org/"
+        },{
           "svg": "Harden Icon",
           "title": {
             "text" : "<b>HARDEN</b>",
-            "size" : "2rem"
+            "size" : "1.5rem"
           },
           "subtitle": "<b>Implement security baselines</b> using our Ansible, Chef, and Terraform content",
-          "router_link" : "/harden",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          }
+          "router_link" : "/harden"
         },
         {
           "svg": "Validate Icon",
           "title": {
             "text" : "<b>VALIDATE</b>",
-            "size" : "2rem"
+            "size" : "1.5rem"
           },
           "subtitle": "<b>Generate detailed security testing results</b> throughout the lifecycle of a system via <b>automated tests</b> and <b>manual attestation</b>",
-          "router_link" : "/validate",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          }
+          "router_link" : "/validate"
         },
         {
           "svg": "Normalize Icon",
           "title": {
             "text" : "<b>NORMALIZE</b>",
-            "size" : "2rem"
+            "size" : "1.5rem"
           },
           "subtitle": "<b>Convert security results</b> from all your security tools into a common data format",
-          "router_link" : "/normalize",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          }
+          "router_link" : "/normalize"
         },
         {
           "svg": "Visualize Icon",
           "title": {
             "text" : "<b>VISUALIZE</b>",
-            "size" : "2rem"
+            "size" : "1.5rem"
           },
           "subtitle": "<b>Identify overall security status</b> and deep-dive to solve specific security defects",
-          "link" : "https://heimdall-lite.mitre.org",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          }
+          "link" : "https://heimdall-lite.mitre.org"
         }
       ],
       "row_height": "10rem"
@@ -78,42 +58,22 @@
             "text" : "<b>Based On Standards</b>",
             "size" : "1.5rem"
           },
-          "subtitle": "(STIGs, CIS Benchmarks, Agency Baselines)",
-          "cols": {
-            "xl" : "6",
-            "lg" : "6",
-            "md" : "6",
-            "sm" : "6",
-            "xs" : "12"
-          }
+          "subtitle": "(STIGs, CIS Benchmarks, Agency Baselines)"
         },
         {
           "title": {
             "text" : "<b>Security Tool Output</b>",
             "size" : "1.5rem"
           },
-          "subtitle": "(Code Analysis, Continuous Monitoring, Security Operations)",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "3",
-            "xs" : "12"
-          }
+          "subtitle": "(Code Analysis, Continuous Monitoring, Security Operations)"
+
         },
         {
           "title": {
             "text" : "<b>Aggregated Data</b>",
             "size" : "1.5rem"
           },
-          "subtitle": "(Compile All Results For Analysis)",
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "3",
-            "xs" : "12"
-          }
+          "subtitle": "(Compile All Results For Analysis)"
         }
       ],
       "row_height": "9rem"
@@ -121,6 +81,41 @@
     {
       "name": "TOOLS",
       "data": [
+        {
+          "subcards": [
+            {
+              "title": "Vulcan",
+              "subtitle": [
+                {
+                  "type": "text",
+                  "contents": "Generate and tailor <b>security guidance</b> based on Security Requirements Guides (SRGs)"
+                }
+              ],
+              "link" : "https://vulcan.mitre.org"
+            },
+            {
+              "title": "Training Classes",
+              "subtitle" : [
+                {
+                  "type": "text",
+                  "contents": "Learn to use and develop SAF security tools appropriate to your mission"
+                }
+              ],
+              "router_link": "/train"
+            },
+            {
+              "title": "Getting Started",
+              "subtitle" : [
+                {
+                  "type": "text",
+                  "contents": "Step through and refine your user story"
+                }
+              ],
+              "router_link": "/gettingstarted"
+            }
+          ],
+          "min_height" : "500px"
+        },
         {
           "subcards": [
             {
@@ -142,13 +137,6 @@
               "link" : "https://www.ansible.com/"
             }
           ],
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          },
           "min_height" : "500px"
         },
         {
@@ -168,28 +156,6 @@
                 }
               ],
               "link" : "https://saf-cli.mitre.org/#attest"
-            },
-            {
-              "title": "Vulcan",
-              "subtitle": [
-                {
-                  "type": "text",
-                  "contents": "<b>Author standards</b> to create "
-                },
-                {
-                  "type": "svg",
-                  "contents": "InSpec Icon"
-                },
-                {
-                  "type": "svg",
-                  "contents": "InSpec Typemark"
-                },
-                {
-                  "type": "text",
-                  "contents": " validation code"
-                }
-              ],
-              "link" : "https://vulcan.mitre.org"
             },
             {
               "title": "saf generate",
@@ -217,15 +183,30 @@
               "title": "saf validate",
               "subtitle": "<b>Validate threshold checks</b> within the pipeline",
               "link" : "https://saf-cli.mitre.org/#validate"
+            },
+            {
+              "title": "Vulcan",
+              "subtitle": [
+                {
+                  "type": "text",
+                  "contents": "Generate "
+                },
+                {
+                  "type": "svg",
+                  "contents": "InSpec Icon"
+                },
+                {
+                  "type": "svg",
+                  "contents": "InSpec Typemark"
+                },
+                {
+                  "type": "text",
+                  "contents": " validation code to current, tailored, or authored standards"                  
+                }
+              ],
+              "link" : "https://vulcan.mitre.org"
             }
           ],
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          },
           "min_height" : "500px"
         },
         {
@@ -247,13 +228,6 @@
               "link" : "https://saf-cli.mitre.org/#hdf-to-splunk"
             }
           ],
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          },
           "min_height" : "500px"
         },
         {
@@ -279,14 +253,6 @@
               "link" : "https://saf-cli.mitre.org/#view"
             }
           ],
-
-          "cols": {
-            "xl" : "3",
-            "lg" : "3",
-            "md" : "3",
-            "sm" : "6",
-            "xs" : "12"
-          },
           "min_height" : "500px"
         }
       ],

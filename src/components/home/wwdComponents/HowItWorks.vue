@@ -19,8 +19,17 @@
       <v-col xs="12" smAndUp="11">
         <v-container fluid>
           <v-row justify="center">
-            <p v-if="$vuetify.breakpoint.xs" class="primary--text" style="font-size:2rem">{{row.name}}</p>
-            <v-col v-for="(item, index) in row.data" class="pa-1" :key="index" :xl="item.cols.xl" :lg="item.cols.lg" :md="item.cols.md" :sm="item.cols.sm" :cols="item.cols.xs">
+            <v-col cols="12">
+              <p v-if="$vuetify.breakpoint.xs" class="primary--text" style="font-size:2rem">{{row.name}}</p>
+            </v-col>
+            
+            <v-col v-for="(item, index) in row.data" class="pa-1" :key="index"
+              :cols="$vuetify.breakpoint.xs ? 12 : ''"
+              sm="4"
+              md="4"
+              :lg="item.cols ? item.cols : ''"
+              :xl="item.cols ? item.cols : ''"
+            >
               <v-hover v-slot:default="{ hover }">
                 <v-card
                   :class="hover && (item.link || item.router_link) ? getHighlight() : ''"
@@ -150,6 +159,9 @@ export default {
       data: howitworks.rows,
     };
   },
+  mounted () {
+      console.log(this.$vuetify.breakpoint.width)
+    },
   // created() {
   //   imgVersion : '-Dark'
   // },
