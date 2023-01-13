@@ -7,7 +7,7 @@
           "svg": "Plan Icon",
           "title": {
             "text" : "<b>PLAN</b>",
-            "size" : "2rem"
+            "size" : "1.5rem"
           },
           "subtitle": "Choose, tailor, and create <b>security guidance</b> appropriate for your mission",
           "link" : "https://vulcan.mitre.org/"
@@ -15,7 +15,7 @@
           "svg": "Harden Icon",
           "title": {
             "text" : "<b>HARDEN</b>",
-            "size" : "2rem"
+            "size" : "1.5rem"
           },
           "subtitle": "<b>Implement security baselines</b> using our Ansible, Chef, and Terraform content",
           "router_link" : "/harden"
@@ -24,7 +24,7 @@
           "svg": "Validate Icon",
           "title": {
             "text" : "<b>VALIDATE</b>",
-            "size" : "2rem"
+            "size" : "1.5rem"
           },
           "subtitle": "<b>Generate detailed security testing results</b> throughout the lifecycle of a system via <b>automated tests</b> and <b>manual attestation</b>",
           "router_link" : "/validate"
@@ -33,7 +33,7 @@
           "svg": "Normalize Icon",
           "title": {
             "text" : "<b>NORMALIZE</b>",
-            "size" : "2rem"
+            "size" : "1.5rem"
           },
           "subtitle": "<b>Convert security results</b> from all your security tools into a common data format",
           "router_link" : "/normalize"
@@ -42,7 +42,7 @@
           "svg": "Visualize Icon",
           "title": {
             "text" : "<b>VISUALIZE</b>",
-            "size" : "2rem"
+            "size" : "1.5rem"
           },
           "subtitle": "<b>Identify overall security status</b> and deep-dive to solve specific security defects",
           "link" : "https://heimdall-lite.mitre.org"
@@ -66,6 +66,7 @@
             "size" : "1.5rem"
           },
           "subtitle": "(Code Analysis, Continuous Monitoring, Security Operations)"
+
         },
         {
           "title": {

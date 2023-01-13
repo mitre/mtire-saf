@@ -27,8 +27,8 @@
               :cols="$vuetify.breakpoint.xs ? 12 : ''"
               sm="4"
               md="4"
-              lg=""
-              xl=""
+              :lg="item.cols ? item.cols : ''"
+              :xl="item.cols ? item.cols : ''"
             >
               <v-hover v-slot:default="{ hover }">
                 <v-card
