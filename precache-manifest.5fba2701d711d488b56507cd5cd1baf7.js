@@ -32,7 +32,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/_redirects"
   },
   {
-    "revision": "836e1457466860594cd0",
+    "revision": "c2a703f528616fb91e97",
     "url": "/css/app.ed79c549.css"
   },
   {
@@ -592,6 +592,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/refactr.f60310fc.png"
   },
   {
+    "revision": "a44f73b0db991cff3bff4771aa177b24",
+    "url": "/img/rfed-logo-horiz.a44f73b0.svg"
+  },
+  {
     "revision": "6daa0e92a75bdd0887675360b257cc4a",
     "url": "/img/robert-thew.6daa0e92.png"
   },
@@ -676,12 +680,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/img/wtm.ef7918b4.svg"
   },
   {
-    "revision": "9c3ba1dad85da76f12841a1cccd30e26",
+    "revision": "f6c7e5430458794bd9474dad8178919c",
     "url": "/index.html"
   },
   {
-    "revision": "836e1457466860594cd0",
-    "url": "/js/app.243a4202.js"
+    "revision": "c2a703f528616fb91e97",
+    "url": "/js/app.363ff945.js"
   },
   {
     "revision": "5f943402232e81153764",
