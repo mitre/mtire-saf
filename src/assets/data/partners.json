@@ -6,7 +6,7 @@
       "img": "Progress_Chef_Primary_Logo_Stacked.png"
     },
     {
-      "name": "VmWare",
+      "name": "VMware",
       "link": "https://www.vmware.com",
       "img": "vmware.png"
     },
@@ -19,6 +19,11 @@
       "name": "Nessus",
       "link": "https://www.tenable.com/",
       "img": "nessus.png"
+    },
+    {
+      "name": "Rancher Federal",
+      "link": "https://ranchergovernment.com/",
+      "img": "rfed-logo-horiz.svg"
     },
     {
       "name": "Elastic",
