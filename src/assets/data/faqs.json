@@ -137,6 +137,21 @@
         }
       ],
       "tag" : "cca"
+    },
+    {
+      "question": "Are there any recorded demos of the MITRE SAF?",
+      "answer": "<p>Here are some recordings of the MITRE SAF content</p>",
+      "links": [
+        {
+          "name": "ChefConf 2022 MITRE SAF - Unifying the DevSecOps Journey - The MITRE SAF as a Force Mutliplier",
+          "download_link": "https://www.youtube.com/watch?v=TyAI3yQl66A"
+        },
+        {
+          "name": "ChefConf 2022 MITRE SAF - The Tooling of DevSecOps - MITRE SAF in Action",
+          "download_link": "https://www.youtube.com/watch?v=e3HVhdC3SxI"
+        }
+      ],
+      "tag" : "demos"
     }
   ]
 }
