@@ -12,16 +12,16 @@
       ],
       "items": [
         {
-          "name": "During PLANNING,<br />use MITRE SAF to:",
+          "name": "During PLANNING,<br />use MITRE SAF© to:",
           "link": "",
           "bullets" : [
             "Identify applicable security and privacy requirements",
             "Assess development best practices guidance",
-            "Identify MITRE SAF tools to support development, assessment, & operations security processes"
+            "Identify MITRE SAF© tools to support development, assessment, & operations security processes"
           ]
         },
         {
-          "name": "During DEVELOPMENT,<br />use MITRE SAF to:",
+          "name": "During DEVELOPMENT,<br />use MITRE SAF© to:",
           "link": "",
           "bullets" : [
             "Implement relevant security hardening scripts",
@@ -42,7 +42,7 @@
           ]
         },
         {
-          "name": "During OPERATIONS,<br />use MITRE SAF to:",
+          "name": "During OPERATIONS,<br />use MITRE SAF© to:",
           "link": "",
           "bullets" : [
             "Monitor security posture through validation checks",
@@ -55,9 +55,8 @@
     {
       "sectionHeader": "How We Support It",
       "sectionDesc": [
-        "Develop a toolchain to support the above areas of What and How for secure development.",
-        "NOTE: The new <a href='https://saf-cli.mitre.org' target='_blank'>SAF CLI tool</a> replicates the functions of InSpec_Tools and Heimdall_Tools. The older tools have been deprecated."
-      ],
+        "Develop a toolchain to support the above areas of What and How for secure development."
+        ],
       "items": [
         {
           "name": "SAF CLI",
@@ -67,7 +66,7 @@
           "bullets" : [
             "Generate InSpec security validation code",
             "Set and validate threshold checks within a pipeline",
-            "Convert security tool test data to and from our standard Heimdall Data Format (HDF)",
+            "Convert security tool test data to and from our standard OASIS Heimdall Data Format (OHDF)",
             "Automate Heimdall setup and deployment"
           ],
           "icon": "",
@@ -166,7 +165,7 @@
         {
           "name": "Serverless Heimdall Pusher (AWS)",
           "link": "",
-          "desc": "Lambda function that pushes HDF results stored in an s3 bucket to Heimdall Server",
+          "desc": "Lambda function that pushes OHDF results stored in an s3 bucket to Heimdall Server",
           "icon": "",
           "png" : "aws_lambda_logo",
           "app_link": "",

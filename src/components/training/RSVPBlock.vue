@@ -1,8 +1,8 @@
 <template>
   <div>
-    <h2 class="mb-2">Upcoming Class Offerings: SAF Training February 2023!</h2>
+    <h2 class="mb-2">Upcoming Class Offerings: MITRE SAF© Training February 2023!</h2>
     <p >
-      Sponsored by <a href="https://www.mda.mil/" target="_blank">MDA</a>, the MITRE SAF Team is happy to announce its first round of security automation training courses for 2023. 
+      Sponsored by <a href="https://www.mda.mil/" target="_blank">MDA</a>, the MITRE SAF© Team is happy to announce its first round of security automation training courses for 2023. 
       These are free, on-line virtual, hands-on, instructor-led two-day courses.
     </p>
     <ul>
@@ -32,7 +32,7 @@
       >
       Please RSVP if you are interested in attending. If you are having trouble with the form, please email
       <a :href="'mailto:' + communityData.trainingContactEmail" target="_blank"
-        >SAF@groups.mitre.org.</a
+        >saf@groups.mitre.org.</a
       >
       <br>
       For information on prerequisites and resources for learning Ruby, look at the saf-training material available 

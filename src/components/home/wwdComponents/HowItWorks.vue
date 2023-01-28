@@ -1,7 +1,7 @@
 <template>
   <v-container class style="width:100%">
     <v-row align="center" justify="center" class="my-4">
-      <p class="primary--text ma-0" style="font-size:300%">How MITRE SAF Works</p>
+      <p class="primary--text ma-0" style="font-size:300%">How MITRE SAF© Works</p>
     </v-row>
     <v-row justify="center" v-for="(row, n) in data" :key="n">
       <v-col cols="1" v-if="$vuetify.breakpoint.smAndUp">

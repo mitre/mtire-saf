@@ -17,7 +17,7 @@
               <router-link to="training">training material</router-link>.
             </p>
             <p class="mx-0">
-              All assessment tests under MITRE SAF are associated with NIST SP
+              All assessment tests under MITRE SAF© are associated with NIST SP
               800-53 Security Controls. Explore these associations in this
               <router-link to="control-table"
                 >Control Assessment Range table</router-link

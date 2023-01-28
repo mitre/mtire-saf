@@ -1,4 +1,4 @@
-# MITRE SAF
+# MITRE SAF©
 
 [![MadeWithVueJs.com shield](https://madewithvuejs.com/storage/repo-shields/1444-shield.svg)](https://madewithvuejs.com/p/aura/shield-link)
 
@@ -12,7 +12,7 @@ Version: 1.0.0
 
 ## Overview
 
-The MITRE Security Automation Framework (SAF) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the community to streamline security automation for Systems and in DevOps pipelines.
+The MITRE Security Automation Framework (MITRE SAF©) brings together open-source, accessible applications, techniques, libraries, and tools developed by MITRE and the community to streamline security automation for Systems and in DevOps pipelines.
 
 The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/).
 

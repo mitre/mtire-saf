@@ -1,7 +1,7 @@
 {
-  "communityName": "MITRE SAF",
-  "communityShortDescription": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for systems and DevOps pipelines.",
-  "communityLongDec": "The MITRE Security Automation Framework (SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for systems and DevOps pipelines.",
+  "communityName": "MITRE SAF©",
+  "communityShortDescription": "The MITRE Security Automation Framework (MITRE SAF©) is a suite of open-source security automation tools, techniques and processes that facilitate the development, collection, and standardization of content for use by government and industry organizations to implement evolving security requirements while deploying apps at speed.",
+  "communityLongDec": "The MITRE Security Automation Framework (MITRE SAF©) is a suite of open-source security automation tools, techniques and processes that facilitate the development, collection, and standardization of content for use by government and industry organizations to implement evolving security requirements while deploying apps at speed.",
   "communityMeetupLink": "",
   "communityEmail": "saf@groups.mitre.org",
   "website": "https://saf.mitre.org",
@@ -38,6 +38,6 @@
       "icon": "mdi-linkedin"
     }
   ],
-  "aboutProgram": "The MITRE Security Automation Framework (MITRE SAF) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for Systems and DevOps pipelines.",
+  "aboutProgram": "The MITRE Security Automation Framework (MITRE SAF©) brings together applications, techniques, libraries, and tools developed by MITRE and the security community to streamline security automation for Systems and DevOps pipelines.",
   "codeOfConduct": ""
 }

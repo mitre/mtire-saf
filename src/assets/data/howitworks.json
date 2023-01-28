@@ -98,7 +98,7 @@
               "subtitle" : [
                 {
                   "type": "text",
-                  "contents": "Learn to use and develop SAF security tools appropriate to your mission"
+                  "contents": "Learn to use and develop MITRE SAF© security tools appropriate to your mission"
                 }
               ],
               "router_link": "/train"
@@ -162,7 +162,7 @@
               "subtitle": [
                 {
                   "type": "text",
-                  "contents": "(formerly InSpec_Tools) <b>Generate </b>"
+                  "contents": "<b>Generate </b>"
                 },
                 {
                   "type": "svg",
@@ -212,19 +212,19 @@
         {
           "subcards": [
             {
-              "title": "Heimdall Data Format (HDF)",
+              "title": "OASIS Heimdall Data Format (OHDF)",
               "subtitle": "<b>Normalize data</b> for portability and aggregation",
               "router_link" : "/normalize"
             },
             {
               "title": "saf convert *2hdf",
-              "subtitle": "(formerly Heimdall_Tools) <b>Convert Output</b> from non-InSpec tools to HDF",
+              "subtitle": "<b>Convert Output</b> from non-InSpec tools to OHDF",
               "link" : "https://saf-cli.mitre.org/#convert"
             },
             {
 
               "title": "saf convert hdf2splunk",
-              "subtitle" : "<b>Store HDF</b> output into Splunk for later retrieval / visualization using Heimdall",
+              "subtitle" : "<b>Store OHDF</b> output into Splunk for later retrieval / visualization using Heimdall",
               "link" : "https://saf-cli.mitre.org/#hdf-to-splunk"
             }
           ],
@@ -244,7 +244,7 @@
             },
             {
               "title": "saf convert:hdf2",
-              "subtitle": "(formerly InSpec_Tools) <b>Convert HDF</b> to other tool formats and report styles (e.g. csv, html)",
+              "subtitle": "(formerly InSpec_Tools) <b>Convert OHDF</b> to other tool formats and report styles (e.g. csv, html)",
               "link" : "https://saf-cli.mitre.org/#convert"
             },
             {
