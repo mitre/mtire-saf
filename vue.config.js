@@ -5,7 +5,7 @@ module.exports = {
     }]);
   },
   pwa: {
-    name: "MITRE SAF",
+    name: "MITRE SAF©",
     workboxPluginMode: "InjectManifest",
     themeColor: "#4A90E2",
     workboxOptions: {

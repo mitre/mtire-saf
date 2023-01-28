@@ -1,7 +1,7 @@
 {
   "faqs": [
     {
-      "question": "How many NIST SP 800-53 Security Controls are assessed under the MITRE SAF?",
+      "question": "How many NIST SP 800-53 Security Controls are assessed under the MITRE SAF©?",
       "answer": "Currently, about 162 NIST SP 800-53 security controls are assessed under this framework. Note that assessment coverage varies based on the component type. For more information, explore this Control Assessment Range table!",
       "links": [
         {
@@ -16,7 +16,7 @@
       "answer": "NIST SP 800-53 associations are included in all InSpec profiles and output from other security tools processed through Heimdall_tools. See our presentation to learn more!",
       "links": [
         {
-          "name": "InSpec, HDF, and NIST SP 800-53 Security Controls",
+          "name": "InSpec, OHDF, and NIST SP 800-53 Security Controls",
           "download_link": "MITRE_InSpec_Profiles_and_HDF_include_NIST_SP-800-53_Associations.pdf"
         }
       ],
@@ -27,25 +27,20 @@
       "answer": "Teams should follow the code review recommendations given here:",
       "links": [
         {
-          "name": "MITRE SAF Code Review Recommendations",
+          "name": "MITRE SAF© Code Review Recommendations",
           "download_link": "MITRE_SAF_Code_Review_Recommendations.pdf"
         }
       ],
       "tag" : "code-review"
     },
     {
-      "question": "Which tools are supported by the MITRE SAF?",
+      "question": "Which tools are supported by the MITRE SAF©?",
       "answer": "",
       "links": [
         {
           "name": "InSpec (and our InSpec profiles)",
           "router_link": "/validate",
           "desc": " for assessing configuration settings, vulnerabilities, and least functionality"
-        },
-        {
-          "name": "InSpec Tools",
-          "link": "https://inspec-tools.mitre.org",
-          "desc": "to create and format InSpec data like profiles and results"
         },
         {
           "name": "Heimdall Server",
@@ -58,21 +53,26 @@
           "desc": " to visualize security data easily from anywhere, using a lightweight in-browser version of Heimdall for simple use cases"
         },
         {
-          "name": "Heimdall Tools",
-          "link": "https://heimdall-tools.mitre.org/",
-          "desc": " to convert data from common security tools into Heimdall Data Format (HDF) to be viewed in Heimdall"
+          "name": "SAF CLI",
+          "link": "https://saf-cli.mitre.org",
+          "desc": ", an all-in-one command line utility supporting DevSecOps pipeline activities, such as converting between security data formats and comparing data against compliance thresholds"
         },
         {
-          "name": "HDF-to-Splunk",
-          "link": "http://hdf-json-to-splunk.mitre.org/",
-          "desc": " converter to use Splunk to store HDF security data"
+          "name": "Vulcan",
+          "link": "https://vulcan.mitre.org",
+          "desc": ", a webapp for creating security guidance documentation in a collaborative and intuitive environment"
+        },
+        {
+          "name": "eMASSer",
+          "link": "https://mitre.github.io/emasser/",
+          "desc": ", a tool for programmatically interacting with eMASS systems via API"
         }
       ],
       "tag" : "tools"
     },
     {
       "question": "What happened to Heimdall_Tools and InSpec_Tools?",
-      "answer": "MITRE SAF has combined a number of its tools, including Heimdall_Tools and InSpec_Tools, into a single utility called SAF CLI. The new tool covers the same use cases as the old ones in a more convenient package. Similarly, our GitHub Actions for the older tools have been replaced by the SAF CLI GitHub Action. Action. See our page for SAF CLI for details.",
+      "answer": "MITRE SAF© has combined a number of its tools, including Heimdall_Tools and InSpec_Tools, into a single utility called SAF CLI. The new tool covers the same use cases as the old ones in a more convenient package. Similarly, our GitHub Actions for the older tools have been replaced by the SAF CLI GitHub Action. Action. See our page for SAF CLI for details.",
       "links": [
         {
           "name": "SAF CLI",
@@ -128,26 +128,26 @@
       "tag" : "cinc"
     },
     {
-      "question": "How can I as a MITRE, government or vendor employee contribute to MITRE SAF?",
-      "answer": "<p>MITRE SAF has created the Continuous Collaboration Agreement to help sponsors for MITRE projects easily work with the SAF, and have MITRE support their contributions to the shared community. For more information, please review the MITRE SAF CCA Template.</p><p>Vendors and the open source community can contribute to MITRE SAF via the Apache 2.0 OSS License.</p>",
+      "question": "How can I as a MITRE, government or vendor employee contribute to MITRE SAF©?",
+      "answer": "<p>MITRE SAF© has created the Continuous Collaboration Agreement to help sponsors for MITRE projects easily work with the SAF, and have MITRE support their contributions to the shared community. For more information, please review the MITRE SAF© CCA Template.</p><p>Vendors and the open source community can contribute to MITRE SAF© via the Apache 2.0 OSS License.</p>",
       "links": [
         {
-          "name": "MITRE SAF CCA Template",
+          "name": "MITRE SAF© CCA Template",
           "download_link": "MITRE-SAF-CCA-Template.docx"
         }
       ],
       "tag" : "cca"
     },
     {
-      "question": "Are there any recorded demos of the MITRE SAF?",
-      "answer": "<p>Here are some recordings of the MITRE SAF content</p>",
+      "question": "Are there any recorded demos of the MITRE SAF©?",
+      "answer": "<p>Here are some recordings of the MITRE SAF© content</p>",
       "links": [
         {
-          "name": "ChefConf 2022 MITRE SAF - Unifying the DevSecOps Journey - The MITRE SAF as a Force Mutliplier",
+          "name": "ChefConf 2022 MITRE SAF© - Unifying the DevSecOps Journey - The MITRE SAF© as a Force Mutliplier",
           "download_link": "https://www.youtube.com/watch?v=TyAI3yQl66A"
         },
         {
-          "name": "ChefConf 2022 MITRE SAF - The Tooling of DevSecOps - MITRE SAF in Action",
+          "name": "ChefConf 2022 MITRE SAF© - The Tooling of DevSecOps - MITRE SAF© in Action",
           "download_link": "https://www.youtube.com/watch?v=e3HVhdC3SxI"
         }
       ],

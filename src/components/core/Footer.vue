@@ -25,7 +25,7 @@
                 style="width: 2rem; height: 2rem; vertical-align: middle"
                 class="mr-2"
               />
-              MITRE SAF
+              MITRE SAF©
             </p>
           
             <v-spacer />

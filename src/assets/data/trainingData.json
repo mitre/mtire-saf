@@ -2,7 +2,7 @@
   "training": {
     "courses" : [
       {
-        "name" : "SAF User Class (New!)",
+        "name" : "MITRE SAF© User Class (New!)",
         "course_link" : "https://mitre.github.io/saf-training/",
         "desc" : "This class provides understanding and hands-on practical use of MITRE's Security Automation Framework with a focus on automating security validation and visualization.",
         "bullets" : [
@@ -38,7 +38,7 @@
       },
       {
         "name" : "COMING SOON! Security Guidance Developer Class",
-        "desc" : "This course looks at MITRE SAF's resources in the planning stage of the security validation process.",
+        "desc" : "This course looks at MITRE SAF©'s resources in the planning stage of the security validation process.",
         "bullets" : [
           "Learn to choose, tailor, and create security guidance appropriate for your mission",
           "Develop security guidance using the MITRE Vulcan application",

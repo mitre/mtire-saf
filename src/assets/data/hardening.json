@@ -7,7 +7,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Operating Systems"]
@@ -19,7 +19,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Operating Systems"]
@@ -31,7 +31,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Operating Systems"]
@@ -43,7 +43,7 @@
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Operating Systems"]
@@ -55,7 +55,7 @@
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Virtual Platforms"]
@@ -67,7 +67,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Virtual Platforms"]
@@ -79,7 +79,7 @@
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Web Servers"]
@@ -91,7 +91,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Web Servers"]
@@ -103,7 +103,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Web Servers"]
@@ -115,7 +115,7 @@
       "platform_name": "Ansible",
       "platform_img": "ansible.svg",
       "platform_link": "https://www.ansible.com/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Web Servers"]
@@ -127,7 +127,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Web Servers"]
@@ -139,7 +139,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Web Servers"]
@@ -151,7 +151,7 @@
       "platform_name": "Terraform",
       "platform_img": "terraform.svg",
       "platform_link": "https://www.terraform.io/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Cloud Service Providers"]
@@ -163,7 +163,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Databases"]
@@ -211,7 +211,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Application Logic"] 
@@ -223,7 +223,7 @@
       "platform_name": "Kitchen",
       "platform_img": "chef-2.svg",
       "platform_link": "https://docs.chef.io/workstation/kitchen/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Application Logic"] 
@@ -619,7 +619,7 @@
       "platform_name": "Keycloak",
       "platform_img": "keycloak.svg",
       "platform_link": "https://www.keycloak.org/",
-      "sponsor_name" : "MITRE SAF",
+      "sponsor_name" : "MITRE SAF©",
       "sponsor_img": "saf_logo.png",
       "sponsor_link": "/",
       "category": ["Application Logic"]
