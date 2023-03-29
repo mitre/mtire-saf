@@ -899,6 +899,21 @@
         "Application Logic"
       ],
       "gitHash": "0"
+    },
+    {
+      "shortName": "Elastic Kubernetes Service CIS Baseline",
+      "longName": "Elastic Kubernetes Service CIS Baseline",
+      "link": "https://github.com/mitre/eks-cis-cluster-baseline",
+      "platform_name": "InSpec",
+      "platform_img": "inspec-blue-back-border.svg",
+      "platform_link": "https://docs.chef.io/inspec/",
+      "sponsor_name" : "MITRE SAF©",
+      "sponsor_img": "saf_logo.png",
+      "sponsor_link": "/",
+      "category": [
+        "Virtual Platforms"
+      ],
+      "gitHash": "0"
     }
   ]
 }
