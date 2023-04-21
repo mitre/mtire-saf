@@ -92,7 +92,11 @@
       "links": [
         {
           "name": "InSpec Pipeline Integration Example",
-          "link": "https://mitre-inspec-advanced-developer.netlify.com/course/4.html"
+          "link": "https://mitre.github.io/saf-training/courses/advanced/05.html"
+        },
+        {
+          "name": "Or Try Here: InSpec Pipeline Integration Example",
+          "link": "https://mitre-saf-training.netlify.app/courses/advanced/05.html"
         }
       ],
       "tag" : "pipeline"
