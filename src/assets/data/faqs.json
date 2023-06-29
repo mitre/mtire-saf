@@ -43,9 +43,9 @@
           "desc": " for assessing configuration settings, vulnerabilities, and least functionality"
         },
         {
-          "name": "InSpec Tools",
-          "link": "https://inspec-tools.mitre.org",
-          "desc": "to create and format InSpec data like profiles and results"
+          "name": "SAF CLI",
+          "link": "https://saf-cli.mitre.org",
+          "desc": " for data conversion to and from OHDF, generating manual attestations, comparing validation results to thresholds, and more"
         },
         {
           "name": "Heimdall Server",
@@ -56,11 +56,6 @@
           "name": "Heimdall Lite",
           "link": "https://heimdall-lite.mitre.org",
           "desc": " to visualize security data easily from anywhere, using a lightweight in-browser version of Heimdall for simple use cases"
-        },
-        {
-          "name": "Heimdall Tools",
-          "link": "https://heimdall-tools.mitre.org/",
-          "desc": " to convert data from common security tools into Heimdall Data Format (HDF) to be viewed in Heimdall"
         },
         {
           "name": "HDF-to-Splunk",
@@ -103,7 +98,7 @@
     },
     {
       "question": "How is InSpec deployed?",
-      "answer": "It is intended and recommended that InSpec be installed on a \"runner\" host (such as a DevOps orchestration server, an administrative management system, or a developer's workstation/laptop) and run against the target remotely. However, InSpec may be deployed in various ways depending on the needs of the user:",
+      "answer": "We recommend that InSpec be installed on a \"runner\" host (such as a DevOps orchestration server, an administrative management system, or a developer's workstation/laptop) and run against the target remotely. However, InSpec may be deployed in various ways depending on the needs of the user:",
       "images": [
         {
           "name": "Inspec Runners",
@@ -133,14 +128,8 @@
     },
     {
       "question": "How can I as a MITRE, government or vendor employee contribute to MITRE SAF?",
-      "answer": "<p>MITRE SAF has created the Continuous Collaboration Agreement to help sponsors for MITRE projects easily work with the SAF, and have MITRE support their contributions to the shared community. For more information, please review the MITRE SAF CCA Template.</p><p>Vendors and the open source community can contribute to MITRE SAF via the Apache 2.0 OSS License.</p>",
-      "links": [
-        {
-          "name": "MITRE SAF CCA Template",
-          "download_link": "MITRE-SAF-CCA-Template.docx"
-        }
-      ],
-      "tag" : "cca"
+      "answer": "Vendors and the open source community can contribute to MITRE SAF© via the Apache 2.0 OSS License.",
+      "tag" : "participate"
     },
     {
       "question": "Are there any recorded demos of the MITRE SAF?",

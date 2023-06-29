@@ -42,6 +42,7 @@
     "register-service-worker": "^1.7.2",
     "vue": "^2.6.12",
     "vue-cheetah-grid": "^1.1.5",
+    "vue-cli": "^2.9.6",
     "vue-json-viewer": "^2.2.20",
     "vue-prism-component": "1.2.0",
     "vue-router": "^3.5.2",
