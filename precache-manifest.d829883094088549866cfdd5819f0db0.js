@@ -16,10 +16,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/How to Use the MITRE SAF.pdf"
   },
   {
-    "revision": "a48a7158644611f15540718769019d62",
-    "url": "/MITRE-SAF-CCA-Template.docx"
-  },
-  {
     "revision": "4b00a811782f7fa776f060ad7ca0e6de",
     "url": "/MITRE_InSpec_Profiles_and_HDF_include_NIST_SP-800-53_Associations.pdf"
   },
