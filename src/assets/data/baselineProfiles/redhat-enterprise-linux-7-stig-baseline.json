@@ -1,5 +1,5 @@
 {
-  "name": "RHEL_7_STIG",
+  "name": "redhat-enterprise-linux-7-stig-baseline",
   "title": "Red Hat Enterprise Linux 7 Security Technical Implementation Guide",
   "maintainer": "MITRE SAF Team",
   "copyright": "MITRE, 2022",
@@ -11969,7 +11969,7 @@
       "id": "controls/SV-204429.rb"
     }
   ],
-  "sha256": "8f5f2d39198710b49d4fb8a807ef4b2d357c0999b7b2387e72f6538d56db46c8",
+  "sha256": "5d0ff8e89dc579ca8dfc30d6c7bc4be2ea7f0ac58d214f83e80a1ee8c0a3d899",
   "status_message": "",
   "status": "loaded",
   "generator": {
