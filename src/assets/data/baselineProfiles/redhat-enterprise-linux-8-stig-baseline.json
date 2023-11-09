@@ -5,7 +5,7 @@
   "copyright": "MITRE",
   "license": "Apache-2.0",
   "summary": "This Security Technical Implementation Guide is published as a tool to improve the security of Department of Defense (DoD) information systems. The requirements are derived from the National Institute of Standards and Technology (NIST) 800-53 and related documents. Comments or proposed revisions to this document should be sent via email to the following address: disa.stig_spt@mail.mil.",
-  "version": "1.3.1",
+  "version": "1.6.3",
   "inspec_version": ">= 4.0",
   "inputs": [],
   "supports": [],
@@ -15930,7 +15930,7 @@
       "id": "controls/SV-244522.rb"
     }
   ],
-  "sha256": "dcb7abc9591ba08228dd2175ac1207a8ffe0406666ded43945f29140fa0fcb78",
+  "sha256": "e77bff1a77faa36e2ec0358309408723e1bb9e6d6bd5b7fb48cfb7f7cd7c8e28",
   "status_message": "",
   "status": "loaded",
   "generator": {
