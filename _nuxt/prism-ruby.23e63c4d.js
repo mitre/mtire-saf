@@ -1,8 +1,4 @@
-<<<<<<< HEAD:_nuxt/prism-ruby.23e63c4d.js
 import{ce as W,cf as K}from"./entry.54e69cac.js";var N={exports:{}};(function(m){var S=typeof window<"u"?window:typeof WorkerGlobalScope<"u"&&self instanceof WorkerGlobalScope?self:{};/**
-=======
-import{cd as W,ce as K}from"./entry.f9854684.js";var N={exports:{}};(function(m){var S=typeof window<"u"?window:typeof WorkerGlobalScope<"u"&&self instanceof WorkerGlobalScope?self:{};/**
->>>>>>> 85d3413eabad7d8f68e8fec04ca9700473cc16c5:_nuxt/prism-ruby.e224cabe.js
  * Prism: Lightweight, robust, elegant syntax highlighting
  *
  * @license MIT <https://opensource.org/licenses/MIT>
