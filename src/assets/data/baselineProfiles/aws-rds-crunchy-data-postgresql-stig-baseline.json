@@ -7,7 +7,7 @@
   "summary": "Inspec Validation Profile for AWS RDS hosted Crunchy Data PostgreSQL Security Technical Implementation Guide",
   "license": "Apache-2.0",
   "Description": "An InSpec Compliance Profile.",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "inspec_version": ">= 4.0",
   "depends": [
     {
@@ -550,9 +550,6 @@
       "refs": [
         {
           "ref": []
-        },
-        {
-          "ref": []
         }
       ],
       "tags": {
@@ -585,7 +582,11 @@
         "fix": "Where dynamic code execution is employed in circumstances where the objective could practically\n\tbe satisfied by static execution with strongly typed parameters, modify the code to do so."
       },
       "impact": 0.5,
-      "refs": [],
+      "refs": [
+        {
+          "ref": []
+        }
+      ],
       "tags": {
         "severity": "medium",
         "gtitle": "SRG-APP-000251-DB-000391",
@@ -600,7 +601,7 @@
           "SI-10"
         ]
       },
-      "code": "control 'V-233527' do\n  title 'PostgreSQL and associated applications must reserve the use of dynamic code execution for situations\n\tthat require it.'\n  desc 'With respect to database management systems, one class of threat is known as SQL Injection, or more\n\tgenerally, code injection. It takes advantage of the dynamic execution capabilities of various programming\n\tlanguages, including dialects of SQL. In such cases, the attacker deduces the manner in which SQL statements are\n\tbeing processed, either from inside knowledge or by observing system behavior in response to invalid inputs. When\n\tthe attacker identifies scenarios where SQL queries are being assembled by application code (which may be within\n\t\tthe database or separate from it) and executed dynamically, the attacker is then able to craft input strings\n\t\tthat subvert the intent of the query. Potentially, the attacker can gain unauthorized access to data,\n\t\tincluding security settings, and severely corrupt or destroy the database.\n\nThe principal protection against code injection is not to use dynamic execution except where it provides necessary\nfunctionality that cannot be utilized otherwise. Use strongly typed data items rather than general-purpose strings\nas input parameters to task-specific, pre-compiled stored procedures and functions (and triggers).\n\nThis calls for inspection of application source code, which will require collaboration with the application\ndevelopers. It is recognized that in many cases, the database administrator (DBA) is organizationally separate from\nthe application developers, and may have limited, if any, access to source code. Nevertheless, protections of this\ntype are so important to the secure operation of databases that they must not be ignored. At a minimum, the DBA must\nattempt to obtain assurances from the development organization that this issue has been addressed, and must document\nwhat has been discovered.'\n  desc 'check', 'Review PostgreSQL source code (trigger procedures, functions) and application source code, to\n\tidentify cases of dynamic code execution. Any user input should be handled through prepared statements.\n\nIf dynamic code execution is employed in circumstances where the objective could practically be satisfied by static\nexecution with strongly typed parameters, this is a finding.'\n  desc 'fix', 'Where dynamic code execution is employed in circumstances where the objective could practically\n\tbe satisfied by static execution with strongly typed parameters, modify the code to do so.'\n  impact 0.5\n  tag severity: 'medium'\n  tag gtitle: 'SRG-APP-000251-DB-000391'\n  tag gid: 'V-233527'\n  tag rid: 'SV-233527r606806_rule'\n  tag stig_id: 'CD12-00-001900'\n  tag fix_id: 'F-36686r606805_fix'\n  tag cci: ['CCI-001310']\n  tag nist: ['SI-10']\n\n  describe 'Review PostgreSQL source code and application source code, to identify cases of dynamic code execution.' do\n    skip 'If dynamic code execution is employed where an objective can satisfied by static execution with strongly typed parameters, this is a finding.'\n  end\nend\n",
+      "code": "  control 'V-233527' do\n    describe 'A manual review is require to ensure PostgreSQL and associated applications reserve the use of dynamic\n    code execution for situations that require it.' do\n      skip 'A manual review is require to ensure PostgreSQL and associated applications reserve the use of dynamic\n    code execution for situations that require it.'\n    end\n  end\n",
       "source_location": {
         "ref": "crunchy-data-postgresql-stig-baseline-main/controls/V-233527.rb",
         "line": 1
@@ -4692,7 +4693,7 @@
       "id": "crunchy-data-postgresql-stig-baseline-main/controls/V-233623.rb"
     }
   ],
-  "sha256": "8e30455e1bdabfa29e2f30232bf0dc17d7d1266b546b8046ba2b26c9b4bc864a",
+  "sha256": "d3c4cbde8d79ad3f90dc015834f5cde9ad122f7673a185f436c89f858e3bd416",
   "status_message": "",
   "status": "loaded",
   "generator": {
