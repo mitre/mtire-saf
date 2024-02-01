@@ -45,35 +45,6 @@
       "id": "V-32833"
     },
     {
-      "title": "A configuration file must be present to deploy properties for JRE.",
-      "desc": "The deployment.config file is used for specifying the location and execution of system-level properties for the Java Runtime Environment. By default no deployment.config file exists; thus, no system-wide deployment.properties file exists. Without the deployment.config file, setting particular options for the Java control panel is impossible. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.",
-      "descriptions": {
-        "default": "The deployment.config file is used for specifying the location and execution of system-level properties for the Java Runtime Environment. By default no deployment.config file exists; thus, no system-wide deployment.properties file exists. Without the deployment.config file, setting particular options for the Java control panel is impossible. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed."
-      },
-      "impact": 0.5,
-      "refs": [],
-      "tags": {
-        "severity": "medium",
-        "gtitle": "JRE0070 Configuration file must be present",
-        "gid": "V-32901",
-        "rid": "SV-43621r1_rule",
-        "stig_id": "JRE0070-UX",
-        "cci": "CCI-000366",
-        "nist": [
-          "CM-6 b",
-          "Rev_4"
-        ],
-        "check": "Navigate to the lib directory: /usr/java/jre/lib/ If there is no configuration file entitled 'deployment.config', this is a finding. ",
-        "fix": "Create a JRE deployment configuration file. Navigate to the lib directory: /usr/java/jre/lib/ Create a configuration file entitled 'deployment.config'. "
-      },
-      "code": "control 'V-32901' do\n  title 'A configuration file must be present to deploy properties for JRE.'\n  desc  \"The deployment.config file is used for specifying the location and execution of system-level properties for the Java Runtime Environment. By default no deployment.config file exists; thus, no system-wide deployment.properties file exists. Without the deployment.config file, setting particular options for the Java control panel is impossible. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.\"\n  impact 0.5\n  tag \"severity\": 'medium'\n  tag \"gtitle\": 'JRE0070 Configuration file must be present'\n  tag \"gid\": 'V-32901'\n  tag \"rid\": 'SV-43621r1_rule'\n  tag \"stig_id\": 'JRE0070-UX'\n  tag \"cci\": 'CCI-000366'\n  tag \"nist\": ['CM-6 b', 'Rev_4']\n  tag \"check\": \"Navigate to the lib directory: /usr/java/jre/lib/ If there is no configuration file entitled 'deployment.config', this is a finding. \"\n  tag \"fix\": \"Create a JRE deployment configuration file. Navigate to the lib directory: /usr/java/jre/lib/ Create a configuration file entitled 'deployment.config'. \"\n\n  describe file('/usr/java/jre/lib/deployment.config') do\n    it { should exist }\n  end\nend\n",
-      "source_location": {
-        "ref": "./JRE 7 STIG/controls/V-32901.rb",
-        "line": 1
-      },
-      "id": "V-32901"
-    },
-    {
       "title": "The dialog enabling users to grant permissions to execute signed content from an un-trusted authority must be locked.",
       "desc": "Java applets exist both signed and unsigned. Even for signed applets, there can be many sources, some of which may be purveyors of malware. Applet sources considered trusted can have their information populated into the browser, enabling Java to validate applets against trusted sources. Permitting execution of signed Java applets from un-trusted sources may result in malware running on the system, and risks system modification, invasion of privacy, or denial of service. Ensuring users cannot change the permission settings which control the execution of signed Java applets contributes to a more consistent security profile. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.",
       "descriptions": {
@@ -103,62 +74,33 @@
       "id": "V-32829"
     },
     {
-      "title": "The configuration file must contain proper keys and values to deploy settings correctly.",
-      "desc": "This configuration file must hold values of the location of the deployment.properties file as well as the enforcement of these properties. Without a proper path for the properties file, deployment would not be possible. If the path specified does not lead to a properties file the value of the 'deployment.system.config. mandatory' key determines how to handle the situation. If the value of this key is true, JRE will not run if the path to the properties file is invalid. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.",
+      "title": "A configuration file must be present to deploy properties for JRE.",
+      "desc": "The deployment.config file is used for specifying the location and execution of system-level properties for the Java Runtime Environment. By default no deployment.config file exists; thus, no system-wide deployment.properties file exists. Without the deployment.config file, setting particular options for the Java control panel is impossible. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.",
       "descriptions": {
-        "default": "This configuration file must hold values of the location of the deployment.properties file as well as the enforcement of these properties. Without a proper path for the properties file, deployment would not be possible. If the path specified does not lead to a properties file the value of the 'deployment.system.config. mandatory' key determines how to handle the situation. If the value of this key is true, JRE will not run if the path to the properties file is invalid. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed."
+        "default": "The deployment.config file is used for specifying the location and execution of system-level properties for the Java Runtime Environment. By default no deployment.config file exists; thus, no system-wide deployment.properties file exists. Without the deployment.config file, setting particular options for the Java control panel is impossible. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed."
       },
       "impact": 0.5,
       "refs": [],
       "tags": {
         "severity": "medium",
-        "gtitle": "JRE0060 The deployment.config file must be properly configured",
-        "gid": "V-32842",
-        "rid": "SV-43649r1_rule",
-        "stig_id": "JRE0060-UX",
+        "gtitle": "JRE0070 Configuration file must be present",
+        "gid": "V-32901",
+        "rid": "SV-43621r1_rule",
+        "stig_id": "JRE0070-UX",
         "cci": "CCI-000366",
         "nist": [
           "CM-6 b",
           "Rev_4"
         ],
-        "check": "Navigate to the deployment.config file. /usr/java/jre/lib/deployment.config If the configuration file does not contain 'deployment.system.config=file:/usr/java/jre/lib/deployment.properties', this is a finding. If the configuration file does not contain 'deployment.system.config.mandatory=false', this is a finding.",
-        "fix": "Specify the path to the deployment.properties file and set the mandatory configuration values. Navigate to the deployment.config file. /usr/java/jre/lib/deployment.properties Include the following keys in the configuration file: 'deployment.system.config=file:/usr/java/jre/lib/deployment.properties' 'deployment.system.config.mandatory=false'."
+        "check": "Navigate to the lib directory: /usr/java/jre/lib/ If there is no configuration file entitled 'deployment.config', this is a finding. ",
+        "fix": "Create a JRE deployment configuration file. Navigate to the lib directory: /usr/java/jre/lib/ Create a configuration file entitled 'deployment.config'. "
       },
-      "code": "control 'V-32842' do\n  title 'The configuration file must contain proper keys and values to deploy settings correctly.'\n  desc  \"This configuration file must hold values of the location of the deployment.properties file as well as the enforcement of these properties. Without a proper path for the properties file, deployment would not be possible. If the path specified does not lead to a properties file the value of the 'deployment.system.config. mandatory' key determines how to handle the situation. If the value of this key is true, JRE will not run if the path to the properties file is invalid. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.\"\n  impact 0.5\n  tag \"severity\": 'medium'\n  tag \"gtitle\": 'JRE0060 The deployment.config file must be properly configured'\n  tag \"gid\": 'V-32842'\n  tag \"rid\": 'SV-43649r1_rule'\n  tag \"stig_id\": 'JRE0060-UX'\n  tag \"cci\": 'CCI-000366'\n  tag \"nist\": ['CM-6 b', 'Rev_4']\n  tag \"check\": \"Navigate to the deployment.config file. /usr/java/jre/lib/deployment.config If the configuration file does not contain 'deployment.system.config=file:/usr/java/jre/lib/deployment.properties', this is a finding. If the configuration file does not contain 'deployment.system.config.mandatory=false', this is a finding.\"\n  tag \"fix\": \"Specify the path to the deployment.properties file and set the mandatory configuration values. Navigate to the deployment.config file. /usr/java/jre/lib/deployment.properties Include the following keys in the configuration file: 'deployment.system.config=file:/usr/java/jre/lib/deployment.properties' 'deployment.system.config.mandatory=false'.\"\n\n  describe file('/usr/java/jre/lib/deployment.config') do\n    its('content') { should match(%r{deployment.system.config=file:/usr/java/jre/lib/deployment.properties}) }\n  end\n  describe file('/usr/java/jre/lib/deployment.config') do\n    its('content') { should match(/deployment.system.config.mandatory=false/) }\n  end\nend\n",
+      "code": "control 'V-32901' do\n  title 'A configuration file must be present to deploy properties for JRE.'\n  desc  \"The deployment.config file is used for specifying the location and execution of system-level properties for the Java Runtime Environment. By default no deployment.config file exists; thus, no system-wide deployment.properties file exists. Without the deployment.config file, setting particular options for the Java control panel is impossible. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.\"\n  impact 0.5\n  tag \"severity\": 'medium'\n  tag \"gtitle\": 'JRE0070 Configuration file must be present'\n  tag \"gid\": 'V-32901'\n  tag \"rid\": 'SV-43621r1_rule'\n  tag \"stig_id\": 'JRE0070-UX'\n  tag \"cci\": 'CCI-000366'\n  tag \"nist\": ['CM-6 b', 'Rev_4']\n  tag \"check\": \"Navigate to the lib directory: /usr/java/jre/lib/ If there is no configuration file entitled 'deployment.config', this is a finding. \"\n  tag \"fix\": \"Create a JRE deployment configuration file. Navigate to the lib directory: /usr/java/jre/lib/ Create a configuration file entitled 'deployment.config'. \"\n\n  describe file('/usr/java/jre/lib/deployment.config') do\n    it { should exist }\n  end\nend\n",
       "source_location": {
-        "ref": "./JRE 7 STIG/controls/V-32842.rb",
+        "ref": "./JRE 7 STIG/controls/V-32901.rb",
         "line": 1
       },
-      "id": "V-32842"
-    },
-    {
-      "title": "The setting enabling users to configure the check publisher certificates for revocation must be locked.",
-      "desc": "Certificates may be revoked due to improper issuance, compromise of the certificate, and failure to adhere to policy. Therefore, any certificate found revoked on a CRL or via Online Certificate Status Protocol (OCSP) should not be trusted. Permitting execution of an applet published with a revoked certificate may result in spoofing, malware, system modification, invasion of privacy, and denial of service. Ensuring users cannot change these settings assures a more consistent security profile. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.",
-      "descriptions": {
-        "default": "Certificates may be revoked due to improper issuance, compromise of the certificate, and failure to adhere to policy. Therefore, any certificate found revoked on a CRL or via Online Certificate Status Protocol (OCSP) should not be trusted. Permitting execution of an applet published with a revoked certificate may result in spoofing, malware, system modification, invasion of privacy, and denial of service. Ensuring users cannot change these settings assures a more consistent security profile. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed."
-      },
-      "impact": 0.5,
-      "refs": [],
-      "tags": {
-        "severity": "medium",
-        "gtitle": "JRE0030 Lock the option to check certificates for revocation",
-        "gid": "V-32831",
-        "rid": "SV-43617r3_rule",
-        "stig_id": "JRE0030-UX",
-        "cci": "CCI-000185",
-        "nist": [
-          "IA-5 (2)(a)",
-          "Rev_4"
-        ],
-        "check": "If the system is on the SIPRNET, this requirement is NA. Navigate to the system 'deployment.properties' file for Java, the default location is /usr/java/jre/lib/deployment.properties. If the 'deployment.security.validation.crl.locked' key is not present within the deployment.properties file, this is a finding. If the 'deployment.security.validation.ocsp.locked' key is not present within the deployment.properties file, this is a finding.",
-        "fix": "Navigate to the system 'deployment.properties' file for Java, the default location is /usr/java/jre/lib/deployment.properties. Add the 'deployment.security.validation.crl.locked' key to the deployment.properties file. Add the 'deployment.security.validation.ocsp.locked' key to the deployment.properties file."
-      },
-      "code": "control 'V-32831' do\n  title 'The setting enabling users to configure the check publisher certificates for revocation must be locked.'\n  desc  \"Certificates may be revoked due to improper issuance, compromise of the certificate, and failure to adhere to policy. Therefore, any certificate found revoked on a CRL or via Online Certificate Status Protocol (OCSP) should not be trusted. Permitting execution of an applet published with a revoked certificate may result in spoofing, malware, system modification, invasion of privacy, and denial of service. Ensuring users cannot change these settings assures a more consistent security profile. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.\"\n  impact 0.5\n  tag \"severity\": 'medium'\n  tag \"gtitle\": 'JRE0030 Lock the option to check certificates for revocation'\n  tag \"gid\": 'V-32831'\n  tag \"rid\": 'SV-43617r3_rule'\n  tag \"stig_id\": 'JRE0030-UX'\n  tag \"cci\": 'CCI-001991'\n  tag \"nist\": ['IA-5 (2) (d)', 'Rev_4']\n  tag \"cci\": 'CCI-000185'\n  tag \"nist\": ['IA-5 (2)(a)', 'Rev_4']\n  tag \"check\": \"If the system is on the SIPRNET, this requirement is NA. Navigate to the system 'deployment.properties' file for Java, the default location is /usr/java/jre/lib/deployment.properties. If the 'deployment.security.validation.crl.locked' key is not present within the deployment.properties file, this is a finding. If the 'deployment.security.validation.ocsp.locked' key is not present within the deployment.properties file, this is a finding.\"\n  tag \"fix\": \"Navigate to the system 'deployment.properties' file for Java, the default location is /usr/java/jre/lib/deployment.properties. Add the 'deployment.security.validation.crl.locked' key to the deployment.properties file. Add the 'deployment.security.validation.ocsp.locked' key to the deployment.properties file.\"\n\n  if is_on_siprnet\n    impact 0.0\n    desc 'If the system is on the SIPRNET, therefore this requirement is NA'\n    describe 'If the system is on the SIPRNET, therefore this requirement is NA' do\n      skip 'If the system is on the SIPRNET, therefore this requirement is NA'\n    end\n  else\n    describe file('/usr/java/jre/lib/deployment.properties') do\n      its('content') { should match(/deployment.security.validation.crl.locked/) }\n    end\n    describe file('/usr/java/jre/lib/deployment.properties') do\n      its('content') { should match(/deployment.security.validation.ocsp.locked/) }\n    end\n  end\nend\n",
-      "source_location": {
-        "ref": "./JRE 7 STIG/controls/V-32831.rb",
-        "line": 2
-      },
-      "id": "V-32831"
+      "id": "V-32901"
     },
     {
       "title": "The version of the JRE running on the system must be the most current available.",
@@ -188,6 +130,35 @@
         "line": 1
       },
       "id": "V-39239"
+    },
+    {
+      "title": "The configuration file must contain proper keys and values to deploy settings correctly.",
+      "desc": "This configuration file must hold values of the location of the deployment.properties file as well as the enforcement of these properties. Without a proper path for the properties file, deployment would not be possible. If the path specified does not lead to a properties file the value of the 'deployment.system.config. mandatory' key determines how to handle the situation. If the value of this key is true, JRE will not run if the path to the properties file is invalid. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.",
+      "descriptions": {
+        "default": "This configuration file must hold values of the location of the deployment.properties file as well as the enforcement of these properties. Without a proper path for the properties file, deployment would not be possible. If the path specified does not lead to a properties file the value of the 'deployment.system.config. mandatory' key determines how to handle the situation. If the value of this key is true, JRE will not run if the path to the properties file is invalid. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed."
+      },
+      "impact": 0.5,
+      "refs": [],
+      "tags": {
+        "severity": "medium",
+        "gtitle": "JRE0060 The deployment.config file must be properly configured",
+        "gid": "V-32842",
+        "rid": "SV-43649r1_rule",
+        "stig_id": "JRE0060-UX",
+        "cci": "CCI-000366",
+        "nist": [
+          "CM-6 b",
+          "Rev_4"
+        ],
+        "check": "Navigate to the deployment.config file. /usr/java/jre/lib/deployment.config If the configuration file does not contain 'deployment.system.config=file:/usr/java/jre/lib/deployment.properties', this is a finding. If the configuration file does not contain 'deployment.system.config.mandatory=false', this is a finding.",
+        "fix": "Specify the path to the deployment.properties file and set the mandatory configuration values. Navigate to the deployment.config file. /usr/java/jre/lib/deployment.properties Include the following keys in the configuration file: 'deployment.system.config=file:/usr/java/jre/lib/deployment.properties' 'deployment.system.config.mandatory=false'."
+      },
+      "code": "control 'V-32842' do\n  title 'The configuration file must contain proper keys and values to deploy settings correctly.'\n  desc  \"This configuration file must hold values of the location of the deployment.properties file as well as the enforcement of these properties. Without a proper path for the properties file, deployment would not be possible. If the path specified does not lead to a properties file the value of the 'deployment.system.config. mandatory' key determines how to handle the situation. If the value of this key is true, JRE will not run if the path to the properties file is invalid. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.\"\n  impact 0.5\n  tag \"severity\": 'medium'\n  tag \"gtitle\": 'JRE0060 The deployment.config file must be properly configured'\n  tag \"gid\": 'V-32842'\n  tag \"rid\": 'SV-43649r1_rule'\n  tag \"stig_id\": 'JRE0060-UX'\n  tag \"cci\": 'CCI-000366'\n  tag \"nist\": ['CM-6 b', 'Rev_4']\n  tag \"check\": \"Navigate to the deployment.config file. /usr/java/jre/lib/deployment.config If the configuration file does not contain 'deployment.system.config=file:/usr/java/jre/lib/deployment.properties', this is a finding. If the configuration file does not contain 'deployment.system.config.mandatory=false', this is a finding.\"\n  tag \"fix\": \"Specify the path to the deployment.properties file and set the mandatory configuration values. Navigate to the deployment.config file. /usr/java/jre/lib/deployment.properties Include the following keys in the configuration file: 'deployment.system.config=file:/usr/java/jre/lib/deployment.properties' 'deployment.system.config.mandatory=false'.\"\n\n  describe file('/usr/java/jre/lib/deployment.config') do\n    its('content') { should match(%r{deployment.system.config=file:/usr/java/jre/lib/deployment.properties}) }\n  end\n  describe file('/usr/java/jre/lib/deployment.config') do\n    its('content') { should match(/deployment.system.config.mandatory=false/) }\n  end\nend\n",
+      "source_location": {
+        "ref": "./JRE 7 STIG/controls/V-32842.rb",
+        "line": 1
+      },
+      "id": "V-32842"
     },
     {
       "title": "The option to enable online certificate validation must be enabled.",
@@ -246,6 +217,35 @@
         "line": 2
       },
       "id": "V-32828"
+    },
+    {
+      "title": "The setting enabling users to configure the check publisher certificates for revocation must be locked.",
+      "desc": "Certificates may be revoked due to improper issuance, compromise of the certificate, and failure to adhere to policy. Therefore, any certificate found revoked on a CRL or via Online Certificate Status Protocol (OCSP) should not be trusted. Permitting execution of an applet published with a revoked certificate may result in spoofing, malware, system modification, invasion of privacy, and denial of service. Ensuring users cannot change these settings assures a more consistent security profile. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.",
+      "descriptions": {
+        "default": "Certificates may be revoked due to improper issuance, compromise of the certificate, and failure to adhere to policy. Therefore, any certificate found revoked on a CRL or via Online Certificate Status Protocol (OCSP) should not be trusted. Permitting execution of an applet published with a revoked certificate may result in spoofing, malware, system modification, invasion of privacy, and denial of service. Ensuring users cannot change these settings assures a more consistent security profile. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed."
+      },
+      "impact": 0.5,
+      "refs": [],
+      "tags": {
+        "severity": "medium",
+        "gtitle": "JRE0030 Lock the option to check certificates for revocation",
+        "gid": "V-32831",
+        "rid": "SV-43617r3_rule",
+        "stig_id": "JRE0030-UX",
+        "cci": "CCI-000185",
+        "nist": [
+          "IA-5 (2)(a)",
+          "Rev_4"
+        ],
+        "check": "If the system is on the SIPRNET, this requirement is NA. Navigate to the system 'deployment.properties' file for Java, the default location is /usr/java/jre/lib/deployment.properties. If the 'deployment.security.validation.crl.locked' key is not present within the deployment.properties file, this is a finding. If the 'deployment.security.validation.ocsp.locked' key is not present within the deployment.properties file, this is a finding.",
+        "fix": "Navigate to the system 'deployment.properties' file for Java, the default location is /usr/java/jre/lib/deployment.properties. Add the 'deployment.security.validation.crl.locked' key to the deployment.properties file. Add the 'deployment.security.validation.ocsp.locked' key to the deployment.properties file."
+      },
+      "code": "control 'V-32831' do\n  title 'The setting enabling users to configure the check publisher certificates for revocation must be locked.'\n  desc  \"Certificates may be revoked due to improper issuance, compromise of the certificate, and failure to adhere to policy. Therefore, any certificate found revoked on a CRL or via Online Certificate Status Protocol (OCSP) should not be trusted. Permitting execution of an applet published with a revoked certificate may result in spoofing, malware, system modification, invasion of privacy, and denial of service. Ensuring users cannot change these settings assures a more consistent security profile. NOTE: The 'JRE' directory in the file path may reflect the specific JRE release installed.\"\n  impact 0.5\n  tag \"severity\": 'medium'\n  tag \"gtitle\": 'JRE0030 Lock the option to check certificates for revocation'\n  tag \"gid\": 'V-32831'\n  tag \"rid\": 'SV-43617r3_rule'\n  tag \"stig_id\": 'JRE0030-UX'\n  tag \"cci\": 'CCI-001991'\n  tag \"nist\": ['IA-5 (2) (d)', 'Rev_4']\n  tag \"cci\": 'CCI-000185'\n  tag \"nist\": ['IA-5 (2)(a)', 'Rev_4']\n  tag \"check\": \"If the system is on the SIPRNET, this requirement is NA. Navigate to the system 'deployment.properties' file for Java, the default location is /usr/java/jre/lib/deployment.properties. If the 'deployment.security.validation.crl.locked' key is not present within the deployment.properties file, this is a finding. If the 'deployment.security.validation.ocsp.locked' key is not present within the deployment.properties file, this is a finding.\"\n  tag \"fix\": \"Navigate to the system 'deployment.properties' file for Java, the default location is /usr/java/jre/lib/deployment.properties. Add the 'deployment.security.validation.crl.locked' key to the deployment.properties file. Add the 'deployment.security.validation.ocsp.locked' key to the deployment.properties file.\"\n\n  if is_on_siprnet\n    impact 0.0\n    desc 'If the system is on the SIPRNET, therefore this requirement is NA'\n    describe 'If the system is on the SIPRNET, therefore this requirement is NA' do\n      skip 'If the system is on the SIPRNET, therefore this requirement is NA'\n    end\n  else\n    describe file('/usr/java/jre/lib/deployment.properties') do\n      its('content') { should match(/deployment.security.validation.crl.locked/) }\n    end\n    describe file('/usr/java/jre/lib/deployment.properties') do\n      its('content') { should match(/deployment.security.validation.ocsp.locked/) }\n    end\n  end\nend\n",
+      "source_location": {
+        "ref": "./JRE 7 STIG/controls/V-32831.rb",
+        "line": 2
+      },
+      "id": "V-32831"
     },
     {
       "title": "A properties file must be present to hold all the keys that establish properties within the Java control panel.",
@@ -346,13 +346,6 @@
     {
       "title": null,
       "controls": [
-        "V-32901"
-      ],
-      "id": "controls/V-32901.rb"
-    },
-    {
-      "title": null,
-      "controls": [
         "V-32829"
       ],
       "id": "controls/V-32829.rb"
@@ -360,16 +353,9 @@
     {
       "title": null,
       "controls": [
-        "V-32842"
+        "V-32901"
       ],
-      "id": "controls/V-32842.rb"
-    },
-    {
-      "title": null,
-      "controls": [
-        "V-32831"
-      ],
-      "id": "controls/V-32831.rb"
+      "id": "controls/V-32901.rb"
     },
     {
       "title": null,
@@ -377,6 +363,13 @@
         "V-39239"
       ],
       "id": "controls/V-39239.rb"
+    },
+    {
+      "title": null,
+      "controls": [
+        "V-32842"
+      ],
+      "id": "controls/V-32842.rb"
     },
     {
       "title": null,
@@ -391,6 +384,13 @@
         "V-32828"
       ],
       "id": "controls/V-32828.rb"
+    },
+    {
+      "title": null,
+      "controls": [
+        "V-32831"
+      ],
+      "id": "controls/V-32831.rb"
     },
     {
       "title": null,
