@@ -5,7 +5,7 @@
   "copyright": "MITRE, 2022",
   "copyright_email": "saf@groups.mitre.org",
   "license": "Apache-2.0",
-  "summary": "Inspec Validation Profile for Crunchy Data PostgreSQL Security Technical Implementation Guide Version 1, Release: 1 Benchmark Date: 20 Nov 2020",
+  "summary": "Inspec Validation Profile for Crunchy Data PostgreSQL Security Technical Implementation Guide Version 2, Release: 1 Benchmark Date: 27 Jul 2022",
   "version": "2.1.0",
   "inspec_version": ">= 4.0",
   "inputs": [],
@@ -4325,7 +4325,7 @@
       "id": "controls/V-233548.rb"
     }
   ],
-  "sha256": "e51dd718facd700e817698c44a623b0869282d93510ad64c9c4651c291e5baff",
+  "sha256": "11ba1619aa36367fc8c8edb10b01758e7575e890c6423a7981686432d3575e08",
   "status_message": "",
   "status": "loaded",
   "generator": {
