@@ -6,7 +6,7 @@
   "copyright_email": "saf@groups.mitre.org",
   "summary": "Inspec Validation Profile for AWS RDS hosted Crunchy Data PostgreSQL Security Technical Implementation Guide",
   "license": "Apache-2.0",
-  "Description": "An InSpec Compliance Profile.",
+  "description": "An InSpec Compliance Profile.",
   "version": "2.2.0",
   "inspec_version": ">= 4.0",
   "depends": [
@@ -4733,7 +4733,7 @@
       "id": "crunchy-data-postgresql-stig-baseline-main/controls/V-259740.rb"
     }
   ],
-  "sha256": "daf3cb3c5814996075b53eead0e30d4edd0b0c0b0d5619a8a38ec147970ae463",
+  "sha256": "ce01c54133ca9ccf9bb73392d265025486aa73cc69f24f75e302b0ccb713940e",
   "status_message": "",
   "status": "loaded",
   "generator": {
