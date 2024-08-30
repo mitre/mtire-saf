@@ -3,7 +3,7 @@
   "title": "microsoft-sql-server-2014-instance-stig-baseline",
   "maintainer": "The MITRE Corporation",
   "copyright": "(c) 2018 The MITRE Corporation",
-  "copyright_email": "inspec@mitre.org",
+  "copyright_email": "saf@groups.mitre.org",
   "license": "Apache-2.0",
   "summary": "Inspec Validation Profile for Microsoft SQL Server 2014 Instance STIG",
   "version": "1.9.0",
@@ -4446,7 +4446,7 @@
       "id": "controls/V-67757.rb"
     }
   ],
-  "sha256": "111cb013e116b872d823e3705545c83a4bf903904dbf7a7022cc78893983ed4a",
+  "sha256": "3ffac82ade0eb8cc4e119d663961f5b409301c6914a71b0a9c3c5c82dc038e68",
   "status_message": "",
   "status": "loaded",
   "generator": {
