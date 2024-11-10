@@ -7,7 +7,7 @@
   "license": "Apache-2.0",
   "summary": "InSpec profile aligned to DISA STIG for Microsoft IIS 8.5 Server Security Technical Implementation Guide",
   "description": null,
-  "version": "2.7.0",
+  "version": "2.7.1",
   "supports": [],
   "depends": [],
   "inspec_version": "~>6.0",
@@ -2325,7 +2325,7 @@
       "id": "controls/SV-214402.rb"
     }
   ],
-  "sha256": "eb90776d6a28252b853cd4047ca35725fab591fd1a54dfa1a49012e2459d2300",
+  "sha256": "831341c78a3d6d401bffa732059fe704d5fd2fc229833a86b9270e34ed027201",
   "status_message": "",
   "status": "loaded",
   "generator": {
