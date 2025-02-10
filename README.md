@@ -129,4 +129,4 @@ Awesome! Contributions of all kinds are greatly appreciated. To help smoothen th
 ## Template Authors
 
 **Maintainer:** [Vrijraj Singh](https://github.com/vrijraj)
-**Developer:** [Bharat Agarwal](https://github.com/bharatagsrwal)
+**Developer:** [Bharat Agarwal](https://github.com/agarwalbharat)
